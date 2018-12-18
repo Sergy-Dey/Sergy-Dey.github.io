@@ -1,14 +1,231 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/stylesheet.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/animate.css">
+    <link rel="stylesheet" href="./style/slider/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+
+    <!-- script -->
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap.js"></script>
+    <script src="./script/wow.min.js"></script>
+    <script src="./script/jquery.maskedinput.js"></script>
+    <!-- <script src="./script/slider/script.js"></script> -->
+    <script src="./script/script.js"></script>
+
     <title>Document</title>
 </head>
 <body>
-    <h3>
-        TTest3
-    </h3>
+    <header>
+        <style>
+        .preloader {position:fixed;width:100%;height:100%;left:0;top:0;background:url('./img/preloader.gif') no-repeat center;z-index:9999;opacity:1;transition:opacity 0.3s;}
+        .preloader.fadeOut {opacity:0;}
+        </style>
+        <!-- <div class="preloader"></div> -->
+        <div class="wrapper">
+            <nav class="wow fadeInDown navbar navbar-static-top navbar-menu-main" data-wow-duration="2s" data-wow-delay="3s"  role="navigation" style="position: -webkit-sticky; position: sticky; top: 0;">
+                    <!-- Контейнер (определяет ширину Navbar) -->
+                <div class="">
+                    <!-- Заголовок -->
+                    <div class="navbar-header">
+                        <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+                        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button> -->
+                        <a href="#">
+                            <img src="./img/logo_baza_white.png" alt="">
+                        </a> 
+                    </div>
+                    <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+                    <div class="collapse navbar-collapse menu-navbar" id="navbar-main">
+                        <!-- <div style="display: flex; flex-direction:row; justify-content: center; "> -->
+                            <ul class="nav navbar-nav nav-coll-firft">
+                                <li class="active"><a href="#">Новостройки</a></li>
+                                <li><a href="#">Коммерческая недвижимость</a></li>
+                                <li><a href="#">Паркинги</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Клиентам</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav navbar-right nav-coll-second">   
+                                <li><a href="tel:+1234567890" class="phone-class">8(343)305-05-05</a></li>
+                                <li>
+                                    <button class="btn form-call-class" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModal">
+                                        Заказать звонок
+                                    </button>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="scrollBody">
+            <div class="class-section-1">
+                <div class="title-block">
+                    <div class="block-title-text wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
+                        <h2>
+                            Профессионально<br>
+                            поможем купить,<br>
+                            продать и арендовать<br>
+                            недвижимость<br>
+                            в Екатеринбурге
+                        </h2>
+                    </div>
+                    <div class="block-btn-click">
+                        <a href=""class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">Смотреть жк</a>
+                        <button class="btn form-call-class wow fadeInUp" data-title="Получить консультацию"   data-wow-duration="2s" data-wow-delay="2s" data-toggle="modal" data-target="#phoneModal">
+                            Получить консультацию
+                        </button>
+                        <img class="tree3 wow fadeInLeft" src="./img/tree3.png" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                        <img class="quadcopter wow fadeInLeft" data-wow-duration="2s" data-wow-delay="3s"src="./img/quadcopter.png" alt="">
+                        <img class="cloud2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s" src="./img/cloud2.png" alt="">
+                    </div>
+                </div>
+                <div class="img-gk-block">
+                    <a class="wow fadeInUp" id="block-open-gk" data-wow-duration="2s" data-wow-delay="3s" href="/test">
+                        ЖК "Парк Каменные палатки" 
+                    </a>
+                    <div class="block-modal-gk">   
+                        <h3>          
+                            ЖК "Парк Каменные палатки"
+                        </h3>
+                        <p class="text-18 desc-gk-modal">
+                            Дом с личным выходом в парк 777 га
+                        </p>
+                        <p class="text-18 desc-address-gk-modal">
+                            ЖБИ, ул. Высоцкого - Егоршинский подход,
+                        </p>
+                        <table>
+                            <tr>
+                                <td class="text-left"><a href="/test">Студии</a></td>
+                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><a href="/test">1-комнатные</a></td>
+                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><a href="/test">2-комнатные</a></td>
+                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><a href="/test">3-комнатные</a></td>
+                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><a href="/test">4-комнатные</a></td>
+                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <img class="img-cloud1 fadeInRight wow" data-wow-duration="3s" data-wow-delay="1s" src="./img/cloud1.png" alt="">
+                    <img class="img-cloud3 fadeInDown wow" data-wow-duration="3s" data-wow-delay="1s" src="./img/cloud3.png" alt="">
+                    <img class="img-cloud4 fadeInRight wow" data-wow-duration="3s" data-wow-delay="1s" src="./img/cloud4.png" alt="">
+                    <img class="img-tree wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/tree.png" alt="">
+
+                    <img class="img-tree2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/tree2.png" alt="">
+
+                    <img class="img-fence wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/fence.png" alt="">
+                    <!-- <section class="wow slideInLeft" >
+
+                    </section> -->
+                    <img class="img-gk wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/gk-home.png" alt="">
+                </div>
+                <div style="clear:both;"></div>
+                <div class="img-gk-slider fadeInRight wow" data-wow-duration="3s" data-wow-delay="2s">
+                    <div class="block-title-slider col-md-4" >
+                        <h2>
+                            В ЖК "Бриз" снижение процента по ипотеке до 7,8%
+                        </h2>
+                        <a href="#" class="btn-red">Подробнее</a>
+                    </div>
+                    <div class="slider-items col-md-8" >
+                        <div class="album">
+                            <ul>
+                                <li><img src="http://jtour.by/uploads/posts/2014-10/1414766992_25.jpg" alt=""></li>
+                                <li><img src="http://puteshestvie-about.ru/wp-content/uploads/2011/04/Egipet-cairo.jpg" alt=""></li>
+                                <li><img src="http://img6.qwrt.ru/img6/2015/07/22/%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F-%D0%BE%D1%82%D0%B4%D1%8B%D1%85-%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC-%D0%B5%D0%B4%D0%B0-09160.jpg" alt=""></li>
+                                <li><img src="http://v-thailand.com/wp-content/uploads/2015/11/Puteshestviya-v-odinochku-820x344.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+     <!-- Modal -->
+    <div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content-call col-md-10 col-md-offset-1">
+                <!-- Modal Header -->
+                <div class="modal-call-form">
+                    <button type="button" class="close" 
+                    data-dismiss="modal">
+                        <img src="./img/btn-close.png" alt="">
+                        <!-- <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span> -->
+                    </button>
+                    <h2 class="modal-title" id="myModalLabel">
+                        Заказать звонок
+                    </h2>
+                    <p class="text-24">
+                        Менеджер свяжиться свами<br>
+                        и проконсультирует по всем<br>
+                        интересующим вас вопросам
+                    </p>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <form class="form-horizontal" role="form">
+                        <div class="col-xs-12 form-group">
+                            
+                            <input type="text" class="form-control-phoneCall" 
+                            id="inputNameForm" placeholder="Ваше имя"/>
+                            
+                        </div>
+                        <div class="col-xs-12 form-group">
+                            <!-- <div class="col-sm-10"> -->
+                                <input type="test" class="form-control-phoneCall"
+                                id="inputPhoneForm" placeholder="+7(   )   -  -"/>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-xs-12 form-group btn-form-modal-block">
+                            <!-- <div class="col-sm-offset-2 col-sm-10"> -->
+                                <button type="submit" class="btn-form-modal">Презвоните мне!</button>
+                                <p>
+                                    Нажимая кнопку "Перезвоните мне", вы соглашаетесь с условиями 
+                                    Лицензионногосоглашения и Политикой обработки персонильных 
+                                    данных
+                                </p>
+                            <!-- </div> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+<!-- <style>
+    body {height:100vh;}
+header,main,footer {width:100%;display:block;float:left;}
+header {position:absolute;}
+main {height:100%;}
+</style> -->

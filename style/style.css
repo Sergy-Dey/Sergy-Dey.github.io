@@ -1,0 +1,348 @@
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'TT Commons';
+}
+
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+body{
+    background:url('../img/bcmain.jpg');
+    font-family: 'TT Commons';
+}
+
+.wrapper{
+    margin: 0 auto;
+}
+
+
+/* -------------menu-nav-bar------------- */
+header{
+    position: absolute;
+    padding: 0px 80px;
+    width: 100%;
+}
+.navbar-menu-main{
+    margin-top: 30px;
+    z-index: 100;
+    /* display:none; */
+}
+.menu-navbar .nav-coll-firft{
+    margin-left: 70px;
+}
+.menu-navbar .nav-coll-firft li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu-navbar .nav-coll-second .phone-class{
+    font-size: 24px;
+    color:#fff;
+}
+.form-call-class{
+    background: none;
+    width: 204px;
+    height: 50px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 30px;
+}
+/* -----------------end------------------ */
+#scrollBody{
+    margin-left: 0px;
+    width: 400%;
+}
+.class-section-1{
+    height: 100%;
+    /* margin-left: 80px; */
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: flex-end;
+}
+.title-block{
+    float: left;
+    display: block;
+ }
+ .class-section-1 .title-block{
+     margin-bottom: 120px;
+ }
+.class-section-1 .block-title-text h2{
+    color:#fff;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 82px;
+}
+.block-btn-click{
+    margin-top: 80px;
+    position: relative;
+}
+.block-btn-click .tree3{
+    position: absolute;
+    left: -161px;
+}
+.block-btn-click .quadcopter{
+    position: absolute;
+    /* left: px; */
+    right: 180px;
+    bottom: 600px;
+}
+.block-btn-click .cloud2{
+    position: absolute;
+    right: 180px;
+    bottom: 286px;
+    opacity: 0.5;
+}
+.block-btn-click a{
+    text-align: center;
+    line-height: 45px;
+    border-radius: 4px;
+    width: 180px;
+    height: 50px;
+    border: 2px solid #ff0e0e;
+    background-color: #ff0e0e;
+    display: inline-block;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.form-consult-class{
+    background: none;
+    width: 204px;
+    height: 50px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 18px;
+}
+.img-gk-block{
+    margin-left: 150px;
+    position: relative;
+    width: 860px;
+}
+
+.img-gk-block #block-open-gk{
+    z-index: 15;
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    line-height: 42px;
+    border-radius: 4px;
+    bottom: 117px;
+    width: 300px;
+    left: 240px;
+    /* z-index: 3; */
+    font-size: 24px;
+    color: #000000;
+    background-color: #ffffff;
+}
+/* .img-gk-block a:hover{
+
+} */
+.img-gk {
+    z-index: 5;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    height: 760px;
+}
+ .img-tree {
+    position: absolute;
+    z-index: 6;
+    left: -144px;
+    bottom: -91px;
+    width: 175px;
+    height: 174px;
+}
+.img-tree2 {
+    position: absolute;
+    z-index: 6;
+    left: 556px;
+    bottom: -18px;
+    width: 177px;
+    height: 109px;
+}
+.img-fence {
+    position: absolute;
+    z-index: 3;
+    left: -227px;
+    bottom: -8px;
+    width: 234px;
+    height: 95px;
+}
+.img-cloud1{
+    position: absolute;
+    opacity: 0.6;
+    /* top: -196px; */
+    left: -136px;
+    bottom: 391px;
+}
+.img-cloud3{
+    position: absolute;
+    /* top: -196px; */
+    left: 260px;
+    bottom: 770px;
+}
+.img-cloud4{
+    position: absolute;
+    opacity: 0.5;
+    /* top: -196px; */
+    left: 743px;
+    bottom: -58px;
+
+}
+.modal-content-call{
+    padding: 50px;
+}
+.modal-call-form{
+    /* text-align: center; */
+    margin-bottom: 50px;
+}
+.form-control-phoneCall{
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    width: 100%;
+    color: #b5b5b5;
+    font-size: 20px;
+    line-height: 24px;
+}
+input{
+/* color: */
+    outline: none;  
+}
+.modal-body input{
+    margin-bottom: 20px;
+}
+.btn-form-modal-block{
+    margin-top: 50px;
+    text-align: center;
+}
+.btn-form-modal{
+    width: 100%;
+    height: 58px;
+    border:none;
+    background-color: #ff0e0e;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition-timing-function: ease-out;
+    transition:.3s;
+    font-size: 18px;
+}
+.btn-form-modal:hover{
+    background-color: #da0f0f;
+    transition-timing-function: ease-in;
+    transition:.3s;
+}
+.btn-form-modal-block p{
+    font-size: 15px;
+    line-height: 20px;
+    color:#bababa;
+    margin-top: 25px;
+}
+.block-modal-gk{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    bottom: 159px;
+    left: 210px;
+    background: rgb(255, 255, 255);
+    width: 350px;
+    padding: 40px;
+    padding-top: 50px;
+    border-radius: 8px;
+    color:black;
+}
+.block-modal-gk h3{
+    margin-bottom: 30px;
+}
+.block-modal-gk .desc-gk-modal{
+    margin-bottom: 20px;
+}
+.block-modal-gk .desc-address-gk-modal{
+    color:#999999;
+    margin-bottom: 30px;
+}
+.block-modal-gk table{
+    width: 100%;
+}
+.block-modal-gk table tbody tr td a{
+    color:#d3d3d3;
+    display: block;
+    line-height: 36px;
+    font-size: 15px;
+    transition-timing-function: ease-out;
+    transition:.3s;
+}
+.block-modal-gk table tbody tr td:first-child a{
+    color: #000000;
+}
+.block-modal-gk table tbody tr:hover td a{
+    color: #ff0e0e;
+    transition-timing-function: ease-in;
+    transition:.3s;
+}
+
+.img-gk-slider{
+    border-radius: 10px;
+    z-index: 300;
+    width: 1080px;
+    background: #fff;
+    padding: 0px 63px 0px 80px;
+    margin-bottom: 270px;
+}
+.img-gk-slider .block-title-slider h2{
+    margin-bottom: 40px;
+}
+.img-gk-slider .block-title-slider{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+/* slider */
+.album{ /* Задаю общие характеристики сладеру */
+    position: relative;
+    /* margin: 5% 20% 0 20%; */
+    margin-top: 60px;
+    width: 520px;
+    /* height: 100%; */
+    height: 500px;
+    /* height: 350px; */
+    overflow: hidden;
+    }
+    .album ul, .album li { /* Подгоняю размеры видимой области элементов списка и убираю маркер */
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    float: left;
+    width: 800px;
+    height: 350px;
+    }
+    .album ul { /* Для того чтобы все изображения отображались, для них нужно создать активное полотно во всю ширину. Поэтому 800px*4=3200px*/
+    width: 3200px; 
+   }
+    .album .nav {/* Описываю внешний вид навигации (она будет выглядеть как панель с кнопками радио)*/
+    position: absolute;
+    bottom: 16px; 
+    left: 45%;
+    }
+    .album .nav span { /*Редактирую внешний вид каждой навигационной кнопки */
+    display: block;
+    margin-right:13px;
+    background: #fff;
+    border-radius: 9px;
+    height: 16px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    box-shadow: 1px 2px 3px #001;
+    }
+    .album .nav span.on { /*Изменяю фоновый цвет элемента навигации, если изображение, за которое он отвечает, отображается */
+    background: #98FB98;
+    }

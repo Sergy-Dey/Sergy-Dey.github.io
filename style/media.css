@@ -1,0 +1,173 @@
+h1{
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 82px;
+  }
+  h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+  }
+  h3{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+  .text-24{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+  }
+  .text-18{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .text-UI15{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .menuUp{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .btn-red{
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    width: 180px;
+    height: 50px;
+    border: 2px solid #ff0e0e;
+    background-color: #ff0e0e;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+
+  }
+/* } */
+@media (max-width: 1336px) {
+  h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+  }
+  h2{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+  }
+  .text-24{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+  .text-18{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .text-UI15{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .menuUp{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 768px) {
+  h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+  }
+  h2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .text-24{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .text-18{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .text-UI15{
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 500;
+  }
+  .menuUp{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 321px) {
+  h1{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+  h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .text-24{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .text-18{
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 500;
+  }
+  .text-UI15{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+  }
+  .menuUp{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+  
+  .black-h{
+    color: black;
+  }
+  .white-h{
+    color: white;
+  }
