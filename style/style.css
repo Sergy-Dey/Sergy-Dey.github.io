@@ -8,7 +8,7 @@ html{
 ::-webkit-scrollbar-button{width:2px;height:2px;}
 
 body{
-    background:url('../img/bcmain.jpg');
+    background:url('../img/bcmain.jpg') repeat-x center;
     font-family: 'TT Commons';
 }
 
@@ -97,7 +97,7 @@ header{
     bottom: 286px;
     opacity: 0.5;
 }
-.block-btn-click a{
+/* .block-btn-click a{
     text-align: center;
     line-height: 45px;
     border-radius: 4px;
@@ -110,7 +110,7 @@ header{
     color:#fff;
     font-weight: 600;
     text-transform: uppercase;
-}
+} */
 .form-consult-class{
     background: none;
     width: 204px;
@@ -289,12 +289,25 @@ input{
 }
 
 .img-gk-slider{
+    position: relative;
     border-radius: 10px;
     z-index: 300;
     width: 1080px;
     background: #fff;
     padding: 0px 63px 0px 80px;
     margin-bottom: 270px;
+}
+.img-gk-slider .posit-img-gk-slider{
+    /* position: absolute; */
+    position: absolute;
+    top: 100%;
+    left: 12%;
+}
+.img-gk-slider .air-snake-posit{
+    /* position: absolute; */
+    position: absolute;
+    bottom: 100%;
+    left: 80%;
 }
 .img-gk-slider .block-title-slider h2{
     margin-bottom: 40px;
@@ -305,44 +318,78 @@ input{
 }
 
 /* slider */
-.album{ /* Задаю общие характеристики сладеру */
+.slider { width: 500px; height: 400px; margin-top: 50px; }
+.slider .slider-img { width: 100%; }
+
+
+
+/* block-pick-up-apartment */
+.block-pick-up-apartment{
     position: relative;
-    /* margin: 5% 20% 0 20%; */
-    margin-top: 60px;
-    width: 520px;
-    /* height: 100%; */
-    height: 500px;
-    /* height: 350px; */
-    overflow: hidden;
-    }
-    .album ul, .album li { /* Подгоняю размеры видимой области элементов списка и убираю маркер */
-    list-style-type: none;
-    padding: 0;
-    margin: 0; 
-    float: left;
-    width: 800px;
-    height: 350px;
-    }
-    .album ul { /* Для того чтобы все изображения отображались, для них нужно создать активное полотно во всю ширину. Поэтому 800px*4=3200px*/
-    width: 3200px; 
-   }
-    .album .nav {/* Описываю внешний вид навигации (она будет выглядеть как панель с кнопками радио)*/
-    position: absolute;
-    bottom: 16px; 
-    left: 45%;
-    }
-    .album .nav span { /*Редактирую внешний вид каждой навигационной кнопки */
+    width: 440px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 45px 50px 25px 50px;
+    margin-bottom: 95px;
+    margin-left: 50px;
+}
+.block-pick-up-apartment ul li{
+    display: inline-block;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 5px;
+    transition-timing-function: ease-in;
+    transition:.3s;
+}
+.block-pick-up-apartment ul li:last-child{
+    /* display: inline; */
+    margin-right: 0px;
+    width: 92px;
+    transition-timing-function: ease-out;
+    transition:.3s;
+}
+.block-pick-up-apartment ul li:hover{
+    border: 1px solid #ff0e0e;
+    transition-timing-function: ease-in;
+    transition:.3s;
+}
+.block-pick-up-apartment ul li a{
     display: block;
-    margin-right:13px;
-    background: #fff;
-    border-radius: 9px;
-    height: 16px;
-    width: 16px;
-    height: 16px;
-    overflow: hidden;
+    color: #000000;
+    transition-timing-function: ease-out;
+    transition:.3s;
+}
+.block-pick-up-apartment ul li a:hover{
+    /* display: block; */
+    color: #ff0e0e;
+    transition-timing-function: ease-in;
+    transition:.3s;
+}
+.block-pick-up-apartment .block-horizontal input{
+    float: right;
+    border: none;
+    width: 120px;
+}
+.block-pick-up-apartment .block-horizontal p label{
+    font-weight: 500;
+}
+.block-horizontal{
+    margin-top: 50px;
+}
+
+.block-horizontal .label-num{
+    margin-top: 20px;
+    font-size: 18px;
+    color:#a3a3a3;
+}
+.block-horizontal .start-num{
     float: left;
-    box-shadow: 1px 2px 3px #001;
-    }
-    .album .nav span.on { /*Изменяю фоновый цвет элемента навигации, если изображение, за которое он отвечает, отображается */
-    background: #98FB98;
-    }
+}
+.block-horizontal .end-num{
+    float: right;
+}

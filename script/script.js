@@ -129,4 +129,30 @@ $('#block-open-gk').on('click',function(e){
     sliderJS(param, s); 
     return false;
     });
+    $('.slider').tilesSlider({
+        x              : 1, // # of tiles in x axis, 20 max
+        y              : 1, // # of tiles in y axis, 20 max
+        effect         : 'updown',
+        fade           : false, // fade images in addition to the tiles effect
+        random         : false, // animate tiles in random order
+        reverse        : false, // start animation from opposite direction
+        backReverse    : false, // reverse the animation when going back in the slideshow (useful for some effects)
+        rewind         : false, // reverse animation at a certain percentage in time
+        auto           : false, // Start the slideshow on load
+        loop           : false, // Start slideshow again when it finishes
+        slideSpeed     : 3500, // time between slides
+        tileSpeed      : 800, // time to clear all tiles
+        cssSpeed       : 300, // css3 transition speed [100,200,300,400,500,600,700,800,900,1000],
+        nav            : true, // Add navigation
+        navWrap        : null, // Add the navigation to an existing element
+        bullets        : true, // Show bullets, if false the show pagination with numbers
+        thumbs         : false, // Show thumbnails when hovering nav
+        thumbSize      : 100, // Thumbnail size (percentage of the original image)
+        timer          : true // show or hide the timer bar
+
+  });
+
+
+
+
 })
