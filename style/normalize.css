@@ -21,6 +21,17 @@ html {
   main {
     display: block;
   }
+  ::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+button::-moz-focus-inner 
+{
+  border: 0;
+}
+*{
+outline: none !important
+}
   
   /**
    * Correct the font size and margin on `h1` elements within `section` and

@@ -10,6 +10,7 @@ html{
 body{
     background:url('../img/bcmain.jpg') repeat-x center;
     font-family: 'TT Commons';
+    background-size: auto 100%;
 }
 
 .wrapper{
@@ -22,6 +23,7 @@ header{
     position: absolute;
     padding: 0px 80px;
     width: 100%;
+    z-index: 1000;
 }
 .navbar-menu-main{
     margin-top: 30px;
@@ -58,18 +60,28 @@ header{
     color: #fff;
     margin-left: 30px;
     text-transform: uppercase;
+    outline: none;
+    transition-timing-function: ease-out;
+    transition:.4s;
 }
 /* -----------------end------------------ */
 #scrollBody{
     margin-left: 0px;
     /* width:1000%; */
-    width: 13120px;  
+    width: 18000px;  
+}
+.footer-block{
+    width: 5000px;
+    height: 100%;
+    background: #fff;
+    margin-left: 200px;
+    position:relative;
 }
 .class-section-1{
     height: 100%;
     /* margin-left: 80px; */
     padding-left: 80px;
-    padding-right: 80px;
+    /* padding-right: 80px; */
     display: flex;
     /* flex-direction: row; */
     align-items: flex-end;
@@ -80,6 +92,7 @@ header{
  }
  .class-section-1 .title-block{
      margin-bottom: 120px;
+     width: 715px;
  }
 .class-section-1 .block-title-text h2{
     color:#fff;
@@ -103,9 +116,11 @@ header{
 }
 .block-btn-click .cloud2{
     position: absolute;
-    right: 180px;
+    right: 290px;
     bottom: 286px;
     opacity: 0.5;
+    transition-timing-function: ease-in;
+    transition:.3s;
 }
 /* .block-btn-click a{
     text-align: center;
@@ -792,5 +807,111 @@ input{
 .block-cooperation-with-us .ipoteka-programm-kaska{
     position: absolute;
     top: 35px;
-    left: 36px;
+    left: 27px;
+}
+
+.menu-navbar .nav-coll-firft .li-activ a{
+    color:#000000;
+    transition-timing-function: ease-in;
+    transition:.4s;
+}
+.menu-navbar .nav-coll-firft .li-activ a:hover{
+    color:#ff0e0e;
+}
+.menu-navbar .nav-coll-second .phone-class.phone-class-act{
+    color: #000000;
+}
+.form-call-class-act{
+    border: 2px solid #ff0e0e;
+    color:#ff0e0e;
+    transition-timing-function: ease-in;
+    transition:.4s;
+}
+
+.phone-class-act{
+    color: #000000;
+}
+
+.footer-block-content{
+    position:absolute;
+    bottom:0;
+    width:1600px;
+    padding-left: 250px;
+}
+
+.block-left-foot .form-horizontal .form-group{
+    margin-right: 0px;
+    margin-left: none;
+}
+
+.footer-block-content .form-control-phoneCall{
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    width: 100%;
+    color: #b5b5b5;
+    font-size: 24px;
+    line-height: 24px;
+}
+.block-top-footer .block-left-foot{
+    width: 860px;
+    float: left;
+}
+.block-top-footer .block-right-foot{
+    position: relative;
+    width: 260px;
+    float: right;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+.block-right-foot img{
+    position: absolute;
+    top: -300px;
+}
+/* .footer-block-content .block-right-foot{
+    width: 260px;
+} */
+.footer-block-content .block-right-foot p{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.footer-block-content .block-right-foot a{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ff0e0e;
+    /* margin-top: 35px; */
+}
+.block-top-footer{
+    height: 660px;
+}
+.block-bottom-footer{
+    min-height: 100px;
+    position: relative;
+    /* border: 1px solid; */
+    width: 90%;
+    padding: 20px 0;
+    border-bottom:1px solid #e4e4e4;
+    border-top:1px solid #e4e4e4;
+}
+.block-bottom-footer > div {
+    float: left;
+    margin-right: 220px;
+}
+.block-stud-foot a img, .block-stud-foot a p{
+    display:inline-block;
+}
+.block-stud-foot a{
+    color:#000000;
+}
+.block-bottom-footer .block-taxi-and-message{
+    position: absolute;
+    margin-right: 0px;
+    right: 0px;
+    top:-80px;
+}
+.block-bottom-footer .block-taxi-and-message a{
+    display: block;
+    margin-top: 20px;
 }
