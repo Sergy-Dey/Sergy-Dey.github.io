@@ -1,4 +1,4 @@
-$('*').ready(function(){
+$(document).ready(function(){
   $('.preloader').remove('fadeOut');
   setTimeout(function(){
     $('.preloader').addClass('fadeOut');
@@ -7,9 +7,9 @@ $('*').ready(function(){
       
       $('.preloader').remove();
       
-    },1000);
+    },500);
    
-  },5000);
+  },3000);
  
   
 // TODO: scroll----------------------------//
@@ -97,13 +97,15 @@ function onWheel(e) {
 
 
 // Анимация элементов
-  var delAnim=delta;
-  console.log(delAnim);
+  var delAnim=delta/5;
+  // console.log(delAnim);
   if(delta>0 || delta<0){
     // $('.block-btn-click .quadcopter').css({"transform": 'translateY('+delAnim / 10+'px)'});
     // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
     $('.block-btn-click .quadcopter').css({"right": (180-delAnim)+"px"});
     $('.img-cloud1').css({"left": (550-delAnim)+"px"});
+    $('.img-gk-block').css({'margin-left':delAnim+'px'});
+    $('.img-gk-slider').css({'margin-left':-delAnim+'px'});
     // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
     // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
     // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
