@@ -34,7 +34,7 @@
         .preloader {position:fixed;width:100%;height:100%;left:0;top:0;background:url('./img/preloader.gif') no-repeat center #fff;z-index:9999;opacity:1;transition:opacity 0.3s;}
         .preloader.fadeOut {opacity:0;}
         </style>
-        <div class="preloader fadeOut"></div>
+        <div class="preloader"></div>
         <div class="wrapper">
             <nav class="wow fadeInDown navbar navbar-static-top navbar-menu-main" data-wow-duration="2s" data-wow-delay="3s"  role="navigation" style="position: -webkit-sticky; position: sticky; top: 0;">
                     <!-- Контейнер (определяет ширину Navbar) -->
@@ -913,6 +913,6 @@
       $( "#amount-floor" ).val( $( "#slider-range-floor" ).slider( "values", 0 ) +
         " - " + $( "#slider-range-floor" ).slider( "values", 1 )+" м2" );
     } );
-    $('.preloader').remove();
+    // $('.preloader').remove();
 </script>
 </html>

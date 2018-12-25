@@ -1,16 +1,16 @@
 $('*').ready(function(){
-  // $('.preloader').remove('fadeOut');
-  // setTimeout(function(){
-  //   $('.preloader').addClass('fadeOut');
-  //   setTimeout(function(){
-  //     //Задать размер footer и header
+  $('.preloader').remove('fadeOut');
+  setTimeout(function(){
+    $('.preloader').addClass('fadeOut');
+    setTimeout(function(){
+      //Задать размер footer и header
       
-  //     // $('.preloader').remove();
+      $('.preloader').remove();
       
-  //   },10000)
+    },1000);
    
-  // },10000);
-  $('.preloader').remove();
+  },5000);
+ 
   
 // TODO: scroll----------------------------//
 
