@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/bootstrap.css">
     <link rel="stylesheet" href="./style/animate.css">
-    <!-- <link rel="stylesheet" href="./style/slider/style.css"> -->
+    <link rel="stylesheet" href="./style/jquery.bxslider.css">
     <link rel="stylesheet" href="./style/jquery.tiles.min.css">
     <link rel="stylesheet" href="./style/jquery-ui.css">
     <link rel="stylesheet" href="./style/style.css">
@@ -21,8 +21,9 @@
     <script src="./script/wow.min.js"></script>
     <script src="./script/jquery-ui.js"></script>
     <script src="./script/jquery.maskedinput.js"></script>
-    <script src="./script/jquery.tiles.min.js"></script>
+    <!-- <script src="./script/jquery.tiles.min.js"></script> -->
     <!-- <script src="./script/slider/script.js"></script> -->
+    <script src="./script/jquery.bxslider.js"></script>
     <script src="./script/script.js"></script>
 
     <title>Document</title>
@@ -30,10 +31,10 @@
 <body>
     <header>
         <style>
-        .preloader {position:fixed;width:100%;height:100%;left:0;top:0;background:url('./img/preloader.gif') no-repeat center;z-index:9999;opacity:1;transition:opacity 0.3s;}
+        .preloader {position:fixed;width:100%;height:100%;left:0;top:0;background:url('./img/preloader.gif') no-repeat center #fff;z-index:9999;opacity:1;transition:opacity 0.3s;}
         .preloader.fadeOut {opacity:0;}
         </style>
-        <!-- <div class="preloader"></div> -->
+        <div class="preloader fadeOut"></div>
         <div class="wrapper">
             <nav class="wow fadeInDown navbar navbar-static-top navbar-menu-main" data-wow-duration="2s" data-wow-delay="3s"  role="navigation" style="position: -webkit-sticky; position: sticky; top: 0;">
                     <!-- Контейнер (определяет ширину Navbar) -->
@@ -96,13 +97,16 @@
                         <img class="tree3 wow fadeInLeft" src="./img/tree3.png" data-wow-duration="1s" data-wow-delay="1s" alt="">
                         <img class="quadcopter wow fadeInLeft" data-wow-duration="2s" data-wow-delay="3s"src="./img/quadcopter.png" alt="">
                         <img class="cloud2 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s" src="./img/cloud2.png" alt="">
+                        <img class="img-cloud1 fadeInRight wow" data-wow-duration="3s" data-wow-delay="1s" src="./img/cloud1.png" alt="">
                     </div>
                 </div>
-                <div class="img-gk-block">
-                    <a class="wow fadeInUp" id="block-open-gk" data-wow-duration="2s" data-wow-delay="3s" href="/test">
+                <div class="img-gk-block img-gk-stone-block wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s">
+
+                     <a class="block-open-gk" href="/test" data-num='1'>
                         ЖК "Парк Каменные палатки" 
                     </a>
-                    <div class="block-modal-gk">   
+                    
+                    <div class="block-modal-gk block-modal-gk-1" style="display: none;">   
                         <h3>          
                             ЖК "Парк Каменные палатки"
                         </h3>
@@ -135,7 +139,7 @@
                             </tr>
                         </table>
                     </div>
-                    <img class="img-cloud1 fadeInRight wow" data-wow-duration="3s" data-wow-delay="1s" src="./img/cloud1.png" alt="">
+
                     <img class="img-cloud3 fadeInDown wow" data-wow-duration="3s" data-wow-delay="1s" src="./img/cloud3.png" alt="">
                     <img class="img-cloud4 fadeInRight wow" data-wow-duration="3s" data-wow-delay="1s" src="./img/cloud4.png" alt="">
                     <img class="img-tree wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/tree.png" alt="">
@@ -143,26 +147,48 @@
                     <img class="img-tree2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/tree2.png" alt="">
 
                     <img class="img-fence wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/fence.png" alt="">
-                    <!-- <section class="wow slideInLeft" >
-
-                    </section> -->
-                    <img class="img-gk wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/gk-home.png" alt="">
+                    <!-- <img class="img-gk wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s" src="./img/gk-home.png" alt=""> -->
                 </div>
+
                 <div style="clear:both;"></div>
                 <div class="img-gk-slider fadeInRight wow" data-wow-duration="3s" data-wow-delay="2s">
-                    <div class="block-title-slider col-md-4" >
-                        <h2>
-                            В ЖК "Бриз" снижение процента по ипотеке до 7,8%
-                        </h2>
-                        <a href="#" class="btn-red">Подробнее</a>
-                    </div>
-                    <div class="slider-items col-md-8" >
                         <div class="slider">
-                            <img class="slider-img" src="./img/house2.png"/> 
-                            <img class="slider-img" src="./img/img-01.png"/>
-                            <img class="slider-img" src="./img/img-visual01.jpg"/>
+                            <div class="slider-item">
+                                <div class="block-title-slider">
+                                    <h2>
+                                        В ЖК "Бриз" снижение процента по ипотеке до 7,8%
+                                    </h2>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+
+                                <img class="slider-img" src="./img/house2.png"/> 
+
+                            </div>
+                            <div class="slider-item">
+                                <div class="block-title-slider">
+                                    <h2>
+                                        В ЖК "Бриз" снижение процента по ипотеке до 7,8%
+                                    </h2>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+
+                                <img class="slider-img" src="./img/img-01.png"/>
+
+                            </div>
+                            <div class="slider-item">
+                                <div class="block-title-slider">
+                                    <h2>
+                                        В ЖК "Бриз" снижение процента по ипотеке до 7,8%
+                                    </h2>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+
+                                <img class="slider-img" src="./img/img-visual01.jpg"/> 
+
+                            </div>
+
                         </div>
-                    </div>
+                    
                     <img class="posit-img-gk-slider" src="./img/bilbord.png" alt="">
                     <img class="air-snake-posit" src="./img/air-snake.png" alt="">
                 </div>
@@ -214,11 +240,11 @@
                 </div>
 
                 <div style="clear:both;"></div>
-                <div class="img-gk-block-briz">
-                    <a id="block-open-gk-briz" href="#" class="gk-block-item">
+                <div class="img-gk-block img-gk-block-briz">
+                    <a href="#" class="gk-block-item block-open-gk" data-num='2'>
                         ЖК "Бриз" 
                     </a>
-                    <div class="block-modal-gk">   
+                    <div class="block-modal-gk block-modal-gk-2" style="display: none;">   
                         <h3>          
                             ЖК "Парк Каменные палатки"
                         </h3>
@@ -251,18 +277,18 @@
                             </tr>
                         </table>
                     </div>
-                    <img src="./img/gk-briz.png" class="img-gk-briz-home" alt="">
+                    <!-- <img src="./img/gk-briz.png" class="img-gk-briz-home" alt="">-->   
                     <img src="./img/fence2.png" class="img-gk-briz-fence2" alt="">
                     <img src="./img/tree2.png" class="img-gk-briz-tree2" alt="">
-                    <img src="./img/sun.png" class="img-gk-briz-sun" alt="">
+                    <img src="./img/sun.png" class="img-gk-briz-sun" alt=""> 
                 </div>
 
                 <div style="clear:both;"></div>
-                <div class="img-gk-block-briz2">
-                    <a id="block-open-gk-sunber" href="#" class="gk-block-item">
+                <div class="img-gk-block img-gk-block-sunny-beach">
+                    <a href="#" class="gk-block-item block-open-gk" data-num='3'>
                         ЖК "Солнечный берег" 
                     </a>
-                    <div class="block-modal-gk">   
+                    <div class="block-modal-gk block-modal-gk-3" style="display: none;">   
                         <h3>          
                             ЖК "Солнечный берег" 
                         </h3>
@@ -295,25 +321,26 @@
                             </tr>
                         </table>
                     </div>
-                    <img src="./img/gk-briz2.png" class="img-gk-briz-home2" alt="">
-                    <!-- <img src="./img/fence2.png" class="img-gk-briz-fence2" alt="">-->
                     <img src="./img/tree4.png" class="img-gk-briz-tree4 block-absolute" alt="">
                     <img src="./img/tree5.png" class="img-gk-briz-tree5 block-absolute" alt=""> 
                     <img src="./img/tree6.png" class="img-gk-briz-tree6 block-absolute" alt="">
                     <img src="./img/cloud5.png" class="img-gk-briz-cloud6 block-absolute" alt="">
                     <img src="./img/helicopter.png" class="img-gk-briz-helicopter block-absolute" alt="">
                     <img src="./img/cloud6.png" class="img-gk-briz-cloud5 block-absolute" alt="">
-                    <!-- <img src="./img class="img-gk-briz-cloud6 block-absolute" alt=""> -->
+                    <img src="./img class="img-gk-briz-cloud6 block-absolute" alt="">
                 </div> 
 
                 <div style="clear:both;"></div>
-                <div class="img-gk-block-briz3">
-                    <a id="block-open-gk-stone" href="#" class="gk-block-item">
+                <div class="img-gk-block img-gk-stone-block-2">
+                    <!-- <a id="block-open-gk-stone" href="#" class="gk-block-item">
+                        ЖК "Каменные палатки" 
+                    </a> -->
+                    <a href="#" class="gk-block-item block-open-gk" data-num='4'>
                         ЖК "Каменные палатки" 
                     </a>
-                    <div class="block-modal-gk">   
+                    <div class="block-modal-gk block-modal-gk-4" style="display: none;">   
                         <h3>          
-                            ЖК "Солнечный берег" 
+                            ЖК "Парк Каменные палатки"
                         </h3>
                         <p class="text-18 desc-gk-modal">
                             Дом с личным выходом в парк 777 га
@@ -344,37 +371,86 @@
                             </tr>
                         </table>
                     </div>
-                    <img src="./img/gk-briz3.png" class="img-gk-briz-home2" alt="">
+
                     
                     <img src="./img/kran.png" class="img-gk-briz-kran block-absolute" alt=""> 
                     <img src="./img/tree7.png" class="img-gk-briz-tree7 block-absolute" alt="">
                     <img src="./img/tree8.png" class="img-gk-briz-tree8 block-absolute" alt="">
                     <img src="./img/fence.png" class="img-gk-briz-fence3 block-absolute" alt="">
-                   <!-- <img src="./img/cloud6.png" class="img-gk-briz-cloud5 block-absolute" alt=""> -->
-                    <!-- <img src="./img class="img-gk-briz-cloud6 block-absolute" alt=""> -->
+                    <img src="./img/cloud6.png" class="img-gk-briz-cloud5 block-absolute" alt="">
+                    <img src="./img class="img-gk-briz-cloud6 block-absolute" alt="">
                 </div> 
 
+
                 <div style="clear:both;"></div>
-                <div class="img-gk-briz-slider">
-                    <div class="block-img-gk-briz-slider-title col-md-4">
-                        <h2>Заботимся<br> о своих<br> клиентах</h2>
-                        <div id="parallelogram">
-
-                        </div>    
-                    </div>
-                    <div class="block-img-gk-briz-slider-img col-md-4">
-                        <img src="./img/childrenWoman.jpg" alt="">
-                    </div>
-                    <div class="block-img-gk-briz-slider-content text-24 col-md-4">
-                        <ul>
-                            <li>Полное сопровождение сделки</li>
-                            <li>Клиентская поддержка 24/7</li>
-                            <li>Любые способы оплаты</li>
-                            <li>Выкуп квартиры в пользу новостройки</li>
-                        </ul>
-                        <div id="parallelogram2">
-
-                            </div> 
+                <div class="img-gk-slider slider-block-2 fadeInRight wow" data-wow-duration="3s" data-wow-delay="2s">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="block-img-gk-briz-slider-title">
+                                <h2>Заботимся<br> о своих<br> клиентах</h2>
+                                <div id="parallelogram">
+        
+                                </div>    
+                            </div>
+                            <div class="block-img-gk-briz-slider-img col-md-4">
+                                <img src="./img/childrenWoman.jpg" alt="">
+                            </div>
+                            
+                            <div class="block-img-gk-briz-slider-content text-24 col-md-4">
+                                <ul>
+                                    <li>Полное сопровождение сделки</li>
+                                    <li>Клиентская поддержка 24/7</li>
+                                    <li>Любые способы оплаты</li>
+                                    <li>Выкуп квартиры в пользу новостройки</li>
+                                </ul>
+                                <div id="parallelogram2">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="block-img-gk-briz-slider-title">
+                                <h2>Заботимся<br> о своих<br> клиентах</h2>
+                                <div id="parallelogram">
+        
+                                </div>    
+                            </div>
+                            <div class="block-img-gk-briz-slider-img col-md-4">
+                                <img src="./img/childrenWoman.jpg" alt="">
+                            </div>
+                            
+                            <div class="block-img-gk-briz-slider-content text-24 col-md-4">
+                                <ul>
+                                    <li>Полное сопровождение сделки</li>
+                                    <li>Клиентская поддержка 24/7</li>
+                                    <li>Любые способы оплаты</li>
+                                    <li>Выкуп квартиры в пользу новостройки</li>
+                                </ul>
+                                <div id="parallelogram2">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="block-img-gk-briz-slider-title">
+                                <h2>Заботимся<br> о своих<br> клиентах</h2>
+                                <div id="parallelogram">
+        
+                                </div>    
+                            </div>
+                            <div class="block-img-gk-briz-slider-img col-md-4">
+                                <img src="./img/childrenWoman.jpg" alt="">
+                            </div>
+                            
+                            <div class="block-img-gk-briz-slider-content text-24 col-md-4">
+                                <ul>
+                                    <li>Полное сопровождение сделки</li>
+                                    <li>Клиентская поддержка 24/7</li>
+                                    <li>Любые способы оплаты</li>
+                                    <li>Выкуп квартиры в пользу новостройки</li>
+                                </ul>
+                                <div id="parallelogram2">
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                     <img class="posit-img-gk-slider" src="./img/bilbord.png" alt="">
                     <img class="posit-img-gk-cloud9" src="./img/cloud7.png" alt="">
@@ -466,55 +542,6 @@
                     <img src="./img/cloud8.png" class="img-gk-triumf-cloud8" style="top: -115%;" alt="">
                     <img src="./img/moon.png" class="img-gk-triumf-moon"alt="">
                 </div>
-
-                <div style="clear:both;"></div>
-                <div class="img-gk-block-briz2">
-                    <a id="block-open-gk-sunber" href="#" class="gk-block-item">
-                        ЖК "Солнечный берег" 
-                    </a>
-                    <div class="block-modal-gk">   
-                        <h3>          
-                            ЖК "Солнечный берег" 
-                        </h3>
-                        <p class="text-18 desc-gk-modal">
-                            Дом с личным выходом в парк 777 га
-                        </p>
-                        <p class="text-18 desc-address-gk-modal">
-                            ЖБИ, ул. Высоцкого - Егоршинский подход,
-                        </p>
-                        <table>
-                            <tr>
-                                <td class="text-left"><a href="/test">Студии</a></td>
-                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
-                            </tr>
-                            <tr>
-                                <td class="text-left"><a href="/test">1-комнатные</a></td>
-                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
-                            </tr>
-                            <tr>
-                                <td class="text-left"><a href="/test">2-комнатные</a></td>
-                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
-                            </tr>
-                            <tr>
-                                <td class="text-left"><a href="/test">3-комнатные</a></td>
-                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
-                            </tr>
-                            <tr>
-                                <td class="text-left"><a href="/test">4-комнатные</a></td>
-                                <td class="text-right"><a href="#">от 3,4 млн</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <img src="./img/gk-briz2.png" class="img-gk-briz-home2" alt="">
-                    <!-- <img src="./img/fence2.png" class="img-gk-briz-fence2" alt="">-->
-                    <img src="./img/tree4.png" class="img-gk-briz-tree4 block-absolute" alt="">
-                    <img src="./img/tree5.png" class="img-gk-briz-tree5 block-absolute" alt=""> 
-                    <img src="./img/tree6.png" class="img-gk-briz-tree6 block-absolute" alt="">
-                    <img src="./img/cloud5.png" class="img-gk-briz-cloud6 block-absolute" alt="">
-                    <img src="./img/cloud6.png" class="img-gk-briz-cloud5 block-absolute" alt="">
-                    <!-- <img src="./img class="img-gk-briz-cloud6 block-absolute" alt=""> -->
-                </div> 
-
 
                 <div style="clear:both;"></div>
                 <div class="change-buy-apartament">
@@ -711,14 +738,19 @@
                                 </a>
                             </div>
                             <div class="block-taxi-and-message">
-                                <a href="">
+                                <button style="border:none; background:none;" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModalTaxi">
                                     <img src="./img/social/taxi.png" alt="">
-                                </a>
+                                </button>
+                                
                                 <a href="">
                                     <img src="./img/social/chat.png" alt="">
                                 </a>
                             </div>
-
+                        </div>
+                        <div class="text-content-desc-foot text-18">
+                            <p>
+                                Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях е являеться публичной оферой, определяемой положениями статьи 437 ГК РФ
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -778,6 +810,69 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="phoneModalTaxi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-content-call col-md-10 col-md-offset-1">
+                    <!-- Modal Header -->
+                    <div class="modal-call-form">
+                        <button type="button" class="close" 
+                        data-dismiss="modal">
+                            <img src="./img/btn-close.png" alt="">
+                        </button>
+                        <h2 class="modal-title" id="myModalLabel">
+                            Вызов такси
+                        </h2>
+                        <p class="text-24">
+                            Закажите бесплатное такси<br>
+                            до офиса продаж
+                        </p>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+    
+                        <form class="form-horizontal" role="form">
+                            <div class="col-xs-8 form-group">
+                            
+                                <input type="text" class="form-control-phoneCall" 
+                                id="inputNameForm" placeholder="Улица"/>
+                                
+                            </div>
+                            <div class="col-xs-4 form-group">
+                            
+                                <input type="text" style="margin-left: 15px;" class="form-control-phoneCall" 
+                                id="inputNameForm" placeholder="Дом"/>
+                                
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                
+                                <input type="text" class="form-control-phoneCall" 
+                                id="inputNameForm" placeholder="Ваше имя"/>
+                                
+                            </div>
+                            <div class="col-xs-12 form-group">
+                                <!-- <div class="col-sm-10"> -->
+                                    <input type="test" class="form-control-phoneCall"
+                                    id="inputPhoneForm" placeholder="+7(   )   -  -"/>
+                                <!-- </div> -->
+                            </div>
+                            <div class="col-xs-12 form-group btn-form-modal-block">
+                                <!-- <div class="col-sm-offset-2 col-sm-10"> -->
+                                    <button type="submit" class="btn-form-modal" style="background-color: #ffbe0e">Вызвать такси</button>
+                                    <p>
+                                        Нажимая кнопку "Вызвать такси", вы соглашаетесь с условиями 
+                                        Лицензионногосоглашения и Политикой обработки персонильных 
+                                        данных
+                                    </p>
+                                <!-- </div> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 <script>
     $( function() {
@@ -818,11 +913,6 @@
       $( "#amount-floor" ).val( $( "#slider-range-floor" ).slider( "values", 0 ) +
         " - " + $( "#slider-range-floor" ).slider( "values", 1 )+" м2" );
     } );
+    $('.preloader').remove();
 </script>
 </html>
-<!-- <style>
-    body {height:100vh;}
-header,main,footer {width:100%;display:block;float:left;}
-header {position:absolute;}
-main {height:100%;}
-</style> -->

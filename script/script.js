@@ -1,11 +1,17 @@
-$(document).ready(function(){
+$('*').ready(function(){
+  // $('.preloader').remove('fadeOut');
   // setTimeout(function(){
   //   $('.preloader').addClass('fadeOut');
   //   setTimeout(function(){
-  //     $('.preloader').remove();
-  //   },1000)
-  // },1000);
-
+  //     //Задать размер footer и header
+      
+  //     // $('.preloader').remove();
+      
+  //   },10000)
+   
+  // },10000);
+  $('.preloader').remove();
+  
 // TODO: scroll----------------------------//
 
 var elem = document.getElementById('scrollBody');
@@ -50,7 +56,9 @@ function onWheel(e) {
   var delta = (-1)*(e.deltaY || e.detail || e.wheelDelta);
   
   var padding = parseInt($("#scrollBody").css("margin-left"));
-
+  if(padding >= 0){
+    $("#scrollBody").css({"margin-left": 0 +'px'});
+  }
   if(delta>0){
     if(padding >= 0 && delta < 0){
         if(delta>0){
@@ -87,6 +95,20 @@ function onWheel(e) {
     $(".navbar-header a img").attr("src","./img/logo_baza_white.png");
   }
 
+
+// Анимация элементов
+  var delAnim=delta;
+  console.log(delAnim);
+  if(delta>0 || delta<0){
+    // $('.block-btn-click .quadcopter').css({"transform": 'translateY('+delAnim / 10+'px)'});
+    // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
+    $('.block-btn-click .quadcopter').css({"right": (180-delAnim)+"px"});
+    $('.img-cloud1').css({"left": (550-delAnim)+"px"});
+    // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
+    // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
+    // $('.block-btn-click .quadcopter').css({"right": (180+delAnim)+"px","bottom": (600+delAnim)+"px"});
+  }
+  
 }
 
 // End-------------------------------------//
@@ -112,7 +134,7 @@ $('#inputEmailForm').blur(function() {
 });
 // End-------------------------------------//
 
-//Задать размер footer и header
+// //Задать размер footer и header
 var w=$(window).width();
 $('.footer-block-content').css({'width' : w+'px'});
 $('header').css({'width' : w+'px'});
@@ -144,86 +166,71 @@ $('.btn').click(function() {
 });
 // End-------------------------------------//
 
+$('.block-open-gk').hover(function (e) {
+  e.preventDefault();
+  var d = $(this).data('num');  
+  console.log(d);   
+  $('.block-modal-gk-'+d).fadeIn(500);
+}); 
+$('.block-modal-gk').mouseleave(function () {
+      // $(this).closest(blockOut).fadeIn(500);
+  $('.block-modal-gk').fadeOut(500);
+});
 
-$('#block-open-gk').on('click',function(e){
-  e.preventDefault();
-  // console.log('test');
-  if($('.block-modal-gk').hasClass('active')){
-    $('.block-modal-gk').fadeOut(500);
-    $('.block-modal-gk').removeClass('active');
-  }else{
-    $('.block-modal-gk').fadeIn(500);
-    $('.block-modal-gk').addClass('active');
-  }
-})
 
-$('#block-open-gk-briz').on('click',function(e){
-  e.preventDefault();
-  // console.log('test');
-  if($('.block-modal-gk').hasClass('active')){
-    $('.block-modal-gk').fadeOut(500);
-    $('.block-modal-gk').removeClass('active');
-  }else{
-    $('.block-modal-gk').fadeIn(500);
-    $('.block-modal-gk').addClass('active');
-  }
-})
-$('#block-open-gk-sunber').on('click',function(e){
-  e.preventDefault();
-  // console.log('test');
-  if($('.block-modal-gk').hasClass('active')){
-    $('.block-modal-gk').fadeOut(500);
-    $('.block-modal-gk').removeClass('active');
-  }else{
-    $('.block-modal-gk').fadeIn(500);
-    $('.block-modal-gk').addClass('active');
-  }
-})
-$('#block-open-gk-stone').on('click',function(e){
-  e.preventDefault();
-  // console.log('test');
-  if($('.block-modal-gk').hasClass('active')){
-    $('.block-modal-gk').fadeOut(500);
-    $('.block-modal-gk').removeClass('active');
-  }else{
-    $('.block-modal-gk').fadeIn(500);
-    $('.block-modal-gk').addClass('active');
-  }
-})
-$('#block-open-gk-triumf').on('click',function(e){
-  e.preventDefault();
-  // console.log('test');
-  if($('.block-modal-gk').hasClass('active')){
-    $('.block-modal-gk').fadeOut(500);
-    $('.block-modal-gk').removeClass('active');
-  }else{
-    $('.block-modal-gk').fadeIn(500);
-    $('.block-modal-gk').addClass('active');
-  }
-})
+// function FadeBlock (blockIn, blockOut){
+//   $(blockIn).hover(function (e) {
+//     e.preventDefault();
+//     var parent= $(blockIn).parent();
+//     console.log(parent);
+//     // $(blockIn).parent().closest(blockOut).fadeIn(500);
+//     var test=$(parent).closest(blockOut);
+//     console.log(test);  
+//     $(blockOut).fadeIn(500);
+//   }); 
+//   $(blockOut).mouseleave(function () {
+//     // $(this).closest(blockOut).fadeIn(500);
+//     $(blockOut).fadeOut(500);
+//   }); 
+// }
+// FadeBlock(".block-open-gk", ".block-modal-gk");
+// FadeBlock(".block-open-gk-2", ".block-modal-gk-2");
+
+
 
   // Слайдер----------------------------------------//
-  $('.slider').tilesSlider({
-    x              : 1, // # of tiles in x axis, 20 max
-    y              : 1, // # of tiles in y axis, 20 max
-    effect         : 'updown',
-    fade           : false, // fade images in addition to the tiles effect
-    random         : false, // animate tiles in random order
-    reverse        : false, // start animation from opposite direction
-    backReverse    : false, // reverse the animation when going back in the slideshow (useful for some effects)
-    rewind         : false, // reverse animation at a certain percentage in time
-    auto           : false, // Start the slideshow on load
-    loop           : false, // Start slideshow again when it finishes
-    slideSpeed     : 3500, // time between slides
-    tileSpeed      : 800, // time to clear all tiles
-    cssSpeed       : 300, // css3 transition speed [100,200,300,400,500,600,700,800,900,1000],
-    nav            : true, // Add navigation
-    navWrap        : null, // Add the navigation to an existing element
-    bullets        : true, // Show bullets, if false the show pagination with numbers
-    thumbs         : false, // Show thumbnails when hovering nav
-    thumbSize      : 100, // Thumbnail size (percentage of the original image)
-    timer          : true // show or hide the timer bar
+  $('.slider').bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+    slideWidth: 840,
+    adaptiveHeight:true,
+    responsive:true,
+    touchEnabled:true,
+    hideControlOnEnd:false
   });
+  // $('.slider').tilesSlider({
+  //   x              : 1, // # of tiles in x axis, 20 max
+  //   y              : 1, // # of tiles in y axis, 20 max
+  //   effect         : 'updown',
+  //   fade           : false, // fade images in addition to the tiles effect
+  //   random         : false, // animate tiles in random order
+  //   reverse        : false, // start animation from opposite direction
+  //   backReverse    : false, // reverse the animation when going back in the slideshow (useful for some effects)
+  //   rewind         : false, // reverse animation at a certain percentage in time
+  //   auto           : false, // Start the slideshow on load
+  //   loop           : false, // Start slideshow again when it finishes
+  //   slideSpeed     : 3500, // time between slides
+  //   tileSpeed      : 800, // time to clear all tiles
+  //   cssSpeed       : 300, // css3 transition speed [100,200,300,400,500,600,700,800,900,1000],
+  //   nav            : true, // Add navigation
+  //   navWrap        : null, // Add the navigation to an existing element
+  //   bullets        : true, // Show bullets, if false the show pagination with numbers
+  //   thumbs         : false, // Show thumbnails when hovering nav
+  //   thumbSize      : 100, // Thumbnail size (percentage of the original image)
+  //   timer          : true // show or hide the timer bar
+  // });
   // End-------------------------------------//
 
 });
