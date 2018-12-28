@@ -9,7 +9,7 @@ $(document).ready(function(){
       
     },500);
    
-  },3000);
+  },350);
  
   
 // TODO: scroll----------------------------//
@@ -142,6 +142,28 @@ $('.footer-block-content').css({'width' : w+'px'});
 $('header').css({'width' : w+'px'});
 
 
+// checkbox
+  var inputs=document.getElementsByTagName("input");
+  for(var i=0;i<inputs.length;i++)
+    {
+    if(inputs[i].type=="checkbox")
+      {
+      inputs[i].onchange=function()
+        {
+        inputs=document.getElementsByTagName("input");
+        for(var i=0;i<inputs.length;i++)
+          {
+          if(inputs[i].type=="checkbox")
+            {
+            inputs[i].checked=false;
+            }
+            this.checked=true;
+          }
+        }
+      }
+    }
+
+
 // Инициализация Wow эфектов
 new WOW().init();
 // var wow = new WOW(
@@ -228,6 +250,13 @@ if($(window).height()>1000){
     touchEnabled:true,
     hideControlOnEnd:false
   });
+
+//   $('.slider').slick({
+//     // dots:true,
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3
+// });
   // $('.slider').tilesSlider({
   //   x              : 1, // # of tiles in x axis, 20 max
   //   y              : 1, // # of tiles in y axis, 20 max
