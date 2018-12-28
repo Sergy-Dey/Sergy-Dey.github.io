@@ -179,6 +179,22 @@ $('.block-modal-gk').mouseleave(function () {
   $('.block-modal-gk').fadeOut(500);
 });
 
+$('.img-gk-block').hover(function (e) {
+  e.preventDefault();
+  var d = $(this).data('num');  
+  console.log(d);   
+  $('.block-modal-gk-'+d).fadeIn(500);
+}); 
+$('.img-gk-block').mouseleave(function () {
+      // $(this).closest(blockOut).fadeIn(500);
+  $('.block-modal-gk').fadeOut(500);
+});
+
+if($(window).height()>1000){
+  var pb= $(window).height()-1000;
+  $('.block-top-footer').css({'margin-bottom':pb+'px'})
+}
+
 
 // function FadeBlock (blockIn, blockOut){
 //   $(blockIn).hover(function (e) {

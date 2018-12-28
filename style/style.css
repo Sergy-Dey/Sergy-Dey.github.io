@@ -823,7 +823,9 @@ input{
     z-index: 100;
 }
 .ipoteka-programm .col-md-6 img{
+    /* max-width: 550px; */
     max-width: 550px;
+    height: 520px;
 }
 .ipoteka-programm .col-md-6 h2{
     margin-top: 70px;
@@ -987,10 +989,20 @@ input{
     color:#000000;
 }
 .block-bottom-footer .block-taxi-and-message{
-    position: absolute;
+    /* position: absolute;
     margin-right: 0px;
     right: -100px;
-    top: -80px;
+    top: -80px; */
+    position: fixed;
+    margin-right: 0px;
+    /* right: -100px; */
+    /* top: -80px; */
+    right: 100px;
+    bottom: 40px;
+    z-index: 999;
+}
+.block-bottom-footer .block-taxi-and-message button{
+    padding: 0px;
 }
 .block-bottom-footer .block-taxi-and-message a{
     display: block;
