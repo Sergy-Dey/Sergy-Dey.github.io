@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/stylesheet.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="./style/jquery.bxslider.css"> -->
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+    <link rel="stylesheet" href="./style/slick.css">
+    <link rel="stylesheet" href="./style/company.css">
+    <link rel="stylesheet" href="./style/media.css">
+
+    <!-- script -->
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap.js"></script>
+    <!-- <script src="./script/wow.min.js"></script> -->
+    <script src="./script/jquery-ui.js"></script>
+    <!-- <script src="./script/jquery.maskedinput.js"></script> -->
+    <!-- <script src="./script/jquery.tiles.min.js"></script> -->
+    <!-- <script src="./script/slider/script.js"></script> -->
+    <!-- <script src="./script/jquery.bxslider.js"></script> -->
+    <!-- <script src="./script/script.js"></script> -->
+    <!-- <script scr="./script/slick.js"></script> -->
+    <script src="./script/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./script/company.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="page-gk">
+      <div class="wrapper-1">
+            <div class="block-menu-page">
+                <!-- Заголовок -->
+                <div class="navbar-header">
+                    <a href="#">
+                        <img src="./img/logo-red.png" alt="">
+                    </a> 
+                </div>
+                <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+                <div class="collapse navbar-collapse menu-navbar" style="z-index: 100; position:relative;" id="navbar-main">
+                    <ul class="nav navbar-nav nav-coll-firft">
+                        <li class="active"><a href="#">Новостройки</a></li>
+                        <li><a href="#">Коммерческая недвижимость</a></li>
+                        <li><a href="#">Паркинги</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Клиентам</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right nav-coll-second">   
+                        <li><a href="tel:+1234567890" class="phone-class">8(343)305-05-05</a></li>
+                        <li>
+                            <button class="btn form-call-class" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModal">
+                                Заказать звонок
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./img/cloud3.png" class="img-cloud3-2" alt="">
+            </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="block-client-header" id="tabs">
+        <div class="wrapper-2">
+            <h1>Клиентам</h1>
+            <ul>
+                <li class="mortgage-tags tab ">Ипотека</li>
+                <li class="payment-methods-tags tab ">Способы оплаты</li>
+                <li class="promotions-and-discounts-tags tab ">Акции и скидки</li>
+                <li class="our-partners-tags tab li-active">Наши партнеры</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="mortgage-block-main" style="display: none;">
+        <div style="width: 100; height:100px; background:red;"></div>
+    </div>
+    <div class="payment-methods-main" style="display: none;">
+        <div style="width: 100; height:100px; background:black;"></div>
+    </div>
+    <div class="promotions-and-discounts-main" style="display: none;">
+        <div style="width: 100; height:100px; background:green;"></div>
+    </div> -->
+    <div class="our-partners-main">
+        <div class="wrapper-2">
+            <h2>Партнерская сеть база</h2>
+            <p class="our-partners-main-desc">
+                Достаточно прийти к нам в офис. Мы подберем программы ипотечного кредитования,
+                сделаем предварительный расчет ваших ипотечных платежей, поможем заполнить заявку
+                на кредит и направим ее в наши банки-партнеры.
+            </p>
+            <div style="clear: both;"></div>
+            <h2>Банки</h2>
+            <div class="our-partners-bank-block">
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+                <div class="our-partners-bank-item">
+                    <img src="./img/img-for-back/sber.jpg" alt="">
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <h2>Строительные компании</h2>
+            <div class="our-partners-bank-block">
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <h2>Ремонтные компании</h2>
+            <div class="our-partners-bank-block">
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+                <div class="our-partners-bank-item">
+                    <!-- <img src="./img/img-for-back/sber.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div style="clear: both;"></div>
+    <div class="block-get-consult">
+        <div class="wrapper-2">
+            <div class="block-left-foot client-footer-block">
+                <h1>Стать партнером</h1>
+                <form class="form-horizontal" role="form">
+                    <div class="col-xs-12 form-group">
+                        <input type="text" class="form-control-phoneCall" 
+                        id="inputNameForm" placeholder="Ваше имя"/>
+                    </div>
+                    <div class="col-xs-12 form-group">
+                        <input type="text" class="form-control-phoneCall"
+                        id="inputEmailForm" placeholder="E-mail"/>
+                    </div>
+                    <div class="col-xs-6 form-group">
+                        <input type="text" class="form-control-phoneCall"
+                        id="inputPhoneForm" placeholder="+7(   )   -  -"/>
+                    </div>
+                    <div class="col-xs-6 form-group">
+                        <input type="text" class="form-control-phoneCall"
+                        id="inputTimeForm" style="margin-left: 30px;" placeholder="Укажите удобное время для звонка"/>
+                    </div>
+                    <div class="col-xs-12 form-group">
+                        <input type="text" class="form-control-phoneCall"
+                        id="inputCommentForm" placeholder="Название организации"/>
+                    </div>
+                    <div class="col-xs-12 form-group">
+                            <input type="text" class="form-control-phoneCall"
+                            id="inputCommentForm" placeholder="Должность"/>
+                        </div>
+                    <div class="col-xs-12 form-group">
+                        <input type="text" class="form-control-phoneCall"
+                        id="inputCommentForm" placeholder="Коментарии"/>
+                    </div>
+                    <a href="#" class="btn-red">Отправить заявку</a>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div>
+    <footer>
+        <div class="wrapper-2">
+            <div class="footer-block-page">
+                <div class="footer-block-page-top">
+                    <ul class="footer-block-page-top-menu">
+                        <li><a href="">Новостройки</a> </li>
+                        <li><a href="">Офисы, склады</a></li>
+                        <li><a href="">Паркинги</a></li>
+                    </ul>
+                    <ul class="footer-block-page-top-menu footer-block-page-top-menu-2">
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Клиентам</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <div class="footer-block-page-top-adress-1">
+                        <p class="text-24">
+                            г. Екатеринбург, ул Малышева 51,
+                            БЦ "Высоцкий", 1 этаж
+                        </p>
+                        <a href="#">Назначить встречу</a>
+                    </div>
+                    <div class="footer-block-page-top-adress-2">
+                        <p class="text-24">
+                            г. Екатеринбург, ул Малышева 51,
+                            БЦ "Высоцкий", 1 этаж
+                        </p>
+                        <p class="text-24">
+                            Бесплатная парковка для клиентов
+                        </p>
+                    </div>
+                    <div class="footer-block-page-top-phone">
+                        <a href="#" class="text-24">
+                           8 (343) 305-05-05
+                        </a>
+                        <p class="text-24">
+                            Работфем 24/7
+                        </p>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="footer-block-page-bottom">
+                    <div class="all-rights text-18">
+                        &copy;2014-2019 AH &laquo;Baza&raquo;<br>
+                        Все права защищены.
+                    </div> 
+                    <div class="all-rights text-18">
+                        Политика конфеденциальности<br>
+                        Правила и условия.
+                    </div> 
+                    <div class="all-rights">
+                        <a href=""><img src="./img/social/fb.png" alt=""></a>
+                        <a href=""><img src="./img/social/fb.png" alt=""></a>
+                        <a href=""><img src="./img/social/fb.png" alt=""></a>
+                        <a href=""><img src="./img/social/fb.png" alt=""></a>
+                        <a href=""><img src="./img/social/fb.png" alt=""></a>
+                        <a href=""><img src="./img/social/fb.png" alt=""></a>
+                    </div> 
+                    <a href="#" class="block-stud-foot">
+                        <img src="./img/social/stud.png" alt="">
+                        <p class="text-18">
+                            Дизайн сайта - Студия дизайна<br>
+                            Евгения Ярового
+                        </p>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="text-content-desc-foot text-18">
+                    <p>
+                        Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях е являеться публичной оферой, определяемой положениями статьи 437 ГК РФ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block-taxi-and-message">
+            <button style="border:none; background:none;" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModalTaxi">
+                <img src="./img/social/taxi.png" alt="">
+            </button>
+            
+            <a href="">
+                <img src="./img/social/chat.png" alt="">
+            </a>
+        </div>
+    </footer>
+</div>
+<script>
+$(function(){
+    // $('.block-client-header ul li').click(function(){
+    //     var test=$(this).attr('class');
+    //     console.log(test);
+    // })
+    
+    var tab;
+    var tabContent;
+    if( document.getElementsByClassName('tabContent').length>0){
+		tabContent = document.getElementsByClassName('tabContent');
+		tab = document.getElementsByClassName('tab');
+		hideTabsContent(1);	
+		
+		document.getElementById('tabs').onclick = function(event){
+            console.log('test');
+		var target = event.target;
+			if(target.className == 'tab'){
+				for(var i = 0; i < tab.length; i++){
+					if(target == tab[i]){
+						showTabsContent(i);
+						break;
+					}
+				}
+			}
+		}
+    }
+    function hideTabsContent(a){
+        console.log('test2');
+        for(var i = a; i < tabContent.length; i++){
+            tabContent[i].classList.remove('show');
+            tabContent[i].classList.add('hide');
+            tab[i].classList.remove('tab-active');		
+        }	
+    }
+
+    function showTabsContent(b){
+        console.log('test3');
+        if(tabContent[b].classList.contains('hide')){
+            hideTabsContent(0);
+            tab[b].classList.add('tab-active');
+            tabContent[b].classList.remove('hide');
+            tabContent[b].classList.add('show');
+        }
+    }
+})
+</script>
+</body>
+</html>

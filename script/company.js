@@ -52,6 +52,43 @@ $(document).ready(function(){
         slidesToScroll: 3
     });
 
+    $('.slider-partners').slick({
+        // dots:true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+
+    $('.another-apartament-slider').slick({
+        // dots:true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 3
+    });
+
     $('.single-item').slick();
+
+
+    // checkbox
+    // checkbox
+  var inputs=document.getElementsByTagName("input");
+  for(var i=0;i<inputs.length;i++)
+    {
+    if(inputs[i].type=="checkbox")
+      {
+      inputs[i].onchange=function()
+        {
+        inputs=document.getElementsByTagName("input");
+        for(var i=0;i<inputs.length;i++)
+          {
+          if(inputs[i].type=="checkbox")
+            {
+            inputs[i].checked=false;
+            }
+            this.checked=true;
+          }
+        }
+      }
+    }
 
 });

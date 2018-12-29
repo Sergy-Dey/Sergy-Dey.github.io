@@ -24,11 +24,12 @@ header{
     padding: 0px 80px;
     width: 100%;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 .navbar-menu-main{
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: -25px;
     z-index: 100;
-    /* display:none; */
 }
 .menu-navbar .nav-coll-firft{
     margin-left: 70px;
@@ -994,7 +995,7 @@ input{
 }
 .block-bottom-footer > div {
     float: left;
-    margin-right: 200px;
+    margin-right: 180px;
     font-size: 18px;
 }
 
