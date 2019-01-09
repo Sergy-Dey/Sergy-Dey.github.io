@@ -1,0 +1,48 @@
+@media (max-width: 1366px) {
+    .wrapper-1{
+        width: 1277px;
+        margin: 0 auto;
+    }
+    .wrapper-2{
+        width: 1277px;
+        margin: 0 auto;
+    }
+
+    /* Block for menu */
+    .header-menu{
+        height: 68px;
+    }
+    .header-menu .logo-baza{
+        width: 84px;
+        position: absolute;
+    }
+    .header-menu .header-menu-nav .href-menu{
+        margin-left: 120px;
+    }
+    .header-menu .header-menu-nav .href-menu li a {
+        font-size: 14px;
+    }
+    .header-menu .header-menu-nav .href-phone-form li a{
+        font-size: 18px;
+    }
+    .header-menu .header-menu-nav .href-phone-form li{
+        margin-left: 20px;
+    }
+    .header-menu .header-menu-nav .href-phone-form li button{
+        width: 175px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+    /* Block for menu--End */
+
+
+    /* client-Partners */
+    .our-partners-bank-block .our-partners-bank-item:nth-child(3n){
+        margin-right: 0px;
+     }
+     .our-partners-bank-block .our-partners-bank-item:nth-child(4n){
+        margin-right: 34px;
+     }
+     /* client-Partners-end */
+}
