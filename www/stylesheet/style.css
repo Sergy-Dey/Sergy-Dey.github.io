@@ -1136,7 +1136,7 @@ margin-bottom: 30px;
 
 /* layouts-list */
 .block-list-main{
-    height: 1000px;
+    min-height: 1000px;
     margin-top: 70px;
 }
 .block-list-main .block-left{
@@ -1144,6 +1144,7 @@ margin-bottom: 30px;
 }
 .block-list-main .block-right{
     float: right;
+    width: 70%;
 }
 .block-sort-list{
     width: 440px;
@@ -1256,5 +1257,134 @@ margin-bottom: 30px;
     font-size: 18px;
     text-align: center;
     padding-bottom: 50px;
+}
+.block-list-main table{
+    width: 100%;
+    margin-top: 10px;
+}
+.block-list-main table thead tr{
+    height: 70px;
+}
+.block-list-main table thead tr th a{
+    color:#9b9b9b;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+}.block-list-main table thead tr th{
+    padding-top: 10px;
+}
+.block-list-main table thead tr th a:after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 6px;
+    top: 3px;
+    right: -15px;
+    background: url('../images/icons/strelka1.png') no-repeat center;
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+}
+.block-list-main table thead tr th.active-th a:after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 6px;
+    top: 5px;
+    right: -15px;
+    background: url('../images/icons/strelka.png') no-repeat center;
+    -moz-transform: rotate(-90deg); /* Для Firefox */
+    -ms-transform: rotate(-90deg); /* Для IE */
+    -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg); /* Для Opera */
+    transform: rotate(-90deg);
+}
+.block-list-main table tbody{
+    background-color: white;
+    border-radius: 5px;
+}
+.block-list-main table tbody tr{
+    height: 90px;
+    position: relative;
+    border-bottom:1px solid #eaeaea;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .2s ease-in-out;
+    position: relative;
+}
+.block-img-list-scheme{
+    display:none;
+    width: 300px;
+    height: 343px;
+    border-radius: 5px;
+    position: absolute;
+    z-index:100;
+    top: -330px;
+    left: -90px;
+    background-color: white;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-box-shadow: 0px 0px 10px -6px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 10px -6px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 10px -6px rgba(0,0,0,0.68);
+}
+.block-img-list-scheme img{
+    margin-top: 70px;
+    max-width: 150px;
+    max-height: 220px;
+}
+.block-img-list-scheme:after{
+    position: absolute;
+    content:'';
+    border: 20px solid transparent;
+    border-top: 20px solid white;
+    top: 340px;
+    left: 120px;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.block-list-main table tbody tr:hover{
+    background-color: #f0f0f0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.block-list-main table tbody tr:hover .block-img-list-scheme{
+    display: block;
+    
+}
+.block-list-main table tbody tr td{
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+    position: relative;
+}
+.block-list-main table tbody tr td.block-schema-apart-lock:before{
+    position: absolute;
+    content: '';
+    left: 30px;
+    top: 30px;
+    background: url('../images/icons/lock.png')no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+main{
+    display: block;
+    float:left;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-bottom: 75px;
+}
+.table-list-layout-block tbody tr:first-child {
+    border-radius: 10px 10px 0px 0px;
+    overflow:hidden;
 }
 /* layouts-list-end */
