@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    body{
+        overflow:visible;
+    }
     .block-mobile-monitor{
         overflow: hidden;
     }
