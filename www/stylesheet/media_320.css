@@ -1,4 +1,4 @@
-@media (max-width: 366px) {
+@media (max-width: 767px){
     .wrapper-1{
         width: 320px;
         margin: 0 auto;
@@ -7,6 +7,36 @@
         width: 300px;
         margin: 0 auto;
     }
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 34px;
+      }
+      h2{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+      h3{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+      .text-24{
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+      }
+      .text-18{
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 500;
+      }
+      .text-UI15{
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 500;
+      }
     
     /* Block for menu */
     .header-menu{
@@ -130,4 +160,394 @@
         margin-left: 20px;
     }
     /* 404-end */
+
+
+
+     /* <!-- Start-modal-form-for-menu --> */
+     .logo-head {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 20px;
+    }
+    .block-menu-for-modal {
+        float: none;
+        width: 100%;
+        /* margin-top: 22px; */
+    }
+
+    .block-menu-for-modal a:first-child {
+        float: left;
+        z-index: 10;
+        position: relative;
+    }
+    .block-menu-for-modal a:last-child {
+        float: right;
+        z-index: 10;
+        position: relative;
+    }
+    .modal-header-menu li {
+        margin-top: 30px;
+    }
+    .modal-header-menu li:first-child {
+        margin-top: 50px;
+    }
+    .modal-header-menu li a {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+     /* <!-- End-modal-form-for-call --> */
+
+     /* main */
+     .header-mobile-menu{
+         position: relative;
+     }
+     .header-mobile-menu .logo-baza{
+         position: absolute;
+         left: 50%;
+         transform: translate(-50%);
+     }
+     .block-menu-mobile{
+         display: none;
+     }
+     .img-cloud-mobile-1 {
+        left: -270px;
+        top: -240px;
+    }
+    .img-cloud-mobile-2 {
+        position: absolute;
+        opacity: 0.4;
+        z-index: 100;
+        top: 190px;
+    }
+    .header-mobile-desc h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .header-mobile-desc .block-btn-click a{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .header-mobile-desc .block-btn-click button.form-call-class{
+        display: none;
+    }
+    .block-header-mobile{
+        height: 830px;
+    }
+    .header-mobile-desc .block-btn-click button.form-call-class-taxi{
+        display: block;
+        width: 101%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 10px;
+    }
+    .main-mobile-gk-block,.main-mobide-block .main-mobile-gk-block-2{
+        height: 136px;
+    }
+    .block-see-change-apart{
+        background-image:linear-gradient(#fff, #fff);
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    .block-see-change-apart .block-pick-up-apartment{
+        display: none;
+    }
+    .block-see-change-apart .form-call-class-change-apart {
+        display: block;
+        color:#ff0e0e;
+        border: 2px solid #ff0e0e;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .wrapper-2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .block-see-change-apart .block-pick-up-apartment {
+        width: 100%;
+        margin-left: 0px;
+        padding: 25px 13px 60px 13px;
+        margin-bottom: 0px;
+    }
+    .block-see-change-apart-btn {
+        position: relative;
+    }
+    .block-pick-up-apartment h3 {
+        font-size: 15px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 0px;
+        line-height: 17px;
+    }
+    .apart-btn-close-modal {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .block-change-apartment ul {
+        margin-top: 30px;
+    }
+    .block-pick-up-apartment ul li {
+        margin-right: 9px;
+    }
+    .block-pick-up-apartment ul li a {
+        font-size: 12px;
+    }
+    .block-see-change-apart .block-pick-up-apartment .block-horizontal {
+        margin-top: 35px;
+        width: 100%;
+    }
+    .block-see-change-apart .block-pick-up-apartment .btn-red{
+        width: 70%;
+    }
+    .block-change-apartment ul {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block-pick-up-apartment ul li {
+        /* margin-right: -1px; */
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .block-horizontal-right > *{
+        font-size: 15px;
+    }
+    .block-pick-up-apartment .block-see-change-apart-btn a{
+        display: block;
+
+    }
+
+    .block-mobile-border-1 .slider-board-1 {
+        background-color: #f6f6f7;
+        margin-left: 0px;
+    }
+    .block-mobile-border-1 .slider-board-1 .slider-img {
+        position: absolute;
+        top: 0px;
+        max-width: 290px;
+        max-height: 220px;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    .block-mobile-border-1 .slider-board-1 .block-title-slider{
+        margin-top: 260px;
+        margin-left: 10px;
+    }
+    .block-mobile-border-1 .slider-board-1 .block-title-slider h2{
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    .block-mobile-border-1 .img-gk-slider{
+        margin-top: 30px;
+        padding-top: 30px;
+        height: 500px;
+    }
+    .block-mobile-border-1 .slider-board-1 .slick-dots{
+        left: 15px;
+        bottom: -45px;
+    }
+    .slider-item-2{
+        margin-top: 0px;
+    }
+    .block-mobile-border-2 .block-img-gk-briz-slider-title{
+        margin-left: 20px;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    .block-mobile-border-2 .block-img-gk-briz-slider-img{
+        float: none;
+        margin: 0 auto;
+        padding: 0px;
+        height: 180px;
+        width: 100px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .block-mobile-border-2 .block-img-gk-briz-slider-img img {
+        max-width: 91px;
+        max-height: 171px;
+        /* float: none; */
+        position: absolute;
+        bottom: 0px;
+    }
+    .block-mobile-border-2 .block-img-gk-briz-slider-title h2 {
+        font-size: 30px;
+        line-height: 34px;
+        font-weight: 600;
+        width: 280px;
+        margin-top: 220px;
+    }
+    .block-mobile-border-2 .block-img-gk-briz-slider-title ul {
+        font-size: 15px;
+        margin-left: 25px;
+    }
+    .block-img-gk-briz-slider-title #parallelogram {
+        width: 60px;
+        top: 60px;
+        left: 41px;
+        height: 114px;
+        display: block;
+        position: absolute;
+        width: 128px;
+        top: 90px;
+        z-index: 15;
+        right: 54px;
+        height: 270px;
+        transform: rotate(-10deg);
+        /* background: red; */
+        border: 3px solid #ff0e0e;
+    }
+    .block-img-gk-briz-slider-title #parallelogram2 {
+        position: absolute;
+        display: block;
+        width: 90px;
+        /* bottom: 240px; */
+        top: -35px;
+        right: 13px;
+        /* right: 85px; */
+        right: -20px;
+        height: 120px;
+        transform: rotate(60deg);
+        border: 3px solid #ff0e0e;
+    }
+    .block-mobile-border-2 .block-img-gk-briz-slider-title ul li{
+        margin-left: 0px;
+    }
+    .block-mobile-border-2 .block-img-gk-briz-slider-title ul li:before{
+        top: 4px;
+    }
+    .block-mobile-border-2 .slider-board-2-mobile .slick-dots{
+        left: 25px;
+    }
+
+    .change-buy-apartament-mobile .change-buy-apartament {
+        padding: 30px 20px 40px 20px;
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+    }
+    .change-buy-apartament h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .change-buy-apartament-mobile .change-buy-apartament .text-24 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .checked-change label {
+        padding-left: 30px;
+    }
+    .checked-change label::before {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        margin-left: -30px;
+    }
+    .change-buy-apartament .btn-red {
+        margin-top: 23px;
+        margin-left: 43px;
+        width: 154px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 37px;
+        font-weight: 600;
+    }
+    .change-buy-apartament-mobile{
+        overflow: hidden;
+    }
+    .change-buy-apartament .btn-red{
+        margin-left: none;
+    }
+    .change-buy-apartament .btn-red{
+        margin-left: 50%;
+    }
+    .change-buy-apartament-mobile .change-buy-apartament{
+        height: 520px;
+        padding: 30px 20px 0px 20px;
+    }
+    .img-helicopter-mobile-2{
+        left: 100px;
+    }
+    .ipoteka-programm-mobile img{
+        max-height: 290px;
+        max-width: 290px;
+    }
+    .ipoteka-programm-mobile h2{
+        font-size: 24px;
+        line-height: 56px;
+    }
+    .ipoteka-programm-mobile p {
+        font-size: 15px;
+    }
+    .ipoteka-programm-mobile{
+        width: 100%;
+    }
+    .ipoteka-programm-mobile a{
+        width: 196px;
+    }
+    .block-cooperation-with-us-mobile{
+        padding-top: 30px;
+    padding-bottom: 70px;
+    }
+    .block-cooperation-with-us-mobile .block-cooperation-with-us{
+        margin-left: 0px;
+        width: 290px;
+        height: 540px;
+        padding: 0;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-top:300px;
+    }
+    .block-cooperation-with-us-mobile .block-cooperation-with-us .ipoteka-programm-kaska{
+        left: -12px;
+    }
+    .footer-block-content{
+        margin-top: 60px;
+    }
+    .form-group-2{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .form-group-3{
+        width: 100%;
+    }
+    .footer-block-content .form-control-phoneCall{
+        margin-bottom: 30px;
+    }
+    .block-right-foot .block-right-foot-title h3{
+        margin-bottom: 25px;
+    }
+    .block-right-foot .block-right-foot-address{
+        flex-direction: column;
+        width: 65%;
+    }
+    .footer-block-content .block-right-foot p{
+        margin-top: 10px;
+    }
+    .block-bottom-footer-text{
+
+        flex-direction: column;
+    }
+    .block-bottom-footer-text > p{
+        margin-bottom: 30px;
+    }
+    .block-bottom-footer-social{
+        flex-direction: column;
+    }
+    .block-bottom-footer-social >div{
+        padding-bottom: 25px;
+    }
+    .footer-block-content .block-right-foot p{
+        width: 90%;
+    }
+     /* main end */
 }

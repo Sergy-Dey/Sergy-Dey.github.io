@@ -1,13 +1,42 @@
-@media (max-width: 1366px) {
+@media (max-width: 1910px) {
     .wrapper-1{
-        width: 1277px;
+        width: 90%;
         margin: 0 auto;
     }
     .wrapper-2{
-        width: 1277px;
+        width: 80%;
         margin: 0 auto;
     }
-
+    h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    }
+    h2{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 44px;
+    }
+    h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    }
+    .text-24{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    }
+    .text-18{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    }
+    .text-UI15{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    }
     /* Block for menu */
     .header-menu{
         height: 68px;
@@ -31,8 +60,9 @@
     .header-menu .header-menu-nav .href-phone-form li button{
         width: 175px;
         height: 37px;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 35px;
+        margin-left: 0px;
     }
     /* Block for menu--End */
 
@@ -45,4 +75,201 @@
         margin-right: 34px;
      }
      /* client-Partners-end */
+
+    /* page-gk */
+    .main-block-page-gk{
+        overflow: hidden;
+    }
+    .main-block-page-gk .figura-1{
+        left: 143px;
+    }
+    .main-block-page-gk .figura-1:hover{
+       opacity: 0;
+    }
+    .main-block-page-gk .figura-cercl-1 {
+        top: 600px;
+        left: 380px;
+    }
+    .main-block-page-gk .block-modal-gk-1{
+        left: 223px;
+    }
+    .main-block-page-gk .figura-2{
+        left: 608px;
+    }
+    .main-block-page-gk .block-modal-gk.block-modal-gk-2{
+        left: 572px;
+    }
+    .main-block-page-gk .figura-cercl-2 {
+        right: 560px;
+    }
+    .main-block-page-gk .figura-3{
+        left: 740px;
+    }
+    .main-block-page-gk .block-modal-gk.block-modal-gk-3{
+        left: 739px;
+    }
+    .main-block-page-gk .figura-cercl-3 {
+        right: 340px;
+    }
+    .main-block-page-gk .figura-cercl-4 {
+        right: 50px;
+    }
+    .main-block-page-gk .figura-4{
+        right: -109px;
+    }
+    .main-block-page-gk .block-modal-gk.block-modal-gk-4{
+        left: 918px;
+    }
+     /* page-gk-end */
+
+     /* main */
+     .block-content{
+         /* display: none; */
+     }
+     .header-menu .header-menu-nav .href-menu li{
+         margin-right: 20px;
+     }
+     .header-menu.position-fixed-for-main{
+        height: 95px;
+     }
+     .header-menu.position-fixed-for-main .header-menu-nav .href-phone-form li{
+        margin-left: 0px;
+    }
+    .header-menu.position-fixed-for-main .header-menu-nav .href-phone-form li button{
+        font-size: 14px;
+    }
+    .header-menu.position-fixed-for-main .header-menu-nav .href-menu li a:hover{
+        padding-bottom: 15px;
+    }
+    .title-block{
+        padding-bottom: 20px;
+    }
+    .title-block .block-title-text {
+        margin-bottom: 20px;
+    }
+    .btn-red{
+        font-size: 16px;
+        line-height: 44px;
+        height: 40px;
+    }
+    .form-call-class{
+        height: 44px;
+        font-size: 16px;
+        line-height: 44px;
+    }
+    .block-gk-img-1 .block-gk-img-main{
+        height: 500px;
+    }
+    .GenplanOneMain-image:hover .GenplanOneMain-image-svg {
+        opacity: 0;
+    }
+    .img-fence-1{
+        left: 0px;
+        height: 80px;
+    }
+    .img-tree-2{
+        width: 160px;
+    }
+    .img-tree-3{
+        right: 70px;
+        /* width: 186px; */
+        height: 100px;
+    }
+    .img-quadcopter{
+        left: 600px;
+    }
+    .board-gk-slider{
+        margin-bottom: 25px;
+    }
+    .block-sort-change-apartaments{
+        margin-bottom: 10px;
+    }
+    .block-sort-change-apartaments-title {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .block-href-a {
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .block-horizontal {
+        margin-top: 20px;
+    }
+    .img-tree-10{
+        right: 0px;
+        width: 219px;
+    }
+    .change-buy-apartament{
+        margin-bottom: 30px;
+    }
+    .change-buy-apartament {
+        padding: 25px 30px 0px 50px;
+        height: 525px;
+    margin-bottom: 0px;
+        /* margin-bottom: 5px; */
+    }
+    .img-tree-11{
+        width: 245px;
+    }
+    .ipoteka-programm {
+        width: 1200px;
+        border: 5px solid #9d9d9d;
+        background: #fff;
+        margin-bottom: 25px;
+        position: relative;
+        border-radius: 10px;
+        z-index: 40;
+        height: 492px;
+    }
+    .ipoteka-programm-block-img img {
+        max-width: 448px;
+    }
+    .ipoteka-programm-img-bilbord {
+        bottom: -314px;
+    }
+    .block-cooperation-with-us {
+        padding: 245px 45px 40px 45px;
+    margin-bottom: 0px;
+    }
+    .block-cooperation-with-us img{
+        width: 247px;
+    }
+    .footer-block-content {
+        margin-top: 130px;
+        margin-left: 150px;
+    }
+    .block-left-foot h1 {
+        margin-bottom: 15px;
+    }
+    .footer-block-content .form-control-phoneCall {
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        font-size: 20;
+        line-height: 25px;
+    }
+    .block-top-footer .block-left-foot {
+        width: 760px;
+    }
+    .block-top-footer .block-right-foot {
+        margin-right: 50px;
+        margin-top: 50;
+    }
+    .text-content-desc-foot {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .text-content-desc-foot p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .block-bottom-footer > div {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .block-taxi-and-message {
+        right: 20px;
+        bottom: 20px;
+    }
+     /* main end */
 }
