@@ -686,4 +686,29 @@
         display: none;
         width: 10px;
     }
+
+     /* commerce.html */
+     .block-commmerce-item{
+         height: 500px;
+     }
+     .block-commmerce-item h2{
+         margin-top: 200px;
+     }
+     .block-commmerce-item p{
+         width: 260px;
+     }
+     .block-commmerce-item .block-commmerce-setting p{
+         margin-bottom: 25px;
+     }
+     .block-commmerce-item img {
+        right: 0px;
+        bottom: 0px;
+        top: 0%;
+        left: 50%;
+        border-radius: 5px;
+        transform: translate(-50%, 0%);
+        max-height: 220px;
+        max-width: 285px;
+    }
+    /* commerce.html end*/
 }
