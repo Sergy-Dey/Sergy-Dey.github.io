@@ -1,12 +1,12 @@
 @media (max-width: 1356px) {
-    /* .wrapper-1{
-        width: 728px;
+    .wrapper-1{
+        width: 95%;
         margin: 0 auto;
-    } */
-    /* .wrapper-2{
-        width: 700px;
+    } 
+    .wrapper-2{
+        width: 90%;
         margin: 0 auto;
-    } */
+    }
     h1{
     font-size: 48px;
     font-weight: 600;
@@ -114,7 +114,7 @@
         background: url('../images/icons/nav-menu.png')no-repeat center;
     }
     .header-menu .header-menu-nav .href-phone-form li{
-        margin-left: 20px;
+        margin-left: 0px;
     }
     .header-menu .header-menu-nav .href-phone-form li button{
         width: 175px;
@@ -196,23 +196,35 @@
          margin-left: 30px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-text.promotions-and-discounts-text-href, .promotions-and-discounts-item .promotions-and-discounts-text{
-        margin-left: 0;
+        /* margin-left: 0;
         margin-top: 0;
-        padding-top: 220px;
+        padding-top: 220px; */
+        float: left;
+        margin-top: 87px;
+        /* padding-top: 220px; */
+        margin-left: 25px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-img-abs{
-        width: 100%;
+        /* width: 100%;
         top: 0px;
-        height: 195px;
+        height: 195px; */
+        position: absolute;
+        bottom: 0px;
+        max-height: 300px;
+        max-width: 450px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-img-rel{
-        float: right;
-        max-width: 300px;
-        margin: 0 auto;
         position: absolute;
-        top: 0px;
-        height: 195px;
-        left: 0px;
+        right: 30px;
+        top: 30px;
+        max-width: 390px;
+        max-height: 320px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+     }
+     .promotions-and-discounts-text.promotions-and-discounts-text-href h2{
+         margin-bottom: 35px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-text p{
         margin-top: 15px;
@@ -264,6 +276,9 @@
         line-height: 56px;
         font-weight: 600;
         color: black;
+    }
+    .modal-header-menu li a.active-menu-mobile{
+        color:#ff0e0e;
     }
      /* <!-- End-modal-form-for-call --> */
 
@@ -834,6 +849,16 @@
     .block-top-footer .block-left-foot{
         width: 100%;
     }
+    .another-page-footer .block-top-footer .block-left-foot{
+        width: 700px;
+    }
+    .footer-block-content.another-page-footer .form-control-phoneCall {
+        font-size: 18px;
+        padding-bottom: 25px;
+    }
+    .footer-block-content.another-page-footer .btn-red{
+        margin-top: 35px;
+    }
     .block-left-foot h1{
         margin-bottom: 40px;
     }
@@ -887,6 +912,91 @@
     }
     /* footer end */
 
+     /* clients-Mortdade */
+     .block-text-header-clients-mortgage{
+         margin-top: 30px;
+     }
+     .block-text-header-clients-mortgage p{
+        width: 95%;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 0px;
+    }
+    .block-text-header-clients-mortgage h2{
+        margin-bottom: 24px;
+    }
+    .block-titmin-clients-mortgage .block-titmin-clients-mortgage-item p{
+        font-size: 23px;
+        line-height: 29px;
+        width: auto;
+    }
+    .block-docs-clients-mortgag-item{
+        margin-bottom: 50px;
+        margin-right: 30px;
+    }
+    .block-docs-clients-mortgag h2 {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .block-docs-clients-mortgag-item p span{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .block-docs-clients-mortgag-item p{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+    .block-docs-clients-mortgag-item img {
+        width: 54px;
+        height: 77px;
+        float: left;
+        margin-bottom: 0px;
+        margin-right: 25px;
+    }
+    .block-you-our-clients-mortgag ul li{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .block-you-our-clients-mortgag .left-block{
+        float:none;
+        width: 95%;
+        margin-bottom: 45px;
+    }
+    .block-you-our-clients-mortgag .rigth-block{
+        float: none;
+        width: 95%;
+    }
+    .block-you-our-clients-mortgag ul li{
+        margin-bottom: 5px;
+    }
+    .block-you-our-clients-mortgag {
+        margin-top: 20px;
+    }
+    .block-mortgag-clients-mortgag .block-for-form-backgr{
+        background: #f9f9f9;
+        border-radius: 5px;
+        padding-bottom: 40px;
+        width: 330px;
+    }
+    .block-mortgag-clients-mortgag .left-block .block-form {
+        /* background-color: #b5b5b5; */
+        padding: 30px 25px 0px 25px;
+    }
+    .block-mortgag-clients-mortgag .left-block .sum-credit{
+        margin-left: 20px;
+    }
+    .block-form .block-horizontal input{
+        background: #f9f9f9;
+    }
+    .block-mortgag-clients-mortgag .left-block .btn-red {
+        width: 200px;
+        margin-left: 25px;
+        height: 50px;
+        line-height: 54px;
+        font-size: 15px;
+    }
+    /* clients-Mortdade end */
 
 
 
@@ -910,6 +1020,107 @@
     .footer-block-content .block-right-foot p{
         width: 30%;
     }
+    .block-mortgag-clients-mortgag .left-block{
+        width: 330px;
+    }
+    .block-mortgag-clients-mortgag .rigth-block{
+        width: 350px;
+    }
+    .block-banks-item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 235px;
+    }
+    .block-title-banks-img-main{
+        margin-bottom: 30px;
+    }
+    .block-rate-banks-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block-banks-item-border{
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
      /* main end */
+     .footer-block-another-page{
+         display: none;
+     }
+     .footer-block-page-top .footer-block-page-top-menu{
+         display: none;
+     }
+     .footer-block-another-page-for-mobile{
+         display: block;
+         margin-top: 50px;
+     }
+     .footer-block-another-page-for-mobile .block-first-foot{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #cacaca;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+     }
+     .footer-block-another-page-for-mobile .block-first-foot .block-address-one{
+
+     }
+     .footer-block-another-page-for-mobile .block-first-foot > div p{
+         font-size: 15px;
+         line-height: 20px;
+     }
+     .footer-block-another-page-for-mobile .block-first-foot .block-address-one h4{
+         font-size: 24px;
+         line-height: 24px;
+         font-weight: 600;
+         margin-bottom: 25px;
+     }
+     .footer-block-another-page-for-mobile .block-first-foot .block-address-two a{
+        color: #ff0e0e;
+        font-size: 15px;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 19px;
+        display: block;
+     }
+     .footer-block-another-page-for-mobile .block-first-foot .block-address-three{
+        display: flex;
+        align-items: flex-end;
+     }
+     .footer-block-another-page-for-mobile .block-second-foot{
+        border-bottom: 1px solid #cacaca;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+     }
+     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-one{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        line-height: 20px; 
+     }
+     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+     }
+     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow a{
+         font-size: 15px;
+         line-height: 20px;
+         color:black;
+         margin-left: 25px;
+     }
+     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .social-block-for-mobile a{
+         margin-left: 10px;
+     }
+    .footer-block-another-page-for-mobile .text-content-desc-foot{
+        margin-bottom: 30px;
+    }
      
 }

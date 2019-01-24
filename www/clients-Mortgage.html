@@ -9,6 +9,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="./stylesheet/normalize.css">
     <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
+    <link rel="stylesheet" href="./stylesheet/animate.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="stylesheet" href="./stylesheet/media.css">
     <link rel="stylesheet" href="./stylesheet/media_1366.css">
@@ -17,6 +18,10 @@
     <!-- script -->
     <script src="./script/jquery.min.js"></script>
     <script src="./script/jquery-ui.js"></script>
+    <script src="./script/jquery.maskedinput.js"></script>
+    <script src="./script/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src='./script/jquery.ui.touch-punch.min.js' type="text/javascript" charset="utf-8"></script>
+    <script src="./script/wow.min.js"></script>
     <script src="./script/script.js"></script>
 
     <title>Document</title>
@@ -33,19 +38,19 @@
                     <li><a href="#">Коммерческая недвижимость</a></li>
                     <li><a href="#">Паркинги</a></li>
                     <li><a href="#">О компании</a></li>
-                    <li><a href="#">Клиентам</a></li>
+                    <li><a class="active-menu" href="#">Клиентам</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
                 <ul class="href-phone-form">   
                     <li><a href="tel:+1234567890" class="phone-class">8(343)305-05-05</a></li>
-                    <li><button href="tel:+1234567890" class="phone-class-icons"></button></li>
+                    <li><button class="phone-class-icons button js-button-campaign btn form-call-class "></button></li>
                     <li>
-                        <button class="btn form-call-class" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModal">
+                        <button class="button js-button-campaign btn form-call-class" data-title="Заказать звонок">
                             Заказать звонок
                         </button>
                     </li>
                     <li>
-                        <button class="btn form-menu-class" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModal">
+                        <button class="form-menu-class">
                         </button>
                     </li>
                 </ul>
@@ -59,8 +64,8 @@
             <div class="wrapper-2">
                 <h1>Клиентам</h1>
                 <ul>
-                    <li class="mortgage-tags tab ">Ипотека</li>
-                    <li class="payment-methods-tags tab li-active">Способы оплаты</li>
+                    <li class="mortgage-tags tab li-active">Ипотека</li>
+                    <li class="payment-methods-tags tab">Способы оплаты</li>
                     <li class="promotions-and-discounts-tags tab ">Акции и скидки</li>
                     <li class="our-partners-tags tab">Наши партнеры</li>
                 </ul>
@@ -102,23 +107,31 @@
                 <h2>Необходимая документация</h2>
                 <div class="block-docs-clients-mortgag-item">
                     <img src="./images/img/work-book.jpg" alt="">
-                    <p><span>Трудовая книжка</span></p>
-                    <p>Или другой документ подтверждающий занятость</p>
+                    <div class="block-docs-clients-mortgag-item-text">
+                        <p><span>Трудовая книжка</span></p>
+                        <p>Или другой документ подтверждающий занятость</p>
+                    </div>
                 </div>
                 <div class="block-docs-clients-mortgag-item">
                     <img src="./images/img/work-book.jpg" alt="">
-                    <p><span>Трудовая книжка</span></p>
-                    <p>Или другой документ подтверждающий занятость</p>
+                    <div class="block-docs-clients-mortgag-item-text">
+                        <p><span>Трудовая книжка</span></p>
+                        <p>Или другой документ подтверждающий занятость</p>
+                    </div>
                 </div>
                 <div class="block-docs-clients-mortgag-item">
                     <img src="./images/img/work-book.jpg" alt="">
-                    <p><span>Трудовая книжка</span></p>
-                    <p>Или другой документ подтверждающий занятость</p>
+                    <div class="block-docs-clients-mortgag-item-text">
+                        <p><span>Трудовая книжка</span></p>
+                        <p>Или другой документ подтверждающий занятость</p>
+                    </div>
                 </div>
                 <div class="block-docs-clients-mortgag-item">
                     <img src="./images/img/work-book.jpg" alt="">
-                    <p><span>Трудовая книжка</span></p>
-                    <p>Или другой документ подтверждающий занятость</p>
+                    <div class="block-docs-clients-mortgag-item-text">
+                        <p><span>Трудовая книжка</span></p>
+                        <p>Или другой документ подтверждающий занятость</p>
+                    </div>
                 </div>
             </div>
             <div style="clear: both;"></div>
@@ -152,85 +165,124 @@
                 <h2>Расчет ипотеки</h2>
                 <div class="left-block">
                     <p class="opacity-banks">Параметры кредитования</p>
-                    <div class="block-form">
-                        <div class="block-horizontal">
-                            <label class="label-for-form-title" for="amount">Cтоимость недвижимости</label>
-                            <div style="float:left;">
-                                <input type="text" id="property-value">
-                                <label class="stepen" id="property-value">&#8381;</label>
+                    <div class="block-for-form-backgr">
+                        <div class="block-form">
+                            <div class="block-horizontal">
+                                <label class="label-for-form-title" for="amount">Cтоимость недвижимости</label>
+                                <div style="float:left;">
+                                    <input type="text" id="property-value">
+                                    <!-- <label class="stepen" id="property-value">&#8381;</label> -->
+                                </div>
+                                <div style="clear: both;"></div>
+                                <div id="slider-property-value"></div>
                             </div>
                             <div style="clear: both;"></div>
-                            <div id="slider-property-value"></div>
-                        </div>
-                        <div style="clear: both;"></div>
-                        <div class="block-horizontal">
-                            <label class="label-for-form-title" for="an-initial-fee">Первоначальный взнос</label>
-                            <div style="float:left;">
-                                <input type="text" id="an-initial-fee">
-                                <label class="stepen" id="amount-square"> &#8381;</label>
-                            </div>
-                            
-                            <div style="clear: both;"></div>
-                            <div id="slider-an-initial-fee"></div>
-                        </div>
-                        <div style="clear: both;"></div>
-                        <div class="block-horizontal">
-                            <label class="label-for-form-title" for="loan-terms">Срок</label>
-                            <div style="float:left;">
-                                    <input type="text" id="loan-terms" readonly>
-                                    <label class="stepen" id="amount-square">&#8381;</label>
-                            </div>
-                            <div style="clear: both;"></div>
+                            <div class="block-horizontal">
+                                <label class="label-for-form-title" for="an-initial-fee">Первоначальный взнос</label>
+                                <div style="float:left;">
+                                    <input type="text" id="an-initial-fee">
+                                    <!-- <label class="stepen" id="amount-square"> &#8381;</label> -->
+                                </div>
                                 
-                            <div id="slider-loan-terms"></div>
+                                <div style="clear: both;"></div>
+                                <div id="slider-an-initial-fee"></div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="block-horizontal">
+                                <label class="label-for-form-title" for="loan-terms">Срок</label>
+                                <div style="float:left;">
+                                    <input type="text" id="loan-terms" readonly>
+                                    <!-- <label class="stepen" id="amount-square">&#8381;</label> -->
+                                </div>
+                                <div style="clear: both;"></div>
+                                    
+                                <div id="slider-loan-terms"></div>
+                            </div>
                         </div>
+                        <p class="sum-credit">Сумма кредита 4 000 000 &#8381;</p>
+                        <a class="btn-red"href="#">Подать заявку</a>
                     </div>
-                    <p class="sum-credit">Сумма кредита 4 000 000 &#8381;</p>
-                    <a class="btn-red"href="#">Подать заявку</a>
                     <p class="opacity-banks">Встреча у нас в офисе и первоночальны взнос Встреча у нас в офисе и первоночальны взнос Встреча у нас в офисе и первоночальны взнос</p>
                 </div>
                 <div class="rigth-block">
                     <p class="opacity-banks">Вам подходят 2 программы</p>
                     <div class="block-banks-items">
                         <div class="block-banks-item" style="background-color: #7dc361;">
-                            <img src="./images/icons/sber.png" alt="">
-                            <div class="block-title-banks">
-                                <p><span>Банк</span></p>
-                                <p>Сбербанк</p>
+                            <div class="block-title-banks-img-main">
+                                <img src="./images/icons/sber.png" alt="">
+                                <div class="block-title-banks">
+                                    <p><span>Банк</span></p>
+                                    <p>Сбербанк</p>
+                                </div>
+                            </div> 
+                            
+                            <div class="block-rate-banks-main">
+                                <div class="block-rate-banks block-banks-item-border">
+                                    <p><span>Ставка</span></p>
+                                    <p>8,7 %</p>
+                                </div>
+                                <div class="block-term-banks block-banks-item-border">
+                                    <p><span>Срок</span></p>
+                                    <p>30 лет</p>
+                                </div>
+                                <div class="block-payment-banks block-banks-item-border">
+                                    <p><span>Платеж в месяц</span></p>
+                                    <p>45 800₽</p>
+                                </div>
                             </div>
-                            <div class="block-rate-banks block-banks-item-border">
-                                <p><span>Ставка</span></p>
-                                <p>8,7 %</p>
-                            </div>
-                            <div class="block-term-banks block-banks-item-border">
-                                <p><span>Срок</span></p>
-                                <p>30 лет</p>
-                            </div>
-                            <div class="block-payment-banks block-banks-item-border">
-                                <p><span>Платеж в месяц</span></p>
-                                <p>45 800₽</p>
-                            </div>
+                            
                         </div>
                         <div class="block-banks-item" style="background-color: #454545;">
-                            <img src="./images/icons/sber.png" alt="">
-                            <div class="block-title-banks">
-                                <p><span>Банк</span></p>
-                                <p>Сбербанк</p>
+                            <div class="block-title-banks-img-main">
+                                <img src="./images/icons/sber.png" alt="">
+                                <div class="block-title-banks">
+                                    <p><span>Банк</span></p>
+                                    <p>Сбербанк</p>
+                                </div>
+                            </div> 
+                            
+                            <div class="block-rate-banks-main">
+                                <div class="block-rate-banks block-banks-item-border">
+                                    <p><span>Ставка</span></p>
+                                    <p>8,7 %</p>
+                                </div>
+                                <div class="block-term-banks block-banks-item-border">
+                                    <p><span>Срок</span></p>
+                                    <p>30 лет</p>
+                                </div>
+                                <div class="block-payment-banks block-banks-item-border">
+                                    <p><span>Платеж в месяц</span></p>
+                                    <p>45 800₽</p>
+                                </div>
                             </div>
-                            <div class="block-rate-banks block-banks-item-border">
-                                <p><span>Ставка</span></p>
-                                <p>8,7 %</p>
-                            </div>
-                            <div class="block-term-banks block-banks-item-border">
-                                <p><span>Срок</span></p>
-                                <p>30 лет</p>
-                            </div>
-                            <div class="block-payment-banks block-banks-item-border">
-                                <p><span>Платеж в месяц</span></p>
-                                <p>45 800₽</p>
-                            </div>
+                            
                         </div>
                         <div class="block-banks-item" style="background-color: #e14747;">
+                            <div class="block-title-banks-img-main">
+                                <img src="./images/icons/sber.png" alt="">
+                                <div class="block-title-banks">
+                                    <p><span>Банк</span></p>
+                                    <p>Сбербанк</p>
+                                </div>
+                            </div> 
+                            
+                            <div class="block-rate-banks-main">
+                                <div class="block-rate-banks block-banks-item-border">
+                                    <p><span>Ставка</span></p>
+                                    <p>8,7 %</p>
+                                </div>
+                                <div class="block-term-banks block-banks-item-border">
+                                    <p><span>Срок</span></p>
+                                    <p>30 лет</p>
+                                </div>
+                                <div class="block-payment-banks block-banks-item-border">
+                                    <p><span>Платеж в месяц</span></p>
+                                    <p>45 800₽</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- <div class="block-banks-item" style="background-color: #e14747;">
                             <img src="./images/icons/sber.png" alt="">
                             <div class="block-title-banks">
                                 <p><span>Банк</span></p>
@@ -286,7 +338,7 @@
                                 <p><span>Платеж в месяц</span></p>
                                 <p>45 800₽</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <a href="#">Показать еще</a>
                 </div>
@@ -339,42 +391,45 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+
+    <!-- footer -->
     <div style="clear: both;"></div>
-    <div class="block-get-consult">
-        <div class="wrapper-2">
-            <div class="block-left-foot client-footer-block">
-                <h1>Получить консультацию</h1>
-                <form class="form-horizontal" role="form">
-                    <div class="col-xs-12 form-group">
-                        <input type="text" class="form-control-phoneCall" 
-                        id="inputNameForm" placeholder="Ваше имя"/>
-                    </div>
-                    <div class="col-xs-12 form-group">
-                        <input type="text" class="form-control-phoneCall"
-                        id="inputEmailForm" placeholder="E-mail"/>
-                    </div>
-                    <div class="block-two-input">
-                        <div class="col-xs-6 form-group">
+    <div class="wrapper-2">
+        <div class="footer-block-content another-page-footer">
+            <div class="block-top-footer">
+                <div class="block-left-foot">
+                    <h1>Получить консультацию</h1>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control-phoneCall" 
+                            id="inputNameForm" placeholder="Ваше имя"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-phoneCall"
+                            id="inputEmailForm" placeholder="E-mail"/>
+                        </div>
+                        <div class="form-group form-group-2">
                             <input type="text" class="form-control-phoneCall"
                             id="inputPhoneForm" placeholder="+7(   )   -  -"/>
                         </div>
-                        <div class="col-xs-6 form-group">
+                        <div class="form-group form-group-3">
                             <input type="text" class="form-control-phoneCall"
-                            id="inputTimeForm" style="margin-left: 30px;" placeholder="Укажите удобное время для звонка"/>
+                            id="inputTimeForm" placeholder="Укажите удобное время для звонка"/>
                         </div>
-                    </div>
-                    
-                  
-                    <a href="#" class="btn-red">Отправить заявку</a>
-                </form>
-                
+                        <div class="form-group">
+                            <input type="text" class="form-control-phoneCall"
+                            id="inputCommentForm" placeholder="Коментарии"/>
+                        </div>
+                        <a href="#" style="width: 213px;" class="btn-red">Отправить заявку</a>
+                    </form>   
+                </div>
             </div>
         </div>
     </div>
 
     <div style="clear: both;"></div>
-    <footer>
+    <footer class="footer-block-another-page">
         <div class="wrapper-2">
             <div class="footer-block-page" style="margin-top: 40px;">
                 <div class="footer-block-page-top">
@@ -457,6 +512,118 @@
             </a>
         </div>
     </footer>
+    <div class="footer-block-another-page-for-mobile">
+        <div class="wrapper-2">
+            <div class="block-first-foot">
+                <div class="block-address-one">
+                    <h4>Адреса офисов</h4>
+                    <p>г. Екатеринбург, ул Малышева 51,<br> БЦ "Высоцкий", 1 этаж</p>
+                </div>
+                <div class="block-address-two">
+                    <a href="">НАЗНАЧИТЬ ВСТРЕЧУ</a>
+                    <p>г. Екатеринбург, ул 8 Марта 46,<br> ТЦ "Гринвич", 2очередь 1 этаж</p>
+                </div>
+                <div class="block-address-three">
+                    <p>Бесплатная парковка для <br>клиентов</p>
+                </div>
+            </div>
+            <div class="block-second-foot">
+                <div class="block-desc-foot-one">
+                    <div class="block-desc-1-one">
+                        <p>© 2014-2018 AH «Baza»<br>
+                        Все права защищены.</p>
+                    </div>
+                    <div class="block-desc-2-one">
+                        <p>Политика конфиденциальности<br>
+                            Правила и условия</p>
+                    </div>
+                    <div class="block-desc-3-one">
+                        8 (343) 305-05-05<br>
+                        Работаем 24/7
+                    </div>
+                </div>
+                <div class="block-desc-foot-two">
+                    <div class="block-disayn-studie-yarow">
+                        <img src="./images/social/stud.png" alt="">
+                        <a href="">Дизайн сайта - Студия <br>Юдизайна Евгения Ярового</a>
+                    </div>
+                    <div class="social-block-for-mobile">
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-content-desc-foot text-18">
+                <p>
+                    Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях е являеться публичной оферой, определяемой положениями статьи 437 ГК РФ
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- Start-modal-form-for-menu -->
+    <div class="block-modal-menu" style="display:none;">
+        <div class="wrapper">
+            <div class="modal-header-top">
+                <a class="logo-head" href="#">
+                    <img src="./images/icons/logo-red.png" alt="">
+                </a> 
+                <div class="block-menu-for-modal">
+                    <a href="">
+                        <img src="./images/icons/phone-red.png" alt="">
+                    </a>
+                    <a class="modal-menu-false" href="">
+                        <img src="./images/icons/btn-close.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <ul class="modal-header-menu">
+                <li><a href="">Новостройки</a></li>
+                <li><a href="#">Комерческая недвижимость</a></li>
+                <li><a href="#">Паркинги</a></li>
+                <li><a href="">О компании</a></li>
+                <li><a class="active-menu-mobile" href="">Клиентам</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End-modal-form-for-menu -->
+
+    <!-- Start-modal-form-for-call -->
+    <div class="overlay js-overlay-campaign">
+        <form action="">
+            <div class="popup js-popup-campaign">
+                <div class="modal-call-form-title">
+                    <h2>Заказать звонок</h2>
+                    <p>
+                        Менеджер свяжиться свами
+                        и&nbspпроконсультирует по всем
+                        интересующим вас вопросам
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control-phoneCall" id="inputNameForm" placeholder="Ваше имя">
+                    <input type="test" class="form-control-phoneCall" id="inputPhoneForm" placeholder="+7(   )   -  -">
+                </div>
+                <div class="modal-body-btn">
+                    <button type="submit" class="btn-form-modal">Презвоните мне!</button>
+                </div>
+                <div class="modal-body-footer">
+                    <p>
+                        Нажимая кнопку «Перезвоните мне», вы соглашаетесь с условиями Лицензионного&nbspсоглашения и Политикой обработки&nbspперсонильных данных
+                    </p>
+                </div>
+                <div class="close-popup js-close-campaign"></div>
+            </div>
+        </form>
+    </div>
+    <!-- End-modal-form-for-call -->
 </body>
 <script>
     $( function() {
@@ -464,39 +631,40 @@
         // } );
         // $( "#slider-property-value" ).slider( );
         $( "#slider-property-value" ).slider({
-            range: true,
+            range: "min",
             min: 0,
             max: 10000000,
-            values: [ 0, 4000000 ],
+            value: 4000000,
             slide: function( event, ui ) {
-                $( "#property-value" ).val(ui.values[ 1 ]);
+                $( "#property-value" ).val(ui.value + " ₽" );
             }
         });
-        $( "#property-value" ).val($( "#slider-property-value" ).slider( "values", 1 ));
+        $( "#property-value" ).val($( "#slider-property-value" ).slider( "value" )+ " ₽");
 
 
     $( "#slider-an-initial-fee" ).slider({
-        range: true,
+        range: "min",
         min: 0,
         max: 10000000,
-        values: [ 0, 4000000 ],
+        value: 3000000,
         slide: function( event, ui ) {
-            $( "#an-initial-fee" ).val( ui.values[ 1 ]);
+            $( "#an-initial-fee" ).val(ui.value + " ₽" );
+            // $( "" ).val( ui.value + "" );
         }
         });
-        $( "#an-initial-fee" ).val( $( "#slider-an-initial-fee" ).slider( "values", 1 ));
+        $( "#an-initial-fee" ).val($( "#slider-an-initial-fee" ).slider( "value" )+ " ₽");
 
 
     $( "#slider-loan-terms" ).slider({
-        range: true,
+        range: "min",
         min: 0,
-        max: 10000000,
-        values: [ 0, 4000000 ],
+        max: 50,
+        value: 10,
         slide: function( event, ui ) {
-            $( "#loan-terms" ).val(ui.values[ 1 ]);
+            $( "#loan-terms" ).val(ui.value + " лет" );
         }
         });
-        $( "#loan-terms" ).val($( "#slider-loan-terms" ).slider( "values", 1 ));
+        $( "#loan-terms" ).val($( "#slider-loan-terms" ).slider( "value" )+ " лет");
     } );
     // $('.preloader').remove();
 </script>

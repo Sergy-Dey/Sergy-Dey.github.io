@@ -275,6 +275,7 @@ $(document).ready(function(){
     });
 
     $( ".block-question-sometime a" ).on( "click", function() {
+        // console.log("test");
         if($(this).hasClass('show-block-quest-act')){
             $(this).removeClass('show-block-quest-act');
             $(this).next().hide(500);
@@ -312,9 +313,14 @@ $(document).ready(function(){
         $(".modal-call-form-title h2").html(d);
     });
 
-    // открыть по кнопкеы
+    // открыть по кнопке
     $('.js-button-campaign').click(function() { 
-        
+        console.log("test");
+        $('.js-overlay-campaign').fadeIn();
+        $('.js-overlay-campaign').addClass('disabled');
+    });
+    $('.js-button-campaign.form-menu-class').click(function() { 
+        console.log("test");
         $('.js-overlay-campaign').fadeIn();
         $('.js-overlay-campaign').addClass('disabled');
     });

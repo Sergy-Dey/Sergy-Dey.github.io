@@ -1,10 +1,10 @@
 @media (max-width: 1910px) {
     .wrapper-1{
-        width: 90%;
+        width: 1366px;
         margin: 0 auto;
     }
     .wrapper-2{
-        width: 80%;
+        width: 1277px;
         margin: 0 auto;
     }
     h1{
@@ -50,6 +50,9 @@
     }
     .header-menu .header-menu-nav .href-menu li a {
         font-size: 14px;
+    }
+    .header-menu .header-menu-nav .href-menu li a.active-menu, .header-menu .header-menu-nav .href-menu li a:hover{
+        padding-bottom: 15px;
     }
     .header-menu .header-menu-nav .href-phone-form li a{
         font-size: 18px;
@@ -242,12 +245,20 @@
     .block-left-foot h1 {
         margin-bottom: 15px;
     }
+    .another-page-footer .block-left-foot h1{
+        margin-bottom: 75px;
+    }
     .footer-block-content .form-control-phoneCall {
         padding-bottom: 5px;
         margin-bottom: 20px;
-        font-size: 20;
+        font-size: 20px;
         line-height: 25px;
     }
+    .another-page-footer.footer-block-content .form-control-phoneCall{
+        padding-bottom: 25px;
+        margin-bottom: 40px;
+    }
+    .footer-block-content .form-control-phoneCall
     .block-top-footer .block-left-foot {
         width: 760px;
     }
@@ -272,4 +283,62 @@
         bottom: 20px;
     }
      /* main end */
+
+     /* clients-Mortdade */
+     .block-text-header-clients-mortgage p{
+         width: 95%;
+         /* font-size: 18px;
+         line-height: 24px;
+         margin-top: 0px; */
+     }
+     .block-text-header-clients-mortgage h2{
+         /* margin-bottom: 24px; */
+     }
+     .block-titmin-clients-mortgage .block-titmin-clients-mortgage-item{
+         width: 50%;
+     }
+     .block-you-our-clients-mortgag .rigth-block{
+         width: 50%;
+     }
+     .block-mortgag-clients-mortgag .left-block{
+         width: 400px;
+     }
+     .block-mortgag-clients-mortgag .left-block .btn-red {
+        width: 250px;
+    }
+    .block-mortgag-clients-mortgag .rigth-block{
+        width: 800px;
+    }
+    .block-banks-item{
+        width: 100%;
+    }
+    .block-banks-item .block-title-banks{
+        margin-left: 40px;
+    float: left;
+    text-align: left;
+    }
+    .block-banks-item p{
+        font-size: 20px;
+    }
+    .block-banks-item p span{
+        font-size: 15px;
+    }
+    .block-banks-item-border{
+        margin-left: 75px;
+    }
+
+     /* clients-Mortdade end */
+     .footer-block-page-bottom{
+        margin-bottom: 40px;
+     }
+    .footer-block-another-page .text-content-desc-foot{
+         margin-top: 0px;
+         margin-bottom: 30px;
+     }
+}
+@media (max-width: 892px){
+    /* .block-client-header ul li {
+        font-size: 15px;
+        margin-right: 65px;
+    } */
 }

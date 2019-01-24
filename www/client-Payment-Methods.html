@@ -1,6 +1,23 @@
 <!DOCTYPE html PUBLIC>
 <html lang="en">
 <head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <!-- Fonts -->
+    <!-- <link rel="stylesheet" href="./stylesheet/stylesheet.css"> -->
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="./stylesheet/normalize.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/media.css">
+    <link rel="stylesheet" href="./stylesheet/media_1366.css">
+    <link rel="stylesheet" href="./stylesheet/media_768.css">
+    <link rel="stylesheet" href="./stylesheet/media_320.css"> -->
+    <!-- script -->
+    <!-- <script src="./script/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+
+    <title>Document</title> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,6 +25,8 @@
     <link rel="stylesheet" href="./stylesheet/stylesheet.css">
     <!-- styles -->
     <link rel="stylesheet" href="./stylesheet/normalize.css">
+    <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
+    <link rel="stylesheet" href="./stylesheet/animate.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="stylesheet" href="./stylesheet/media.css">
     <link rel="stylesheet" href="./stylesheet/media_1366.css">
@@ -15,6 +34,11 @@
     <link rel="stylesheet" href="./stylesheet/media_320.css">
     <!-- script -->
     <script src="./script/jquery.min.js"></script>
+    <script src="./script/jquery-ui.js"></script>
+    <script src="./script/jquery.maskedinput.js"></script>
+    <script src="./script/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src='./script/jquery.ui.touch-punch.min.js' type="text/javascript" charset="utf-8"></script>
+    <script src="./script/wow.min.js"></script>
     <script src="./script/script.js"></script>
 
     <title>Document</title>
@@ -31,19 +55,19 @@
                     <li><a href="#">Коммерческая недвижимость</a></li>
                     <li><a href="#">Паркинги</a></li>
                     <li><a href="#">О компании</a></li>
-                    <li><a href="#">Клиентам</a></li>
+                    <li><a class="active-menu" href="#">Клиентам</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
                 <ul class="href-phone-form">   
                     <li><a href="tel:+1234567890" class="phone-class">8(343)305-05-05</a></li>
-                    <li><button href="tel:+1234567890" class="phone-class-icons"></button></li>
+                    <li><button class="phone-class-icons button js-button-campaign btn form-call-class "></button></li>
                     <li>
-                        <button class="btn form-call-class" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModal">
+                        <button class="button js-button-campaign btn form-call-class" data-title="Заказать звонок">
                             Заказать звонок
                         </button>
                     </li>
                     <li>
-                        <button class="btn form-menu-class" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModal">
+                        <button class="form-menu-class">
                         </button>
                     </li>
                 </ul>
@@ -57,8 +81,8 @@
             <div class="wrapper-2">
                 <h1>Клиентам</h1>
                 <ul>
-                    <li class="mortgage-tags tab ">Ипотека</li>
-                    <li class="payment-methods-tags tab li-active">Способы оплаты</li>
+                    <li class="mortgage-tags tab li-active">Ипотека</li>
+                    <li class="payment-methods-tags tab">Способы оплаты</li>
                     <li class="promotions-and-discounts-tags tab ">Акции и скидки</li>
                     <li class="our-partners-tags tab">Наши партнеры</li>
                 </ul>
@@ -205,7 +229,7 @@
     </div>
 
     <div style="clear: both;"></div>
-    <div class="block-get-consult">
+    <!-- <div class="block-get-consult">
         <div class="wrapper-2">
             <div class="block-left-foot client-footer-block">
                 <h1>Стать партнером</h1>
@@ -246,10 +270,44 @@
                 
             </div>
         </div>
+    </div> -->
+
+    <div style="clear: both;"></div>
+    <div class="wrapper-2">
+        <div class="footer-block-content another-page-footer">
+            <div class="block-top-footer">
+                <div class="block-left-foot">
+                    <h1>Стать партнером</h1>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control-phoneCall" 
+                            id="inputNameForm" placeholder="Ваше имя"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-phoneCall"
+                            id="inputEmailForm" placeholder="E-mail"/>
+                        </div>
+                        <div class="form-group form-group-2">
+                            <input type="text" class="form-control-phoneCall"
+                            id="inputPhoneForm" placeholder="+7(   )   -  -"/>
+                        </div>
+                        <div class="form-group form-group-3">
+                            <input type="text" class="form-control-phoneCall"
+                            id="inputTimeForm" placeholder="Укажите удобное время для звонка"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-phoneCall"
+                            id="inputCommentForm" placeholder="Коментарии"/>
+                        </div>
+                        <a href="#" style="width: 213px;" class="btn-red">Отправить заявку</a>
+                    </form>   
+                </div>
+            </div>
+        </div>
     </div>
 
     <div style="clear: both;"></div>
-    <footer>
+    <!-- <footer>
         <div class="wrapper-2">
             <div class="footer-block-page">
                 <div class="footer-block-page-top">
@@ -331,7 +389,202 @@
                 <img src="./img/social/chat.png" alt="">
             </a>
         </div>
+    </footer> -->
+    
+    <div style="clear: both;"></div>
+    <footer class="footer-block-another-page">
+        <div class="wrapper-2">
+            <div class="footer-block-page" style="margin-top: 40px;">
+                <div class="footer-block-page-top">
+                    <ul class="footer-block-page-top-menu">
+                        <li><a href="">Новостройки</a> </li>
+                        <li><a href="">Офисы, склады</a></li>
+                        <li><a href="">Паркинги</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Клиентам</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <div class="footer-block-page-top-adress-1">
+                        <p class="text-18">
+                            г. Екатеринбург, ул Малышева 51,
+                            БЦ "Высоцкий", 1 этаж
+                        </p>
+                        <a href="#">Назначить встречу</a>
+                    </div>
+                    <div class="footer-block-page-top-adress-2">
+                        <p class="text-18">
+                            г. Екатеринбург, ул Малышева 51,
+                            БЦ "Высоцкий", 1 этаж
+                        </p>
+                        <p class="text-18" style="margin-top:15px;">
+                            Бесплатная парковка для клиентов
+                        </p>
+                    </div>
+                    <div class="footer-block-page-top-phone">
+                        <a href="#" class="text-18">
+                           8 (343) 305-05-05
+                        </a>
+                        <p class="text-18">
+                            Работфем 24/7
+                        </p>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="footer-block-page-bottom">
+                    <div class="all-rights text-18">
+                        &copy;2014-2019 AH &laquo;Baza&raquo;<br>
+                        Все права защищены.
+                    </div> 
+                    <div class="all-rights text-18">
+                        Политика конфеденциальности<br>
+                        Правила и условия.
+                    </div> 
+                    <div class="all-rights">
+                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                    </div> 
+                    <a href="#" class="block-stud-foot">
+                        <img src="./images/social/stud.png" alt="">
+                        <p class="text-18">
+                            Дизайн сайта - Студия дизайна<br>
+                            Евгения Ярового
+                        </p>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="text-content-desc-foot text-18">
+                    <p>
+                        Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях е являеться публичной оферой, определяемой положениями статьи 437 ГК РФ
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="block-taxi-and-message">
+            <button style="border:none; background:none;" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModalTaxi">
+                <img src="./images/social/taxi.png" alt="">
+            </button>
+            
+            <a href="">
+                <img src="./images/social/chat.png" alt="">
+            </a>
+        </div>
     </footer>
-        
+    <div class="footer-block-another-page-for-mobile">
+        <div class="wrapper-2">
+            <div class="block-first-foot">
+                <div class="block-address-one">
+                    <h4>Адреса офисов</h4>
+                    <p>г. Екатеринбург, ул Малышева 51,<br> БЦ "Высоцкий", 1 этаж</p>
+                </div>
+                <div class="block-address-two">
+                    <a href="">НАЗНАЧИТЬ ВСТРЕЧУ</a>
+                    <p>г. Екатеринбург, ул 8 Марта 46,<br> ТЦ "Гринвич", 2очередь 1 этаж</p>
+                </div>
+                <div class="block-address-three">
+                    <p>Бесплатная парковка для <br>клиентов</p>
+                </div>
+            </div>
+            <div class="block-second-foot">
+                <div class="block-desc-foot-one">
+                    <div class="block-desc-1-one">
+                        <p>© 2014-2018 AH «Baza»<br>
+                        Все права защищены.</p>
+                    </div>
+                    <div class="block-desc-2-one">
+                        <p>Политика конфиденциальности<br>
+                            Правила и условия</p>
+                    </div>
+                    <div class="block-desc-3-one">
+                        8 (343) 305-05-05<br>
+                        Работаем 24/7
+                    </div>
+                </div>
+                <div class="block-desc-foot-two">
+                    <div class="block-disayn-studie-yarow">
+                        <img src="./images/social/stud.png" alt="">
+                        <a href="">Дизайн сайта - Студия <br>Юдизайна Евгения Ярового</a>
+                    </div>
+                    <div class="social-block-for-mobile">
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-content-desc-foot text-18">
+                <p>
+                    Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях е являеться публичной оферой, определяемой положениями статьи 437 ГК РФ
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start-modal-form-for-menu -->
+    <div class="block-modal-menu" style="display:none;">
+        <div class="wrapper">
+            <div class="modal-header-top">
+                <a class="logo-head" href="#">
+                    <img src="./images/icons/logo-red.png" alt="">
+                </a> 
+                <div class="block-menu-for-modal">
+                    <a href="">
+                        <img src="./images/icons/phone-red.png" alt="">
+                    </a>
+                    <a class="modal-menu-false" href="">
+                        <img src="./images/icons/btn-close.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <ul class="modal-header-menu">
+                <li><a href="">Новостройки</a></li>
+                <li><a href="#">Комерческая недвижимость</a></li>
+                <li><a href="#">Паркинги</a></li>
+                <li><a href="">О компании</a></li>
+                <li><a class="active-menu-mobile" href="">Клиентам</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End-modal-form-for-menu -->
+
+    <!-- Start-modal-form-for-call -->
+    <div class="overlay js-overlay-campaign">
+        <form action="">
+            <div class="popup js-popup-campaign">
+                <div class="modal-call-form-title">
+                    <h2>Заказать звонок</h2>
+                    <p>
+                        Менеджер свяжиться свами
+                        и&nbspпроконсультирует по всем
+                        интересующим вас вопросам
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control-phoneCall" id="inputNameForm" placeholder="Ваше имя">
+                    <input type="test" class="form-control-phoneCall" id="inputPhoneForm" placeholder="+7(   )   -  -">
+                </div>
+                <div class="modal-body-btn">
+                    <button type="submit" class="btn-form-modal">Презвоните мне!</button>
+                </div>
+                <div class="modal-body-footer">
+                    <p>
+                        Нажимая кнопку «Перезвоните мне», вы соглашаетесь с условиями Лицензионного&nbspсоглашения и Политикой обработки&nbspперсонильных данных
+                    </p>
+                </div>
+                <div class="close-popup js-close-campaign"></div>
+            </div>
+        </form>
+    </div>
+    <!-- End-modal-form-for-call -->
 </body>
 </html>
