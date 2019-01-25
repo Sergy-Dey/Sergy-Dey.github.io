@@ -335,6 +335,17 @@
          margin-top: 0px;
          margin-bottom: 30px;
      }
+
+
+     /* layouts-list.html */
+     .block-list-main .block-right {
+        float: right;
+        width: 65%;
+    }
+    .block-list-main table tbody tr td.block-schema-apart-lock:before {
+        left: 20px;
+    }
+     /* layouts-list.html end */
 }
 @media (max-width: 892px){
     /* .block-client-header ul li {

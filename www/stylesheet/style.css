@@ -947,6 +947,8 @@ margin-bottom: 30px;
 } 
 .block-layouts-header .block-schema-or-list .active-a{
     color:#ff0e0e;  
+    border-bottom: 2px solid #ff0e0e; 
+    padding-bottom: 8px;
 }
 .block-layouts-header .block-schema-or-list a:hover{
     color:#ff0e0e;
@@ -1432,9 +1434,12 @@ margin-bottom: 30px;
     font-size: 24px;
 }
 .sort-by-change .checked-change.group-input-check{
-    margin-left: 40px;
+    margin-left: 0px;
     margin-top: 30px;
+    border:none;
+    float: left;
 }
+
 .sort-by-change .checked-change.group-input-check input[type="checkbox"]:checked +label::before {
     opacity: 1;
     background: url('../images/icons/checkmark-red.png') no-repeat center;
@@ -1578,6 +1583,23 @@ main{
 .table-list-layout-block tbody tr:first-child {
     border-radius: 10px 10px 0px 0px;
     overflow:hidden;
+}
+
+.sort-by-change-for-layouts-list .block-horizontal-right{
+    width: 190px;
+}
+.sort-by-change-for-layouts-list.sort-by-change .block-horizontal input{
+    width: 57px;
+    float: left;
+}
+.sort-by-change-for-layouts-list.sort-by-change .block-horizontal p{
+    float: left;
+}
+.sort-by-change-for-layouts-list.sort-by-change label{
+    float: right;
+}
+.sort-by-change-for-layouts-list.block-horizontal-right input:hover{
+    width: auto;
 }
 /* layouts-list-end */
 
