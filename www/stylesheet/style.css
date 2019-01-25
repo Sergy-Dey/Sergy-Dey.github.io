@@ -936,6 +936,7 @@ margin-bottom: 30px;
     font-weight: 600;
     margin-top: 14px;
     display: inline-block;
+    text-transform: uppercase;
     /* margin-left: 0px; */
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -1325,6 +1326,12 @@ margin-bottom: 30px;
 }
 .footer-block-page-schema{
     margin-top: 0px;
+}
+.footer-block-page.footer-block-page-for-scheme{
+    margin-top: 0px !important;
+}
+.table-list-layout-block.table-list-layout-block-for-mobile{
+    display: none;
 }
 /* layouts-scheme-end */
 
@@ -1903,10 +1910,92 @@ main{
     left: 16px;
     background: url('../images/icons/map-icon.png') no-repeat center;
 }
-.block-sort-apartament-title .header-title-apart {
+.header-title-apart {
     margin-top: 80px;
     margin-bottom: 50px;
 }
+.header-title-apart p {
+    display: inline;
+    margin-right: 160px;
+}
+.header-title-apart a {
+    width: 227;
+    height: 48px;
+    border: 2px solid #ff0e0e;
+    float: right;
+    color: #ff0e0e;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.block-sort-apartament {
+    background-color: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 160px;
+}
+.apart-shema {
+    margin-left: 30px;
+}
+.apart-shema .block-left {
+    float: left;
+    background: #fff;
+    padding: 60px 40px 50px 50px;
+    border-radius: 10px;
+}
+.apart-shema .block-left ul {
+    margin-top: 20px;
+}
+.apart-shema .block-left ul li {
+    /* padding: 20px; */
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    border: 1px solid #e5e5e5;
+    /* color: #ff0e0e; */
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-timing-function: ease-in;
+    transition: .3s;
+    margin-right: 10px;
+}
+.apart-shema .block-left ul li a {
+    display: block;
+    color: #000;
+    line-height: 52px;
+    transition-timing-function: ease-in;
+    transition: .3s;
+    font-size: 18px;
+}
+.img-block-apart-shema {
+    margin-top: 30px;
+    width: 343px;
+    /* height: 100%; */
+}
+.img-block-apart-shema .img-block-apart-shema-item {
+    float: left;
+    display: block;
+    cursor: pointer;
+    opacity: 0.5;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition-timing-function: ease-in;
+    transition: .3s;
+    color: #a3a3a3;
+}
+.img-block-apart-shema .img-block-apart-shema-item img {
+    max-width: 80px;
+}
+.img-block-apart-shema .img-block-apart-shema-item:nth-child(4n) {
+    float: left;
+    margin-right: 0px;
+}
+
 /* page-gk-end */
 
 

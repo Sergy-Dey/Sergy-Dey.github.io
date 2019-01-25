@@ -346,6 +346,19 @@
         left: 20px;
     }
      /* layouts-list.html end */
+
+    /* layouts-shema.html */
+    .block-scheme-main .slick-arrow.slick-next {
+        right: -75px;
+    }    
+    .block-scheme-main .slick-arrow.slick-prev{
+        left: -75px;
+    }
+    .block-scheme-main-slider.slick-initialized.slick-slider{
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* layouts-list.html end */
 }
 @media (max-width: 892px){
     /* .block-client-header ul li {

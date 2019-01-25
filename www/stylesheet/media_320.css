@@ -816,6 +816,75 @@
         width: 320px;
         display: inline-block;
     }
+    .block-come-back .come-back{
+        border: none;
+        font-size: 0px;
+    }
+    .block-come-back .come-back:after{
+        /* background-size: contain; */
+        background: url(../images/icons/strelka-2.png)no-repeat center;
+        width: 20px;
+        height: 35px;
+        -moz-transform: rotate(0deg); /* Для Firefox */
+        -ms-transform: rotate(0deg); /* Для IE */
+        -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(0deg); /* Для Opera */
+        transform: rotate(0deg);
+    }
+    .block-layouts-header .block-header-title{
+        margin-left: 15px;
+    }
+    .block-layouts-header .block-schema-or-list {
+        float: none;
+        /* margin: 0 auto; */
+        /* margin-left: 50%; */
+        transform: translate(-50%);
+        width: 256px;
+        position: relative;
+        left: 50%;
+        max-width: 100%;
+    }
+    .block-layouts-header .block-schema-or-list a{
+        display: inline-block;
+        width: 49%;
+    }
+    .block-layouts-header .block-schema-or-list a:last-child{
+        margin-left: 0px;
+    }
+    .block-model-scheme a{
+        width: 100%;
+    }
+    .block-model-scheme-modal{
+        width: 320px;
+        top:24px; 
+    }
+    .block-schema-apart{
+        margin-bottom: 13px;
+    }
+    .block-scheme-main-slider.slick-initialized.slick-slider{
+        height: 1990px;
+    }
+    .block-layouts-scheme .block-scheme-main{
+        height: 2400px;
+    }
+    .block-scheme-main-example{
+        display: none;
+    }
+    .block-scheme-main .slick-arrow.slick-prev{
+        left: 0px;
+        top: 116%;
+    }
+    .block-scheme-main .slick-arrow.slick-next {
+        right: 0px;
+        top: 116%;
+        left: 70px;
+    }
+    .block-model-scheme-modal.block-model-scheme-modal-act{
+        width: 296px;
+    }
+    .block-model-scheme-modal-map {
+        width: 302px;
+    }
     /* .block-list-main table.table-list-layout-block.table-list-layout-block-for-mobile tbody tr td:last-child{
         position: absolute;
         font-size: 13px;
