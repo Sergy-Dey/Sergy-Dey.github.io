@@ -346,11 +346,32 @@ body{
 .payment-methods-main-2 h2{
     margin-bottom: 93px;
 }
-.block-question-sometime p{
+.block-question-sometime{
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.block-question-sometime-desc{
+    display: flex;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.block-question-sometime-desc p{
+  font-size: 30px;
+  line-height: 35px;
+  color:black;
+}
+.block-question-sometime-desc img{
+    width: 20px;
+    height: 20px;
+}
+/* .block-question-sometime p{
     font-size: 30px;
     float: left;
     margin-bottom: 30px;
-}
+} */
 .block-question-sometime a{
     font-size: 40px;
     color:#ff0e0e;
@@ -366,7 +387,7 @@ body{
     height: 18px;
     background: url(../images/icons/plus.png)no-repeat center;
 }
-.block-question-sometime a.show-block-quest-act::before{
+.block-question-sometime .show-block-quest-act{
     -moz-transform: rotate(45deg); /* Для Firefox */
     -ms-transform: rotate(45deg); /* Для IE */
     -webkit-transform: rotate(45deg); /* Для Safari, Chrome, iOS */
@@ -380,6 +401,7 @@ body{
     line-height: 34px;
     margin-bottom: 20px;
     width: 90%;
+    color: black;
 }
 
 /* text-end*/
@@ -2677,6 +2699,7 @@ main{
     fill:#ffffff;
 }
 #body-main{
+    background-image:linear-gradient(to bottom, #003c6b, #3e9fd2);
     display: -webkit-flex;
     -webkit-flex-direction: row;
     display: -webkit-box;
@@ -2694,7 +2717,28 @@ main{
     display:flex;
     align-items:flex-end;
     /* justify-content: center; */
-    background:url("../images/img/bcmain.jpg");
+    /* background:url("../images/img/bcmain.jpg"); */
+    /* background: linear-gradient(to bottom, #003c6b, #3e9fd2); */
+    /* background-image: url('../images/img/stars-on-skay.png'), linear-gradient(to bottom, #003c6b, #3e9fd2);
+    background-repeat: no-repeat; */
+    z-index: 1;
+    position: relative;
+    transition-timing-function: ease-in;
+    transition:.3s;
+}
+.body-main-background{position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url('../images/img/stars-on-skay.png');
+    background-repeat: no-repeat;
+    /* transition-timing-function: ease-in; */
+    opacity:1;
+    transition:opacity 0.3s;
+}
+.body-main-background.body-main-background-2{
+    /* transition-timing-function: ease-in; */
+    transition:opacity 0.3s;opacity:0;
 }
 
 .block-content {
@@ -3447,9 +3491,10 @@ main{
 
 
 /* contact.html */
+
 .block-contact-page .block-contact-page-title{
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 42px;
 }
 .block-contact-page-desc{
     display: flex;
@@ -3459,7 +3504,7 @@ main{
     font-size: 30px;
     line-height: 40px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .block-contact-page-desc .block-contact-page-desc-div p{
     font-size: 24px;
@@ -3494,19 +3539,18 @@ main{
     transform: translate(-50%,-50%);
 }
 .block-social-for-contacts{
-    margin-top: 160px;
+    margin-top: 155px;
 }
 .block-social-for-contacts-title{
-    margin-bottom: 130px;
+    margin-bottom: 57px;
 }
-/* contact.html end */
 
 /* map */
 
 
 .block-map{
     position: relative;
-    height: 1000px;
+    height: 1080px;
 }
 .form-for-map-abs{
     position: absolute;

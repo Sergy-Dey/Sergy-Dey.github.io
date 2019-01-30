@@ -100,7 +100,7 @@
     
     .block-client-header ul .li-active{
         margin-right: 0px;
-        font-size: 15px;
+        font-size: 12px;
         border-bottom: 2px solid #ff0e0e;
         padding-bottom: 20px;
         margin-bottom: 0px;
@@ -893,4 +893,10 @@
         left: 0px;
     } */
     /* layouts-list.html end*/
+
+    /* contact.html */
+    .block-social-for-contacts-title{
+        margin-top: 60px;
+    }
+    /* contact.html end*/
 }
