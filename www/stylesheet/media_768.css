@@ -1236,5 +1236,21 @@
         display:none;
     }
     /* layouts-list.html end */
+
+    /* contact.html */
+    .block-contact-page-desc{
+        flex-wrap: wrap;
+    }
+    .block-contact-page-desc .block-contact-page-desc-div{
+        width: 300px;
+        margin-bottom: 51px;
+    }
+    .block-social-for-contacts-div .block-social-for-contacts-soc{
+        width: 350px;
+        overflow: hidden;
+        height: 125px;
+    }
+
+    /* contact.html end */
      
 }

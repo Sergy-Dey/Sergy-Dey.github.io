@@ -3493,7 +3493,55 @@ main{
     top: 50%;
     transform: translate(-50%,-50%);
 }
+.block-social-for-contacts{
+    margin-top: 160px;
+}
+.block-social-for-contacts-title{
+    margin-bottom: 130px;
+}
 /* contact.html end */
+
+/* map */
+
+
+.block-map{
+    position: relative;
+    height: 1000px;
+}
+.form-for-map-abs{
+    position: absolute;
+    width: 320px;
+    height: 490px;
+    background-color: white;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-for-map-abs img{
+    width: 320px;
+    height: 240px;
+}
+.form-for-map-abs .block-contact-page-desc-div{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.form-for-map-abs .block-contact-page-desc-div h4{
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.form-for-map-abs .block-contact-page-desc-div a{
+    font-size: 18px;
+    line-height: 24px;
+    color:#ff0e0e;
+    display: block;
+    margin-top: 25px;
+}
+/* map end */
+
 
 /* Elements position absolute */
 .img-cloud-1{
