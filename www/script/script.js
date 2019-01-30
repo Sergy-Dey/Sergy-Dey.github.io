@@ -307,6 +307,36 @@ $(document).ready(function(){
     // });
 
 
+    // Модальное окно для page-gk
+    // $('.block-container-for-pluse').click(function() { 
+    //     console.log("test");
+    //     $('.block-container-for-pluse-overlay').fadeIn();
+    //     // $('.block-container-for-pluse-overlay').addClass('disabled');
+    //     return false;
+    // });
+    $('.block-container-for-pluse').on('click', function() {
+        $('.modal-wrapper').toggleClass('open');
+       $('.page-wrapper').toggleClass('blur-it');
+        return false;
+     });
+     $(".btn-close-modal-form-page-gk").on('click', function() {
+        $('.modal-wrapper').removeClass('open');
+        $('.page-wrapper').removeClass('blur-it');
+        return false;
+     });
+    // закрыть на крестик
+    // $('.block-container-for-pluse').click(function() { 
+    //     $('.block-container-for-pluse-overlay').fadeOut();
+        
+    // });
+    // $(document).mouseup(function (e) { 
+    //     var popup = $('.block-container-for-pluse');
+    //     if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+    //         $('.block-container-for-pluse-overlay').fadeOut();
+            
+    //     }
+    // });
+
     // Модальное окно-------------------------//
     $('button.btn.form-call-class').click(function() {
         var d = $(this).data('title');     
@@ -315,7 +345,7 @@ $(document).ready(function(){
 
     // открыть по кнопке
     $('.js-button-campaign').click(function() { 
-        console.log("test");
+        // console.log("test");
         $('.js-overlay-campaign').fadeIn();
         $('.js-overlay-campaign').addClass('disabled');
     });

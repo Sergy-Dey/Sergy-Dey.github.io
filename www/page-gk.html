@@ -24,6 +24,29 @@
     <script src="./script/script.js"></script>
 
     <title>Document</title> -->
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <!-- Fonts -->
+    <!-- <link rel="stylesheet" href="./stylesheet/stylesheet.css"> -->
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="./stylesheet/normalize.css">
+    <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
+    <link rel="stylesheet" href="./stylesheet/animate.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/media.css">
+    <link rel="stylesheet" href="./stylesheet/media_1366.css">
+    <link rel="stylesheet" href="./stylesheet/media_768.css">
+    <link rel="stylesheet" href="./stylesheet/media_320.css"> -->
+    <!-- script -->
+    <!-- <script src="./script/jquery.min.js"></script>
+    <script src="./script/jquery-ui.js"></script>
+    <script src="./script/jquery.maskedinput.js"></script>
+    <script src="./script/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src='./script/jquery.ui.touch-punch.min.js' type="text/javascript" charset="utf-8"></script>
+    <script src="./script/wow.min.js"></script>
+    <script src="./script/script.js"></script> -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,6 +56,7 @@
     <link rel="stylesheet" href="./stylesheet/normalize.css">
     <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
     <link rel="stylesheet" href="./stylesheet/animate.css">
+    <link rel="stylesheet" href="./stylesheet/slick.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="stylesheet" href="./stylesheet/media.css">
     <link rel="stylesheet" href="./stylesheet/media_1366.css">
@@ -46,8 +70,6 @@
     <script src='./script/jquery.ui.touch-punch.min.js' type="text/javascript" charset="utf-8"></script>
     <script src="./script/wow.min.js"></script>
     <script src="./script/script.js"></script>
-
-    <title>Document</title>
 </head>
 <body>
     <!-- header -->
@@ -257,6 +279,7 @@
                 <p>ЖБИ. ул.Высоцкого- Егоршинский подход</p>
                 <a href="#">Записаться в офис</a>
             </div>
+
             <div style="clear: both;"></div>
             <div class="block-sort-apartament">
                 <div class="wrapper-1">
@@ -283,61 +306,85 @@
                             <div style="clear: both;"></div>
                             <div class="img-block-apart-shema">
                                 <a class="img-block-apart-shema-item">
-                                    <img src="./img/img-for-back/shema-minipng.png" alt="">
+                                    <img src="./images/img-slider/shema-minipng.png" alt="">
                                     <p>1KL1</p>
                                 </a>
                                 <a class="img-block-apart-shema-item">
-                                    <img src="./img/img-for-back/shema-minipng.png" alt="">
+                                    <img src="./images/img-slider/shema-minipng.png" alt="">
                                     <p>1KL1</p>
                                 </a>
                                 <a class="img-block-apart-shema-item">
-                                    <img src="./img/img-for-back/shema-minipng.png" alt="">
+                                    <img src="./images/img-slider/shema-minipng.png" alt="">
                                     <p>1KL1</p>
                                 </a>
                                 <a class="img-block-apart-shema-item">
-                                    <img src="./img/img-for-back/shema-minipng.png" alt="">
+                                    <img src="./images/img-slider/shema-minipng.png" alt="">
                                     <p>1KL1</p>
                                 </a>
                                 <a class="img-block-apart-shema-item">
-                                    <img src="./img/img-for-back/shema-minipng.png" alt="">
+                                    <img src="./images/img-slider/shema-minipng.png" alt="">
                                     <p>1KL1</p>
                                 </a>
                             </div>
                             <div style="clear: both;"></div>
                             <div class="block-horizontal-shema">
-                                    <div class="block-horizontal">
-                                        <p class="text-24">
-                                            <label for="amount">Площадь</label>
-                                            <input type="text" id="amount-square">
-                                            <label class="stepen" id="amount-square">м<sup><small>2</small></sup></label>
-                                        </p>
-                                        
-                                        <div id="slider-range-square"></div>
-                                        <p class="start-num label-num">0</p>
-                                        <p class="end-num label-num">500</p>
+                                <div class="block-horizontal">
+                                    <div class="block-horizontal-input-main">
+                                        <div class="block-horizontal-left">
+                                            <label for="amount-cost-mob"><p class="text-24">Стоимость</p></label>
+                                        </div>
+                                        <div class="block-horizontal-right">
+                                            <input type="number" id="amount-square-1">
+                                            <p>-</p>
+                                            <input type="number" id="amount-square-2">
+                                            <label class="stepen" id="amount-cost-mob">млн &#8381;</label>
+                                        </div> 
                                     </div>
-                                    <div class="block-horizontal">
-                                        <p class="text-24">
-                                            <label for="amount-cost">Стоимость</label>
-                                            <input type="text" id="amount-cost">
-                                            <label class="stepen" id="amount-square">млн &#8381;</label>
-                                        </p>
-                                        
-                                        <div id="slider-range-cost"></div>
-                                        <p class="start-num label-num">0</p>
-                                        <p class="end-num label-num">500</p>
+                                    <div id="slider-range-square"></div>
+                                    <div class="block-horizontal-label-main">
+                                        <p class="start-num">0</p>
+                                        <p class="end-num">500</p>
                                     </div>
-                                    <div class="block-horizontal">
-                                        <p class="text-24">
-                                            <label for="amount-floor">Этаж</label>
-                                            <input type="text" id="amount-floor" readonly>
-                                            <label class="stepen" id="amount-square">этаж</label>
-                                        </p>
-                                            
-                                        <div id="slider-range-floor"></div>
-                                        <p class="start-num label-num">0</p>
-                                        <p class="end-num label-num">500</p>
+                                    
+                                </div>
+                                <div class="block-horizontal">
+                                    <div class="block-horizontal-input-main">
+                                        <div class="block-horizontal-left">
+                                            <label for="amount-cost-1"><p class="text-24">Площадь</p></label>
+                                        </div>
+                                        <div class="block-horizontal-right">
+                                            <input type="number" id="amount-cost-1">
+                                            <p>-</p>
+                                            <input type="number" id="amount-cost-2">
+                                            <label class="stepen" id="amount-cost-mob">м<sup><small>2</small></sup></label>
+                                        </div> 
                                     </div>
+                                    <div id="slider-range-cost"></div>
+                                    <div class="block-horizontal-label-main">
+                                        <p class="start-num">0</p>
+                                        <p class="end-num">500</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="block-horizontal">
+                                    <div class="block-horizontal-input-main">
+                                        <div class="block-horizontal-left">
+                                            <label for="amount-floor"><p class="text-24">Этаж</p></label>
+                                        </div>
+                                        <div class="block-horizontal-right">
+                                            <input type="number" id="amount-floor-1">
+                                            <p>-</p>
+                                            <input type="number" id="amount-floor-2">
+                                            <label class="stepen" id="amount-cost-mob"></label>
+                                        </div> 
+                                    </div>
+                                    <div id="slider-range-floor"></div>
+                                    <div class="block-horizontal-label-main">
+                                        <p class="start-num">0</p>
+                                        <p class="end-num">500</p>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
                         <div class="block-right">
@@ -347,7 +394,7 @@
                                 <a href="">#Грязная зона</a>
                             </div>
                             <div class="block-shema-big">
-                                <img src="./img/img-for-back/shema-big.jpg" alt="">
+                                <img src="./images/img-slider/shema-big.jpg" alt="">
                                 
                             </div>
                             <div class="block-shema-text text-24">
@@ -359,8 +406,218 @@
                     </div>
                 </div>
             </div>
+
+            <div style="clear: both;"></div>
+            <div class="wrapper-1 single-item-num-wrapper">
+                <div class="single-item">
+                    <div class="single-item-num">
+                        <img src="./images/img-slider/slider-big.jpg" alt="">
+                    </div>
+                    <div class="single-item-num">
+                        <img src="./images/img-slider/slider-big.jpg" alt="">
+                    </div>
+                    <div class="single-item-num">
+                        <img src="./images/img-slider/slider-big.jpg" alt="">
+                        
+                    </div>
+                </div>
+                <a class="single-item-num-href" href="#">Смотреть 3D тур</a>
+            </div>
+
+            <div style="clear: both;"></div>
+            <div class="wrapper-2">
+                <div class="block-gk-docs">
+                    <div class="block-left text-24">
+                        <h2>Парк Каменные палатки</h2>
+                        <p>
+                            Это новый жилой комплекс расположенный в микрорайоне ЖБИ
+                            в границах улиц Высоцкого и Егоршинский подход, в непосредственной
+                            близости к озеру Шарташ и пригородному лесопарку &laquo;Каменные палатки&raquo;
+                        </p>
+                        <p>
+                            Это новый жилой комплекс расположенный в микрорайоне ЖБИ
+                            в границах улиц Высоцкого и Егоршинский подход, в непосредственной
+                            близости к озеру Шарташ и пригородному лесопарку &laquo;Каменные палатки&raquo;
+                        </p>
+                        <p class="settlement-date">
+                            Ближайшая дата заселения 15 октября 2018
+                        </p>
+                    </div>
+                    <div class="block-right">
+                        <div class="blocl-docs-download">
+                            <img src="./images/img/docs.png" alt="">
+                            <div class="blocl-docs-download-file">
+                                <p>Информация от застройщика</p>
+                                <a class="download-file-pdf" href="#">Скачвть .pdf</a>
+                            </div>
+                        </div>
+                        <div class="blocl-docs-download">
+                            <img src="./images/img/docs.png" alt="">
+                            <div class="blocl-docs-download-file">
+                                <p>Презентация проекта</p>
+                                <a class="download-file-pdf" href="#">Скачвть .pdf</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="clear: both;"></div>
+            <div class="wrapper-1 single-item-num-wrapper">  
+                <div class="single-item single-item-stroy">
+                    <div class="single-item-num">
+                        <h2 class="title-slider">Ход строительства</h2>
+                        <img src="./images/img-slider/slider-stroy.jpg" alt="">
+                        
+                    </div>
+                    <div class="single-item-num">
+                        <h2 class="title-slider">Ход строительства</h2>
+                        <img src="./images/img-slider/slider-stroy.jpg" alt="">
+                        
+                    </div>
+                    <div class="single-item-num">
+                        <h2 class="title-slider">Ход строительства</h2>
+                        <img src="./images/img-slider/slider-stroy.jpg" alt="">
+                        
+                    </div>
+                </div>
+                <a class="single-item-num-href" href="#">Онлайн-камера</a>
+            </div>
+
+
+            <div style="clear: both;"></div>
+            <div class="block-have-pluse">
+                <div class="wrapper-2">
+                    <a href="" class="block-container-for-min-pluse block-container-for-pluse">
+                        <div class="block-pluce min-pluce">
+                            <img src="./images/img-gk/pluse-1.jpg" alt="">
+                            
+                        </div>
+                        <h2>Облагороженные территории</h2>
+                        
+                    </a>
+                    <a href="#" class="block-container-for-min-pluse block-container-for-pluse">
+                        <div class="block-pluce min-pluce">
+                            <img src="./images/img-gk/pluse-2.jpg" alt="">
+                            
+                        </div>
+                        <h2>Современные лифты</h2>
+                    </a>
+                    <a href="#" class="block-container-for-big-pluse block-container-for-pluse">
+                        <div class="block-pluce big-pluce">
+                            <img src="./images/img-gk/pluse-3.jpg" alt="">
+                            
+                        </div>
+                        <h2>Крутлосуточный ресепшн</h2>
+                    </a>
+                    
+                </div>
+                
+            </div>
+
+            
+
         </div>
-        .
+        
+    </div>
+    <div style="clear: both;"></div>
+    <div class="block-map" style="margin-top: 140px">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acc66922bb6ddbb88b0344c26bd25e03508061b25d4bd5f4d64924b47ce9f5650&amp;width=100%&amp;height=1000&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+    
+    <div style="clear: both;"></div>
+    <div class="wrapper-2">
+        <div class="block-gk-docs block-gk-docs-2">
+            <div class="block-left block-left-width text-24">
+                <h2>Как купить квартиру?</h2>
+                <p>
+                    Это новый жилой комплекс расположенный в микрорайоне ЖБИ
+                    в границах улиц Высоцкого и Егоршинский подход, в непосредственной
+                    близости к озеру Шарташ и пригородному лесопарку &laquo;Каменные палатки&raquo;
+                </p>
+                <p>
+                    Это новый жилой комплекс расположенный в микрорайоне ЖБИ
+                    в границах улиц Высоцкого и Егоршинский подход, в непосредственной
+                    близости к озеру Шарташ и пригородному лесопарку &laquo;Каменные палатки&raquo;
+                </p>
+            </div>
+            <div class="block-right">
+                <div class="change-buy-apartament">
+                    <h2>
+                        Выберите свой вариант покупки квартиры
+                    </h2>
+                    <div class="checked-change text-24">
+                        <div class="group-input-check">
+                            <input type="checkbox" id="c2" name="cc" />
+                            <label for="c2">Буду использовать собственные средства для покупки</label>
+                        </div>
+                        <div class="group-input-check">
+                            <input type="checkbox" id="c3" name="cc" />
+                            <label for="c3">У меня есть своя квартира, которую нужно продать</label>
+                        </div>
+                        <div class="group-input-check">
+                            <input type="checkbox" id="c4" name="cc" />
+                            <label for="c4">Хочу использовать материнский капитал</label>
+                        </div>
+                        <div class="group-input-check">
+                            <input type="checkbox" id="c5" name="cc" />
+                            <label for="c5">У меня на руках военный сертификат</label>
+                        </div>
+                        <div class="group-input-check">
+                            <input type="checkbox" id="c6" name="cc" />
+                            <label for="c6"><span></span>Хочу взять ипотеку</label>
+                        </div>
+                    </div>
+                    <a href="" class="btn-red">Следующий шаг</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div>
+    <div class="block-mortgage-calculation">
+        <div class="wrapper-2">
+            <div class="block-left block-left-mortgage-calculation">
+                <div class="mortgage-calculation-text">
+                    &laquo;Оставьте заявку и я помогу подобрать удобную программу кредитования&raquo;
+                </div>
+                <img src="./images/img-absolute/photo-bk-2.png" alt="">
+                <div class="mortgage-calculation-employee">
+                    <p>
+                        Александр Константинопольский
+                    </p>
+                    <p><span>ипотечный брокер</span></p>
+                </div>
+            </div>
+            <div class="block-right block-right-mortgage-calculation">
+                <h2>Расчет ипотеки</h2>
+                <div class="block-horizontal">
+                    <p>
+                        <label for="amount">Стоимость недвижимости:</label>
+                        <input type="text" id="amount" readonly>
+                    </p>
+                    <div id="slider-range-min"></div>
+                </div>
+                <div class="block-horizontal">
+                    <p>
+                        <label for="amount-first">Первоночальный взнос:</label>
+                        <input type="text" id="amount-first" readonly>
+                    </p>
+                    <div id="slider-range-min-first"></div>
+                </div>
+                <div class="block-horizontal">
+                    <p>
+                        <label for="amount-num">Стоимость недвижимости:</label>
+                        <input type="text" id="amount-num" readonly>
+                    </p>
+                    <div id="slider-range-min-num"></div>
+                </div>
+                <div class="block-horizontal">
+                    <a class="btn-red" href="#">Подобрать программу</a>
+                </div>
+            </div>
+        </div>
     </div>
 
        
@@ -372,7 +629,7 @@
         <div class="footer-block-content another-page-footer">
             <div class="block-top-footer">
                 <div class="block-left-foot">
-                    <h1>Стать партнером</h1>
+                    <h1>Получить консультацию</h1>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
                             <input type="text" class="form-control-phoneCall" 
@@ -539,6 +796,79 @@
         </div>
     </div>
 
+    <!-- Start-modal-for-page.gk -->
+    <!-- Modal -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="wrapper-2">
+                <div class="block-modal-page-gk-img">
+                    <img src="./images/img/modal-page-gk.jpg" alt="">
+                </div>
+                <div class="block-modal-page-gk-desc">
+                    <h2>Современные<br> лифты</h2>
+                    <p>
+                        В наши дома мы устанавливаем только современные<br>
+                        бесшумные лифты от лучших производителей. В них<br>
+                        легко поместятся детская коляска, велосипел или<br>
+                        даже новый диван. Дизайнерская отделка кабин<br>
+                        перекликается с цветовыми решениями фасалов. А<br>
+                        благодоря специальным прочным покрытиям лифты<br>
+                        надолго сохранят безупреччный внешний вид.
+                    </p>
+                    <div class="block-modal-page-gk-desc-foot">
+                        <div class="block-modal-page-gk-desc-foot-1">
+                            <img src="./images/img-gk/pluse-1.jpg" alt="">
+                            <p>
+                                Облагороженные<br> территории
+                            </p>
+                        </div>
+                        <div class="block-modal-page-gk-desc-foot-2">
+                            <img src="./images/img-gk/pluse-2.jpg" alt="">
+                            <p>
+                                Круглосуточный<br> ресепшн
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn-close-modal-form-page-gk">
+                <img src="./images/icons/btn-close.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- <div class="block-container-for-pluse-overlay">
+        <div class="block-modal-gk">
+            <h1 class="black-h">Test</h1>
+        </div> -->
+            <!-- <form action="">
+                <div class="popup js-popup-campaign">
+                    <div class="modal-call-form-title">
+                        <h2>Заказать звонок</h2>
+                        <p>
+                            Менеджер свяжиться свами
+                            и&nbspпроконсультирует по всем
+                            интересующим вас вопросам
+                        </p>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control-phoneCall" id="inputNameForm" placeholder="Ваше имя">
+                        <input type="test" class="form-control-phoneCall" id="inputPhoneForm" placeholder="+7(   )   -  -">
+                    </div>
+                    <div class="modal-body-btn">
+                        <button type="submit" class="btn-form-modal">Презвоните мне!</button>
+                    </div>
+                    <div class="modal-body-footer">
+                        <p>
+                            Нажимая кнопку «Перезвоните мне», вы соглашаетесь с условиями Лицензионного&nbspсоглашения и Политикой обработки&nbspперсонильных данных
+                        </p>
+                    </div>
+                    <div class="close-popup js-close-campaign"></div>
+                </div>
+            </form> -->
+    <!-- </div> -->
+    <!-- Start-modal-for-page.gk end -->
+
+
     <!-- Start-modal-form-for-menu -->
     <div class="block-modal-menu" style="display:none;">
         <div class="wrapper">
@@ -597,5 +927,102 @@
         </form>
     </div>
     <!-- End-modal-form-for-call -->
+
+    <script>
+        $(function(){
+            $('.single-item').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        })
+    </script>
+    <script>
+            $( function() {
+                $( "#slider-range-min" ).slider({
+                range: "min",
+                value: 100000,
+                min: 1,
+                max: 4000000,
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( ui.value + " р" );
+                }
+                });
+                $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" )+ " р");
+            } );
+            $( function() {
+                $( "#slider-range-min-first" ).slider({
+                range: "min",
+                value: 100000,
+                min: 1,
+                max: 4000000,
+                slide: function( event, ui ) {
+                    $( "#amount-first" ).val( ui.value + " р" );
+                }
+                });
+                $( "#amount-first" ).val( $( "#slider-range-min-first" ).slider( "value" )+ " р");
+            } );
+            $( function() {
+                $( "#slider-range-min-num" ).slider({
+                range: "min",
+                value: 100000,
+                min: 1,
+                max: 4000000,
+                slide: function( event, ui ) {
+                    $( "#amount-num" ).val( ui.value + " р" );
+                }
+                });
+                $( "#amount-num" ).val( $( "#slider-range-min-num" ).slider( "value" )+ " р");
+            } );
+            
+        </script>
+    <script>
+        $( function() {
+
+
+            $( "#slider-range-square" ).slider({
+                range: true,
+                min: 20,
+                max: 500,
+                values: [ 0, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount-square-1" ).val( ui.values[ 0 ]);
+                    $( "#amount-square-2" ).val(ui.values[ 1 ]);
+                    // $(".start-num").text(ui.min);
+                    // console.log(ui.min);
+                }
+            });
+            $( "#amount-square-1" ).val( $( "#slider-range-square" ).slider( "values", 0 ));
+            $( "#amount-square-2" ).val( $( "#slider-range-square" ).slider( "values", 1 ));
+            $( "#slider-range-cost" ).slider({
+                range: true,
+                min: 20,
+                max: 500,
+                values: [ 0, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount-cost-1" ).val( ui.values[ 0 ]);
+                    $( "#amount-cost-2" ).val(ui.values[ 1 ]);
+                    // $(".start-num").text(ui.min);
+                    // console.log(ui.min);
+                }
+            });
+            $( "#amount-cost-1" ).val( $( "#slider-range-cost" ).slider( "values", 0 ));
+            $( "#amount-cost-2" ).val( $( "#slider-range-cost" ).slider( "values", 1 ));
+            $( "#slider-range-floor" ).slider({
+                range: true,
+                min: 20,
+                max: 500,
+                values: [ 0, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount-floor-1" ).val( ui.values[ 0 ]);
+                    $( "#amount-floor-2" ).val(ui.values[ 1 ]);
+                    // $(".start-num").text(ui.min);
+                    // console.log(ui.min);
+                }
+            });
+            $( "#amount-floor-1" ).val( $( "#slider-range-floor" ).slider( "values", 0 ));
+            $( "#amount-floor-2" ).val( $( "#slider-range-floor" ).slider( "values", 1 ));
+        })
+    </script>
 </body>
 </html>
