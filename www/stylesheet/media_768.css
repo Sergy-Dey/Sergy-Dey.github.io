@@ -1127,6 +1127,7 @@
      .social-block-for-mobile{
         display: flex;
         justify-content: space-between;
+        margin-left: 35px;
      }
      .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow{
         display: flex;
