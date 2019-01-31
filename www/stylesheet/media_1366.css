@@ -370,12 +370,16 @@
     .block-social-for-contacts-div{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .block-social-for-contacts-div .block-social-for-contacts-soc{
         float: none;
         margin-left: 0;
         margin-right: 0;
+    }
+    .block-social-for-contacts-div .block-social-for-contacts-soc{
+        width: 400px;
+        overflow: hidden;
     }
     /* contact.html end */
 }

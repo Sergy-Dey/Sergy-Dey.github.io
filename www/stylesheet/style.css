@@ -3393,8 +3393,10 @@ input.form-control-phoneCall:-moz-placeholder{
     width: 50%;
 }
 .btn-for-contact{
-    width: 154px;
+    width: 218px;
     margin-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .block-left-foot h1{
     margin-bottom: 96px;
