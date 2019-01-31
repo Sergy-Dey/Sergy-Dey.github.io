@@ -16,7 +16,7 @@
         margin: 0 auto;
     }
     .wrapper-2{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     h1{
@@ -942,4 +942,31 @@
         height: 103px;
         margin-bottom: 18px;
     }
+
+    /* footer */
+    .another-page-footer .block-left-foot h1{
+        margin-bottom: 19px;
+    }
+    .footer-block-content.another-page-footer .form-control-phoneCall{
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+    .footer-block-content.another-page-footer .btn-red {
+        margin-top: 14px;
+        width: 100%;
+        height: 35px;
+        line-height: 41px;
+    }
+    .footer-block-another-page-for-mobile{
+        margin-top: 51px;
+    }
+    .social-block-for-mobile{
+        margin-left: 0px;
+        justify-content: start
+    }
+    .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .social-block-for-mobile a{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    /* footer end */
 }
