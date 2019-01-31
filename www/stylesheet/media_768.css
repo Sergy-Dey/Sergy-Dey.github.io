@@ -852,20 +852,34 @@
         /* margin-left: 0px; */
     }
     .block-top-footer .block-left-foot{
-        width: 100%;
+        width: 643px;
     }
     .another-page-footer .block-top-footer .block-left-foot{
         width: 700px;
     }
-    .footer-block-content.another-page-footer .form-control-phoneCall {
-        font-size: 18px;
-        padding-bottom: 25px;
+    .form-group-2{
+        width: 49%;
+    }
+    .form-group-2 .form-control-phoneCall, .form-group-3 .form-control-phoneCall{
+        margin-top: 0px;
+    }
+    .form-group-3{
+        width: 46%;
     }
     .footer-block-content.another-page-footer .btn-red{
-        margin-top: 35px;
+        margin-top: 15px;
+        margin-top: 15px;
+        width: 189px;
+        height: 43px;
+        line-height: 49px;
     }
-    .block-left-foot h1{
-        margin-bottom: 40px;
+    .footer-block-content.another-page-footer .form-control-phoneCall {
+        font-size: 18px;
+        padding-bottom: 19px;
+        margin-bottom: 24px;
+    }
+    .another-page-footer .block-left-foot h1 {
+        margin-bottom: 36px;
     }
     .footer-block-content .form-control-phoneCall{
         font-size: 18px;
@@ -1059,7 +1073,7 @@
      }
      .footer-block-another-page-for-mobile{
          display: block;
-         margin-top: 50px;
+         margin-top: 54px;
      }
      .footer-block-another-page-for-mobile .block-first-foot{
         display: flex;
@@ -1079,7 +1093,7 @@
          font-size: 24px;
          line-height: 24px;
          font-weight: 600;
-         margin-bottom: 25px;
+         margin-bottom: 17px;
      }
      .footer-block-another-page-for-mobile .block-first-foot .block-address-two a{
         color: #ff0e0e;
@@ -1087,7 +1101,7 @@
         line-height: 30px;
         text-transform: uppercase;
         font-weight: 600;
-        margin-bottom: 19px;
+        margin-bottom: 10px;
         display: block;
      }
      .footer-block-another-page-for-mobile .block-first-foot .block-address-three{
@@ -1107,8 +1121,12 @@
      }
      .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two{
         display: flex;
+        justify-content: start;
+        margin-top: 21px;
+     }
+     .social-block-for-mobile{
+        display: flex;
         justify-content: space-between;
-        margin-top: 25px;
      }
      .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow{
         display: flex;
@@ -1119,10 +1137,17 @@
          font-size: 15px;
          line-height: 20px;
          color:black;
-         margin-left: 25px;
+         margin-left: 16px;
      }
      .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .social-block-for-mobile a{
-         margin-left: 10px;
+        margin-left: 10px;
+        width: 43px;
+        height: 43px;
+        display: block;
+     }
+     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .social-block-for-mobile a img{
+        width: 43px;
+        height: 43px;
      }
     .footer-block-another-page-for-mobile .text-content-desc-foot{
         margin-bottom: 30px;
