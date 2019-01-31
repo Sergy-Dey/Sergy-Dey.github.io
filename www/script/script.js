@@ -382,7 +382,7 @@ $(document).ready(function(){
         $('.js-overlay-campaign').addClass('disabled');
     });
     $('.js-button-campaign.form-menu-class').click(function() { 
-        console.log("test");
+        // console.log("test");
         $('.js-overlay-campaign').fadeIn();
         $('.js-overlay-campaign').addClass('disabled');
     });
@@ -398,6 +398,29 @@ $(document).ready(function(){
         var popup = $('.js-popup-campaign');
         if (e.target!=popup[0]&&popup.has(e.target).length === 0){
             $('.js-overlay-campaign').fadeOut();
+            
+        }
+    });
+
+
+    // for taxi modal form
+    $('.js-button-campaign-taxi').click(function() { 
+        // console.log("test");
+        $('.js-overlay-campaign-taxi').fadeIn();
+        $('.js-overlay-campaign-taxi').addClass('disabled');
+    });
+
+    // закрыть на крестик
+    $('.js-close-campaign').click(function() { 
+        $('.js-overlay-campaign-taxi').fadeOut();
+        
+    });
+
+    // закрыть по клику вне окна
+    $(document).mouseup(function (e) { 
+        var popup = $('.js-popup-campaign');
+        if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+            $('.js-overlay-campaign-taxi').fadeOut();
             
         }
     });

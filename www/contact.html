@@ -256,7 +256,7 @@
                             г. Екатеринбург, ул Малышева 51,
                             БЦ "Высоцкий", 1 этаж
                         </p>
-                        <p class="text-18" style="margin-top:15px;">
+                        <p class="text-18" style="margin-top:30px;">
                             Бесплатная парковка для клиентов
                         </p>
                     </div>
@@ -279,13 +279,13 @@
                         Политика конфеденциальности<br>
                         Правила и условия.
                     </div> 
-                    <div class="all-rights">
+                    <div class="all-rights block-socoal-footer-icons">
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
                         <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/ok.png" alt=""></a>
+                        <a href=""><img src="./images/social/twit.png" alt=""></a>
+                        <a href=""><img src="./images/social/fsoc.png" alt=""></a>
+                        <a href=""><img src="./images/social/inst.png" alt=""></a>
                     </div> 
                     <a href="#" class="block-stud-foot">
                         <img src="./images/social/stud.png" alt="">
@@ -306,7 +306,7 @@
 
 
         <div class="block-taxi-and-message">
-            <button style="border:none; background:none;" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModalTaxi">
+            <button style="border:none; background:none;" class="js-button-campaign-taxi phoneModalTaxi" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModalTaxi">
                 <img src="./images/social/taxi.png" alt="">
             </button>
             
@@ -426,5 +426,37 @@
         </form>
     </div>
     <!-- End-modal-form-for-call -->
+
+    <!-- Start-modal-form-for-call-taxi -->
+    <div class="overlay js-overlay-campaign-taxi">
+        <form action="">
+            <div class="popup js-popup-campaign">
+                <div class="modal-call-form-title">
+                    <h2>Вызов такси</h2>
+                    <p>
+                        Закажите бесплатное такси до офиса продаж
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <div class="form-control-phoneCall-block-min">
+                        <input type="text" class="form-control-phoneCall inputStreetForm" id="inputStreetForm" placeholder="Улица">
+                        <input type="text" class="form-control-phoneCall inputHomeForm" id="inputHomeForm" placeholder="Дом">
+                    </div>
+                    <input type="text" class="form-control-phoneCall" id="inputNameForm" placeholder="Ваше имя">
+                    <input type="test" class="form-control-phoneCall" id="inputPhoneForm" placeholder="+7(   )   -  -">
+                </div>
+                <div class="modal-body-btn">
+                    <button type="submit" style="background-color: #ffbe0e" class="btn-form-modal">Вызвать такси</button>
+                </div>
+                <div class="modal-body-footer">
+                    <p>
+                        Нажимая кнопку «Вызвать такси», вы соглашаетесь с условиями Лицензионного&nbspсоглашения и Политикой обработки&nbspперсонильных данных
+                    </p>
+                </div>
+                <div class="close-popup js-close-campaign"></div>
+            </div>
+        </form>
+    </div>
+    <!-- End-modal-form-for-call-taxi -->
 </body>
 </html>
