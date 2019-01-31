@@ -1133,6 +1133,9 @@
         align-items: center;
         justify-content: space-between;
      }
+     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow img{
+        height: 55px;
+     }
      .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow a{
          font-size: 15px;
          line-height: 20px;
