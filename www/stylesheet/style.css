@@ -3610,6 +3610,14 @@ input.form-control-phoneCall:-moz-placeholder{
 .block-map{
     position: relative;
     height: 1080px;
+    margin-top: 96px
+}
+/* .block-map ymaps{
+    height: 1080px;
+} */
+.block-for-map-yandex{
+    height: 1080px;
+    overflow: hidden;
 }
 .form-for-map-abs{
     position: absolute;

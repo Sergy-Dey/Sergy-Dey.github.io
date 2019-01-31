@@ -899,4 +899,15 @@
         margin-top: 60px;
     }
     /* contact.html end*/
+
+    /* map */
+    .block-for-map-yandex{
+        height: 568px;
+        overflow: hidden;
+    }
+    .form-for-map-abs{
+        display:none;
+    }
+
+    /* map end */
 }
