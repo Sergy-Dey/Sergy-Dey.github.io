@@ -5,6 +5,7 @@
     } 
     .wrapper-2{
         width: 90%;
+        /* width: 674px; */
         margin: 0 auto;
     }
     h1{
@@ -43,14 +44,17 @@
         height: 68px;
     }
     .header-menu .logo-baza{
-        width: 84px;
+        width: 100px;
         position: absolute;
     }
     .header-menu .header-menu-nav .href-menu{
         margin-left: 130px;
     }
+    .header-menu .header-menu-nav{
+        margin-top: 45px;
+    }
     .header-menu .header-menu-nav .href-phone-form{
-        margin-top: 10px;
+        margin-top: 4px;
     }
     .header-menu .header-menu-nav .href-menu li{
         /* font-size: 14px; */
@@ -104,7 +108,7 @@
     }
     .header-menu .header-menu-nav .href-phone-form li .form-menu-class{
         display: inline-block;
-        width: 27px;
+        width: 30px;
         border:none;
         border-radius:0px;
         height: 20px;
