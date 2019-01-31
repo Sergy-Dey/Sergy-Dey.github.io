@@ -54,11 +54,15 @@
     .header-menu{
         height: 68px;
     }
+    .header-menu .header-menu-nav {
+        margin-top: 24px;
+    }
     .header-menu .logo-baza{
-        width: 90px;
+        width: 71px;
         position: absolute;
         left: 50%;
-        transform: translate(-50%)
+        transform: translate(-50%);
+    top: 1px;
     }
    .header-menu .header-menu-nav .href-menu{
         margin-left: 0px;
@@ -67,11 +71,29 @@
 
     .header-menu .header-menu-nav .href-phone-form li .phone-class-icons{
         position: absolute;
-        left: 20px;
+        left: 3px;
     }
     .header-menu .header-menu-nav .href-phone-form li .form-menu-class{
         position: absolute;
         right: 10px;
+    }
+    .block-contact-page .block-contact-page-title{
+        margin-top: 38px;
+    }
+    .block-contact-page-desc .block-contact-page-desc-div{
+        margin-bottom: 11px;
+    }
+    .block-contact-page-desc .block-contact-page-desc-div h4{
+        margin-bottom: 0px;
+    }
+    .block-contact-page-desc .block-contact-page-desc-div p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .block-contact-page-desc .block-contact-page-desc-div a{
+        font-size: 12px;
+        line-height: 24px;
+        margin-top: 13px;
     }
     /* Block for menu--End */
 
@@ -902,7 +924,7 @@
 
     /* map */
     .block-map{
-        height: 568px;
+        height: 623px;
         overflow: hidden;
     }
     .form-for-map-abs{
@@ -910,4 +932,14 @@
     }
 
     /* map end */
+    .block-social-for-contacts {
+        margin-top: 52px;
+    }
+    .block-social-for-contacts-title{
+        margin-top: 0px;
+    }
+    .block-social-for-contacts-div .block-social-for-contacts-soc{
+        height: 103px;
+        margin-bottom: 18px;
+    }
 }
