@@ -3305,7 +3305,7 @@ main{
     overflow: hidden;
 }
 .footer-block-content{
-    margin-top: 150px;
+    margin-top: 145px;
     margin-left: 250px;
 }
 .footer-block-content.another-page-footer{
@@ -3315,30 +3315,45 @@ main{
     position: relative;
 }
 .block-top-footer .block-left-foot {
-    width: 860px;
+    width: 879px;
     float: left;
 }
 .footer-block-content .form-control-phoneCall {
     border: none;
     border-bottom: 1px solid #e4e4e4;
-    padding-bottom: 15px;
-    margin-bottom: 40px;
+    padding-bottom: 19px;
+    margin-bottom: 45px;
     width: 100%;
     color: #b5b5b5;
     font-size: 24px;
     line-height: 24px;
 }
+input.form-control-phoneCall::-webkit-input-placeholder{
+    color:#b5b5b5;
+}
+input.form-control-phoneCall::-moz-placeholder{
+    color:#b5b5b5;
+}
+input.form-control-phoneCall:-ms-input-placeholder{
+    color:#b5b5b5;
+}
+input.form-control-phoneCall:-moz-placeholder{
+    color:#b5b5b5;
+}
 .form-group-2{
     float: left;
-    width: 48%;
-    margin-right: 30px;
+    width: 47%;
+    margin-right: 23px;
+}
+.form-group-3 .form-control-phoneCall{
+    
 }
 .form-group-3{
     float: left;
-    width: 48%;
+    width: 50%;
 }
 .block-left-foot h1{
-    margin-bottom: 90px;
+    margin-bottom: 96px;
 }
 .block-top-footer .block-right-foot {
     position: relative;
