@@ -1281,9 +1281,21 @@
     /* contact.html end */
 
     /* map */
-    .block-for-map-yandex{
+    .block-map{
         height: 970px;
-        overflow: hidden;
+        margin-top: 0px;
+    }
+    .block-social-for-contacts {
+        margin-top: 43px;
+    }
+    .block-social-for-contacts-title {
+        margin-bottom: 40px;
+    }
+    .block-social-for-contacts-div .block-social-for-contacts-soc{
+        font-size: 24px;
+    }
+    .block-social-for-contacts-div{
+        justify-content: space-between;
     }
 
     /* map end */

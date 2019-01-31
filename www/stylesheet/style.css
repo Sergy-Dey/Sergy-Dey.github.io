@@ -3615,10 +3615,10 @@ input.form-control-phoneCall:-moz-placeholder{
 /* .block-map ymaps{
     height: 1080px;
 } */
-.block-for-map-yandex{
+/* .block-for-map-yandex{
     height: 1080px;
     overflow: hidden;
-}
+} */
 .form-for-map-abs{
     position: absolute;
     width: 320px;
