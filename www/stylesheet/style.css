@@ -3322,7 +3322,7 @@ main{
     border: none;
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 19px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
     width: 100%;
     color: #b5b5b5;
     font-size: 24px;
@@ -3345,12 +3345,16 @@ input.form-control-phoneCall:-moz-placeholder{
     width: 47%;
     margin-right: 23px;
 }
-.form-group-3 .form-control-phoneCall{
-    
+.form-group-2 .form-control-phoneCall, .form-group-3 .form-control-phoneCall{
+    margin-top: 3px;
 }
 .form-group-3{
     float: left;
     width: 50%;
+}
+.btn-for-contact{
+    width: 154px;
+    margin-top: 16px;
 }
 .block-left-foot h1{
     margin-bottom: 96px;
