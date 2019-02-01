@@ -502,6 +502,8 @@ $(document).ready(function(){
 
     // Маска для телефона------------------------//
     $("#inputPhoneForm").mask("+7(999) 999-99-99");
+    $("#inputPhoneFormModal").mask("+7(999) 999-99-99");
+    $("#inputPhoneFormTaxi").mask("+7(999) 999-99-99");
     // End-------------------------------------//
 
     // Удалить текст из botton //
