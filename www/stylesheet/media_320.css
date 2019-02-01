@@ -678,18 +678,25 @@
     .footer-block-content.another-page-footer .btn-red {
         margin-top: 25px;
     }
-    .footer-block-another-page-for-mobile .block-first-foot{
-        flex-direction: column;
-    }
+
     .footer-block-another-page-for-mobile .block-first-foot{
         position: relative;
+        margin-bottom: 12px;
+        flex-direction: column;
     }
     .footer-block-another-page-for-mobile .block-first-foot .block-address-two a{
         position: absolute;
-        bottom:0px;
+        bottom: -8px;
+        font-size: 12px;
     }
     .footer-block-another-page-for-mobile .block-first-foot > div p{
-        margin-bottom: 25px;
+        margin-bottom: 12px;
+        line-height: 24px;
+        font-size: 18px;
+    }
+    .footer-block-another-page-for-mobile .block-second-foot{
+        padding-bottom: 24px;
+        margin-bottom: 15px;
     }
     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-one{
         flex-direction: column;
@@ -699,6 +706,7 @@
     }
     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two{
         flex-direction: column-reverse;
+        margin-top: -3px;
     }
     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow{
         justify-content: flex-start;
@@ -707,6 +715,13 @@
     .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .social-block-for-mobile a:nth-child(n+4){
         display: none;
         width: 10px;
+    }
+    
+    .text-content-desc-foot p{
+        font-size: 12px;
+    }
+    .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow img{
+        height: 45px
     }
 
      /* commerce.html */
