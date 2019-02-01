@@ -52,10 +52,10 @@
     
     /* Block for menu */
     .header-menu{
-        height: 68px;
+        height: 62px;
     }
     .header-menu .header-menu-nav {
-        margin-top: 24px;
+        margin-top: 18px;
     }
     .header-menu .logo-baza{
         width: 71px;
@@ -99,8 +99,12 @@
 
 
     /* Client-header */
+    .block-client-header{
+        margin-top: 45px;
+    }
     .block-client-header ul{
-        height: 50px;
+        height: 27px;
+        margin-top: 30px;
         justify-content: space-between;
     }
     .block-client-header ul li{

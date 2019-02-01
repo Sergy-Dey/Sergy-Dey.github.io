@@ -1368,6 +1368,10 @@
     }
 
     /* map end */
-
+    .popup{
+        width: 455px;
+        height: 650px;
+        font-size: 15px;
+    }
      
 }
