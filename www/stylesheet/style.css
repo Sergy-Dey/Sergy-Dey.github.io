@@ -669,12 +669,13 @@ body{
     margin-top: 32px;
 }
 .page-next-or-prev{
+    margin-top: 68px;
     border-top: 1px solid #e1e1e1;
-    padding-top: 40px;
+    padding-top: 14px;
 }
 .page-next-or-prev li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 29px;
 }
 .page-next-or-prev li a{
     font-size: 18px;
@@ -3881,3 +3882,9 @@ input.form-control-phoneCall:-moz-placeholder{
     bottom: -186px;
 }
 /* Elements position absolute end */
+
+
+/*  */
+.footer-block-page.footer-block-page-for-Promotions-discounts{
+    margin-top: 18px;
+}
