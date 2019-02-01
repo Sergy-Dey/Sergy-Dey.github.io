@@ -134,6 +134,9 @@
     .block-client-header{
         margin-top: 65px;
     }
+    .block-client-header ul{
+        margin-top: 24px;
+    }
     .block-client-header ul li{
         font-size: 15px;
         margin-right: 65px;
@@ -187,8 +190,12 @@
 
 
      /* client-Promotions-discounts */
+     .promotions-and-discounts-main{
+        margin-top: 56px;
+     }
      .promotions-and-discounts-item{
-        height: 355px;
+        width: 702px;
+        height: 357px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-img-abs{
         width: 370px;
@@ -208,7 +215,7 @@
         margin-top: 0;
         padding-top: 220px; */
         float: left;
-        margin-top: 87px;
+        margin-top: 84px;
         /* padding-top: 220px; */
         margin-left: 25px;
      }
