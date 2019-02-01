@@ -201,11 +201,33 @@
      .promotions-and-discounts-item.promotions-and-discounts-item-2{
         height: 396px;
      }
+     .promotions-and-discounts-item .promotions-and-discounts-text.promotions-and-discounts-text-href .btn-red{
+        margin-top: -11px;
+        width: 176px;
+        line-height: 53px;
+        height: 47px;
+     }
      .promotions-and-discounts-item.promotions-and-discounts-item-2 .promotions-and-discounts-text.promotions-and-discounts-text-href{
         width: 180px;
      }
-     .promotions-and-discounts-item .promotions-and-discounts-img-abs{
-        width: 370px;
+     .page-next-or-prev{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        margin-top: 32px;
+        border-top: 1px solid #e1e1e1;
+        padding-top: 40px;
+        padding-bottom: 37px;
+        border-bottom: 1px solid #e1e1e1;
+     }
+     .page-next-or-prev li{
+        margin-right: 77px;
+     }
+     .page-next-or-prev li:last-child{
+         margin-right: 0px;
+     }
+     .page-next-or-prev li a{
+        font-size: 30px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-img-rel{
         float: right;
@@ -232,8 +254,8 @@
         height: 195px; */
         position: absolute;
         bottom: 0px;
-        max-height: 300px;
-        max-width: 450px;
+        /* max-height: 300px; */
+        max-width: 390px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-img-rel{
         position: absolute;
