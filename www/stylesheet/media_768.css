@@ -131,6 +131,9 @@
 
 
     /* Client-header */
+    .block-client-header{
+        margin-top: 65px;
+    }
     .block-client-header ul li{
         font-size: 15px;
         margin-right: 65px;
