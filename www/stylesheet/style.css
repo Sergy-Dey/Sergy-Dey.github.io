@@ -665,8 +665,8 @@ body{
 }
 .promotions-and-discounts-item .promotions-and-discounts-img-rel{
     float: right;
-    margin-right: 170px;
-    margin-top: 50px;
+    margin-right: 175px;
+    margin-top: 32px;
 }
 .page-next-or-prev{
     border-top: 1px solid #e1e1e1;
@@ -692,10 +692,13 @@ body{
 }
 .promotions-and-discounts-item .promotions-and-discounts-text.promotions-and-discounts-text-href{
     width: 265px;
-    margin-top: 75px;
+    margin-top: 66px;
     display: inline-block;
     margin-left: 90px;
-
+}
+.promotions-and-discounts-item .promotions-and-discounts-text.promotions-and-discounts-text-href .btn-red{
+    margin-top: 29px;
+    width: 176px;
 }
 
 /* client-Promotions-discounts-end */
