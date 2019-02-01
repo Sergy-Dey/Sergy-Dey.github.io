@@ -196,6 +196,13 @@
      .promotions-and-discounts-item{
         width: 702px;
         height: 357px;
+        margin-bottom: 28px;
+     }
+     .promotions-and-discounts-item.promotions-and-discounts-item-2{
+        height: 396px;
+     }
+     .promotions-and-discounts-item.promotions-and-discounts-item-2 .promotions-and-discounts-text.promotions-and-discounts-text-href{
+        width: 180px;
      }
      .promotions-and-discounts-item .promotions-and-discounts-img-abs{
         width: 370px;
