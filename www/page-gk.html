@@ -1,52 +1,6 @@
 <!DOCTYPE html PUBLIC>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./stylesheet/stylesheet.css"> -->
-    <!-- styles -->
-    <!-- <link rel="stylesheet" href="./stylesheet/normalize.css">
-    <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
-    <link rel="stylesheet" href="./stylesheet/slick.css">
-    <link rel="stylesheet" href="./stylesheet/style.css">
-    <link rel="stylesheet" href="./stylesheet/media.css">
-    <link rel="stylesheet" href="./stylesheet/media_1366.css">
-    <link rel="stylesheet" href="./stylesheet/media_768.css">
-    <link rel="stylesheet" href="./stylesheet/media_320.css"> -->
-
-    <!-- script -->
-    <!-- <script src="./script/jquery.min.js"></script> -->
-    <!-- <script src="./script/wow.min.js"></script> -->
-    <!-- <script src="./script/jquery-ui.js"></script> -->
-    <!-- <script src="./script/jquery.maskedinput.js"></script> -->
-    <!-- <script src="./script/slick.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./script/script.js"></script>
-
-    <title>Document</title> -->
-    <!-- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <!-- Fonts -->
-    <!-- <link rel="stylesheet" href="./stylesheet/stylesheet.css"> -->
-    <!-- styles -->
-    <!-- <link rel="stylesheet" href="./stylesheet/normalize.css">
-    <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
-    <link rel="stylesheet" href="./stylesheet/animate.css">
-    <link rel="stylesheet" href="./stylesheet/style.css">
-    <link rel="stylesheet" href="./stylesheet/media.css">
-    <link rel="stylesheet" href="./stylesheet/media_1366.css">
-    <link rel="stylesheet" href="./stylesheet/media_768.css">
-    <link rel="stylesheet" href="./stylesheet/media_320.css"> -->
-    <!-- script -->
-    <!-- <script src="./script/jquery.min.js"></script>
-    <script src="./script/jquery-ui.js"></script>
-    <script src="./script/jquery.maskedinput.js"></script>
-    <script src="./script/slick.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src='./script/jquery.ui.touch-punch.min.js' type="text/javascript" charset="utf-8"></script>
-    <script src="./script/wow.min.js"></script>
-    <script src="./script/script.js"></script> -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -624,6 +578,7 @@
     
 
 
+    <!-- get consult -->
     <div style="clear: both;"></div>
     <div class="wrapper-2">
         <div class="footer-block-content another-page-footer">
@@ -651,18 +606,19 @@
                             <input type="text" class="form-control-phoneCall"
                             id="inputCommentForm" placeholder="Коментарии"/>
                         </div>
-                        <a href="#" style="width: 213px;" class="btn-red">Отправить заявку</a>
+                        <a href="#" class="btn-red btn-for-contact">Отправить заявку</a>
                     </form>   
                 </div>
             </div>
         </div>
     </div>
-
     <div style="clear: both;"></div>
-
+    <!-- get consult -->
+    
+    <!-- footer -->
     <footer class="footer-block-another-page">
         <div class="wrapper-2">
-            <div class="footer-block-page" style="margin-top: 40px;">
+            <div class="footer-block-page">
                 <div class="footer-block-page-top">
                     <ul class="footer-block-page-top-menu">
                         <li><a href="">Новостройки</a> </li>
@@ -684,7 +640,7 @@
                             г. Екатеринбург, ул Малышева 51,
                             БЦ "Высоцкий", 1 этаж
                         </p>
-                        <p class="text-18" style="margin-top:15px;">
+                        <p class="text-18" style="margin-top:30px;">
                             Бесплатная парковка для клиентов
                         </p>
                     </div>
@@ -707,13 +663,13 @@
                         Политика конфеденциальности<br>
                         Правила и условия.
                     </div> 
-                    <div class="all-rights">
+                    <div class="all-rights block-socoal-footer-icons">
+                        <a href=""><img src="./images/social/vk.png" alt=""></a>
                         <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
-                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/ok.png" alt=""></a>
+                        <a href=""><img src="./images/social/twit.png" alt=""></a>
+                        <a href=""><img src="./images/social/fsoc.png" alt=""></a>
+                        <a href=""><img src="./images/social/inst.png" alt=""></a>
                     </div> 
                     <a href="#" class="block-stud-foot">
                         <img src="./images/social/stud.png" alt="">
@@ -734,7 +690,7 @@
 
 
         <div class="block-taxi-and-message">
-            <button style="border:none; background:none;" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModalTaxi">
+            <button style="border:none; background:none;" class="js-button-campaign-taxi phoneModalTaxi" data-title="Заказать звонок" data-toggle="modal" data-target="#phoneModalTaxi">
                 <img src="./images/social/taxi.png" alt="">
             </button>
             
@@ -779,12 +735,18 @@
                         <a href="">Дизайн сайта - Студия <br>Юдизайна Евгения Ярового</a>
                     </div>
                     <div class="social-block-for-mobile">
+                        <!-- <a href=""><img src="./images/social/vk.png" alt=""></a>
                         <a href=""><img src="./images/social/vk.png" alt=""></a>
                         <a href=""><img src="./images/social/vk.png" alt=""></a>
                         <a href=""><img src="./images/social/vk.png" alt=""></a>
                         <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/vk.png" alt=""></a> -->
                         <a href=""><img src="./images/social/vk.png" alt=""></a>
-                        <a href=""><img src="./images/social/vk.png" alt=""></a>
+                        <a href=""><img src="./images/social/fb.png" alt=""></a>
+                        <a href=""><img src="./images/social/ok.png" alt=""></a>
+                        <a href=""><img src="./images/social/twit.png" alt=""></a>
+                        <a href=""><img src="./images/social/fsoc.png" alt=""></a>
+                        <a href=""><img src="./images/social/inst.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -795,79 +757,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Start-modal-for-page.gk -->
-    <!-- Modal -->
-    <div class="modal-wrapper">
-        <div class="modal">
-            <div class="wrapper-2">
-                <div class="block-modal-page-gk-img">
-                    <img src="./images/img/modal-page-gk.jpg" alt="">
-                </div>
-                <div class="block-modal-page-gk-desc">
-                    <h2>Современные<br> лифты</h2>
-                    <p>
-                        В наши дома мы устанавливаем только современные<br>
-                        бесшумные лифты от лучших производителей. В них<br>
-                        легко поместятся детская коляска, велосипел или<br>
-                        даже новый диван. Дизайнерская отделка кабин<br>
-                        перекликается с цветовыми решениями фасалов. А<br>
-                        благодоря специальным прочным покрытиям лифты<br>
-                        надолго сохранят безупреччный внешний вид.
-                    </p>
-                    <div class="block-modal-page-gk-desc-foot">
-                        <div class="block-modal-page-gk-desc-foot-1">
-                            <img src="./images/img-gk/pluse-1.jpg" alt="">
-                            <p>
-                                Облагороженные<br> территории
-                            </p>
-                        </div>
-                        <div class="block-modal-page-gk-desc-foot-2">
-                            <img src="./images/img-gk/pluse-2.jpg" alt="">
-                            <p>
-                                Круглосуточный<br> ресепшн
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="" class="btn-close-modal-form-page-gk">
-                <img src="./images/icons/btn-close.png" alt="">
-            </a>
-        </div>
-    </div>
-    <!-- <div class="block-container-for-pluse-overlay">
-        <div class="block-modal-gk">
-            <h1 class="black-h">Test</h1>
-        </div> -->
-            <!-- <form action="">
-                <div class="popup js-popup-campaign">
-                    <div class="modal-call-form-title">
-                        <h2>Заказать звонок</h2>
-                        <p>
-                            Менеджер свяжиться свами
-                            и&nbspпроконсультирует по всем
-                            интересующим вас вопросам
-                        </p>
-                    </div>
-                    <div class="modal-body">
-                        <input type="text" class="form-control-phoneCall" id="inputNameForm" placeholder="Ваше имя">
-                        <input type="test" class="form-control-phoneCall" id="inputPhoneForm" placeholder="+7(   )   -  -">
-                    </div>
-                    <div class="modal-body-btn">
-                        <button type="submit" class="btn-form-modal">Презвоните мне!</button>
-                    </div>
-                    <div class="modal-body-footer">
-                        <p>
-                            Нажимая кнопку «Перезвоните мне», вы соглашаетесь с условиями Лицензионного&nbspсоглашения и Политикой обработки&nbspперсонильных данных
-                        </p>
-                    </div>
-                    <div class="close-popup js-close-campaign"></div>
-                </div>
-            </form> -->
-    <!-- </div> -->
-    <!-- Start-modal-for-page.gk end -->
-
+    <!-- footer end -->
 
     <!-- Start-modal-form-for-menu -->
     <div class="block-modal-menu" style="display:none;">
@@ -912,7 +802,7 @@
                 </div>
                 <div class="modal-body">
                     <input type="text" class="form-control-phoneCall" id="inputNameForm" placeholder="Ваше имя">
-                    <input type="test" class="form-control-phoneCall" id="inputPhoneForm" placeholder="+7(   )   -  -">
+                    <input type="text" class="form-control-phoneCall" id="inputPhoneFormModal" placeholder="+7(   )   -  -">
                 </div>
                 <div class="modal-body-btn">
                     <button type="submit" class="btn-form-modal">Презвоните мне!</button>
@@ -927,6 +817,38 @@
         </form>
     </div>
     <!-- End-modal-form-for-call -->
+
+    <!-- Start-modal-form-for-call-taxi -->
+    <div class="overlay js-overlay-campaign-taxi">
+        <form action="">
+            <div class="popup js-popup-campaign">
+                <div class="modal-call-form-title">
+                    <h2>Вызов такси</h2>
+                    <p>
+                        Закажите бесплатное такси до офиса продаж
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <div class="form-control-phoneCall-block-min">
+                        <input type="text" class="form-control-phoneCall inputStreetForm" id="inputStreetForm" placeholder="Улица">
+                        <input type="text" class="form-control-phoneCall inputHomeForm" id="inputHomeForm" placeholder="Дом">
+                    </div>
+                    <input type="text" class="form-control-phoneCall" id="inputNameForm" placeholder="Ваше имя">
+                    <input type="text" class="form-control-phoneCall" id="inputPhoneFormTaxi" placeholder="+7(   )   -  -">
+                </div>
+                <div class="modal-body-btn">
+                    <button type="submit" style="background-color: #ffbe0e" class="btn-form-modal">Вызвать такси</button>
+                </div>
+                <div class="modal-body-footer">
+                    <p>
+                        Нажимая кнопку «Вызвать такси», вы соглашаетесь с условиями Лицензионного&nbspсоглашения и Политикой обработки&nbspперсонильных данных
+                    </p>
+                </div>
+                <div class="close-popup js-close-campaign"></div>
+            </div>
+        </form>
+    </div>
+    <!-- End-modal-form-for-call-taxi -->
 
     <script>
         $(function(){
