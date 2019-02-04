@@ -182,9 +182,11 @@
         /* top: 30px; */
         max-width: 200px;
         max-height: 170px;
+        top: 0px;
+        border: 1px solid #e1e1e1;
+        padding: 11px 43px;
+        border-radius: 5px;
         margin-left: 0px;
-        margin-right: 0px
-        margin-top: 0px;
      }
 
     .promotions-and-discounts-item .promotions-and-discounts-text.promotions-and-discounts-text-href,
@@ -192,12 +194,34 @@
         margin-left: 0;
         width: 310px;
         margin-top: 0;
-        padding-top: 210px;
+        padding-top: 207px;
+    }
+    .promotions-and-discounts-item .promotions-and-discounts-text p{
+        margin-top: 3px;
+        font-size: 13px;
+    }
+    .promotions-and-discounts-main{
+        margin-top: 38px;
     }
     .promotions-and-discounts-item .promotions-and-discounts-img-abs{
         width: 100%;
-        top: 0px
+        top: 0px;
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        padding-top: 16px;
     }
+    .promotions-and-discounts-item.promotions-and-discounts-item-2 .promotions-and-discounts-text.promotions-and-discounts-text-href{
+        width: 100%;
+    }
+    .promotions-and-discounts-item .promotions-and-discounts-text.promotions-and-discounts-text-href .btn-red{
+        margin-top: -20px;
+        width: 141px;
+        line-height: 40px;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    
      /* client-Promotions-discounts-end*/
 
      /* 404 */
