@@ -171,6 +171,7 @@
      /* client-Promotions-discounts */
      .promotions-and-discounts-item{
         height: 350px;
+        width: 288px;
         border: none;
      }
      .promotions-and-discounts-item .promotions-and-discounts-img-rel{
@@ -182,7 +183,7 @@
         max-width: 200px;
         max-height: 170px;
         margin-left: 0px;
-        margin-right: 0px;
+        margin-right: 0px
         margin-top: 0px;
      }
 
