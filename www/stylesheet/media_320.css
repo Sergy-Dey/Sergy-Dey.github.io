@@ -1020,7 +1020,7 @@
     }
     .popup{
         width: 310px;
-        width: 440px;
+        height: 440px;
     }
     .modal-call-form-title h2 {
         font-size: 24px;
