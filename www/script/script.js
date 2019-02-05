@@ -456,7 +456,9 @@ $(document).ready(function(){
     $('.block-gk-img-5').NewSvg(); 
     $('.block-gk-img-6').NewSvg(); 
 
-    $('.block-gk-img-6').CreateSvg();
+
+    // $('.main-block-page-gk').NewSvg(); 
+    $('.main-block-page-gk').CreateSvg();
 
 
    
@@ -498,6 +500,93 @@ $(document).ready(function(){
     $(".GenplanOneMain-image" ).mouseleave(function () {
             // $(this).closest(blockOut).fadeIn(500);
         $(this).find('.block-open-gk-modal').removeClass("block-open-gk-modal-active");
+    });
+
+
+    // Модальное окно для  page
+    // function inWindow(s){
+    //     var scrollTop = $(window).scrollTop();
+    //     var windowHeight = $(window).height();
+    //     var currentEls = $(s);
+    //     var result = [];
+    //     currentEls.each(function(){
+    //         var el = $(this);
+    //         var offset = el.offset();
+    //         if(scrollTop <= offset.top && (el.height() + offset.top) < (scrollTop + windowHeight))
+    //         result.push(this);
+    //     });
+    //     return $(result);
+    // }
+    // var boxesInWindow = inWindow(".block-modal-gk");
+    
+    // // сделаем фон этих элементов красным
+    // console.log(boxesInWindow);
+    // var f = $('.block-modal-gk');
+    // $(window).scroll(function() {
+    //     var w = $(this);
+    //     if (w.scrollTop() > f.offset().top ) {
+    //         // footer в окне
+    //         // console.log("false");
+
+    //         $(".block-modal-gk").addClass("block-modal-gk-bottom");
+    //         // $(".block-modal-gk").removeClass("block-modal-gk-top");
+    //     }else{
+    //         // $(".block-modal-gk").addClass("block-modal-gk-top");
+    //         $(".block-modal-gk").removeClass("block-modal-gk-bottom");
+    //     }
+         
+    //     // } else {
+
+    //     //     $(".block-modal-gk").addClass("block-modal-gk-top");
+    //     //     $(".block-modal-gk").removeClass("block-modal-gk-bottom");
+
+    //     //     // console.log("true");
+            
+    //     // }
+    // });
+
+    $( ".main-block-page-gk .href-figura-1" ).hover( function() {
+        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+        $(this).find(".href-figura-1-rel svg  polygon").fadeIn(200);
+        $(this).find(".block-modal-gk").fadeIn(200);
+    });
+    $(".main-block-page-gk .href-figura-1" ).mouseleave(function () {
+            // $(this).closest(blockOut).fadeIn(500);
+            $(this).find(".href-figura-1-rel svg  polygon").fadeOut(200);
+            $(this).find(".block-modal-gk").fadeOut(200);
+    });
+
+    $( ".main-block-page-gk .href-figura-2" ).hover( function() {
+        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+        $(this).find(".href-figura-2-rel svg  polygon").fadeIn(200);
+        $(this).find(".block-modal-gk").fadeIn(200);
+    });
+    $(".main-block-page-gk .href-figura-2" ).mouseleave(function () {
+            // $(this).closest(blockOut).fadeIn(500);
+            $(this).find(".href-figura-2-rel svg  polygon").fadeOut(200);
+            $(this).find(".block-modal-gk").fadeOut(200);
+    });
+
+    $( ".main-block-page-gk .href-figura-3" ).hover( function() {
+        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+        $(this).find(".href-figura-3-rel svg  polygon").fadeIn(200);
+        $(this).find(".block-modal-gk").fadeIn(200);
+    });
+    $(".main-block-page-gk .href-figura-3" ).mouseleave(function () {
+            // $(this).closest(blockOut).fadeIn(500);
+            $(this).find(".href-figura-3-rel svg  polygon").fadeOut(200);
+            $(this).find(".block-modal-gk").fadeOut(200);
+    });
+
+    $( ".main-block-page-gk .href-figura-4" ).hover( function() {
+        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+        $(this).find(".href-figura-4-rel svg  polygon").fadeIn(200);
+        $(this).find(".block-modal-gk").fadeIn(200);
+    });
+    $(".main-block-page-gk .href-figura-4" ).mouseleave(function () {
+            // $(this).closest(blockOut).fadeIn(500);
+            $(this).find(".href-figura-4-rel svg  polygon").fadeOut(200);
+            $(this).find(".block-modal-gk").fadeOut(200);
     });
 
     // Маска для телефона------------------------//

@@ -1726,10 +1726,10 @@ main{
     text-align: center;
     line-height: 28px;
 }
-.main-block-page-gk .figura-cercl-1 {
+/* .main-block-page-gk .figura-cercl-1 {
     top: 600px;
     left: 629px;
-}
+} */
 .main-block-page-gk .figura-1 {
     opacity: 0;
     position: absolute;
@@ -1810,37 +1810,45 @@ main{
 }
 
 .block-modal-gk {
-    /* display: none; */
+    display: none;
     position: absolute;
     z-index: 1000;
     bottom: 100px;
-    left: 210px;
+    left: 50%;
     background: rgb(255, 255, 255);
-    width: 350px;
+    width: 348px;
+    height: 470px;
     padding: 40px;
     padding-top: 50px;
     border-radius: 8px;
+    transform: translate(-50%);
     color: black;
     -webkit-box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     -moz-box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
 }
-.main-block-page-gk .block-modal-gk-1 {
-    position: absolute;
+.block-modal-gk-top{
+    top: -116px;
+}
+.block-modal-gk-bottom{
+    top: 400px;
+}
+/* .main-block-page-gk .block-modal-gk-1 {
+    position: absolute; */
     /* display: none; */
-    opacity: 0;
+    /* opacity: 0;
     bottom: 420px;
     left: 470px;
     transition-timing-function: ease-in;
     transition: .5s;
-}
+} */
 
 .block-modal-gk h3 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .block-modal-gk .desc-address-gk-modal {
     color: #999999;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .block-modal-gk .desc-gk-modal {
     font-size: 15px;
@@ -1857,6 +1865,9 @@ main{
 }
 .block-modal-gk table {
     width: 100%;
+}
+.block-modal-gk table tbody tr{
+    border-top: 1px solid #f7f7f7;
 }
 .block-modal-gk .text-left {
     text-align: left;
@@ -1880,6 +1891,110 @@ main{
     transition-timing-function: ease-in;
     transition: .3s;
 }
+
+
+.main-block-page-gk .href-figura-1{
+    display: block;
+    position: absolute;
+    width: 372px;
+    height: 750px;
+    bottom: 258px;
+    left: 440px;
+}
+.main-block-page-gk .href-figura-2{
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 397px;
+    bottom: 489px;
+    left: 860px;
+}
+.main-block-page-gk .href-figura-3{
+    display: block;
+    position: absolute;
+    width: 202px;
+    height: 571px;
+    bottom: 333px;
+    left: 1090px;
+}
+.main-block-page-gk .href-figura-4{
+    display: block;
+    position: absolute;
+    width: 230px;
+    height: 648px;
+    bottom: 352px;
+    /* left: 1090px; */
+    right: 126px;
+}
+.main-block-page-gk .href-figura-1 .href-figura-1-rel,
+.main-block-page-gk .href-figura-2 .href-figura-2-rel,
+.main-block-page-gk .href-figura-3 .href-figura-3-rel,
+.main-block-page-gk .href-figura-4 .href-figura-4-rel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.main-block-page-gk .figura-cercl-1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 500; */
+}
+.main-block-page-gk .href-figura-1 .href-figura-1-rel svg{
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    bottom: 824px;
+    left: -440px;
+    overflow: initial;
+    /* opacity: 0; */
+}
+.main-block-page-gk .href-figura-2 .href-figura-2-rel svg{
+    position: absolute;
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -860px;
+    bottom: 588px;
+    overflow: inherit;
+}
+.main-block-page-gk .href-figura-3 .href-figura-3-rel svg{
+    position: absolute;
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -1090px;
+    bottom: 750px;
+    overflow: inherit;
+}
+.main-block-page-gk .href-figura-4 .href-figura-4-rel svg{
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -1401px;
+    bottom: 728px;
+    overflow: inherit;
+}
+.main-block-page-gk .href-figura-1 .href-figura-1-rel svg polygon,
+.main-block-page-gk .href-figura-2 .href-figura-2-rel svg polygon,
+.main-block-page-gk .href-figura-3 .href-figura-3-rel svg polygon,
+.main-block-page-gk .href-figura-4 .href-figura-4-rel svg polygon{
+    opacity: .5;
+    display: none;
+    transition-timing-function: ease-in;
+    /* transition: .2s; */
+}
+/* .main-block-page-gk .href-figura-1 .href-figura-1-rel svg polygon:hover{
+    opacity: .5;
+    transition-timing-function: ease-in;
+    transition: .2s;
+} */
+
+
 .main-block-page-gk .href-figura-1:hover .block-modal-gk-1 {
     opacity: 1;
 }
@@ -2351,7 +2466,7 @@ main{
 	background-color: rgba(0, 0, 0, .4);
 	display: none;
 }
-.block-modal-gk{
+/* .block-modal-gk{
     width: 500px;
     height: 500px;
     background-color: white;
@@ -2364,7 +2479,7 @@ main{
     box-sizing: border-box;
     background-color: white;
     color: #000;
-}
+} */
 
 /* modal for page-gk */
 .modal-wrapper {
