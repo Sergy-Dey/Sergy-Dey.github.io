@@ -464,25 +464,25 @@ $(document).ready(function(){
    
     // checkbox
     // выбор только одного чекбокса
-    var inputs=document.getElementsByClassName("checked-change").getElementsByTagName("input");
-    for(var i=0;i<inputs.length;i++)
-        {
-        if(inputs[i].type=="checkbox")
-        {
-        inputs[i].onchange=function()
-            {
-            inputs=document.getElementsByClassName("checked-change").getElementsByTagName("input");
-            for(var i=0;i<inputs.length;i++)
-            {
-            if(inputs[i].type=="checkbox")
-                {
-                inputs[i].checked=false;
-                }
-                this.checked=true;
-            }
-            }
-        }
-    }
+    // var inputs=document.getElementsByClassName("checked-change").getElementsByTagName("input");
+    // for(var i=0;i<inputs.length;i++)
+    //     {
+    //     if(inputs[i].type=="checkbox")
+    //     {
+    //     inputs[i].onchange=function()
+    //         {
+    //         inputs=document.getElementsByClassName("checked-change").getElementsByTagName("input");
+    //         for(var i=0;i<inputs.length;i++)
+    //         {
+    //         if(inputs[i].type=="checkbox")
+    //             {
+    //             inputs[i].checked=false;
+    //             }
+    //             this.checked=true;
+    //         }
+    //         }
+    //     }
+    // }
     // checkbox end
 
     $("#next-change").click(function(){

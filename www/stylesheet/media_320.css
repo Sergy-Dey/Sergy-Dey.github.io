@@ -1078,4 +1078,7 @@
         top: 20px;
         right: 20px;
     }
+    .block-scheme-main .slick-slide{
+        height: 117%;
+    }
 }
