@@ -1268,7 +1268,7 @@
     }
     .block-list-main {
         min-height: 1000px;
-        margin-top: 70px;
+        margin-top: 0px;
         text-align: center;
     }
     .block-list-main .block-left {
@@ -1373,5 +1373,30 @@
         height: 650px;
         font-size: 15px;
     }
-     
+
+
+    .block-layouts-header{
+        position: relative;
+    }
+    .block-list-main table tbody tr td.block-schema-apart-lock:before{
+        left: 10px;
+    }
+    .block-layouts-header .block-schema-or-list{
+        position: absolute;
+        top: 71px;
+        right: 0px;
+        float:none;
+    }
+    .myCheckbox span{
+        width: 45px;
+        height: 45px;
+        line-height: 49px;
+        font-size: 16px;
+    }
+    .block-model-scheme a{
+        margin-top: -40px;
+    }
+    .block-scheme-main .slick-slide{
+        height: 120%;
+    }
 }

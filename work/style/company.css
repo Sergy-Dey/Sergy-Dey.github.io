@@ -22,7 +22,8 @@ body{
 
 /* Heder---------------------------------------------------------------- */
 .header-block{
-    background: url(../img/bcmain.jpg) repeat-x center;
+    /* background: url(../img/bcmain.jpg) repeat-x center; */
+    background-image: url('../../www/images/img/stars-on-skay.png'), linear-gradient(to bottom, #003c6b, #3e9fd2);
     overflow: hidden;
     height: 920px;
 
@@ -1151,6 +1152,7 @@ header{
 
 .block-gk-docs{
     margin-top: 150px;
+    position: relative;
 }
 .block-gk-docs .block-left{
     float: left;
@@ -1257,12 +1259,31 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     padding:40px 30px 29px 50px;
     width: 610px;
     position: relative;
-    z-index: 300;
+    z-index: 1;
     border: 5px solid #9d9d9d;
     border-radius: 5px;
     background: #fff;
     margin-left: 200px;
     margin-bottom: 100px;
+}
+/* .change-buy-apartament:after{
+    position: absolute;
+    content:"";
+    height: 140px;
+    bottom: -138px;
+    right: 216px;
+    z-index: 1;
+    width: 121px;
+    background: url("../img/bilbord-leg.png");
+} */
+.block-right{
+    position: relative;
+    z-index: 300;
+}
+.ing-for-bilbord-leg{
+    position: absolute;
+    bottom: -841px;
+    right: 236px;
 }
 .block-right .change-buy-apartament{
     margin-left: 0px;
@@ -1313,6 +1334,8 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
 .block-mortgage-calculation{
     background-color: #83b6cb;
     height: 675px;
+    position: relative;
+    z-index:2;
 }
 .block-mortgage-calculation .block-left-mortgage-calculation{
     width: 718px; 
@@ -1466,10 +1489,10 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
 
 .block-apartament-schema{
     background-color: #f3f3f3;
-    margin-top: -28px;
+    margin-top: -9px;
 }
 .block-breadcrumbs{
-    padding-top: 145px;
+    padding-top: 90px;
 }
 .block-breadcrumbs ul li{
     display:inline-block;
@@ -1697,6 +1720,7 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
 }
 .block-apartament-schema-docs.block-gk-docs .block-right{
     float: none;
+    
 }
 .block-apartament-schema-docs.block-gk-docs .block-right .blocl-docs-download{
     margin-bottom: 30px;
@@ -1750,16 +1774,14 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     display: inline-block;
 }
 .another-apartament-slider .slick-next.slick-arrow{
-    right: 25px;
-    top: -100px;
+    left: 95%;
+    top: -625px;
     
 }
 .another-apartament-slider .slick-prev.slick-arrow{
     right: 80px;
-    top: -100px;
-    left: 1625px;
-
-    
+    top: -90px;
+    left: 1580px;    
 }
 .another-apartament-slider .slick-prev.slick-arrow, .another-apartament-slider .slick-next.slick-arrow{
     border: none;
@@ -2009,4 +2031,29 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     margin-right: 0px;
     font-weight: 500;
     font-size: 24px;
+}
+
+
+
+.another-apartament-slider .slick-prev.slick-arrow, .another-apartament-slider .slick-next.slick-arrow{
+    position: relative;
+}
+.another-apartament-slider .slick-next.slick-arrow:after{
+    position: absolute;
+    content:"";
+    width: 28px;
+    height: 53px;
+    background: url("../img/Shape-1.png");
+}
+.another-apartament-slider .slick-prev.slick-arrow:after{
+    position: absolute;
+    content:"";
+    width: 28px;
+    height: 53px;
+    background: url("../img/Shape-1.png");
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
 }

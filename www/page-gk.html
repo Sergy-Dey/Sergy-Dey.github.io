@@ -388,19 +388,40 @@
                             <h3>Подобрать квартиру</h3>
                             <ul>
                                 <li>
-                                    <a href="#">1</a>
+                                    <!-- <a href="#">1</a> -->
+
+                                    <label class="myCheckbox">
+                                        <input type="checkbox" name="test"/>
+                                        <span>1</span>
+                                    </label>
                                 </li>
                                 <li>
-                                    <a href="#">2</a>
+                                    <!-- <a href="#">2</a> -->
+                                    <label class="myCheckbox">
+                                        <input type="checkbox" name="test"/>
+                                        <span>2</span>
+                                    </label>
                                 </li>
                                 <li>
-                                    <a href="#">3</a>
+                                    <!-- <a href="#">3</a> -->
+                                    <label class="myCheckbox">
+                                        <input type="checkbox" name="test"/>
+                                        <span>3</span>
+                                    </label>
                                 </li>
                                 <li>
-                                    <a href="#">4+</a>
+                                    <!-- <a href="#">4+</a> -->
+                                    <label class="myCheckbox">
+                                        <input type="checkbox" name="test"/>
+                                        <span>4+</span>
+                                    </label>
                                 </li>
                                 <li>
-                                    <a href="#">Студия</a>
+                                    <!-- <a href="#">Студия</a> -->
+                                    <label class="myCheckbox">
+                                        <input type="checkbox" name="test"/>
+                                        <span class="lable-studio">Студия</span>
+                                    </label>
                                 </li>
                             </ul>
                             <div style="clear: both;"></div>
@@ -434,9 +455,9 @@
                                             <label for="amount-cost-mob"><p class="text-24">Стоимость</p></label>
                                         </div>
                                         <div class="block-horizontal-right">
-                                            <input type="number" id="amount-square-1">
+                                            <input type="text" id="amount-square-1" onchange="checknumbers()" maxlength=3>
                                             <p>-</p>
-                                            <input type="number" id="amount-square-2">
+                                            <input type="text" id="amount-square-2" onchange="checknumbers()" maxlength=3>
                                             <label class="stepen" id="amount-cost-mob">млн &#8381;</label>
                                         </div> 
                                     </div>
@@ -453,9 +474,9 @@
                                             <label for="amount-cost-1"><p class="text-24">Площадь</p></label>
                                         </div>
                                         <div class="block-horizontal-right">
-                                            <input type="number" id="amount-cost-1">
+                                            <input type="text" id="amount-cost-1" onchange="checknumbers()" maxlength=3>
                                             <p>-</p>
-                                            <input type="number" id="amount-cost-2">
+                                            <input type="text" id="amount-cost-2" onchange="checknumbers()" maxlength=3>
                                             <label class="stepen" id="amount-cost-mob">м<sup><small>2</small></sup></label>
                                         </div> 
                                     </div>
@@ -472,9 +493,9 @@
                                             <label for="amount-floor"><p class="text-24">Этаж</p></label>
                                         </div>
                                         <div class="block-horizontal-right">
-                                            <input type="number" id="amount-floor-1">
+                                            <input type="text" id="amount-floor-1" onchange="checknumbers()" maxlength=2>
                                             <p>-</p>
-                                            <input type="number" id="amount-floor-2">
+                                            <input type="text" id="amount-floor-2" onchange="checknumbers()" maxlength=2>
                                             <label class="stepen" id="amount-cost-mob"></label>
                                         </div> 
                                     </div>
@@ -649,7 +670,7 @@
                     </h2>
                     <div class="checked-change text-24">
                         <div class="group-input-check">
-                            <input type="checkbox" id="c2" name="cc" />
+                            <input class="group-input-check-on-click" type="checkbox" id="c2" name="cc" />
                             <label for="c2">Буду использовать собственные средства для покупки</label>
                         </div>
                         <div class="group-input-check">
@@ -995,6 +1016,13 @@
         </form>
     </div>
     <!-- End-modal-form-for-call-taxi -->
+
+    <!-- <input type="text" maxlength=5 name="numbers" id="numbers" onchange="checknumbers()" value="">  -->
+    <script> 
+    function checknumbers() { 
+        if (!(/^[0-9]*$/.test(numbers.value))) {numbers.value = numbers.value.replace(/[^0-9]*/,'');} 
+    } 
+    </script>
     <script>
         function indents(elem){
             var outrez = (elem+'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');

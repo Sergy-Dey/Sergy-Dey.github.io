@@ -1106,6 +1106,11 @@ margin-bottom: 30px;
     border-radius:5px;
     color:black;
 }
+.block-model-scheme-modal-map .block-model-scheme-map-item.active-scheme-map-item{
+    border:2px solid #ff0e0e;
+    background-color: #ffe3e3;
+    color:#ff0e0e;
+}
 .block-model-scheme-modal-map .block-model-scheme-map-item:hover{
     border:2px solid #ff0e0e;
     background-color: #ffe3e3;
@@ -1343,7 +1348,7 @@ margin-bottom: 30px;
 .block-scheme-main .slick-slide{
     height: 100%;
     position: relative;
-    height: 115%;
+    height: 107%;
 }
 .block-scheme-main .slick-arrow{
     position: absolute;
@@ -1554,14 +1559,14 @@ margin-bottom: 30px;
     content: '';
     width: 10px;
     height: 6px;
-    top: 5px;
+    top: 3px;
     right: -15px;
-    background: url('../images/icons/strelka.png') no-repeat center;
-    -moz-transform: rotate(-90deg); /* Для Firefox */
-    -ms-transform: rotate(-90deg); /* Для IE */
-    -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(-90deg); /* Для Opera */
-    transform: rotate(-90deg);
+    background: url('../images/icons/strelka-4.png') no-repeat center;
+    -moz-transform: rotate(0deg); /* Для Firefox */
+    -ms-transform: rotate(0deg); /* Для IE */
+    -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(0deg); /* Для Opera */
+    transform: rotate(0deg);
 }
 .block-list-main table tbody{
     background-color: white;
@@ -2119,23 +2124,25 @@ main{
 }
 .apart-shema .block-left ul {
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
-.apart-shema .block-left ul li {
-    /* padding: 20px; */
+/* .apart-shema .block-left ul li {
+    
     display: inline-block;
     width: 50px;
     height: 50px;
     text-align: center;
-    /* text-transform: uppercase; */
+
     border: 1px solid #e5e5e5;
-    /* color: #ff0e0e; */
+
     color: #000;
     border-radius: 5px;
     cursor: pointer;
     transition-timing-function: ease-in;
     transition: .3s;
     margin-right: 10px;
-}
+} */
 .apart-shema .block-left ul li a {
     display: block;
     color: #000;
@@ -2198,15 +2205,12 @@ main{
     transition-timing-function: ease-in;
     transition: .3s;
 }
-.apart-shema .block-left ul li {
-    /* padding: 20px; */
+/* .apart-shema .block-left ul li {
     display: inline-block;
     width: 50px;
     height: 50px;
     text-align: center;
-    /* text-transform: uppercase; */
     border: 1px solid #e5e5e5;
-    /* color: #ff0e0e; */
     color: #000;
     border-radius: 5px;
     cursor: pointer;
@@ -2230,7 +2234,8 @@ main{
     transition-timing-function: ease-in;
     transition: .3s;
     font-size: 18px;
-}
+} */
+
 .block-right .block-shema-big {
     text-align: center;
 }
@@ -4002,4 +4007,38 @@ input.form-control-phoneCall:-moz-placeholder{
 /*  */
 .footer-block-page.footer-block-page-for-Promotions-discounts{
     margin-top: 18px;
+}
+
+
+.apart-shema .block-left ul li{
+    display: inline-block;
+}
+.myCheckbox input {
+    /* // display: none;
+    // Better than display: none for accessibility reasons */
+    position: relative;
+    z-index: -9999;
+}
+
+.myCheckbox span {
+    width: 51px;
+    height: 51px;
+    display: block;
+    line-height: 55px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.myCheckbox span.lable-studio {
+   padding-left: 10px;
+   padding-right: 15px;
+}
+
+.myCheckbox input:checked + span {
+    /* background: url("link_to_another_image"); */
+    border:1px solid #ff0e0e;
+    color:#ff0e0e;
+    
 }
