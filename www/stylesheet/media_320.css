@@ -1081,4 +1081,194 @@
     .block-scheme-main .slick-slide{
         height: 117%;
     }
+
+
+    /* page-gk */
+    .main-block-page-gk{
+        width: 320px;
+        height: 568px;
+    }
+    .page-gk-mob-img {
+        display: block;
+        position: relative;
+        /* left: -330px; */
+        left: -156px;
+        /* max-height: 695px; */
+        width: 546px;
+        height: 568px;
+    }
+    .main-block-page-gk .href-figura-1 {
+        width: 98px;
+        height: 395px;
+        bottom: 135px;
+        left: 0px;
+    }
+    .main-block-page-gk .href-figura-2 {
+        width: 63px;
+        height: 223px;
+        bottom: 243px;
+        left: 110px;
+    }
+    .main-block-page-gk .href-figura-3 {
+        width: 63px;
+        height: 368px;
+        bottom: 106px;
+        left: 174px;
+    }
+    .main-block-page-gk .href-figura-4 {
+        width: 63px;
+        height: 316px;
+        bottom: 205px;
+        /* left: 1090px; */
+        right: 0px;
+    }
+    .block-modal-gk{
+        width: 299px;
+    }
+    .block-modal-gk-mob-left, .block-modal-gk-mob-right {
+        top: 0px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .main-block-page-gk .main-block-page-gk-href {
+        right: 50%;
+        top: 89%;
+        /* bottom: 10px; */
+        width: 95%;
+        font-size: 15px;
+        transform: translate(50%);
+    }
+    .main-block-page-gk .main-block-page-gk-href p{
+        font-size: 12px;
+    }
+    .main-block-page-gk .main-block-page-gk-href p:before{
+        left: 20%;
+    }
+    .main-block-page-gk .main-block-page-gk-title {
+        /* display: none; */
+        width: 300px;
+        left: 10px;
+        bottom: 63px;
+    }
+    .main-block-page-gk-container {
+        height: 568px;
+        width: 320px;
+    }
+    .header-title-apart {
+        margin-left: 10px;
+        flex-flow: column;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .header-title-apart p{
+        border-right: none;
+        margin-bottom: 35px;
+    }
+    .block-for-mob-320-sort{
+        display:none;
+    }
+
+    .block-have-pluse{
+        display:none;
+    }
+    .apart-shema .block-left{
+        padding: 0px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    
+    }
+    .btn-block-for-mob-320-sort{
+        display: block;
+        position: relative;
+        border:2px solid #ff0e0e;
+        color:#ff0e0e;
+        text-align: center;
+        height: 43px;
+        border-radius: 5px;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .btn-block-for-mob-320-sort p{
+        font-size: 12px;
+        line-height: 42px;
+        font-weight: 600;
+        position: relative;
+        
+    }
+    .btn-block-for-mob-320-sort p:before{
+        position: absolute;
+        content:"";
+        width: 17px;
+        height: 14px;
+        left: 82px;
+        background: url("../images/icons/filter.png") no-repeat center;
+        top: 45%;
+        transform: translate(0%, -50%);
+    }
+    .apart-shema .block-left h3{
+        margin-left: 16px;
+        margin-bottom: 20px;
+    }
+    .apart-shema .block-left ul{
+        width: 310px;
+        position: relative;
+        right: -6px;
+        margin-top: 0px;
+    }
+    .img-block-apart-shema{
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+    .block-for-mob-320-sort .block-horizontal-shema .block-horizontal {
+        margin-top: 20px;
+        width: 90%;
+        position: relative;
+        left: 20px;
+    }
+    .block-for-mob-320-sort .block-horizontal-label-main{
+        font-size: 2px;
+    }
+    .block-for-mob-320-sort-btn-close{
+        position: absolute;
+        display: block;
+        right: 15px;
+        top: 26px;
+        width: 23px;
+        height: 23px;
+        background: url("../images/icons/btn-close.png") no-repeat center;
+    }
+    .block-right .block-tags-sort{
+        margin-left: 10px;
+    }
+    .block-right .block-tags-sort a{
+        font-size: 14px;
+        padding: 10px 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .apart-shema .block-right .block-shema-big{
+        width: 90%;
+    }
+    .block-gk-docs{
+
+    }
+    .block-gk-docs .block-left {
+        width: 282px;
+    }
+    .block-gk-docs .block-left .settlement-date{
+        width: 276px;
+    }
+    .block-gk-docs .block-right {
+        flex-flow: column;
+    }
+    .block-gk-docs .block-right .blocl-docs-download {
+        width: 290px;
+    }
+
+
+    /* page-gk end */
 }

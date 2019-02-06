@@ -349,6 +349,7 @@ $(document).ready(function(){
     $('.block-container-for-pluse').on('click', function() {
         $('.modal-wrapper').toggleClass('open');
        $('.page-wrapper').toggleClass('blur-it');
+       console.log("test");
         return false;
      });
      $(".btn-close-modal-form-page-gk").on('click', function() {
@@ -544,49 +545,101 @@ $(document).ready(function(){
             
     //     // }
     // });
+    if($(window).width()>1366){
+        $( ".main-block-page-gk .href-figura-1" ).hover( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            $(this).find(".href-figura-1-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $(".main-block-page-gk .href-figura-1" ).mouseleave(function () {
+                // $(this).closest(blockOut).fadeIn(500);
+                $(this).find(".href-figura-1-rel svg  polygon").fadeOut(200);
+                $(this).find(".block-modal-gk").fadeOut(200);
+                return false;
+        });
+    
+        $( ".main-block-page-gk .href-figura-2" ).hover( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            $(this).find(".href-figura-2-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $(".main-block-page-gk .href-figura-2" ).mouseleave(function () {
+                // $(this).closest(blockOut).fadeIn(500);
+                $(this).find(".href-figura-2-rel svg  polygon").fadeOut(200);
+                $(this).find(".block-modal-gk").fadeOut(200);
+                return false;
+        });
+    
+        $( ".main-block-page-gk .href-figura-3" ).hover( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            $(this).find(".href-figura-3-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $(".main-block-page-gk .href-figura-3" ).mouseleave(function () {
+                // $(this).closest(blockOut).fadeIn(500);
+                $(this).find(".href-figura-3-rel svg  polygon").fadeOut(200);
+                $(this).find(".block-modal-gk").fadeOut(200);
+                return false;
+        });
+    
+        $( ".main-block-page-gk .href-figura-4" ).hover( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            $(this).find(".href-figura-4-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $(".main-block-page-gk .href-figura-4" ).mouseleave(function () {
+                // $(this).closest(blockOut).fadeIn(500);
+                $(this).find(".href-figura-4-rel svg  polygon").fadeOut(200);
+                $(this).find(".block-modal-gk").fadeOut(200);
+                return false;
+        });
 
-    $( ".main-block-page-gk .href-figura-1" ).hover( function() {
-        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-        $(this).find(".href-figura-1-rel svg  polygon").fadeIn(200);
-        $(this).find(".block-modal-gk").fadeIn(200);
-    });
-    $(".main-block-page-gk .href-figura-1" ).mouseleave(function () {
-            // $(this).closest(blockOut).fadeIn(500);
-            $(this).find(".href-figura-1-rel svg  polygon").fadeOut(200);
-            $(this).find(".block-modal-gk").fadeOut(200);
-    });
+    }else{
+        $( ".main-block-page-gk .href-figura-1" ).click( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            // $(this).find(".href-figura-1-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $( ".btn-close-block-modal-gk" ).click( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            $(this).parent().fadeOut(200);
+            // $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $( ".main-block-page-gk .href-figura-2" ).click( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            // $(this).find(".href-figura-2-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $( ".main-block-page-gk .href-figura-3" ).click( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            // $(this).find(".href-figura-3-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+        $( ".main-block-page-gk .href-figura-4" ).click( function() {
+            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
+            // $(this).find(".href-figura-4-rel svg  polygon").fadeIn(200);
+            $(this).find(".block-modal-gk").fadeIn(200);
+            return false;
+        });
+    }
+    
 
-    $( ".main-block-page-gk .href-figura-2" ).hover( function() {
-        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-        $(this).find(".href-figura-2-rel svg  polygon").fadeIn(200);
-        $(this).find(".block-modal-gk").fadeIn(200);
+    $(".btn-block-for-mob-320-sort").click(function(){
+        $(".btn-block-for-mob-320-sort").fadeOut(50);
+        $(".block-for-mob-320-sort").fadeIn(500);   
     });
-    $(".main-block-page-gk .href-figura-2" ).mouseleave(function () {
-            // $(this).closest(blockOut).fadeIn(500);
-            $(this).find(".href-figura-2-rel svg  polygon").fadeOut(200);
-            $(this).find(".block-modal-gk").fadeOut(200);
-    });
-
-    $( ".main-block-page-gk .href-figura-3" ).hover( function() {
-        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-        $(this).find(".href-figura-3-rel svg  polygon").fadeIn(200);
-        $(this).find(".block-modal-gk").fadeIn(200);
-    });
-    $(".main-block-page-gk .href-figura-3" ).mouseleave(function () {
-            // $(this).closest(blockOut).fadeIn(500);
-            $(this).find(".href-figura-3-rel svg  polygon").fadeOut(200);
-            $(this).find(".block-modal-gk").fadeOut(200);
-    });
-
-    $( ".main-block-page-gk .href-figura-4" ).hover( function() {
-        // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-        $(this).find(".href-figura-4-rel svg  polygon").fadeIn(200);
-        $(this).find(".block-modal-gk").fadeIn(200);
-    });
-    $(".main-block-page-gk .href-figura-4" ).mouseleave(function () {
-            // $(this).closest(blockOut).fadeIn(500);
-            $(this).find(".href-figura-4-rel svg  polygon").fadeOut(200);
-            $(this).find(".block-modal-gk").fadeOut(200);
+    $(".block-for-mob-320-sort-btn-close").click(function(){
+        $(".block-for-mob-320-sort").fadeOut(50);  
+        $(".btn-block-for-mob-320-sort").fadeIn(500);
+         
     });
 
     // Маска для телефона------------------------//
