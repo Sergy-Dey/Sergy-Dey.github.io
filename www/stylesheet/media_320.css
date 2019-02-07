@@ -1271,4 +1271,127 @@
 
 
     /* page-gk end */
+
+    /* compamy.html */
+    .header-block-company{
+        height: 564px;
+    }
+
+    .header-block-company .img-abs-cloud10{
+        display: none;
+    }
+    .header-block-company .img-abs-cloud11{
+        display: none;
+    }
+    .header-block-company .img-abs-cloud12{
+        display: none;
+    }
+    .img-quadcopter-3{
+        left: 0px;
+        top: 160px; 
+    }
+    .img-air-snake-3 {
+        display: none;
+    }
+    .img-sun-3{
+        position: absolute;
+        top: 100px;
+        right: 5%;
+    }
+    .header-block-company h1{
+        bottom: 30px;
+    }
+    .block-board-left-deg .img-abs-cloud10{
+        display:none;
+    }
+    .block-board-left-deg .img-abs-cloud12{
+        display:none;
+    }
+    .block-board-left-deg .img-abs-man-1 {
+        left: 14%;
+        width: 145px;
+        top: 339px;
+    }
+    .block-board-left-deg .header-block-desc-message-main{
+        right: 53%;
+    }
+    .block-board-left-deg .header-block-desc-message{
+        font-size: 18px;
+        line-height: 24px;
+        width: 320px;
+    }
+    .header-block-desc-message-768{
+        display: none;
+    }
+    .block-board-left-deg{
+        height: 520px;
+        top: 0px;
+    }
+    .block-company-section {
+        margin-top: 20px;
+    }
+    .block-company-section{
+        height: 555px;
+        margin-bottom: 30px;
+    }
+    .main-blocl-desc h1 {
+       margin-bottom: 50px;
+    }
+    .img-abs-man-2{
+        width: 161px;
+        right: 50%;
+    }
+    .block-board-left-deg.block-board-right-deg .header-block-desc-message-main{
+        right: 473px;
+    }
+    .block-board-left-deg.block-board-right-deg .header-block-desc-message:before {
+        left: 260px;
+    }
+    .block-our-life .block-title-our-life {
+        text-align: center;
+    }
+    .block-our-life .block-title-our-life h2{
+        float: none;
+        margin-bottom: 20px;
+    }
+    .block-our-life .block-title-our-life a{
+        float:none;
+        display: inline-block;
+    }
+    .block-wrap-img-our-life{
+        height: 360px;
+    }
+    .additional-services h2 {
+        font-size: 30px;
+        line-height: 34px;
+        font-weight: 600;
+    }
+    .additional-services p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .our-partners.slider-partners-2{
+        left: 0px;
+    }
+    .slider-partners-2-block img{
+        max-width: 260px;
+        position: relative;
+        left: 50%;
+        transform: translate( -50% );
+    }
+    .our-partners.slider-partners-2 .slick-dots {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-top: 30px;
+        transform: translate( -50% );
+    }
+    .block-documents h2{
+        margin-bottom: 30px;
+    }
+    .block-documents-items {
+        justify-content: center;
+    }
+     /* compamy.html end*/
 }

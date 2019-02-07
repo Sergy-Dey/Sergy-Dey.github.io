@@ -437,6 +437,38 @@
         /* margin-bottom: 100px; */
     }
     /* page-gk end */
+
+
+    /* compamy.html */
+    .block-company-section{
+        margin-top: 50px;
+    }
+    .block-board-left-deg{
+        bottom: -100px;
+    }
+    .img-abs-man-1{
+        left: 3%;
+    }
+    .block-board-left-deg .header-block-desc-message-main{
+        right: 40px;
+    }
+    .main-blocl-desc h1{
+        margin-left: 170px;
+    }
+    .block-board-left-deg.block-board-right-deg .header-block-desc-message-main{
+        right: 50%;
+    }
+    .img-balloon-3 {
+        left: 100px;
+    }
+    .our-partners-block-slider .wrapper-2{
+        width: 1130px;
+    }
+    .our-partners.slider-partners .slick-next.slick-arrow {
+        right: -80px;
+    }
+
+    /* compamy.html end*/
 }
 @media (max-width: 892px){
     /* .block-client-header ul li {
