@@ -35,7 +35,7 @@ jQuery(function ($) {
             // direction 120
             // $(".img-quadcopter").css()
             let tes=$('.img-quadcopter').css('left')
-            console.log(tes);
+            // console.log(tes);
             $('.img-quadcopter').css('left',(tes-(direction*.25))+'px');
 
             // var test=getElem('.img-quadcopter', 'width');
