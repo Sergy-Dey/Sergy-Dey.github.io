@@ -450,12 +450,12 @@ $(document).ready(function(){
     // emd-menu
   // End-------------------------------------//
 
-    $('.block-gk-img-1').NewSvg(); 
-    $('.block-gk-img-2').NewSvg(); 
-    $('.block-gk-img-3').NewSvg(); 
-    $('.block-gk-img-4').NewSvg(); 
-    $('.block-gk-img-5').NewSvg(); 
-    $('.block-gk-img-6').NewSvg(); 
+    // $('.block-gk-img-1').NewSvg(); 
+    // $('.block-gk-img-2').NewSvg(); 
+    // $('.block-gk-img-3').NewSvg(); 
+    // $('.block-gk-img-4').NewSvg(); 
+    // $('.block-gk-img-5').NewSvg(); 
+    // $('.block-gk-img-6').NewSvg(); 
 
 
     // $('.main-block-page-gk').NewSvg(); 
@@ -600,32 +600,22 @@ $(document).ready(function(){
 
     }else{
         $( ".main-block-page-gk .href-figura-1" ).click( function() {
-            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-            // $(this).find(".href-figura-1-rel svg  polygon").fadeIn(200);
             $(this).find(".block-modal-gk").fadeIn(200);
             return false;
         });
         $( ".btn-close-block-modal-gk" ).click( function() {
-            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
             $(this).parent().fadeOut(200);
-            // $(this).find(".block-modal-gk").fadeIn(200);
             return false;
         });
         $( ".main-block-page-gk .href-figura-2" ).click( function() {
-            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-            // $(this).find(".href-figura-2-rel svg  polygon").fadeIn(200);
             $(this).find(".block-modal-gk").fadeIn(200);
             return false;
         });
         $( ".main-block-page-gk .href-figura-3" ).click( function() {
-            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-            // $(this).find(".href-figura-3-rel svg  polygon").fadeIn(200);
             $(this).find(".block-modal-gk").fadeIn(200);
             return false;
         });
         $( ".main-block-page-gk .href-figura-4" ).click( function() {
-            // $(this).find(".href-figura-1-rel svg").addClass("svg-active");
-            // $(this).find(".href-figura-4-rel svg  polygon").fadeIn(200);
             $(this).find(".block-modal-gk").fadeIn(200);
             return false;
         });
@@ -642,12 +632,7 @@ $(document).ready(function(){
             return false;
         }
     });
-    // $(".btn-block-for-mob-768-sort p").click(function(){
-       
-    //     $(".block-for-mob-320-sort").fadeIn(50);
-    //     return false;
-    //     // $(".block-for-mob-320-sort").fadeIn(500);   
-    // });
+
     
     $(".btn-block-for-mob-320-sort").click(function(){
         if($(".block-for-mob-320-sort").hasClass("block-for-mob-320-sort-active")){
@@ -661,10 +646,6 @@ $(document).ready(function(){
         }
     });
 
-    // $(".btn-block-for-mob-320-sort").click(function(){
-    //     $(".btn-block-for-mob-320-sort").fadeOut(50);
-    //     $(".block-for-mob-320-sort").fadeIn(500);   
-    // });
     $(".block-for-mob-320-sort-btn-close").click(function(){
         $(".block-for-mob-320-sort").removeClass("block-for-mob-320-sort-active").fadeOut(500);
             $(".btn-block-for-mob-320-sort").fadeIn(50);
