@@ -1,10 +1,7 @@
 function getElem(elem, cs){
     return elem.css(cs);
 }
-// function getStyles( elem ) {
-// 	return window.getComputedStyle( elem, null );
-// }
-// класс для скрола по горизонтали
+
 jQuery(function ($) {
     $.fn.hScroll = function (amount) {
 
@@ -27,15 +24,8 @@ jQuery(function ($) {
                 $(".header-menu-nav").removeClass("menu-footer");
             }
             if(position>1300){
-                console.log("test"+position);
+
                 $(".body-main-background").addClass("body-main-background-2");
-                // $("#body-main").removeClass("body-main-background");
-                // $("#body-main").css({
-                //     "background-image": "linear-gradient(to bottom, #003c6b, #3e9fd2)",
-                //     "transition-timing-function": "ease-in",
-                //     "transition":".3s"
-                // });
-                // $("#body-main").animate({ backgroundImage: "linear-gradient(to bottom, #003c6b, #3e9fd2)"},1000);
             }else{
           
                 $(".body-main-background").removeClass("body-main-background-2");
@@ -102,17 +92,6 @@ jQuery.fn.getCoord = function(){
       "y" : y
   };
 };
-// $(window).bind('scroll',function(e){
-//     parallaxScroll();
-//     console.log("test");
-// });
-// function parallaxScroll(){
-// var scrolled = $(window).scrollTop();
-// console.log("test");
-// $('#parallax-bg1').css('top',(0-(scrolled*.25))+'px');
-// $('#parallax-bg2').css('top',(0-(scrolled*.5))+'px');
-// $('#parallax-bg3').css('top',(0-(scrolled*.75))+'px');
-// }
 
 $(document).ready(function(){
 
