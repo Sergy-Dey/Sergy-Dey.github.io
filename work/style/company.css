@@ -1,10 +1,4 @@
-body{
-    /* background:url('../img/bcmain.jpg') center; */
-    font-family: 'TT Commons';
-    /* overflow: hidden; */
-    /* height: 100%; */
-    /* background-size: auto 100%; */
-}
+
 .class-body{
     overflow: hidden;
 }
@@ -490,110 +484,7 @@ header{
 
 
 
-/* footer ---------------------------------------- */
-.footer-block-page{
-    border-top: 1px solid #e4e4e4;
-    margin-top: 120px;
-    padding-top: 50px;
-}
-.footer-block-page-top .footer-block-page-top-menu{
-    float:left;
-    margin-right: 60px;
-}
-/* .footer-block-page-top .footer-block-page-top-menu li:nth-child(2n+1){
-    float:left;
-} */
-.footer-block-page-top .footer-block-page-top-menu li{
-    font-size: 22px;
-    margin-bottom: 30px;
-    display: block;
-    font-weight: 600;
-    text-transform: uppercase;
-    color:#464646;
-}
-.footer-block-page-top .footer-block-page-top-menu li a{
-    font-size: 24px;
-    display: block;
-    font-weight: 600;
-    text-transform: uppercase;
-    color:#464646;
-}
-.footer-block-page-top .footer-block-page-top-adress-1, .footer-block-page-top .footer-block-page-top-adress-2{
-    float: left;
-    width: 300px;
-    margin-left: 50px;
-}
-/* .footer-block-page-top .footer-block-page-top-adress-1{
-    width: 245px;
-    float: left;
-} */
-.footer-block-page-top .footer-block-page-top-adress-1 a{
-    text-transform: uppercase;
-    color:#ff0e0e;
-    font-size: 22px;
-    margin-top: 20px;
-    font-weight: 600;
-    display: block;
-}
-/* .footer-block-page-top .footer-block-page-top-adress-2{
-    width: 365px;
-    margin-left: 50px;
-    /* float: right; */
-/* }  */
-.footer-block-page-top-adress-2 p:nth-child(2n){
-    margin-top: 30px;
-}
-.footer-block-page-top .footer-block-page-top-phone a{
-    text-transform: uppercase;
-    color:#000;
-    font-size: 24px;
-    /* margin-top: 20px; */
-    margin-bottom: 20px;
-    font-weight: 500;
-    display: block;
-}
-.footer-block-page-top .footer-block-page-top-phone p{
-    font-size: 20px;
-}
-.footer-block-page-top .footer-block-page-top-phone{
-    float: right;
-}
 
-.footer-block-page-bottom{
-    margin-top: 50px;
-}
-.footer-block-page-bottom .all-rights{
-    float: left;
-    margin-right: 50px;
-}
-.footer-block-page-bottom .all-rights a{
-    margin-right: 15px;
-}
-.footer-block-page-bottom .block-stud-foot{
-    display: block;
-    float: right;
-    /* float: left; */
-    width: 308px;
-}
-.footer-block-page-bottom .block-stud-foot img{
-    display: inline;
-    float: left;
-}
-.footer-block-page-bottom .block-stud-foot p{
-    display: inline;
-    float: right;
-    margin-top: 10px;
-    color:black;
-}
-
-.footer-block-page .text-content-desc-foot{
-    border-top: 1px solid #e4e4e4;
-    margin-top: 30px;
-    padding-top: 30px;
-    color: #cbcbcb;
-    margin-bottom: 50px;
-}
-/* -----------------End------------------ */
 
 .class-rotate{
     transform: rotate(-4deg);
@@ -1432,11 +1323,7 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     border-radius: 5px;
     line-height: 54px; */
 }
-.block-left-foot{
-    width: 860px;
-    margin:0 auto;
-    text-align: center;
-}
+
 .block-left-foot .form-control-phoneCall{
     border: none;
     border-bottom: 1px solid #e4e4e4;
@@ -1489,7 +1376,7 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
 
 .block-apartament-schema{
     background-color: #f3f3f3;
-    margin-top: -9px;
+    margin-top: 0px;
 }
 .block-breadcrumbs{
     padding-top: 90px;
@@ -1653,6 +1540,7 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     line-height: 30px;
     color:black;
     margin-right: 30px;
+    text-transform: uppercase;
 }
 .apart-and-plan-float a:last-child{
     margin-right: 0px;
@@ -1870,6 +1758,12 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
 
 
 
+.header-menu.apartament-for-header-menu .header-menu-nav .href-phone-form li button{
+    line-height: 42px;
+}
+
+
+
 /* promotions */
 .promotions-and-discounts-main{
     margin-top: 60px;
@@ -2056,4 +1950,11 @@ box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
     -o-transform: rotate(180deg); /* Для Opera */
     transform: rotate(180deg);
+}
+
+.block-apartament-schema-mob{
+    display: none;
+}
+.block-another-apartament-slider-not{
+    display: none;
 }
