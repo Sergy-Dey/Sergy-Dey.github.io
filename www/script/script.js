@@ -50,6 +50,18 @@ jQuery(function ($) {
 
 // класс создания svg для картинки 
 $.fn.NewSvg = function(){
+    // var Img={
+    //     h:this.find("img").height(),// получаем высоту картинки
+    //     w:this.find("img.block-gk-img-main").width(680)// получаем ширину картинк
+    // };
+    // присваиваем к родительскому блоку картинки высоту и ширину 
+    // $(this).height(Img.h);
+    // $(this).width(700);
+    // присваиваем к svg высоту и ширину
+    // this.find(".GenplanOneMain-image-svg").height(Img.h);
+    // this.find(".GenplanOneMain-image-svg").width(Img.w);  
+    // this.find(".GenplanOneMain-image-svg").width(); 
+
     var Img={
         h:this.find("img").height(),// получаем высоту картинки
         w:this.find("img").width()// получаем ширину картинк

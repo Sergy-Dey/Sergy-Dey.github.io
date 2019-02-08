@@ -4578,12 +4578,19 @@ input.form-control-phoneCall:-moz-placeholder{
     display:none;
 }
 .btn-red.btn-red-1{
-    width: 210px;
+    width: 180px;
 }
 .slider-block-1 .btn-red,
 .slider-block-2 .btn-red,
 .slider-block-3.btn-red{
     width: 200px;
+}
+
+.GenplanOneMain-image .block-gk-img-main{
+    width: 680px;
+}
+.GenplanOneMain-image svg{
+    width: 680px;
 }
 
 
