@@ -56,7 +56,7 @@ $.fn.NewSvg = function(){
     };
     // присваиваем к родительскому блоку картинки высоту и ширину 
     $(this).height(Img.h);
-    $(this).width(Img.w);
+    $(this).width(800);
     // присваиваем к svg высоту и ширину
     this.find(".GenplanOneMain-image-svg").height(Img.h);
     // this.find(".GenplanOneMain-image-svg").width(Img.w);  
