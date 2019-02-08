@@ -1630,7 +1630,7 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
     }
     .btn-close-modal-form-page-gk{
         z-index: 9999;
@@ -2010,4 +2010,25 @@
     }
 
     /* apartament end */
+
+    .modal-wrapper.open .wrapper-1{
+        width: 100%;
+    }
+    .wrapper-1.wrapper-100-percent{
+        width: 100%;
+    }
+
+    .btn-block-for-mob-768-sort{
+        display:block;
+        text-align: center;
+        font-size: 15px;
+        color: #ff0e0e;
+        margin-top: 30px;
+    }
+    .block-for-mob-320-sort{
+        display: none;
+    }
+    .btn-block-for-mob-768-sort p{
+        cursor: pointer;
+    }
 }

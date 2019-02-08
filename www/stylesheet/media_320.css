@@ -1172,8 +1172,36 @@
     }
 
     .block-have-pluse{
-        display:none;
+        display: block;
+        width: 100%;
+        margin-top: 40px;
     }
+    .block-have-pluse .wrapper-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .block-have-pluse .block-container-for-pluse{
+        width: 310px;
+        height: 215px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .block-have-pluse .block-pluce{
+        width: 310px;
+        height: 215px;
+    }
+    .block-have-pluse .block-pluce img{
+        width: 310px;
+        height: 215px;
+    }
+    .block-have-pluse .block-container-for-min-pluse h2,
+    .block-have-pluse .block-container-for-big-pluse h2{
+        width: 276px;
+        bottom: 15px;
+        left: 10px;
+    }
+
     .apart-shema .block-left{
         padding: 0px;
         padding-top: 30px;
@@ -1434,6 +1462,10 @@
     .block-another-apartament img{
         max-width: 290px;
     }
+    .single-item-num-wrapper {
+        position: relative;
+        height: 221px;
+    }
     .single-item-num-wrapper .single-item-num img{
         height: 221;
         width: 320px;
@@ -1508,6 +1540,13 @@
         line-height: 30px;
     }
 
+    .modal-wrapper.open{
+        display: none;
+    }
+
+    .btn-block-for-mob-768-sort{
+        display:none;
+    }
     
     /* apartament end */
 }
