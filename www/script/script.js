@@ -96,12 +96,7 @@ jQuery.fn.getCoord = function(){
 $(document).ready(function(){
 
     
-    $('.block-gk-img-1').NewSvg(); 
-    $('.block-gk-img-2').NewSvg(); 
-    $('.block-gk-img-3').NewSvg(); 
-    $('.block-gk-img-4').NewSvg(); 
-    $('.block-gk-img-5').NewSvg(); 
-    $('.block-gk-img-6').NewSvg(); 
+    
     // Инициализация Wow эфектов
     // new WOW().init();
 
@@ -645,4 +640,13 @@ $(document).ready(function(){
     // Удалить текст из botton //
         $(".board-gk-slider .slick-dots li button").html("");
     // End-------------------------------------//
+
+
+
+    $('.block-gk-img-1').NewSvg(); 
+    $('.block-gk-img-2').NewSvg(); 
+    $('.block-gk-img-3').NewSvg(); 
+    $('.block-gk-img-4').NewSvg(); 
+    $('.block-gk-img-5').NewSvg(); 
+    $('.block-gk-img-6').NewSvg(); 
 })
