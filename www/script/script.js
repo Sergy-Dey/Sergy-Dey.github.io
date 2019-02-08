@@ -59,7 +59,8 @@ $.fn.NewSvg = function(){
     $(this).width(Img.w);
     // присваиваем к svg высоту и ширину
     this.find(".GenplanOneMain-image-svg").height(Img.h);
-    this.find(".GenplanOneMain-image-svg").width(Img.w);  
+    // this.find(".GenplanOneMain-image-svg").width(Img.w);  
+    this.find(".GenplanOneMain-image-svg").width(800); 
 };
 
 // получаем точки для создания svg
