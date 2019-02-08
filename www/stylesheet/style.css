@@ -3034,6 +3034,7 @@ main{
     position: relative;
 } */
 .GenplanOneMain-image{
+    width: 800px;
     margin-left: 160px;
     margin-right: 160px;
 }
