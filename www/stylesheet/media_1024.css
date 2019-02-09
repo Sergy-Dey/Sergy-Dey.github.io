@@ -1727,6 +1727,10 @@
     .header-block-desc-message-768{
         display: block;
         margin-top: 20px;
+        font-weight: 600;
+    }
+    .header-block-desc-message-768 span{
+       font-weight: 500;
     }
     .header-block-desc-message-work{
         display: none;
@@ -2038,5 +2042,25 @@
     }
     .main-blocl-desc{
         margin-top: 130px;
+    }
+
+
+    .block-company-section-2 .block-board-left-deg{
+        transform: rotate(4deg) scale(1.2);
+    }
+    .our-managers{
+        margin-top: 60px;
+    }
+    .our-managers .block-our-managers{
+        margin-top: 60px;
+    }
+    .additional-services-text h1{
+        margin-bottom: 40px;
+    }
+    .block-map{
+        height: 1000px;
+    }
+    .block-documents{
+        margin-top: 100px;
     }
 }

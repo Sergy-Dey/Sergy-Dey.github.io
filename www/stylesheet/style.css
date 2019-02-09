@@ -4137,10 +4137,11 @@ input.form-control-phoneCall:-moz-placeholder{
 
 .header-menu.header-menu-for-company{
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    /* left: 50%; */
+    /* transform: translate(-50%); */
+    /* max-width: 100%; */
     width: 100%;
-    height: 96px;
+    height: 106px;
     z-index: 500;
     border-bottom: 1px solid rgba(242, 242, 242, .3);
 }
@@ -4367,8 +4368,11 @@ input.form-control-phoneCall:-moz-placeholder{
     z-index: 1200;
     bottom: 0px;
 }
-.our-managers h2{
+.our-managers{
     text-align: center;
+}
+.our-managers h2{
+    
     margin-bottom: 80px;
 }
 .our-managers .block-our-managers {
@@ -4376,6 +4380,7 @@ input.form-control-phoneCall:-moz-placeholder{
     justify-content: space-between;
     flex-wrap: wrap;
     cursor: pointer;
+    margin-top: 100px;
 }
 .our-managers .block-our-managers .block-our-managers-item p {
     font-size: 30px;
@@ -4423,7 +4428,9 @@ input.form-control-phoneCall:-moz-placeholder{
     margin-top: 100px;
 }
 .block-our-life .block-title-our-life {
-    height: 100px;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .block-our-life .block-title-our-life h2 {
     float: left;
@@ -4477,12 +4484,15 @@ overflow-x: hidden;
 .additional-services p {
     font-size: 36px;
     margin-bottom: 80px;
-    line-height: 1.5;
+    line-height: 46px;
 }
 .additional-services-text{
     margin: 0 auto;
     /* text-align: center; */
-    width: 760px;
+    width: 800px;
+}
+.additional-services-text h1{
+    margin-bottom: 80px;
 }
 .additional-services p span {
     font-weight: 600;
@@ -4541,9 +4551,19 @@ overflow-x: hidden;
 .our-partners.slider-partners-2{
     display: none;
 }
-.block-documents h2 {
+/* .block-documents h2 {
     margin-top: 70px;
     margin-bottom: 80px;
+} */
+
+.block-documents{
+    text-align: left;
+}
+.block-documents-items{
+    margin-top: 70px;
+}
+.block-documents{
+    
 }
 .block-documents-items{
     display: flex;
@@ -4565,6 +4585,7 @@ overflow-x: hidden;
 .block-documents .block-documents-items .block-documents-item p {
     font-size: 24px;
     margin-top: 40px;
+    line-height: 30px;
 }
 .block-documents .block-documents-items .block-documents-item:hover img {
     box-shadow: 0 0 5px 1px #dfdfdf;

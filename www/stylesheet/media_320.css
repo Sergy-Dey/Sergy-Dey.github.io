@@ -1,3 +1,21 @@
+@media (max-width: 567px){
+    
+    .our-managers .block-our-managers{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px){
+    
+    .block-our-life .block-title-our-life{
+        flex-flow: column;
+    }
+    .block-our-life .block-title-our-life a{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 537px){
     .block-client-header ul{
         /* float: left; */
@@ -970,6 +988,7 @@
     .block-map{
         height: 623px;
         overflow: hidden;
+        margin-top: 70px;
     }
     .form-for-map-abs{
         display:none;
@@ -1565,5 +1584,82 @@
 
     .main-blocl-desc{
         margin-top: 35px;
+    }
+    .block-company-section-2 .block-board-left-deg .header-block-desc-message-main{
+        left: 30px;
+    }
+    .block-company-section-2 .block-board-left-deg .header-block-desc-message-main{
+        transform: rotate(-4deg) translate(-50%);
+        left: 50%;
+        padding-top: 20px;
+        margin-bottom:20px;
+    }
+    .our-managers .block-our-managers .block-our-managers-item{
+        width: 255px;
+    }
+    .our-managers .block-our-managers .block-our-managers-item img{
+        max-width: 255px;
+        width: 100%;
+        max-height: auto;
+        height: auto;
+    }
+    .our-managers .block-our-managers .block-our-managers-item p{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .our-managers .block-our-managers .block-our-managers-item a{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .block-documents-items {
+        justify-content: space-between;
+    }
+    .block-documents .block-documents-items .block-documents-item {
+        margin-bottom: 50px;
+        width: 230px;
+    }
+    .block-documents .block-documents-items .block-documents-item p {
+        margin-top: 10px;
+    }
+    .block-documents .block-documents-items .block-documents-item{
+        display: flex;
+        margin-bottom: 50px;
+        width: 230px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-block-another-page-for-mobile{
+        text-align: center;
+    }
+    .footer-block-another-page-for-mobile .block-first-foot .block-address-three{
+        justify-content: center;
+    }
+    .footer-block-another-page-for-mobile .block-first-foot .block-address-two a{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-block-another-page-for-mobile .block-second-foot .block-desc-foot-two .block-disayn-studie-yarow{
+        justify-content: center;
+    }
+    .social-block-for-mobile{
+        justify-content: center;
+    }
+}
+@media (max-width: 512px){
+    .block-documents-items {
+        justify-content: center;
+    }
+    .block-documents {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .block-documents h1{
+        margin-bottom: 0px;
+    }
+    .block-documents-items{
+        margin-top: 30px;
     }
 }

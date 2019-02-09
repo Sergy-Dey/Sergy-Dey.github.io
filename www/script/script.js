@@ -664,4 +664,7 @@ $(document).ready(function(){
     $('.block-gk-img-4').NewSvg(); 
     $('.block-gk-img-5').NewSvg(); 
     $('.block-gk-img-6').NewSvg(); 
+
+
+    // $(".block-map ymaps").width(300);
 })
