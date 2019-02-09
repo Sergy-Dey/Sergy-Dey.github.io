@@ -2060,6 +2060,7 @@ main{
 .main-block-page-gk .main-block-page-gk-href {
     position: absolute;
     width: 275px;
+    display: flex;
     height: 50px;
     background-color: white;
     font-size: 18px;
@@ -2075,6 +2076,10 @@ main{
     transition-timing-function: ease-in;
     transition: .3s;
     border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 13px;
 }
 .main-block-page-gk .main-block-page-gk-href:hover {
     transition-timing-function: ease-in;
@@ -2089,10 +2094,10 @@ main{
     content: '';
     position: absolute;
     width: 15px;
-    height: 22px;
-    top: 12px;
-    left: 12px;
-    background: url('../images/icons/map-icon.png') no-repeat center;
+    height: 24px;
+    top: 13px;
+    left: -20px;
+    background: url(../images/icons/map-icon.png) no-repeat center;
 }
 .header-title-apart {
     margin-top: 195px;
@@ -2122,6 +2127,7 @@ main{
     line-height: 52px;
     font-size: 18px;
     font-weight: 600;
+    text-transform:uppercase;
 }
 .header-title-apart a:hover{
     background-color: #ff0e0e;
@@ -2209,6 +2215,9 @@ main{
     border:1px solid #fff;
     transition-timing-function: ease-in;
     transition: .3s;
+}
+.block-right .block-tags-sort a:last-child{
+    margin-right: 0px;
 }
 .block-right .block-tags-sort a:hover{
     border:1px solid #ff0e0e;
@@ -2337,6 +2346,21 @@ main{
 .single-item-num-wrapper{
     position: relative;
 }
+.block-have-pluse .wrapper-2 a{
+    position: relative;
+}
+.block-container-for-page-gk-grad{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgba(0,0,0, 0.4) 10%, rgba(255,255,255, 0.1) 70%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius:5px;
+}
+.slick-slide img{
+    width: 100%;
+}
 .single-item-num-wrapper .single-item-num-href {
     position: absolute;
     color: #ff0e0e;
@@ -2359,7 +2383,13 @@ main{
     transition: all 0.25s ease-in-out;
 }
 .block-gk-docs {
-    margin-top: 150px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.block-gk-docs h1{
+    margin-bottom: 50px;
 }
 .block-gk-docs .block-left {
     float: left;
@@ -2495,7 +2525,7 @@ main{
     width: 1380px;
     overflow: hidden;
 }
-.block-have-pluse .block-pluce:hover {
+.block-have-pluse a:hover .block-pluce{
     transform: scale(1.1);
     transition: transform .2s;
 }
@@ -2655,6 +2685,12 @@ main{
   }
   .block-gk-docs-2 .block-right .change-buy-apartament{
       margin-left: 0px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 300;
   }
 
 
@@ -2664,6 +2700,8 @@ main{
   .block-mortgage-calculation{
     background-color: #83b6cb;
     height: 675px;
+    position: relative;
+    z-index: 300;
 }
 .block-mortgage-calculation .block-left-mortgage-calculation{
     width: 718px; 
@@ -2683,6 +2721,7 @@ main{
     background-color: white;
     border-radius: 5px;
     font-size: 24px;
+    z-index: 100;
 }
 .block-mortgage-calculation .block-left-mortgage-calculation .mortgage-calculation-text:before{
     position: absolute;
@@ -2693,10 +2732,10 @@ main{
     display: block;
     width: 0;
     height: 0;
-    transform: rotate(182deg);
-    bottom: -45px;
+    transform: rotate(180deg);
+    bottom: -20px;
     /* left: 57px; */
-    right: 1px;
+    right: 0px;
 }
 .block-mortgage-calculation .block-left-mortgage-calculation .mortgage-calculation-employee{
     position: absolute;
@@ -3405,7 +3444,7 @@ main{
 
 /* change-buy-apartament */
 .change-buy-apartament {
-    padding: 70px 30px 29px 50px;
+    padding: 30px 30px 29px 50px;
     width: 610px;
     height: 700px;
     position: relative;
@@ -3417,16 +3456,27 @@ main{
     margin-bottom: 100px;
 }
 .change-buy-apartament h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.bilbord-leg-page-gk-abs{
+    position: absolute;
+    left: 50%;
+    /* height: 244px; */
+    height: 30vh;
+    transform: translate(-50%, 82%);
+    /* top: 0px; */
+    bottom: 0px;
+    z-index: 100;
+}
+.change-buy-apartament-main{
+    position: relative;
 }
 .checked-change {
     border-bottom: 1px solid #e0e0e0;
 }
 .change-buy-apartament .btn-red {
     margin-top: 30px;
-    margin-left: 50%;
     width: 220px;
-    transform: translate(-50%);
 }
 .checked-change .group-input-check {
     margin-bottom: 15px;
@@ -3557,9 +3607,14 @@ main{
 .footer-block-content.another-page-footer .block-footer-content-all-bottom{
     position: relative;
 }
+.block-top-footer{
+    display: flex;
+    justify-content: center;
+}
 .block-top-footer .block-left-foot {
     width: 879px;
     float: left;
+    text-align: center;
 }
 .footer-block-content .form-control-phoneCall {
     border: none;
@@ -3567,7 +3622,7 @@ main{
     padding-bottom: 19px;
     margin-bottom: 47px;
     width: 100%;
-    color: #b5b5b5;
+    color: black;
     font-size: 24px;
     line-height: 24px;
 }
