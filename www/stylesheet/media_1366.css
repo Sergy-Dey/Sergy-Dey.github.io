@@ -441,17 +441,15 @@
 
     /* compamy.html */
     .block-company-section{
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
-    .block-board-left-deg{
-        bottom: -100px;
-    }
+    
     .img-abs-man-1{
         left: 3%;
     }
-    .block-board-left-deg .header-block-desc-message-main{
+    /* .block-board-left-deg .header-block-desc-message-main{
         right: 40px;
-    }
+    } */
     .main-blocl-desc h1{
         margin-left: 170px;
     }
@@ -496,6 +494,9 @@
     }
     .block-mortgage-calculation .block-left-mortgage-calculation img{
         left: 220px;
+    }
+    .block-company-section-2 .img-abs-man-1{
+        right: 0%;
     }
 }
 @media (max-width: 892px){

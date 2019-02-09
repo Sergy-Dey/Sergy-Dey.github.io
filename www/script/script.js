@@ -50,29 +50,31 @@ jQuery(function ($) {
 
 // класс создания svg для картинки 
 $.fn.NewSvg = function(){
-    // var Img={
-    //     h:this.find("img").height(),// получаем высоту картинки
-    //     w:this.find("img.block-gk-img-main").width(680)// получаем ширину картинк
-    // };
-    // присваиваем к родительскому блоку картинки высоту и ширину 
-    // $(this).height(Img.h);
-    // $(this).width(700);
-    // присваиваем к svg высоту и ширину
-    // this.find(".GenplanOneMain-image-svg").height(Img.h);
-    // this.find(".GenplanOneMain-image-svg").width(Img.w);  
-    // this.find(".GenplanOneMain-image-svg").width(); 
-
     var Img={
-        h:this.find("img").height(),// получаем высоту картинки
-        w:this.find("img").width()// получаем ширину картинк
+        h:this.find(".block-gk-img-main").height(),// получаем высоту картинки
+        w:this.find(".block-gk-img-main").width(680)// получаем ширину картинк
     };
     // присваиваем к родительскому блоку картинки высоту и ширину 
     $(this).height(Img.h);
-    $(this).width(800);
+    $(this).width(Img.w);
+    // $(this).width(700);
+
     // присваиваем к svg высоту и ширину
     this.find(".GenplanOneMain-image-svg").height(Img.h);
-    // this.find(".GenplanOneMain-image-svg").width(Img.w);  
-    this.find(".GenplanOneMain-image-svg").width(800); 
+    this.find(".GenplanOneMain-image-svg").width(Img.w);  
+    // this.find(".GenplanOneMain-image-svg").width(); 
+
+    // var Img={
+    //     h:this.find("img").height(),// получаем высоту картинки
+    //     w:this.find("img").width()// получаем ширину картинк
+    // };
+    // // присваиваем к родительскому блоку картинки высоту и ширину 
+    // $(this).height(Img.h);
+    // $(this).width(800);
+    // // присваиваем к svg высоту и ширину
+    // this.find(".GenplanOneMain-image-svg").height(Img.h);
+    // // this.find(".GenplanOneMain-image-svg").width(Img.w);  
+    // this.find(".GenplanOneMain-image-svg").width(800); 
 };
 
 // получаем точки для создания svg
@@ -249,7 +251,7 @@ $(document).ready(function(){
 
     //скролл 
     
-    $('#body-main').hScroll(60); // You can pass (optionally) scrolling amount
+    $('#body-main').hScroll(120); // You can pass (optionally) scrolling amount
 
     $( ".form-menu-class" ).on( "click", function() {
         $('.block-modal-menu').show(500);

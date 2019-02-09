@@ -58,6 +58,13 @@ h1{
     transition-timing-function: ease-out;
     transition:.3s;
   }
+
+
+
+  /* } */
+/* @media (max-width: 1336px) {
+
+} */
 /* } */
 @media (max-width: 1336px) {
   h1{
@@ -135,7 +142,7 @@ h1{
     text-transform: uppercase;
   }
 }
-@media (max-width: 321px) {
+@media (max-width: 767px) {
   h1{
     font-size: 30px;
     font-weight: 600;

@@ -4227,19 +4227,18 @@ input.form-control-phoneCall:-moz-placeholder{
 
 .block-company-section{
     position: relative;
-    height: 784px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: block;
-    margin-top: 145px;
-    margin-bottom: 145px;
+    width: 100%;
     overflow: hidden;
 }
 .block-board-left-deg{
     width: 100%;
-    height: 630px;
+    min-height: 630px;
     position: relative;
     background-color: #c0d2e7;
     position: relative;
-    bottom: -90px;
     transform: rotate(-4deg);
 }
 .img-abs-man-1{
@@ -4315,6 +4314,7 @@ input.form-control-phoneCall:-moz-placeholder{
 }
 .main-blocl-desc{
     position: relative;
+    overflow-x: hidden;
 }
 .main-blocl-desc h1{
     margin-bottom: 100px;
@@ -4388,9 +4388,9 @@ input.form-control-phoneCall:-moz-placeholder{
 }
 .our-managers .block-our-managers .block-our-managers-item a {
     font-size: 18px;
-    /* display: none; */
-    display: inline;
-    margin-left: 31%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
     font-weight: 600;
     transition-timing-function: ease-in;
     transition: .3s;
@@ -4398,7 +4398,6 @@ input.form-control-phoneCall:-moz-placeholder{
     color: #fff;
     text-align: center;
     cursor: pointer;
-    margin-top: 20px;
 }
 .our-managers .block-our-managers .block-our-managers-item img {
     width: 373px;
@@ -4467,6 +4466,7 @@ input.form-control-phoneCall:-moz-placeholder{
 .additional-services{
     position: relative;
     margin-top: 140px;
+overflow-x: hidden;
 }
 .additional-services h2 {
     font-size: 72px;
@@ -4586,11 +4586,35 @@ input.form-control-phoneCall:-moz-placeholder{
     width: 200px;
 }
 
-.GenplanOneMain-image .block-gk-img-main{
+
+.block-company-section-2 .block-board-left-deg{
+    background:#e3e7ea;
+}
+.block-company-section-2 .block-board-left-deg{
+    transform: rotate(4deg);
+}
+.block-company-section-2 .img-abs-man-1{
+    left: auto;
+    right: 10%;
+}
+.block-company-section-2 .block-board-left-deg .header-block-desc-message-main{
+    transform: rotate(-4deg);
+    right: auto;
+    left: 100px;
+}
+.block-company-section-2 .block-board-left-deg .img-abs-cloud12{
+    width: 72%;
+    right: 0px;
+}
+.block-company-section-2 .block-board-left-deg .img-abs-cloud10{
+    display: none;
+}
+
+/* .GenplanOneMain-image .block-gk-img-main{
     width: 680px;
 }
 .GenplanOneMain-image svg{
     width: 680px;
-}
+} */
 
 

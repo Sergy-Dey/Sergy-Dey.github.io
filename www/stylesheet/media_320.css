@@ -1336,31 +1336,43 @@
         display:none;
     }
     .block-board-left-deg .img-abs-man-1 {
-        left: 14%;
-        width: 145px;
-        top: 339px;
+        position: relative;
+        height: 35vh;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%);
     }
     .block-board-left-deg .header-block-desc-message-main{
-        right: 53%;
+        right: auto;
+        position: relative;
+        top: 0px;
+        left: 50%;
+        padding-top: 30px;
+        transform: rotate(4deg) translate(-50%);
     }
     .block-board-left-deg .header-block-desc-message{
         font-size: 18px;
         line-height: 24px;
-        width: 320px;
+        width: 245px;
+        padding: 10px;
     }
     .header-block-desc-message-768{
-        display: none;
+        /* display: none; */
     }
     .block-board-left-deg{
-        height: 520px;
-        top: 0px;
+        overflow: hidden;
+        position: relative;
+        min-height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
     .block-company-section {
-        margin-top: 20px;
-    }
-    .block-company-section{
+        /* margin-top: 20px;
         height: 555px;
-        margin-bottom: 30px;
+        margin-bottom: 30px; */
     }
     .main-blocl-desc h1 {
        margin-bottom: 50px;
@@ -1549,4 +1561,9 @@
     }
     
     /* apartament end */
+
+
+    .main-blocl-desc{
+        margin-top: 35px;
+    }
 }
