@@ -1985,7 +1985,7 @@
      /* apartament */
     
      .block-apartament-schema{
-        display: none;
+        /* display: none; */
     }
 
     .block-apartament-schema-mob{
@@ -2262,6 +2262,36 @@
     }
     .block-company-section-2 .img-abs-man-1{
         right: 11%;
+    }
+
+    .title-block-apartament-schema-for-1024{
+        display: block;
+    }
+    .title-block-apartament-schema-for-1024 h1{
+        padding-top: 100px;
+    }
+    .block-breadcrumbs {
+        padding-top: 30px;
+    }
+    .block-main-apartament-schema{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .block-main-apartament-schema-form{
+        width: 100%;
+        margin-top:60px;
+    }
+    .block-main-apartament-schema-form h3{
+        display: none;
+    }
+    .block-btn-apartament-schema-form .btn-apartament-to-book{
+        width: 48%;
+    }
+    .block-btn-apartament-schema-form .btn-apartament-mortgage{
+        width: 48%;
     }
     
 }

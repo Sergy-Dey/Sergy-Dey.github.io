@@ -4879,3 +4879,339 @@ overflow-x: hidden;
 .qtip-tip canvas {
     display: none;
 }
+
+
+/*  apatament */
+.block-apartament-schema {
+    background-color: #f3f3f3;
+    margin-top: 0px;
+}
+.block-breadcrumbs {
+    padding-top: 90px;
+}
+.block-breadcrumbs ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+.block-breadcrumbs ul li a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    color: #989898;
+}
+.block-breadcrumbs ul li:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    top: 4px;
+    right: -15px;
+    background: url(../img/img-for-back/strelka1.png)no-repeat center;
+}
+.block-main-apartament-schema {
+    margin-top: 90px;
+    /* display: inline-block; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.block-main-apartament-schema .block-htags-apartament {
+    /* display: inline-block; */
+    float: left;
+}
+.block-main-apartament-schema .block-htags-apartament a {
+    display: block;
+    height: 50px;
+    padding: 0 15px;
+    background-color: white;
+    font-size: 18px;
+    line-height: 48px;
+    border-radius: 5px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.block-main-apartament-schema-img {
+    /* display: inline-block; */
+    float: left;
+    margin-top: 100px;
+    /* margin-left: 100px; */
+}
+.title-block-apartament-schema-for-1024{
+    display: none;
+}
+.block-main-apartament-schema-form {
+    width: 500px;
+    height: 625px;
+    float: right;
+    background: white;
+    border-radius: 5px;
+    padding: 60px 45px;
+    /* margin-right: 190px; */
+}
+.block-main-apartament-schema-form h3 {
+    margin-bottom: 35px;
+}
+.block-main-apartament-schema-form .apartament-schema-form-text {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eaeaea;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad {
+    margin-top: 20px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 25px;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad > div {
+    display: inline-block;
+    width: 170px;
+    font-size: 24px;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad p span {
+    font-size: 15px;
+    line-height: 20px;
+    color: #b2b2b2;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad > div {
+    display: inline-block;
+    width: 170px;
+    font-size: 24px;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad p span {
+    font-size: 15px;
+    line-height: 20px;
+    color: #b2b2b2;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad {
+    margin-top: 20px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 15px;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad.block-cost-and-plohad-3 > div {
+    width: 110px;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad p span {
+    font-size: 15px;
+    line-height: 20px;
+    color: #b2b2b2;
+}
+.block-btn-apartament-schema-form {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.block-btn-apartament-schema-form .btn-apartament-to-book {
+    width: 200px;
+    color: #fff;
+    background-color: #ff0e0e;
+    float: left;
+}
+.block-btn-apartament-schema-form a {
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    border: 2px solid #ff0e0e;
+    border-radius: 5px;
+}
+.block-btn-apartament-schema-form .btn-apartament-mortgage {
+    width: 170px;
+    color: #ff0e0e;
+    background-color: #fff;
+    float: right;
+}
+.block-btn-another-apartament-schema-form {
+    text-align: center;
+    margin-top: 60px;
+}
+.block-btn-another-apartament-schema-form a {
+    font-size: 18px;
+    color: #ff0e0e;
+}
+.block-main-apartament-schema-bottom {
+    display: inline-block;
+    width: 100%;
+    margin-top: 145px;
+    margin-bottom: 45px;
+}
+.apart-and-plan-float {
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+.apart-and-plan-float {
+    float: left;
+}
+.apart-and-plan-float a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: black;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+.apart-and-plan-float a:last-child {
+    margin-right: 0px;
+}
+.download-and-map-float {
+    float: right;
+}
+.download-and-map-float a{
+    line-height: 54px;
+}
+.download-and-map-float a:first-child {
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 54px;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    border:2px solid #fff;
+    font-size: 18px;
+    color: #ff0e0e;
+}
+.download-and-map-float a:last-child {
+    height: 50px;
+    position: relative;
+    border:2px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 54px;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ff0e0e;
+    padding-left: 50px;
+}
+.block-another-apartament {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    width: 100%;
+    display: inline-block;
+}
+.block-another-apartament img {
+    float: left;
+}
+.block-another-apartament .block-another-apartament-text {
+    float: left;
+    width: 516px;
+    margin-left: 180px;
+    margin-top: 100px;
+}
+.block-another-apartament .block-another-apartament-text P {
+    font-size: 24px;
+    line-height: 34px;
+}
+.block-another-apartament .block-another-apartament-text p a {
+    color: #ff0e0e;
+}
+.block-gk-docs.block-apartament-schema-docs{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block-apartament-schema-docs.block-gk-docs .block-right {
+    float: none;
+}
+
+.block-gk-docs .blocl-docs-download img{
+    display: inline-block;
+    margin-right: 30px;
+    /* margin-right: 100px; */
+    -webkit-box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.68);
+}
+.block-gk-docs.block-apartament-schema-docs .blocl-docs-download{
+    display: flex;
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+    justify-content: start;
+    /* flex-wrap: wrap; */
+}
+.block-gk-docs .blocl-docs-download .blocl-docs-download-file{
+    display: inline-block;
+    width: 210px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.docs-for-apartament-page{
+    margin-top: 100px;
+}
+.block-gk-docs .blocl-docs-download .blocl-docs-download-file p {
+    margin-bottom: 20px;
+}
+.block-gk-docs .blocl-docs-download .blocl-docs-download-file .download-file-pdf {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff0e0e;
+    width: 198px;
+    height: 48px;
+    /* margin-top: 30px; */
+    border: 1px solid #ff0e0e;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 48px;
+    transition: all 0.25s ease-in-out;
+}
+.block-gk-docs .blocl-docs-download .blocl-docs-download-file .download-file-pdf:hover {
+    background-color: #ff0e0e;
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.block-main-apartament-schema-form h3 sup small{
+    font-size: 16px;
+}
+.download-and-map-float a{
+    text-transform: uppercase;
+}
+.download-and-map-float a:last-child:before{
+    position: absolute;
+    content: "";
+    background: url("../images/icons/map-icon.png") no-repeat center;
+    width: 15px;
+    height: 21px;
+    top: 50%;
+    transform: translate( 0%, -50%);
+    left: 25px;
+}
+.download-and-map-float a:hover{
+    border:2px solid #ff0e0e;
+}
+.block-main-apartament-schema-form .block-cost-and-plohad > div p{
+    margin-bottom: 10px;
+}
+.block-cost-and-plohad.block-cost-and-plohad-3{
+    margin-top: 33px;
+}
+.block-main-apartament-section-scheme{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+h1 sup small{
+    font-size: 25px;
+}
+
+
+/*  apatament end */

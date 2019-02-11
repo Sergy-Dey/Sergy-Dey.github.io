@@ -506,5 +506,47 @@
         margin-right: 65px;
     } */
 }
+@media (max-width: 1600px){
+    .block-main-apartament-schema-form{
+        width: 590px;
+    }
+    .block-main-apartament-schema{
+        margin-top: 90px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .block-main-apartament-schema .block-htags-apartament {
+        /* display: inline-block; */
+        float: left;
+        display: flex;
+        width: auto;
+    }
+    .block-main-apartament-schema .block-htags-apartament a{
+        width: 200px;
+        margin-right: 20px;
+    }
+    .block-main-apartament-section-scheme{
+        display: flex;
+        width: auto;
+        justify-content: start;
+        flex-flow: column;
+    }
+    .block-main-apartament-schema .block-htags-apartament a{
+        width: 175px;
+        margin-right: 10px;
+    }
+    .block-main-apartament-schema-img{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .block-main-apartament-schema-form{
+        width: 500px;
+    }
+    .block-main-apartament-schema{
+        margin-top: 40px;
+    }
+}
 
 
