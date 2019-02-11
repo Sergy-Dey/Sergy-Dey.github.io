@@ -954,7 +954,7 @@
     }
      .block-list-main table.table-list-layout-block.table-list-layout-block-for-mobile thead tr th{
         padding-top: 10px;
-        padding-right: 25px;
+        padding-right: 12px;
         padding-left: 12px;
     }
     .block-list-main table.table-list-layout-block.table-list-layout-block-for-mobile tbody tr td{
@@ -962,8 +962,13 @@
     }
     .block-list-main .block-right{
         float: none;
-        width: 320px;
+        width: 100%;
         display: inline-block;
+    }
+    .myCheckbox span{
+        width: 40px;
+        height: 40px;
+        line-height: 45px;
     }
     .block-come-back .come-back{
         border: none;
@@ -1849,6 +1854,7 @@
         align-items: center;
         text-transform: uppercase;
         position: relative;
+        margin-left: 10px;
     }
     .block-model-scheme-list .open-modal-schema:after{
         background: url("../images/icons/strelka-4.png") no-repeat center;
@@ -1875,6 +1881,7 @@
         align-items: center;
         text-transform: uppercase;
         position: relative;
+        margin-left: 10px;
     }
     .block-model-scheme-list .block-model-scheme-modal-3 .close-modal-schema-3:after{
         background: url("../images/icons/strelka-4.png") no-repeat center;
@@ -1888,6 +1895,12 @@
     }
     .block-model-scheme-modal-3-none{
         display: none;
+    }
+    .block-sort-list .class-title-list{
+        margin-left: 10px;
+    }
+    .block-layouts-scheme{
+        display: flex;
     }
 }
 @media (max-width: 512px){

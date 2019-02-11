@@ -1313,6 +1313,9 @@
        
         top:-20px;
     }
+    .block-model-scheme-list{
+        max-width: 370px;
+    }
     .block-list-main {
         min-height: 1000px;
         margin-top: 0px;

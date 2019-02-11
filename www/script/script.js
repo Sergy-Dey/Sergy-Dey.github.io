@@ -286,18 +286,24 @@ $(document).ready(function(){
     });
 
     $(".block-model-scheme-list .open-modal-schema").on('click', function () {
-        console.log("test");
         if($(".block-model-scheme-list .block-model-scheme-modal-3").hasClass("block-model-scheme-modal-3-none")){
-            console.log("test 2");
             $(".block-model-scheme-list .open-modal-schema").css({"display":"none"});
             $(".block-model-scheme-list .block-model-scheme-modal-3").removeClass("block-model-scheme-modal-3-none");
             return false;
-        }else{
-            console.log("test 3");
-            // $("block-model-scheme-list .block-model-scheme-modal-3").removeClass("block-model-scheme-modal-3-none");
-            return false;
         }
         return false;
+    });
+
+    $(".block-model-scheme-list .close-modal-schema-3").on("click",function(){
+        console.log("test-1");
+        if($(".block-model-scheme-list .block-model-scheme-modal-3").hasClass("block-model-scheme-modal-3-none")){
+            return false;
+        }else{
+            $(".block-model-scheme-list .block-model-scheme-modal-3").addClass("block-model-scheme-modal-3-none");
+            $(".block-model-scheme-list .open-modal-schema").css({"display":"flex"});
+            return false;
+        }
+        
     });
 
     // $( ".block-question-sometime a" ).on( "click", function() {
