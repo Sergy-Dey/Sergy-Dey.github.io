@@ -1727,15 +1727,17 @@ main{
 .main-block-page-gk-container{
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .main-block-page-gk {
-    position: absolute;
-    transform: translate(-50%);
-    left: 50%;
+    /* position: absolute;
+    transform: translate(-50%); */
+    position: relative;
+    /* left: 50%; */
     width: 100%;
     max-width: 1920px;
-    height: 1082px;
+    /* background:url("../images/img-absolute/") */
+    /* height: 1082px; */
 }
 .main-block-page-gk__map {
     
@@ -1844,18 +1846,18 @@ main{
 }
 
 .block-modal-gk {
-    display: none;
-    position: absolute;
     z-index: 1000;
-    bottom: 100px;
-    left: 50%;
     background: rgb(255, 255, 255);
     width: 348px;
     height: 470px;
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 40px;
     padding-top: 50px;
     border-radius: 8px;
-    transform: translate(-50%);
     color: black;
     -webkit-box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
     -moz-box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.68);
@@ -1930,10 +1932,12 @@ main{
 .main-block-page-gk .href-figura-1{
     display: block;
     position: absolute;
-    width: 372px;
-    height: 750px;
-    bottom: 258px;
-    left: 440px;
+    /* width: 372px; */
+    /* height: 750px; */
+    /* bottom: 10%; */
+    /* left: 440px; */
+    /* top: 35%;
+    left: 37%; */
 }
 .main-block-page-gk .href-figura-2{
     display: block;
@@ -1983,6 +1987,9 @@ main{
     left: -440px;
     overflow: initial;
     /* opacity: 0; */
+}
+.main-block-schema-svg svg polygon{
+
 }
 .main-block-page-gk .href-figura-2 .href-figura-2-rel svg{
     position: absolute;
@@ -2123,14 +2130,33 @@ main{
     background: url(../images/icons/map-icon.png) no-repeat center;
 }
 .header-title-apart {
-    margin-top: 195px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
+.header-title-apart .wrapper-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title-apart-section-main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    /* justify-content: start; */
+}
+.header-title-apart-section{
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+}
+
 .header-title-apart p {
-    display: inline;
-    padding-right: 80px;
-    margin-left: 80px;
-    border-right: 1px solid #eaeaea;
+    /* display: inline; */
+    /* padding-right: 80px;
+    margin-left: 80px; */
+    /* border-right: 1px solid #eaeaea; */
 }
 .header-title-apart p:first-child{
     margin-left: 0px;
@@ -2162,13 +2188,16 @@ main{
     padding-bottom: 160px;
 }
 .apart-shema {
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .apart-shema .block-left {
     float: left;
     background: #fff;
-    padding: 60px 40px 50px 50px;
+    padding: 60px 40px 50px 35px;
     border-radius: 10px;
+}
+.myCheckbox span:hover{
+    /* border: */
 }
 .apart-shema .block-left ul {
     margin-top: 20px;
@@ -2334,11 +2363,27 @@ main{
 .apart-shema .slick-prev.slick-arrow {
     left: -100px;
 }
+
 .single-item .slick-prev.slick-arrow {
     border: none;
     top: 50%;
     z-index: 100;
     /* position: relative; */
+}
+.single-item-num-wrapper .single-item .slick-prev.slick-arrow{
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.single-item-num-wrapper .single-item .slick-prev.slick-arrow::before{
+    top: 0;
+}
+.single-item-num-wrapper .single-item .slick-next.slick-arrow{
+    transform: translateY(-50%);
+}
+.single-item-num-wrapper .single-item .slick-next.slick-arrow::before{
+    top: 0;
 }
 .single-item .slick-next.slick-arrow {
     border: none;
@@ -2387,7 +2432,7 @@ main{
 .single-item-num-wrapper .single-item-num-href {
     position: absolute;
     color: #ff0e0e;
-    width: 200px !important;
+    width: 200px;
     height: 50px;
     background-color: white;
     text-align: center;
@@ -2477,12 +2522,25 @@ main{
 }
 .single-item-num{
     position: relative;
+    height: auto;
 }
 .single-item .single-item-num .title-slider {
     position: absolute;
     color: white;
     top: 30px;
     left: 50px;
+}
+.single-item-num-wrapper{
+    position: relative;
+}
+.title-slider-page-gk{
+    /* position: absolute; */
+    /* left: 60px; */
+    /* top: 80px; */
+    color:black;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    z-index: 300;
 }
 .block-have-pluse .block-container-for-min-pluse{
     width: 665px;
@@ -2702,7 +2760,9 @@ main{
       line-height: 34px;
       font-weight: 600;
   }
-
+.block-gk-docs-2{
+    margin-bottom: 0px;
+}
   .block-gk-docs-2 .block-left{
     width: 45%;
   }
@@ -3485,7 +3545,7 @@ main{
     position: absolute;
     left: 50%;
     /* height: 244px; */
-    height: 30vh;
+    height: 130px;
     transform: translate(-50%, 82%);
     /* top: 0px; */
     bottom: 0px;
@@ -4184,9 +4244,14 @@ input.form-control-phoneCall:-moz-placeholder{
     font-size: 20px;
     cursor: pointer;
 }
+.myCheckbox span:hover{
+    border: 1px solid #ff0e0e;
+    cursor: pointer;
+    color: #ff0e0e;
+}
 .myCheckbox span.lable-studio {
-   padding-left: 10px;
-   padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 .myCheckbox input:checked + span {
@@ -4653,7 +4718,7 @@ overflow-x: hidden;
 } */
 
 .block-documents{
-    text-align: left;
+    text-align: left;   
     padding-top: 60px;
 }
 .block-documents-items{
@@ -4745,9 +4810,19 @@ overflow-x: hidden;
     width: 100%;
     height: 362px;
 }
-.main-block-schema-svg polygon.main-block-schema-svg-active{
-    fill: rgba(255,189,189,0.8);
+
+.main-block-schema-svg polygon{
+    fill: transparent;
     transition: fill 300ms ease;
+}
+.main-block-schema-svg polygon:hover {
+    fill: rgba(255,189,189,0.8);
+}
+.main-block-schema-svg polygon.main-block-schema-svg-active{
+    fill: rgba(255,189,189,0.7);
+    transition: fill 300ms ease;
+    stroke: #ff3e3e;
+    stroke-width: 2px;    
 }
 .block-model-scheme-list .open-modal-schema{
     display: none;
@@ -4791,4 +4866,16 @@ overflow-x: hidden;
 
 .our-partners-block-slider .slick-dots li button:before {
     content: none;
+}
+.slick-arrow{
+    font-size: 0px;
+}
+
+.qtip-default {
+    border: none;
+    background-color: transparent;
+}
+
+.qtip-tip canvas {
+    display: none;
 }

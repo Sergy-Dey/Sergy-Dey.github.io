@@ -1,9 +1,5 @@
-@media (max-width: 567px){
-    
-    .our-managers .block-our-managers{
-        justify-content: center;
-    }
-}
+
+
 
 @media (max-width: 425px){
     
@@ -627,7 +623,7 @@
         left: -12px;
     }
     .footer-block-content{
-        margin-top: 60px;
+        margin-top: 35px;
     }
     .form-group-2{
         width: 100%;
@@ -1236,12 +1232,7 @@
         width: 546px;
         height: 568px;
     }
-    .main-block-page-gk .href-figura-1 {
-        width: 98px;
-        height: 395px;
-        bottom: 135px;
-        left: 0px;
-    }
+
     .main-block-page-gk .href-figura-2 {
         width: 63px;
         height: 223px;
@@ -1304,7 +1295,13 @@
     }
     .header-title-apart p{
         border-right: none;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
+    }
+    .header-title-apart-section{
+        margin-bottom: 20px;
+    }
+    .block-have-pluse .wrapper-2 a div img{
+        width: 115%;
     }
     .block-for-mob-320-sort{
         display:none;
@@ -1396,7 +1393,7 @@
     }
     .img-block-apart-shema{
         margin-top: 60px;
-        margin-left: 10px;
+        padding-left: 10px;
     }
     .block-for-mob-320-sort .block-horizontal-shema .block-horizontal {
         margin-top: 20px;
@@ -1430,7 +1427,7 @@
         width: 90%;
     }
     .block-gk-docs{
-
+        margin-top: 45px;
     }
     .block-gk-docs .block-left {
         width: 100%;
@@ -1439,8 +1436,10 @@
         width: 276px;
     }
     .block-gk-docs .block-right {
-        flex-flow: column;
+        flex-flow: row;
+        flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: flex-start;
     }
     .block-gk-docs .block-right .blocl-docs-download {
         display: flex;
@@ -1450,6 +1449,17 @@
     
     .block-gk-docs .block-right .blocl-docs-download .blocl-docs-download-file{
         margin-top: 20px;
+        font-size: 18px;
+    }
+    .block-gk-docs .block-right .blocl-docs-download .blocl-docs-download-file .download-file-pdf{
+        width: 150px;
+        font-size: 15px;
+        line-height: 44px;
+        height: 40px;
+    }
+    .block-have-pluse .wrapper-2 a .block-pluce.big-pluce img{
+        width: 100%;
+        height: 100%;
     }
     .block-have-pluse .wrapper-2{
         display: flex;
@@ -1646,14 +1656,15 @@
     }
     .single-item-num-wrapper {
         position: relative;
-        height: 290px;
+        /* height: 290px; */
     }
     .single-item-num-wrapper .single-item-num img{
-        height: 100%;
-        width: 100%;
+        /* height: auto;
+        width: auto; */
     }
     .single-item-num-wrapper .single-item-num{
-        height: 290px;
+        /* height: 290px; */
+        height: auto;
     }
   
     
@@ -1661,13 +1672,23 @@
         top: 36%;
     }
     .single-item .slick-next.slick-arrow{
-        top: 36%;
+        /* top: 36%; */
     }
     .wrapper-1.single-item-num-wrapper{
         height: 224px;
     }
     .single-item-num-wrapper .single-item-num-href{
-        display: none;
+        width: 115px;
+        height: 27px;
+        font-size: 12px;
+        line-height: 35px;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .title-slider-page-gk{
+        margin-bottom: 20px;
+        margin-left: 40px;
     }
     .block-another-apartament-slider{
         display: none;
@@ -1902,8 +1923,26 @@
     .block-layouts-scheme{
         display: flex;
     }
+    .block-have-pluse .wrapper-2 a div img{
+        width: 100%;
+        height: auto;
+    }
+    .block-have-pluse .wrapper-2 a .block-pluce.big-pluce img{
+        height: auto;
+    }
+    .block-gk-docs .block-left{
+        width: 500px;
+    }
+    .block-gk-docs.block-gk-docs-2 .block-right .change-buy-apartament{
+        width: 390px;
+        height: 470px;
+        padding: 0px 30px 0px 30px;
+    }
+    .change-buy-apartament .btn-red{
+        margin-left: 0px;
+    }
 }
-@media (max-width: 512px){
+@media (max-width: 450px){
     .block-documents-items {
         justify-content: center;
     }
@@ -1916,5 +1955,58 @@
     }
     .block-documents-items{
         margin-top: 30px;
+    }
+    /* .block-have-pluse .wrapper-2 a div img{
+        width: 100%;
+        height: auto;
+    } */
+    .block-have-pluse .wrapper-2 a .block-pluce.big-pluce img{
+        height: auto;
+        width: 140%;
+    }
+}
+@media (max-width: 567px){
+    
+    .our-managers .block-our-managers{
+        justify-content: center;
+    }
+    .block-gk-docs .block-left{
+        width: 320px;
+    }
+    .block-gk-docs.block-gk-docs-2 .block-right .change-buy-apartament{
+        width: 320px;
+    }
+    .block-gk-docs.block-gk-docs-2{
+        margin-top: 30px;
+    }
+    .block-right-mortgage-calculation{
+        padding-top: 50px;
+    }
+    .block-mortgage-calculation{
+        height: 570px;
+        margin-bottom: 60px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 360px){
+    .block-gk-docs .block-left{
+        width: 290px;
+    }
+    .block-gk-docs.block-gk-docs-2 .block-right .change-buy-apartament{
+        width: 290px;
+        height: 540px;
+        padding: 0px 15px 0px 20px;
+    }
+    .block-right-mortgage-calculation{
+        width: 290px;
+    }
+    .block-right-mortgage-calculation .block-horizontal a{
+        width: 100%;
+    }
+    .block-right-mortgage-calculation .block-horizontal{
+        width: 290px;
+    }
+    .block-mortgage-calculation{
+        margin-bottom: 30px;
     }
 }

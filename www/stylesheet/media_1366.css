@@ -81,9 +81,7 @@
      /* client-Partners-end */
 
     /* page-gk */
-    .main-block-page-gk{
-        overflow: hidden;
-    }
+
     .main-block-page-gk .figura-1{
         left: 143px;
     }
@@ -392,7 +390,7 @@
         right: 250px;
     }
     .header-title-apart{
-        margin-top: 225px;
+        margin-top: 50px;
     }
     .header-title-apart a{
         margin-top: -13px;
@@ -427,11 +425,11 @@
     }
     .block-gk-docs.block-gk-docs-2 .block-right .change-buy-apartament{
         height: 590px;
-    width: 512px;
+        width: 512px;
     }
     .block-gk-docs {
         margin-top: 70px;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
         display: flex;
         justify-content: space-between;
         /* margin-bottom: 100px; */
@@ -497,6 +495,9 @@
     }
     .block-company-section-2 .img-abs-man-1{
         right: 0%;
+    }
+    .block-gk-docs-2{
+        margin-bottom: 100px;
     }
 }
 @media (max-width: 892px){

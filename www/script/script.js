@@ -306,6 +306,23 @@ $(document).ready(function(){
         
     });
 
+    // $('.main-block-page-gk__map a').qtip({
+    //     position: {
+    //         viewport: $('body'),
+    //         target: 'mouse', // Use the mouse position as the position origin
+    //         adjust: {
+    //             // Don't adjust continuously the mouse, just use initial position
+    //             mouse: false
+    //         }
+    //     },
+    //     show: {
+    //         delay: 0
+    //     },
+    //     hide: {
+    //         delay: 0
+    //     }
+    // });
+
     // $( ".block-question-sometime a" ).on( "click", function() {
     //     // console.log("test");
     //     if($(this).hasClass('show-block-quest-act')){

@@ -42,6 +42,12 @@
     .block-company-section-2 .img-abs-man-1{
         right: 0px;
     }
+    .header-title-apart-section-main{
+        width: 100%;
+    }
+    .header-title-apart .wrapper-1{
+        justify-content: space-around;
+    }
     .block-company-section-2 .block-board-left-deg{
         transform: rotate(4deg) scale(1.2);
     }
