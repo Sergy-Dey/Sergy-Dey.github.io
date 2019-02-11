@@ -4580,9 +4580,22 @@ overflow-x: hidden;
     top: 50%;
     left: 400px;
 }
-.our-partners-block-slider h2{
+.our-partners-block-slider h1{
     margin-bottom: 100px;
 }
+.our-partners-block-slider .slick-slide img{
+    width: 340px;
+    display: inline-block;
+}
+.our-partners-block-slider .slider-partners .slick-dots{
+    display: flex;
+    justify-content: center;
+}
+.our-partners-block-slider .slider-partners .slick-dots li button{
+
+}
+
+
 .our-partners.slider-partners .slick-arrow{
     position: absolute;
     background: none;
@@ -4593,7 +4606,7 @@ overflow-x: hidden;
 }
 .our-partners.slider-partners .slick-next.slick-arrow{
     top: 50%;
-    right: 0px;
+    right: -50px;
     transform: translate( 0%, -50%);
 }
 .our-partners.slider-partners .slick-next.slick-arrow:before{
@@ -4606,9 +4619,14 @@ overflow-x: hidden;
     left: 50%;
     transform: translate( -50%, -50%);
 }
+.slider-partners .slick-slide{
+    display: flex;
+    justify-content: center;
+
+}
 .our-partners.slider-partners .slick-prev.slick-arrow{
     top: 50%;
-    left: -70px;
+    left: -50px;
     transform: translate( 0%, -50%);
 }
 .our-partners.slider-partners .slick-prev.slick-arrow:before{
@@ -4639,7 +4657,7 @@ overflow-x: hidden;
     padding-top: 60px;
 }
 .block-documents-items{
-    margin-top: 70px;
+    margin-top: 45px;
 }
 .block-documents{
     
@@ -4742,4 +4760,35 @@ overflow-x: hidden;
 }
 .block-model-scheme-modal-3-none{
     display: block;
+}
+
+
+.our-partners-block-slider .slick-dots li {
+    width: 12px;
+    height: 12px;
+}
+.our-partners-block-slider .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    opacity: 0.2;
+    border: 2px solid #ff0e0e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    transition: opacity 250ms ease;
+}
+.our-partners-block-slider .slick-dots li.slick-active button {
+    opacity: 0.9;
+}
+
+.our-partners-block-slider .slick-dots li button:before {
+    content: none;
 }

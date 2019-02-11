@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
     <link rel="stylesheet" href="./stylesheet/animate.css">
     <link rel="stylesheet" href="./stylesheet/slick.css">
+    <link rel="stylesheet" href="./stylesheet/slick-theme.css">
+    <!-- <link rel="stylesheet" href="./stylesheet/slick.css"> -->
+
+    <link rel="stylesheet" href="./stylesheet/vlad.css">
+
     <link rel="stylesheet" href="./stylesheet/style.css">
     
     <link rel="stylesheet" href="./stylesheet/media_1366.css">
@@ -18,6 +23,18 @@
     <link rel="stylesheet" href="./stylesheet/media_768.css">
     <link rel="stylesheet" href="./stylesheet/media_320.css">
     <link rel="stylesheet" href="./stylesheet/media.css">
+    <!-- <link rel="stylesheet" href="./stylesheet/normalize.css">
+    <link rel="stylesheet" href="./stylesheet/jquery-ui.css">
+    <link rel="stylesheet" href="./stylesheet/slick.css">
+    <link rel="stylesheet" href="./stylesheet/slick-theme.css">
+    <link rel="stylesheet" href="./stylesheet/animate.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/media.css">
+    <link rel="stylesheet" href="./stylesheet/media_1366.css">
+    <link rel="stylesheet" href="./stylesheet/media_1024.css">
+    <link rel="stylesheet" href="./stylesheet/media_768.css">
+    <link rel="stylesheet" href="./stylesheet/media_320.css"> -->
+    
     <!-- script -->
     <script src="./script/jquery.min.js"></script>
     <script src="./script/jquery-ui.js"></script>
@@ -25,7 +42,10 @@
     <script src="./script/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src='./script/jquery.ui.touch-punch.min.js' type="text/javascript" charset="utf-8"></script>
     <script src="./script/wow.min.js"></script>
+    <!-- <script src="./script/script.js"></script> -->
+
     <script src="./script/script.js"></script>
+    <script src="./script/vlad.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -252,7 +272,7 @@
 
 
     <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <!-- <div style="clear: both;"></div>
+    <div style="clear: both;"></div>
     <div class="our-partners-block-slider">
         <div class="wrapper-2">
             <h1>Наши партнеры</h1>
@@ -271,7 +291,7 @@
                 </div>
             </div>
 
-            <div class="our-partners slider-partners-2">
+            <!-- <div class="our-partners slider-partners-2">
                 <div class="slider-partners-2-block">
                     <img src="./images/img/sber.jpg">
                 </div>
@@ -284,9 +304,9 @@
                 <div class="slider-partners-2-block">
                     <img src="./images/img/sber.jpg">
                 </div>
-            </div>
+            </div> -->
         </div>
-    </div> -->
+    </div>
 
     <div style="clear: both;"></div>
     <div class="block-map">
@@ -557,16 +577,32 @@
 </body>
 <script>
     $('.slider-partners').slick({
-        // dots:true,
+        dots:true,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                arrows:false,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 539,
+            settings: {
+                arrows:false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
     });
-    $('.slider-partners-2').slick({
-        dots:true,
-        // infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
+    // $('.slider-partners-2').slick({
+    //     dots:true,
+    //     // infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    // });
 </script>
 </html>
