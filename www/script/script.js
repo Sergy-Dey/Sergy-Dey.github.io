@@ -271,15 +271,32 @@ $(document).ready(function(){
         return false;
     });
 
-    $( ".block-model-scheme a" ).on( "click", function() {
+    $( ".block-model-scheme .open-modal-schema" ).on( "click", function() {
 
         $('.block-model-scheme-modal').addClass('block-model-scheme-modal-act');
+        $(".open-modal-schema").css({"display":"none"});
         $('.block-model-scheme-modal').next().show(500);
-        return false;
+
     });
     $( ".close-modal-schema" ).on( "click", function() {
         $('.block-model-scheme-modal').removeClass('block-model-scheme-modal-act');
+        $(".open-modal-schema").css({"display":"block"});
         $('.block-model-scheme-modal').next().hide(500);
+        // return false;
+    });
+
+    $(".block-model-scheme-list .open-modal-schema").on('click', function () {
+        console.log("test");
+        if($(".block-model-scheme-list .block-model-scheme-modal-3").hasClass("block-model-scheme-modal-3-none")){
+            console.log("test 2");
+            $(".block-model-scheme-list .open-modal-schema").css({"display":"none"});
+            $(".block-model-scheme-list .block-model-scheme-modal-3").removeClass("block-model-scheme-modal-3-none");
+            return false;
+        }else{
+            console.log("test 3");
+            // $("block-model-scheme-list .block-model-scheme-modal-3").removeClass("block-model-scheme-modal-3-none");
+            return false;
+        }
         return false;
     });
 

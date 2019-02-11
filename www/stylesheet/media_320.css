@@ -14,6 +14,12 @@
         width: 100%;
         margin-top: 20px;
     }
+    .block-social-for-contacts-div .block-social-for-contacts-soc{
+        height: 100px;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
 }
 
 @media (max-width: 537px){
@@ -98,8 +104,17 @@
     .block-contact-page .block-contact-page-title{
         margin-top: 38px;
     }
+    .block-contact-page-desc{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
     .block-contact-page-desc .block-contact-page-desc-div{
-        margin-bottom: 11px;
+        margin-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .block-social-for-contacts-div{
+        justify-content: space-between;
     }
     .block-contact-page-desc .block-contact-page-desc-div h4{
         margin-bottom: 0px;
@@ -772,7 +787,55 @@
     }
 
      /* commerce.html */
+
+     .block-commmerce .wrapper-2{
+         width: 100%;
+     }
      .block-commmerce-item{
+         border:none;
+         flex-flow: column-reverse;
+         height: 460px;
+         margin-bottom: 60px;
+         justify-content: space-around;
+     }
+     .block-commmerce-item-text{
+         width: 100%;
+         margin-left: 0px;
+         padding-left: 30px;
+     }
+
+     .block-commmerce-item p{
+        width: 100%;
+        margin-right: 0px;
+        font-size: 18px;
+        line-height: 24px;
+     }
+     .block-commmerce-item h2{
+         margin-top: 25px;
+     }
+     .block-commmerce-item .address-commmerce{
+         margin-top: 20px;
+         width: 80%;
+     }
+     .block-commmerce h1{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: 20px;
+        
+     }
+     .block-commmerce-item .block-commmerce-item-img{
+        width: 100%;
+        height: 220px;
+        padding: 0px;
+        overflow: hidden;
+        margin: 0px;
+     }
+     .block-commmerce-item .block-commmerce-item-img img{
+        width: 100%;
+        height: auto;
+        display: block;
+     }
+     /* .block-commmerce-item{
          height: 500px;
      }
      .block-commmerce-item h2{
@@ -793,12 +856,13 @@
         transform: translate(-50%, 0%);
         max-height: 220px;
         max-width: 285px;
-    }
+    } */
     /* commerce.html end*/
 
     /* layouts-list.html */
     .block-sort-list {
-        width: 320px;
+        /* width: 320px; */
+        width: 100%;
         height: 920px;
         background-color: white;
         position: relative;
@@ -821,6 +885,7 @@
     }
     .sort-by-change .checked-change.group-input-check{
         margin-left: 15px;
+        display: none;
     }
     .sort-by-change .checked-change.group-input-check {
         margin-left: 0px;
@@ -917,13 +982,15 @@
     }
     .block-layouts-header .block-header-title{
         margin-left: 15px;
+        margin-top: 20px;
     }
     .block-layouts-header .block-schema-or-list {
         float: none;
+        top: -10px;
         /* margin: 0 auto; */
         /* margin-left: 50%; */
         transform: translate(-50%);
-        width: 256px;
+        width: 100%;
         position: relative;
         left: 50%;
         max-width: 100%;
@@ -935,8 +1002,15 @@
     .block-layouts-header .block-schema-or-list a:last-child{
         margin-left: 0px;
     }
+    .block-layouts-header{
+        padding-top: 15px;
+    }
     .block-model-scheme a{
         width: 100%;
+    }
+    .block-model-scheme {
+        /* position: relative; */
+        margin-top: 70px;
     }
     .block-model-scheme-modal{
         width: 320px;
@@ -946,28 +1020,60 @@
         margin-bottom: 13px;
     }
     .block-scheme-main-slider.slick-initialized.slick-slider{
-        height: 1990px;
+        /* height: 1990px; */
+        width: 90%;
     }
-    .block-layouts-scheme .block-scheme-main{
+    /* .block-layouts-scheme .block-scheme-main{
         height: 2400px;
-    }
+    } */
     .block-scheme-main-example{
         display: none;
     }
     .block-scheme-main .slick-arrow.slick-prev{
         left: 0px;
-        top: 116%;
+        top: auto;
+        bottom: -65px;
     }
     .block-scheme-main .slick-arrow.slick-next {
-        right: 0px;
-        top: 116%;
+        top: auto;
+        bottom: -65px;
         left: 70px;
     }
     .block-model-scheme-modal.block-model-scheme-modal-act{
-        width: 296px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: -50px;
+        transform: translate(-50%, 0%);
+        height: 344px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .block-model-scheme a:after{
+        /* background: url(../images/icons/btn-close.png) no-repeat center; */
+        /* top: 50%; */
+        top: 19px;
+        right: 28px;
+    }
+    .block-model-scheme-modal.block-model-scheme-modal-act a.close-modal-schema:after{
+        top: 36px;
+    }
+    
+    .block-model-scheme-modal .close-modal-schema{
+        border: none;
+        background: white;
+        padding-top: 20px;
+        margin-top: 0px;
     }
     .block-model-scheme-modal-map {
         width: 302px;
+    }
+
+    .block-model-scheme .wrapper-2{
+        width: 100%;
     }
     /* .block-list-main table.table-list-layout-block.table-list-layout-block-for-mobile tbody tr td:last-child{
         position: absolute;
@@ -988,7 +1094,7 @@
     .block-map{
         height: 623px;
         overflow: hidden;
-        margin-top: 70px;
+        margin-top: 20px;
     }
     .form-for-map-abs{
         display:none;
@@ -1002,8 +1108,9 @@
         margin-top: 0px;
     }
     .block-social-for-contacts-div .block-social-for-contacts-soc{
-        height: 103px;
-        margin-bottom: 18px;
+        height: 100px;
+        /* width: calc(50% - 10px); */
+        margin-bottom: 20px;
     }
 
     /* footer */
@@ -1098,14 +1205,22 @@
         right: 20px;
     }
     .block-scheme-main .slick-slide{
-        height: 117%;
+        /* height: 117%; */
     }
+    .block-scheme-main{
+        padding-bottom: 130px;
+        padding-top: 50px;
+    }
+    .block-scheme-main .wrapper-2{
+        width: 100%;
+    }
+    
 
 
     /* page-gk */
     .main-block-page-gk{
-        width: 320px;
-        height: 568px;
+        /* width: 320px;
+        height: 568px; */
     }
     .page-gk-mob-img {
         display: block;
@@ -1172,8 +1287,8 @@
         bottom: 63px;
     }
     .main-block-page-gk-container {
-        height: 568px;
-        width: 320px;
+        /* height: 568px;
+        width: 320px; */
     }
     .header-title-apart {
         margin-left: 10px;
@@ -1712,6 +1827,67 @@
     }
     .block-gk-docs .block-right .blocl-docs-download{
         margin-bottom: 30px;
+    }
+    .block-layouts-scheme .block-list-main .block-left{
+        width: 100%;
+    }
+    .block-model-scheme-list{
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+    .block-model-scheme-list .open-modal-schema{
+        display: block;
+        width: 145px;
+        height: 44px;
+        border:2px solid #ff0e0e;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        color:#ff0e0e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .block-model-scheme-list .open-modal-schema:after{
+        background: url("../images/icons/strelka-4.png") no-repeat center;
+        width: 10px;
+        height: 6px;
+        position: absolute;
+        content: "";
+        top: 36%;
+        right: 20px;
+        transform: rotate(180deg) translate(0%, -50%); 
+    }
+
+    .block-model-scheme-list .block-model-scheme-modal-3 .close-modal-schema-3{
+        display: block;
+        width: 145px;
+        height: 44px;
+        border:2px solid #ff0e0e;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        color:#ff0e0e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .block-model-scheme-list .block-model-scheme-modal-3 .close-modal-schema-3:after{
+        background: url("../images/icons/strelka-4.png") no-repeat center;
+        width: 10px;
+        height: 6px;
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 20px;
+        transform: translate(0%, -50%); 
+    }
+    .block-model-scheme-modal-3-none{
+        display: none;
     }
 }
 @media (max-width: 512px){
