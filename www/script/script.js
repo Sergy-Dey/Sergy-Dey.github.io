@@ -274,7 +274,7 @@ $(document).ready(function(){
     $( ".block-model-scheme .open-modal-schema" ).on( "click", function() {
 
         $('.block-model-scheme-modal').addClass('block-model-scheme-modal-act');
-        $(".open-modal-schema").css({"display":"none"});
+        // $(".open-modal-schema").css({"display":"none"});
         $('.block-model-scheme-modal').next().show(500);
 
     });

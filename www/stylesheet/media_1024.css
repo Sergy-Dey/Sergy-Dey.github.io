@@ -1294,9 +1294,9 @@
 
     /* layouts-list.html */
     .block-layouts-header .block-header-title{
-        margin-top: 50px;
+        /* margin-top: 50px; */
         margin-bottom: 50px;
-        margin-left: 0px;
+        /* margin-left: 0px; */
     }
     .block-model-scheme .wrapper-2{
         width: 100%;
@@ -1333,7 +1333,8 @@
         margin-top: 50px;
     }
     .block-sort-list {
-        width: 730px;
+        width: 80%;
+        margin: 0 auto;
         height: 530px;
         background-color: white;
         position: relative;
@@ -1354,10 +1355,22 @@
         border: none;
         float: left;
         position: absolute;
-        left: -372px;
+        left: 0px;
+    }
+    .block-list-main .block-left{
+        width: 100%;
+    }
+    label sup small{
+        font-size: 15px;
+    }
+    td sup small {
+        font-size: 12px;
     }
     .sort-by-change .clear-sort{
         display:none;
+    }
+    .block-img-list-scheme{
+        display: none;
     }
     /* layouts-list.html end */
 
@@ -1402,7 +1415,7 @@
 
     /* map */
     .block-map{
-        height: 970px;
+        height: 750px;
         margin-top: 0px;
     }
     .block-social-for-contacts {
@@ -1429,18 +1442,18 @@
 
     .block-layouts-header{
         position: relative;
-        position: relative;
         display: flex;
-        flex-flow: column;
+        flex-flow: row;
+        justify-content: space-between;    
     }
     .block-list-main table tbody tr td.block-schema-apart-lock:before{
         left: 10px;
     }
-    .block-layouts-header .block-schema-or-list{
-        position: absolute;
-        top: 71px;
-        right: 0px;
-        float:none;
+    .block-model-scheme {
+        text-align: center;
+    }
+    .block-layouts-header .block-schema-or-list a{
+        font-size: 15px;
     }
     .myCheckbox span{
         width: 45px;
@@ -1451,7 +1464,29 @@
     .block-model-scheme a{
         margin-top: -40px;
     }
+    .block-horizontal-right > *{
+        font-size: 15px;
+    }
+    .block-horizontal-input-main{
+        align-items: center;
+    }
+    .sort-by-change-for-layouts-list .block-horizontal-right{
+        width: 122px;
+    }
+    .block-horizontal-input-main{
+        width: 260px;
+    }
+    .sort-by-change-for-layouts-list.sort-by-change .block-horizontal input{
+        font-size: 15px;
+        width: 40px;
+        height: 15px;
+    }
+    .sort-by-change-for-layouts-list.sort-by-change .block-horizontal input{
 
+    }
+    .our-partners-block-slider .slider-partners .slick-dots{
+        bottom: -20px;
+    }
     .slider-partners .slick-initialized .slick-slide{
         display: flex !important;
         justify-content: center;
@@ -2183,7 +2218,7 @@
         margin-bottom: 40px;
     }
     .block-map{
-        height: 1000px;
+        height: 750px;
     }
     .block-documents{
         margin-top: 40px;
@@ -2388,6 +2423,9 @@
     .block-main-apartament-schema-form .block-cost-and-plohad > div p span{
         font-size: 15px;
     }
+    .come-back,.block-model-scheme a{
+        font-size: 15px;
+    }
     
 }
 @media (max-width: 886px){
@@ -2398,4 +2436,21 @@
         margin-right: 0px;
     }
     
+}
+@media (max-width: 900px){
+    .block-come-back .come-back{
+        border: none;
+        font-size: 0px;
+        width: 40px;
+    }
+    .block-come-back .come-back:after{
+        background: url(../images/icons/strelka-2.png)no-repeat center;
+        width: 20px;
+        height: 35px;
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
 }

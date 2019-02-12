@@ -4574,6 +4574,7 @@ input.form-control-phoneCall:-moz-placeholder{
         display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 .block-our-life .block-title-our-life h2 {
     float: left;
@@ -4645,8 +4646,14 @@ overflow-x: hidden;
     top: 50%;
     left: 400px;
 }
+.our-partners-block-slider{
+    margin-bottom: 140px;
+}
+.our-partners-block-slider .slider-partners .slick-dots{
+    bottom: -60px;
+}
 .our-partners-block-slider h1{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .our-partners-block-slider .slick-slide img{
     width: 340px;
@@ -4719,7 +4726,7 @@ overflow-x: hidden;
 
 .block-documents{
     text-align: left;   
-    padding-top: 60px;
+    padding-top: 90px;
 }
 .block-documents-items{
     margin-top: 45px;
@@ -5319,6 +5326,15 @@ h1 sup small{
 p sup small{
     font-size: 15px;
 }
-
+.block-scroll-schema-list{
+    max-width: 100%;
+    overflow-x: auto;
+}
+.table-list-layout-block{
+    min-width: 600px;
+}
+.block-scheme-main-slider .slick-slide{
+    height: auto;
+}
 
 /*  apatament end */

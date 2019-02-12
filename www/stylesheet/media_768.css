@@ -95,6 +95,9 @@
     .download-and-map-float a:last-child:before{
         left: 13px;
     }
+    .block-sort-list{
+        width: 100%;
+    }
 
 
 
