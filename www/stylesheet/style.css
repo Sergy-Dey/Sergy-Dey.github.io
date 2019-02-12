@@ -4908,7 +4908,16 @@ overflow-x: hidden;
     height: 9px;
     top: 4px;
     right: -15px;
-    background: url(../img/img-for-back/strelka1.png)no-repeat center;
+    background: url(../images/icons/strelka1.png)no-repeat center;
+}
+.block-breadcrumbs ul li.last-breadcrumbs:after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    top: 4px;
+    right: -15px;
+    background: url("");
 }
 .block-main-apartament-schema {
     margin-top: 90px;
@@ -5211,6 +5220,104 @@ overflow-x: hidden;
 
 h1 sup small{
     font-size: 25px;
+}
+
+.block-main-apartament-schema-bottom-with-1024{
+    display: none;
+}
+
+.another-apartament-slider-item img{
+    width: auto;
+}
+
+.another-apartament-slider{
+    /* height: 350px; */
+    margin-top: 40px;
+    position: relative;
+}
+.another-apartament-slider .slick-arrow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+}
+.another-apartament-slider .slick-prev.slick-arrow{
+    left: auto;
+    right: auto;
+    right: 100px;
+    top: -50px;
+}
+.another-apartament-slider .slick-next.slick-arrow{
+    left: auto;
+    right: auto;
+    right: 0px;
+    top: -50px;
+}
+.another-apartament-slider .slick-prev.slick-arrow:before{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 51px;
+    top: 0px;left: 0px;
+    background: url("../images/icons/strl-r.png") no-repeat center;
+}
+.another-apartament-slider .slick-next.slick-arrow:before{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 51px;
+    top: 0px;left: 0px;
+    background: url("../images/icons/strl-l.png") no-repeat center;
+}
+.block-another-apartament-slider{
+    background-color: #f5f5f5;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.another-apartament-slider .another-apartament-slider-item{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.another-apartament-slider .another-apartament-slider-item .another-apartament-slider-item-section-1{
+    width: 90%;
+    position: relative;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+.another-apartament-slider-item-section-2{
+    margin-top: 35px;
+}
+.slick-slide{
+    height: auto;
+}
+.another-apartament-slider-item{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.another-apartament-slider-item span{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.block-this-stroy{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 21px;
+    color:#afafaf;
+    font-weight: 500;
+}
+p sup small{
+    font-size: 15px;
 }
 
 

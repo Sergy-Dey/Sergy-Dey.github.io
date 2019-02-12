@@ -1620,7 +1620,18 @@
         max-width: 290px;
     }
     .apart-and-plan-float{
-        display:none;
+        /* display:none; */
+    }
+    .block-main-apartament-schema-bottom-with-1024{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .block-main-apartament-schema-img img{
+        width: auto;
     }
     .apart-and-plan-float-2{
         display: block;
@@ -1629,8 +1640,21 @@
         font-size: 12px;
     }
     .apart-and-plan-float{
-        padding: 15px 24px;
+        padding: 10px 20px;
         margin-bottom: 20px;
+    }
+    .block-main-apartament-schema-form{
+        margin-top: 25px;
+    }
+    h1 sup small {
+        font-size: 14px;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad {
+        display:flex;
+        justify-content: space-between;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad > div{
+        width: 130px;
     }
     .block-htags-apartament {
         display: none;
@@ -1677,6 +1701,12 @@
     .wrapper-1.single-item-num-wrapper{
         height: 224px;
     }
+    .block-main-apartament-schema {
+        margin-top: 0px;
+    }
+    .block-main-apartament-schema-img{
+        margin-top: 20px;
+    }
     .single-item-num-wrapper .single-item-num-href{
         width: 115px;
         height: 27px;
@@ -1691,7 +1721,7 @@
         margin-left: 40px;
     }
     .block-another-apartament-slider{
-        display: none;
+        /* display: none; */
     }
     .block-another-apartament-slider-not{
         display: block;
@@ -1941,6 +1971,28 @@
     .change-buy-apartament .btn-red{
         margin-left: 0px;
     }
+    .block-main-apartament-schema .block-htags-apartament{
+        flex-wrap: wrap;
+        display: none;
+    }
+    .block-main-apartament-schema .block-htags-apartament a{
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+        line-height: 38px;
+    }
+    .wrapper-1.title-block-apartament-schema-for-1024 h1{
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 20px;
+    }
+    .apart-and-plan-float a{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .another-apartament-slider .another-apartament-slider-item .another-apartament-slider-item-section-1{
+        width: 370px;
+    }
 }
 @media (max-width: 450px){
     .block-documents-items {
@@ -1987,6 +2039,67 @@
         margin-bottom: 60px;
         margin-top: 50px;
     }
+    .block-main-apartament-schema-img img{
+        /* max-width: 100%; */
+        width: auto;
+        max-height: 140px;
+    }
+    .block-breadcrumbs ul li a{
+        font-size: 10px;
+    }
+   
+    
+}
+@media (max-width: 460px){
+
+    .block-gk-docs.block-apartament-schema-docs .blocl-docs-download{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .block-btn-apartament-schema-form{
+        width: 100%;
+        flex-flow:column;
+    }
+    .block-btn-apartament-schema-form .btn-apartament-to-book{
+        width: 100%;
+    }
+    .block-btn-apartament-schema-form .btn-apartament-mortgage{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .block-main-apartament-schema-form{
+        height: 450px;
+        padding: 30px 15px;
+    }
+    .block-btn-another-apartament-schema-form{
+        margin-top: 20px;
+    }
+    .block-main-apartament-schema-form .apartament-schema-form-text{
+        padding-bottom: 20px;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad > div p{
+        font-size: 15px;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad > div p span{
+        font-size: 13px;
+    }
+    .block-btn-another-apartament-schema-form a{
+        font-size: 15px;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad{
+        margin-top: 10px;
+        /* border-bottom: 1px solid #eaeaea; */
+        padding-bottom: 0px;
+    }
+    .block-cost-and-plohad.block-cost-and-plohad-3{
+        margin-top: 20px;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad > div p{
+        font-size: 15px;
+    }
+    
 }
 @media (max-width: 360px){
     .block-gk-docs .block-left{
@@ -2009,4 +2122,12 @@
     .block-mortgage-calculation{
         margin-bottom: 30px;
     }
+    .download-and-map-float a:first-child{
+        width: 220px;
+    }
+    .download-and-map-float a:first-child{
+        width: 212px;
+    }
+    
+    
 }

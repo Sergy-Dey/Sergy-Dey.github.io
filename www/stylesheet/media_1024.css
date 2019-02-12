@@ -2131,14 +2131,14 @@
     .block-apartament-schema-docs.block-gk-docs .block-right .blocl-docs-download{
         margin-right: 0px;
     }
-    .another-apartament-slider .slick-prev.slick-arrow {
+    /* .another-apartament-slider .slick-prev.slick-arrow { */
         /* right: 80px;
         top: -89px; */
-        left: 586px;
-    }
-    .another-apartament-slider .slick-next.slick-arrow {
+        /* left: 586px;
+    } */
+    /* .another-apartament-slider .slick-next.slick-arrow {
         left: 90%;
-    }
+    } */
     .block-apartament-schema-mob .apart-and-plan-float a{
         line-height: 36px;
     }
@@ -2278,11 +2278,15 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
+    }
+    .block-breadcrumbs ul li:first-child{
+        margin-left: 0px;
     }
     .block-main-apartament-schema-form{
         width: 100%;
         margin-top:60px;
+        margin-bottom: 40px;
     }
     .block-main-apartament-schema-form h3{
         display: none;
@@ -2292,6 +2296,97 @@
     }
     .block-btn-apartament-schema-form .btn-apartament-mortgage{
         width: 48%;
+    }
+    .block-gk-docs.block-apartament-schema-docs{
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 100px;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .block-gk-docs.block-apartament-schema-docs .blocl-docs-download{
+        width: calc(45% - 15px);
+    }
+    .block-main-apartament-schema-bottom{
+        margin-top: 60px;
+    }
+    .block-main-apartament-schema-form{
+        height: 545px;
+    }
+    .block-gk-docs .blocl-docs-download .blocl-docs-download-file .download-file-pdf{
+        line-height: 53px;
+    }
+    .block-btn-apartament-schema-form a{
+        line-height: 50px;
+    }
+    .block-gk-docs.block-apartament-schema-docs .blocl-docs-download{
+        width: 100%;
+    }
+    .title-block-apartament-schema-for-1024 h1{
+        padding-top: 35px;
+    }
+    .block-breadcrumbs {
+        padding-top: 50px;
+    }
+    .wrapper-1.title-block-apartament-schema-for-1024{
+        padding-left: 0px;
+    }
+    .block-main-apartament-section-scheme{
+        width: 100%;
+    }
+    .block-main-apartament-schema-img{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .block-gk-docs.block-apartament-schema-docs .blocl-docs-download{
+        width: 45%;
+    }
+    .docs-for-apartament-page {
+        margin-top: 60px;
+    }
+    .block-gk-docs.block-apartament-schema-docs{
+        margin-bottom: 40px;
+    }
+    
+    .block-main-apartament-schema-bottom-with-1024{
+        display: block;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .block-main-apartament-schema-bottom{
+        display: none;
+    }
+    .block-btn-apartament-schema-form a{
+        font-size: 15px;
+    }
+    .download-and-map-float a:first-child{
+        font-size: 15px;
+    }
+    .download-and-map-float a:last-child{
+        font-size: 15px;
+    }
+    .apart-and-plan-float a{
+        font-size: 15px;
+    }
+    .block-main-apartament-schema-form .apartament-schema-form-text{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .block-main-apartament-schema-form{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad > div p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .block-main-apartament-schema-form .block-cost-and-plohad > div p span{
+        font-size: 15px;
     }
     
 }

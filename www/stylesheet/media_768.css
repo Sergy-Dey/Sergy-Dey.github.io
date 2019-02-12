@@ -59,6 +59,43 @@
     .block-our-life{
         margin-top: 0px;
     }
+    .block-gk-docs.block-apartament-schema-docs .blocl-docs-download{
+        width: 100%;
+    }
+    .download-and-map-float a:last-child{
+        height: 50px;
+        position: relative;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 54px;
+        padding: 0px 10px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        width: 40px;
+        color: #ff0e0e;
+        padding-left: 16px;
+        font-size: 0px;
+        padding: 0px;
+        padding-left: 0px;
+    }
+    .download-and-map-float a:first-child{
+        width: 270px;
+        padding: 0px;
+        padding-left: 0px;
+    }
+    .download-and-map-float{
+        /* float: right; */
+    display: flex;
+    align-items: center;
+    }
+    .download-and-map-float a:last-child:before{
+        left: 13px;
+    }
+
 
 
 

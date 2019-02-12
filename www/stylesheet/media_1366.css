@@ -481,11 +481,11 @@
     .single-item .slick-prev.slick-arrow{
         left: 0px;
     }
-    .another-apartament-slider .slick-prev.slick-arrow {
+    /* .another-apartament-slider .slick-prev.slick-arrow {
         right: 80px;
         top: -89px;
         left: 1150px;
-    }
+    } */
     /* apartament end */
     .block-right-mortgage-calculation .block-horizontal{
         margin-bottom: 50px;
@@ -532,6 +532,15 @@
         width: auto;
         justify-content: start;
         flex-flow: column;
+    }
+    .block-another-apartament .wrapper-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .block-another-apartament .block-another-apartament-text{
+        margin-left: 0px;
+        margin-top: 0px;
     }
     .block-main-apartament-schema .block-htags-apartament a{
         width: 175px;
