@@ -863,6 +863,8 @@
         background-color: white;
         position: relative;
         border-radius: 5px;
+        height: auto;
+    padding-bottom: 20px;
         /* padding: 45px 45px 45px 45px; */
     }    
     .block-sort-list ul {
@@ -1720,7 +1722,7 @@
         width: 115px;
         height: 27px;
         font-size: 12px;
-        line-height: 35px;
+        line-height: 32px;
         bottom: 10px;
         left: 50%;
         transform: translate(-50%, 0%);
@@ -1873,9 +1875,18 @@
         font-size: 12px;
     }
     .block-sort-apartament{
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         padding-top: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
+    }
+    .block-gk-docs.block-apartament-schema-docs .blocl-docs-download{
+        margin-bottom: 60px;
+    }
+    .block-gk-docs .blocl-docs-download .blocl-docs-download-file{
+        margin-top: 25px;
+    }
+    .block-gk-docs .blocl-docs-download .blocl-docs-download-file .download-file-pdf{
+        font-size: 15px;
     }
     .block-sort-apartament .wrapper-1{
         width: 100%;
@@ -1907,7 +1918,7 @@
     }
     .block-model-scheme-list .open-modal-schema{
         display: block;
-        width: 145px;
+        width: 84%;
         height: 44px;
         border:2px solid #ff0e0e;
         border-radius: 5px;
@@ -1934,7 +1945,7 @@
 
     .block-model-scheme-list .block-model-scheme-modal-3 .close-modal-schema-3{
         display: block;
-        width: 145px;
+        width: 87%;
         height: 44px;
         border:2px solid #ff0e0e;
         border-radius: 5px;
@@ -2068,6 +2079,12 @@
     }
     .block-documents{
         padding-top: 60px;
+    }
+    .block-gk-docs.block-apartament-schema-docs{
+        margin-bottom: 0px;
+    }
+    .block-map{
+        width: 550px;
     }
 }
 @media (max-width: 450px){
@@ -2229,6 +2246,19 @@
     }
     .block-model-scheme{
         margin-top: 95px;
+    }
+    .block-horizontal-input-main{
+        width: 220px;
+    }
+    .myCheckbox span{
+        width: 35px;
+        height: 35px;
+        line-height: 38px;
+
+    }
+    .block-model-scheme-modal.block-model-scheme-modal-act{
+        width: 310px;
+        top: -50px;
     }
 }
 

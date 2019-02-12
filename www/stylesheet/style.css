@@ -1071,6 +1071,9 @@ margin-bottom: 30px;
     /* height: 440px; */
     height: auto;
     top:0px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
 }
 .block-model-scheme-modal.block-model-scheme-modal-act{
     background: white;
@@ -4575,6 +4578,13 @@ input.form-control-phoneCall:-moz-placeholder{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+}
+.block-model-scheme a.open-modal-schema{
+    /* margin: 0 auto;
+    position: relative; */
+    left: 50%;
+    transform: translate(-50%);
+    padding-right: 17px
 }
 .block-our-life .block-title-our-life h2 {
     float: left;

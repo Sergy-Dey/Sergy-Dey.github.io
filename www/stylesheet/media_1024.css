@@ -1416,7 +1416,11 @@
     /* map */
     .block-map{
         height: 750px;
+        overflow: hidden;
         margin-top: 0px;
+    }
+    .block-gk-docs h1{
+        margin-bottom: 30px;
     }
     .block-social-for-contacts {
         margin-top: 43px;
@@ -1601,6 +1605,9 @@
         margin-left: 0px;
         flex-flow: column;
         position: relative;
+    }
+    .apart-shema .block-left{
+        padding: 60px 40px 30px 35px;
     }
     .apart-shema .block-left ul {
         margin-top: 20px;
@@ -2220,6 +2227,9 @@
     .block-map{
         height: 750px;
     }
+    .block-horizontal-right input{
+        width: 35px;
+    }
     .block-documents{
         margin-top: 40px;
     }
@@ -2314,6 +2324,7 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: left;
+        margin-top: 25px;
     }
     .block-breadcrumbs ul li:first-child{
         margin-left: 0px;
