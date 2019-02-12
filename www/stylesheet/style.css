@@ -3953,7 +3953,7 @@ input.form-control-phoneCall:-moz-placeholder{
 .block-map{
     position: relative;
     height: 1080px;
-    margin-top: 96px
+    margin-top: 0px;
 }
 /* .block-map ymaps{
     height: 1080px;
@@ -5246,13 +5246,13 @@ h1 sup small{
     left: auto;
     right: auto;
     right: 100px;
-    top: -50px;
+    top: -75px;
 }
 .another-apartament-slider .slick-next.slick-arrow{
     left: auto;
     right: auto;
     right: 0px;
-    top: -50px;
+    top: -75px;
 }
 .another-apartament-slider .slick-prev.slick-arrow:before{
     content: "";

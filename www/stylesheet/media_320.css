@@ -1095,7 +1095,7 @@
     .block-map{
         height: 623px;
         overflow: hidden;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .form-for-map-abs{
         display:none;
@@ -1993,6 +1993,31 @@
     .another-apartament-slider .another-apartament-slider-item .another-apartament-slider-item-section-1{
         width: 370px;
     }
+    .another-apartament-slider .slick-dots li button{
+        width: 10px;
+        height: 10px;
+        background: none;
+        border-radius:50%;
+        border:2px solid #ff0e0e;
+        opacity: 0.5;
+    }
+    .another-apartament-slider .slick-dots{
+        margin-top: 20px;
+    }
+    .another-apartament-slider .slick-dots li.slick-active button{
+        /* width: 10px;
+        height: 10px;
+        background: none;
+        border-radius:50%;
+        border:1px solid #ff0e0e; */
+        opacity: 1;
+    }
+    .another-apartament-slider .slick-dots li button:before{
+        display: none;
+    }
+    .another-apartament-slider .slick-dots{
+        bottom: -55px;
+    }
 }
 @media (max-width: 450px){
     .block-documents-items {
@@ -2104,6 +2129,13 @@
 @media (max-width: 360px){
     .block-gk-docs .block-left{
         width: 290px;
+    }
+    .another-apartament-slider .another-apartament-slider-item .another-apartament-slider-item-section-1{
+        width: 100%;
+    }
+    .block-this-stroy{
+        left: 50%;
+        transform: translate(-50%);
     }
     .block-gk-docs.block-gk-docs-2 .block-right .change-buy-apartament{
         width: 290px;
