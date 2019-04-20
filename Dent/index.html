@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Dentist</title>
+
+    <!-- Fonts -->
+    <link rel='stylesheet' id='zn_all_g_fonts-css'
+        href='//fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic&#038;ver=d14c58ed8b28ab8fd2693fd6b26bf2ab'
+        type='text/css' media='all' />
+    <!-- End -->
+
+    <!-- Styles -->
+    <link rel='stylesheet' id='th-bootstrap-styles-css'
+        href='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/css/bootstrap.min.css?ver=4.16.7'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='th-theme-template-styles-css'
+        href='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/css/template.min.css?ver=4.16.7'
+        type='text/css' media='all' />
+        <link rel='stylesheet' id='52-layout.css-css'
+        href='//demo.kallyas.net/dentist/wp-content/uploads/sites/66/zion-builder/cache/52-layout.css?ver=a4efb0e001f465111d92f2127d84ab89'
+        type='text/css' media='all' />
+        <link rel='stylesheet' id='kallyas-addon-nav-overlay-css-css'
+        href='https://demo.kallyas.net/dentist/wp-content/plugins/kallyas-addon-nav-overlay/assets/styles.min.css?ver=1.0.10'
+        type='text/css' media='all' />
+        <link rel='stylesheet' id='th-theme-options-styles-css'
+        href='//demo.kallyas.net/dentist/wp-content/uploads/sites/66/zn_dynamic.css?ver=1543952567' type='text/css'
+        media='all' />
+    <!-- End -->
+
+    <!-- Images -->
+    <link rel='stylesheet' id='zion-frontend-css'
+        href='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/framework/zion-builder/assets/css/znb_frontend.css?ver=1.0.22'
+        type='text/css' media='all' />
+    <!-- End -->
+
+  
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- End -->
+</head>
+
+<body class="home page-template-default page page-id-52 res1170 kl-sticky-header kl-skin--light" itemscope="itemscope"
+    itemtype="https://schema.org/WebPage">
+    <div id="page-loading" class="kl-pageLoading--yes_img_breath">
+        <div class="preloader-breath-img"><img
+                src="https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/preloader.png"></div>
+    </div>
+    <div class="login_register_stuff">
+        <div id="login_panel" class="loginbox-popup auth-popup mfp-hide">
+            <div class="inner-container login-panel auth-popup-panel">
+                <h3 class="m_title_ext auth-popup-title" itemprop="alternativeHeadline">SIGN IN YOUR ACCOUNT TO HAVE
+                    ACCESS TO DIFFERENT FEATURES</h3>
+                <form id="login_form" name="login_form" method="post" class="zn_form_login znhg-ajax-login-form"
+                    action="https://demo.kallyas.net/dentist/wp-login.php">
+                    <div class="zn_form_login-result"></div>
+                    <div class="form-group kl-fancy-form">
+                        <input type="text" id="kl-username" name="log"
+                            class="form-control inputbox kl-fancy-form-input kl-fw-input"
+                            placeholder="eg: james_smith" />
+                        <label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+                    </div>
+                    <div class="form-group kl-fancy-form">
+                        <input type="password" id="kl-password" name="pwd"
+                            class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type password" />
+                        <label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+                    </div>
+                    <label class="zn_remember auth-popup-remember" for="kl-rememberme">
+                        <input type="checkbox" name="rememberme" id="kl-rememberme" value="forever"
+                            class="auth-popup-remember-chb" />
+                        Remember Me </label>
+                    <input type="submit" id="login" name="submit_button" class="btn zn_sub_button btn-fullcolor btn-md"
+                        value="LOG IN" />
+                    <input type="hidden" value="login" class="" name="zn_form_action" />
+                    <input type="hidden" value="zn_do_login" class="" name="action" />
+                    <div class="links auth-popup-links">
+                        <a href="#forgot_panel" class="kl-login-box auth-popup-link">FORGOT YOUR PASSWORD?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="forgot_panel" class="loginbox-popup auth-popup forgot-popup mfp-hide">
+            <div class="inner-container forgot-panel auth-popup-panel">
+                <h3 class="m_title m_title_ext text-custom auth-popup-title" itemprop="alternativeHeadline">FORGOT YOUR
+                    DETAILS?</h3>
+                <form id="forgot_form" name="login_form" method="post" class="zn_form_lost_pass"
+                    action="https://demo.kallyas.net/wp-login.php?action=lostpassword">
+                    <div class="zn_form_login-result"></div>
+                    <div class="form-group kl-fancy-form">
+                        <input type="text" id="forgot-email" name="user_login"
+                            class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="..." />
+                        <label class="kl-font-alt kl-fancy-form-label">USERNAME OR EMAIL</label>
+                    </div>
+                    <input type="hidden" name="wc_reset_password" value="true">
+                    <input type="hidden" id="_wpnonce" name="_wpnonce" value="0128c7b4b4" /><input type="hidden"
+                        name="_wp_http_referer" value="/dentist/" />
+                    <div class="form-group">
+                        <input type="submit" id="recover" name="submit"
+                            class="btn btn-block zn_sub_button btn-fullcolor btn-md" value="SEND MY DETAILS!" />
+                    </div>
+                    <div class="links auth-popup-links">
+                        <a href="#login_panel" class="kl-login-box auth-popup-link">AAH, WAIT, I REMEMBER NOW!</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="zn-nav-overlay" class="znNavOvr znNavOvr--layoutS1 znNavOvr--animation3 znNavOvr--theme-light">
+        <div class="znNavOvr-inner is-empty">
+            <div class="znNavOvr-menuWrapper"></div>
+        </div>
+        <a href="#" class="znNavOvr-close znNavOvr-close--trSmall" id="znNavOvr-close">
+            <span></span>
+            <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+                <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25"
+                    stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+            </svg>
+        </a>
+    </div>
+    <div id="page_wrapper">
+        <header id="header"
+            class="site-header  style12 cta_button header--sticky header--not-sticked    headerstyle-xs--image_color  sticky-resize headerstyle--image_color site-header--absolute nav-th--light sheader-sh--light"
+            data-custom-sticky-textscheme="sh--dark" data-original-sticky-textscheme="sh--light" role="banner"
+            itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+            <div class="site-header-wrapper sticky-top-area">
+                <div class="site-header-top-wrapper topbar-style--custom  sh--light">
+                    <div class="siteheader-container container">
+                        <div class="fxb-row site-header-row site-header-top ">
+                            <div
+                                class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-top-left'>
+                                <ul class="sh-component social-icons sc--clean topnav navRight topnav-no-hdnav">
+                                    <li class="topnav-li social-icons-li"><a href="#" data-zniconfam="kl-social-icons"
+                                            data-zn_icon="" target="_blank"
+                                            class="topnav-item social-icons-item scheader-icon-" title="Facebook"></a>
+                                    </li>
+                                    <li class="topnav-li social-icons-li"><a href="#" data-zniconfam="kl-social-icons"
+                                            data-zn_icon="" target="_blank"
+                                            class="topnav-item social-icons-item scheader-icon-" title="Twitter"></a>
+                                    </li>
+                                    <li class="topnav-li social-icons-li"><a href="#" data-zniconfam="kl-social-icons"
+                                            data-zn_icon="" target="_blank"
+                                            class="topnav-item social-icons-item scheader-icon-" title="LinkedIn"></a>
+                                    </li>
+                                    <li class="topnav-li social-icons-li"><a href="#" data-zniconfam="kl-social-icons"
+                                            data-zn_icon="" target="_blank"
+                                            class="topnav-item social-icons-item scheader-icon-" title="Pinterest"></a>
+                                    </li>
+                                </ul>
+                                <div class="sh-component kl-header-toptext kl-font-alt"><strong>Open hours:</strong> Mn
+                                    - St: 8:00am - 9:00pm Sn: Closed</div>
+                            </div>
+                            <div
+                                class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-top-right'>
+                                <ul
+                                    class="sh-component topnav navLeft topnav--lang topnav-no-sc topnav-no-hdnav toplang--def">
+                                    <li class="languages drop topnav-drop topnav-li"><a href="#" class="topnav-item"><i
+                                                class="glyphicon glyphicon-globe kl-icon-white xs-icon"></i> <span
+                                                class="hidden-xs">LANGUAGES</span></a>
+                                        <div class="pPanel topnav-drop-panel u-trans-all-2s">
+                                            <ul class="inner topnav-drop-panel-inner">
+                                                <li class="toplang-item "><a href="#" class="toplang-anchor"><img
+                                                            src="https://demo.kallyas.net/dentist/wp-content/themes/kallyas-child/demo-images/flags/en.png"
+                                                            alt="English" class="toplang-flag" /> English </a></li>
+                                                <li class="toplang-item "><a href="#?lang=fr"
+                                                        class="toplang-anchor"><img
+                                                            src="https://demo.kallyas.net/dentist/wp-content/themes/kallyas-child/demo-images/flags/fr.png"
+                                                            alt="Francais" class="toplang-flag" /> Francais </a></li>
+                                                <li class="toplang-item "><a href="#?lang=es"
+                                                        class="toplang-anchor"><img
+                                                            src="https://demo.kallyas.net/dentist/wp-content/themes/kallyas-child/demo-images/flags/es.png"
+                                                            alt="Espanol" class="toplang-flag" /> Espanol </a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="sh-component zn_header_top_nav-wrapper "><span
+                                        class="headernav-trigger js-toggle-class"
+                                        data-target=".zn_header_top_nav-wrapper" data-target-class="is-opened"></span>
+                                    <ul id="menu-top-menu-1" class="zn_header_top_nav topnav topnav-no-sc clearfix">
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71">
+                                            <a href="#">Customer Care</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72">
+                                            <a href="#">Research &#038; Development</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73">
+                                            <a href="#">News</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="sh-component topnav navRight topnav--log topnav-no-sc topnav-no-hdnav">
+                                    <li class="topnav-li"><a href="#login_panel" class="kl-login-box topnav-item"><i
+                                                class="glyphicon glyphicon-log-in visible-xs xs-icon"></i><span
+                                                class="hidden-xs">LOGIN</span></a></li>
+                                </ul>
+                                <div id="search" class="sh-component header-search headsearch--min">
+                                    <a href="#" class="searchBtn header-search-button">
+                                        <span class="glyphicon glyphicon-search kl-icon-white"></span>
+                                    </a>
+                                    <div class="search-container header-search-container">
+                                        <form id="searchform" class="gensearch__form"
+                                            action="https://demo.kallyas.net/dentist/" method="get">
+                                            <input id="s" name="s" value="" class="inputbox gensearch__input"
+                                                type="text" placeholder="SEARCH ..." />
+                                            <button type="submit" id="searchsubmit" value="go"
+                                                class="gensearch__submit glyphicon glyphicon-search"></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kl-top-header site-header-main-wrapper clearfix   header-no-bottom  sh--light">
+                    <div class="container siteheader-container ">
+                        <div class='fxb-col fxb-basis-auto'>
+                            <div class="fxb-row site-header-row site-header-main ">
+                                <div
+                                    class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto fxb-grow-0 fxb-sm-half site-header-col-left site-header-main-left'>
+                                    <div id="logo-container"
+                                        class="logo-container  hasHoverMe logosize--no zn-original-logo">
+
+                                        <h1 class='site-logo logo ' id='logo'><a
+                                                href='https://demo.kallyas.net/dentist/' class='site-logo-anch'><img
+                                                    class="logo-img site-logo-img"
+                                                    src="https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/logo.png"
+                                                    width="176" alt="Dentist"
+                                                    title="Just another Kallyas Demo Sites site" /></a></h1>
+                                    </div>
+                                </div>
+                                <div
+                                    class='fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto fxb-grow-0 site-header-col-center site-header-main-center'>
+                                </div>
+                                <div
+                                    class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right'>
+                                    <div
+                                        class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-main-right-top'>
+                                        <div class="sh-component main-menu-wrapper" role="navigation"
+                                            itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+                                            <div class="zn-res-menuwrapper">
+                                                <a href="#"
+                                                    class="zn-res-trigger zn-menuBurger zn-menuBurger--2--s zn-menuBurger--anim1 "
+                                                    id="zn-res-trigger">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </a>
+                                            </div>
+                                            <div id="main-menu"
+                                                class="main-nav mainnav--overlay mainnav--active-uline mainnav--pointer-dash nav-mm--light zn_mega_wrapper ">
+                                                <ul id="menu-main-menu" class="main-menu main-menu-nav zn_mega_menu ">
+                                                    <li id="menu-item-53"
+                                                        class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-52 current_page_item menu-item-53 active  main-menu-item-top  menu-item-even menu-item-depth-0">
+                                                        <a href="https://demo.kallyas.net/dentist/"
+                                                            class=" main-menu-link main-menu-link-top"><span>Home</span></a>
+                                                    </li>
+                                                    <li id="menu-item-54"
+                                                        class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54  main-menu-item-top  menu-item-even menu-item-depth-0">
+                                                        <a href="#"
+                                                            class=" main-menu-link main-menu-link-top"><span>Services</span></a>
+                                                        <ul class="sub-menu clearfix">
+                                                            <li id="menu-item-55"
+                                                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-55  main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                <a href="https://demo.kallyas.net/dentist/prosthodontics/"
+                                                                    class=" main-menu-link main-menu-link-sub"><span>Prosthodontics</span></a>
+                                                            </li>
+                                                            <li id="menu-item-56"
+                                                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-56  main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                <a href="https://demo.kallyas.net/dentist/cleanings-protection/"
+                                                                    class=" main-menu-link main-menu-link-sub"><span>Cleanings
+                                                                        &#038; Protection</span></a></li>
+                                                            <li id="menu-item-57"
+                                                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-57  main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                <a href="https://demo.kallyas.net/dentist/restoring-teeth/"
+                                                                    class=" main-menu-link main-menu-link-sub"><span>Restoring
+                                                                        Teeth</span></a></li>
+                                                            <li id="menu-item-58"
+                                                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-58  main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                <a href="https://demo.kallyas.net/dentist/cosmetic-dentistry/"
+                                                                    class=" main-menu-link main-menu-link-sub"><span>Cosmetic
+                                                                        Dentistry</span></a></li>
+                                                            <li id="menu-item-59"
+                                                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-59  main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                <a href="https://demo.kallyas.net/dentist/dental-implants/"
+                                                                    class=" main-menu-link main-menu-link-sub"><span>Dental
+                                                                        Implants</span></a></li>
+                                                            <li id="menu-item-60"
+                                                                class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-60  main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                <a href="https://demo.kallyas.net/dentist/invisalign/"
+                                                                    class=" main-menu-link main-menu-link-sub"><span>Invisalign</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-61"
+                                                        class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-61  main-menu-item-top  menu-item-even menu-item-depth-0">
+                                                        <a href="https://demo.kallyas.net/dentist/our-clinic/"
+                                                            class=" main-menu-link main-menu-link-top"><span>Our
+                                                                Clinic</span></a></li>
+                                                    <li id="menu-item-62"
+                                                        class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-62  main-menu-item-top  menu-item-even menu-item-depth-0">
+                                                        <a href="https://demo.kallyas.net/dentist/dental-team/"
+                                                            class=" main-menu-link main-menu-link-top"><span>Dental
+                                                                Team</span></a></li>
+                                                    <li id="menu-item-63"
+                                                        class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-63  main-menu-item-top  menu-item-even menu-item-depth-0">
+                                                        <a href="https://demo.kallyas.net/dentist/prices/"
+                                                            class=" main-menu-link main-menu-link-top"><span>Prices</span></a>
+                                                    </li>
+                                                    <li id="menu-item-64"
+                                                        class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-64  main-menu-item-top  menu-item-even menu-item-depth-0">
+                                                        <a href="https://demo.kallyas.net/dentist/contact-us/"
+                                                            class=" main-menu-link main-menu-link-top"><span>Contact
+                                                                Us</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <a href="https://demo.kallyas.net/dentist/#reservation"
+                                            class="sh-component ctabutton cta-button-0 kl-cta-custom btn btn-fullcolor  zn_dummy_value cta-icon--before btn--rounded"
+                                            target="_self" itemprop="url"><span>Make an Appointment</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5TKGS7" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
+            <section class="zn_section eluid7cd704a6      u-zindex-2   zn_section--relative section--no "
+                id="appointment">
+                <div class="zn-bgSource ">
+                    <div class="zn-bgSource-overlay" style="background-color:rgba(241,243,245,0.9)"></div>
+                </div>
+                <div
+                    class="zn_section_size container custom_width zn-section-height--custom_height zn-section-content_algn--top ">
+                    <div class="row gutter-0">
+                        <div class="eluid7a144e4e            col-md-12 col-sm-12   znColumnElement" id="eluid7a144e4e">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid7a144e4e znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="zn_custom_container eluid7d2833d0  smart-cnt--default   clearfix">
+                                        <div class="row zn_col_container-smart_container gutter-0">
+                                            <div class="eluid6a34c188            col-md-7 col-sm-12   znColumnElement"
+                                                id="eluid6a34c188">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid6a34c188 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div
+                                                            class="znSmartCarousel eluid82eeda65  znSmartCarousel-hasPreloader znSmartCarouselMode--view element-scheme--dark">
+                                                            <div class="znSmartCarousel-loadingContainer">
+                                                                <div
+                                                                    class="znSmartCarousel-nav znSmartCarousel-navPosition--middle znSmartCarousel-navStyle--s1">
+                                                                    <span
+                                                                        class="znSmartCarousel-arr znSmartCarousel-prev "><svg
+                                                                            viewBox="0 0 256 256">
+                                                                            <polyline fill="none" stroke="black"
+                                                                                stroke-width="16"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-linecap="round"
+                                                                                points="184,16 72,128 184,240" />
+                                                                            </svg></span><span
+                                                                        class="znSmartCarousel-arr znSmartCarousel-next"><svg
+                                                                            viewBox="0 0 256 256">
+                                                                            <polyline fill="none" stroke="black"
+                                                                                stroke-width="16"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-linecap="round"
+                                                                                points="72,16 184,128 72,240" />
+                                                                            </svg></span></div>
+                                                                <div class="clearfix"></div>
+                                                                <div class="znSmartCarousel-holder js-slick "
+                                                                    data-slick='{"infinite":true,"slidesToShow":1,"slidesToScroll":1,"autoplay":true,"autoplaySpeed":6000,"easing":"elastic","speed":500,"swipe":true,"touchMove":true,"adaptiveHeight":false,"responsive":{"breakpoint":1024,"settings":{"slidesToScroll":1}},"loadingContainer":".eluid82eeda65","dots":false,"arrows":true,"appendArrows":".eluid82eeda65 .znSmartCarousel-nav","prevArrow":".eluid82eeda65 .znSmartCarousel-prev","nextArrow":".eluid82eeda65 .znSmartCarousel-next"}'>
+                                                                    <div class="znSmartCarousel-item znSmartCarousel-item--1 "
+                                                                        id="eluid82eeda65_0">
+                                                                        <div
+                                                                            class="row znSmartCarousel-container gutter-0">
+                                                                            <div class="eluida6486fb4            col-md-12 col-sm-12   znColumnElement"
+                                                                                id="eluida6486fb4">
+                                                                                <div
+                                                                                    class="znColumnElement-innerWrapper-eluida6486fb4 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                                    <div
+                                                                                        class="znColumnElement-innerContent">
+                                                                                        <div
+                                                                                            class="media-container eluid5123194f  media-container--type-pb kl-overlay-none  ">
+                                                                                            <div class="zn-bgSource ">
+                                                                                                <div class="zn-bgSource-image"
+                                                                                                    style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/03/img_07.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                                                                                </div>
+                                                                                                <div class="zn-bgSource-overlay"
+                                                                                                    style="  background-image: -moz-linear-gradient( -130deg, rgba(16,108,160,0) 0%, rgba(16,108,160,0.75) 70%, rgba(16,108,160,0.74902) 70%, rgba(33,145,173,0.94902) 100%);
+  background-image: -webkit-linear-gradient( -130deg, rgba(16,108,160,0) 0%, rgba(16,108,160,0.75) 70%, rgba(16,108,160,0.74902) 70%, rgba(33,145,173,0.94902) 100%);
+  background-image: -ms-linear-gradient( -130deg, rgba(16,108,160,0) 0%, rgba(16,108,160,0.75) 70%, rgba(16,108,160,0.74902) 70%, rgba(33,145,173,0.94902) 100%);">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="media-container-pb media-container-pb--alg-bottom">
+                                                                                                <div
+                                                                                                    class="row zn_col_container-media_container ">
+                                                                                                    <div class="eluid5bba4625            col-md-12 col-sm-12   znColumnElement"
+                                                                                                        id="eluid5bba4625">
+                                                                                                        <div
+                                                                                                            class="znColumnElement-innerWrapper-eluid5bba4625 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                                                            <div
+                                                                                                                class="znColumnElement-innerContent">
+                                                                                                                <div
+                                                                                                                    class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol-- tbk--colored tbk-icon-pos--after-title eluid4d39921d ">
+                                                                                                                    <h3 class="tbk__title"
+                                                                                                                        itemprop="headline">
+                                                                                                                        Enjoy
+                                                                                                                        your
+                                                                                                                        new
+                                                                                                                        dazzling
+                                                                                                                        smile
+                                                                                                                    </h3>
+                                                                                                                    <p class="tbk__subtitle"
+                                                                                                                        itemprop="alternativeHeadline">
+                                                                                                                        Energistically
+                                                                                                                        procrastinate
+                                                                                                                        ethical
+                                                                                                                        e-business
+                                                                                                                        vis-a-vis
+                                                                                                                        corporate
+                                                                                                                        infomediaries.
+                                                                                                                        Appropriately
+                                                                                                                        restore
+                                                                                                                        enabled
+                                                                                                                        growth
+                                                                                                                        strategies
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="znSmartCarousel-item znSmartCarousel-item--2 "
+                                                                        id="eluid82eeda65_1">
+                                                                        <div
+                                                                            class="row znSmartCarousel-container gutter-0">
+                                                                            <div class="eluid5e386c45            col-md-12 col-sm-12   znColumnElement"
+                                                                                id="eluid5e386c45">
+                                                                                <div
+                                                                                    class="znColumnElement-innerWrapper-eluid5e386c45 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                                    <div
+                                                                                        class="znColumnElement-innerContent">
+                                                                                        <div
+                                                                                            class="media-container eluida1598469  media-container--type-pb kl-overlay-none  ">
+                                                                                            <div class="zn-bgSource ">
+                                                                                                <div class="zn-bgSource-image"
+                                                                                                    style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/03/img_04.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                                                                                </div>
+                                                                                                <div class="zn-bgSource-overlay"
+                                                                                                    style="  background-image: -moz-linear-gradient( -130deg, rgba(16,108,160,0) 0%, rgba(16,108,160,0.75) 70%, rgba(16,108,160,0.74902) 70%, rgba(33,145,173,0.94902) 100%);
+  background-image: -webkit-linear-gradient( -130deg, rgba(16,108,160,0) 0%, rgba(16,108,160,0.75) 70%, rgba(16,108,160,0.74902) 70%, rgba(33,145,173,0.94902) 100%);
+  background-image: -ms-linear-gradient( -130deg, rgba(16,108,160,0) 0%, rgba(16,108,160,0.75) 70%, rgba(16,108,160,0.74902) 70%, rgba(33,145,173,0.94902) 100%);">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="media-container-pb media-container-pb--alg-bottom">
+                                                                                                <div
+                                                                                                    class="row zn_col_container-media_container ">
+                                                                                                    <div class="eluidf6a31b93            col-md-12 col-sm-12   znColumnElement"
+                                                                                                        id="eluidf6a31b93">
+                                                                                                        <div
+                                                                                                            class="znColumnElement-innerWrapper-eluidf6a31b93 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                                                            <div
+                                                                                                                class="znColumnElement-innerContent">
+                                                                                                                <div
+                                                                                                                    class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol-- tbk--colored tbk-icon-pos--after-title eluidacd30e70 ">
+                                                                                                                    <h3 class="tbk__title"
+                                                                                                                        itemprop="headline">
+                                                                                                                        The
+                                                                                                                        ultimate
+                                                                                                                        relaxing
+                                                                                                                        dental
+                                                                                                                        experience
+                                                                                                                    </h3>
+                                                                                                                    <p class="tbk__subtitle"
+                                                                                                                        itemprop="alternativeHeadline">
+                                                                                                                        Energistically
+                                                                                                                        procrastinate
+                                                                                                                        ethical
+                                                                                                                        e-business
+                                                                                                                        vis-a-vis
+                                                                                                                        corporate
+                                                                                                                        infomediaries.
+                                                                                                                        Appropriately
+                                                                                                                        restore
+                                                                                                                        enabled
+                                                                                                                        growth
+                                                                                                                        strategies
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="znSmartCarousel-loading"></div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="eluid6d49b327            col-md-5 col-sm-12   znColumnElement"
+                                                id="eluid6d49b327">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid6d49b327 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div
+                                                            class="media-container eluidde20bb12  media-container--type-pb kl-overlay-none znBoxShadow-5 ">
+                                                            <div class="zn-bgSource ">
+                                                                <div class="zn-bgSource-overlay"
+                                                                    style="background-color:rgba(255,255,255,1)"></div>
+                                                            </div>
+                                                            <div class="media-container-pb media-container-pb--alg-top">
+                                                                <div class="row zn_col_container-media_container ">
+                                                                    <div class="eluid643d7146            col-md-12 col-sm-12   znColumnElement"
+                                                                        id="eluid643d7146">
+                                                                        <div
+                                                                            class="znColumnElement-innerWrapper-eluid643d7146 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                            <div class="znColumnElement-innerContent">
+                                                                                <div
+                                                                                    class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid9a739616 ">
+                                                                                    <h2 class="tbk__title"
+                                                                                        itemprop="headline">Book an
+                                                                                        Appointment</h2>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="zn_contact_form_container contactForm cf-elm eluidafc0ff57  cf--light element-scheme--light  ">
+                                                                                    <form action="#"
+                                                                                        id="form_eluidafc0ff57"
+                                                                                        method="post"
+                                                                                        class="zn_contact_form contact_form cf-elm-form row "
+                                                                                        data-redirect="">
+                                                                                        <div
+                                                                                            class="col-sm-6  kl-material-form zn_form_field zn_cf_text">
+                                                                                            <input type="text"
+                                                                                                name="zn_form_field_full_name1_0"
+                                                                                                id="zn_form_field_full_name1_0"
+                                                                                                value=""
+                                                                                                class="zn_form_input zn-field-text form-control light kl-material-form-input zn_validate_not_empty " /><label
+                                                                                                for="zn_form_field_full_name1_0"
+                                                                                                class="control-label kl-font-alt kl-material-form-label">Full
+                                                                                                Name</label></div>
+                                                                                        <div
+                                                                                            class="col-sm-6  kl-material-form zn_form_field zn_cf_text">
+                                                                                            <input type="text"
+                                                                                                name="zn_form_field_e_mail_address1_1"
+                                                                                                id="zn_form_field_e_mail_address1_1"
+                                                                                                value=""
+                                                                                                class="zn_form_input zn-field-text form-control light kl-material-form-input zn_validate_is_email " /><label
+                                                                                                for="zn_form_field_e_mail_address1_1"
+                                                                                                class="control-label kl-font-alt kl-material-form-label">E-mail
+                                                                                                Address</label></div>
+                                                                                        <div
+                                                                                            class="col-sm-12  kl-material-form zn_form_field zn_cf_text">
+                                                                                            <input type="text"
+                                                                                                name="zn_form_field_phone_number1_2"
+                                                                                                id="zn_form_field_phone_number1_2"
+                                                                                                value=""
+                                                                                                class="zn_form_input zn-field-text form-control light kl-material-form-input zn_validate_is_numeric " /><label
+                                                                                                for="zn_form_field_phone_number1_2"
+                                                                                                class="control-label kl-font-alt kl-material-form-label">Phone
+                                                                                                Number</label></div>
+                                                                                        <div
+                                                                                            class="col-sm-12  kl-material-form zn_form_field zn_cf_datepicker">
+                                                                                            <div
+                                                                                                class="kl-material-form-inpwrapper clearfix">
+                                                                                                <div
+                                                                                                    class="kl-material-form-col-wrapper kl-material-form-date-wrapper">
+                                                                                                    <input
+                                                                                                        onfocus="blur();"
+                                                                                                        type="text"
+                                                                                                        name="zn_form_field_when1_3[date]"
+                                                                                                        id="zn_form_field_when1_3[date]"
+                                                                                                        value=""
+                                                                                                        class="zn_form_input zn-field-datepicker form-control form-control--light kl-material-form-input kl-material-form-date zn_fr_date_picker zn_validate_not_empty"
+                                                                                                        data-dateformat="yy-mm-dd" /><label
+                                                                                                        for="zn_form_field_when1_3[date]"
+                                                                                                        class="control-label kl-font-alt kl-material-form-label">When</label>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="kl-material-form-col-wrapper kl-material-form-time-wrapper">
+                                                                                                    <input
+                                                                                                        onfocus="blur();"
+                                                                                                        type="text"
+                                                                                                        name="zn_form_field_when1_3[time]"
+                                                                                                        id="zn_form_field_when1_3[time]"
+                                                                                                        value=""
+                                                                                                        class="zn_form_input zn-field-datepicker form-control form-control--light kl-material-form-input kl-material-form-time zn_fr_time_picker zn_validate_not_empty"
+                                                                                                        data-timeformat="g:i a" /><label
+                                                                                                        for="zn_form_field_when1_3[time]"
+                                                                                                        class="control-label kl-font-alt kl-material-form-label">PICK
+                                                                                                        TIME</label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-sm-12  kl-material-form zn_form_field zn_cf_textarea">
+                                                                                            <textarea
+                                                                                                name="zn_form_field_observation1_4"
+                                                                                                class="zn_form_input form-control light kl-material-form-textarea zn_validate_not_empty "
+                                                                                                id="zn_form_field_observation1_4"
+                                                                                                cols="40"
+                                                                                                rows="6"></textarea><label
+                                                                                                for="zn_form_field_observation1_4"
+                                                                                                class="control-label kl-font-alt kl-material-form-label">Observation</label>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-sm-12  kl-material-form zn_form_field zn_cf_hidden">
+                                                                                            <input type="hidden"
+                                                                                                name="zn_pb_form_submit_1"
+                                                                                                id="zn_pb_form_submit_1"
+                                                                                                value="1"
+                                                                                                class="zn_form_input zn_validate_none" />
+                                                                                        </div>
+                                                                                        <div class="col-sm-12">
+                                                                                            <div class="zn_contact_ajax_response titleColor"
+                                                                                                id="zn_form_id1"></div>
+                                                                                            <div
+                                                                                                class="zn_submit_container text-center">
+                                                                                                <button
+                                                                                                    class="zn_contact_submit btn btn-fullcolor btn--square  btn-md"
+                                                                                                    type="submit">BOOK
+                                                                                                    NOW</button></div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="zn_section eluidf6e3ffd2     section-sidemargins    section--no " id="eluidf6e3ffd2">
+                <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                    <div class="row ">
+                        <div class="eluid0fb132c6            col-md-7 col-sm-7   znColumnElement" id="eluid0fb132c6">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid0fb132c6 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="media-container eluid65ed6e49 hasRectangleBehind media-container--type- kl-overlay-none  ">
+                                        <div class="zn-bgSource ">
+                                            <div class="zn-bgSource-image"
+                                                style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_08.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid51cbb0da            col-md-5 col-sm-5   znColumnElement" id="eluid51cbb0da">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid51cbb0da znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--line tbk--colored tbk-icon-pos--before-title eluidc1495467 ">
+                                        <span class="tbk__symbol "><span></span></span>
+                                        <h2 class="tbk__title" itemprop="headline">Why Dental Care</h2>
+                                        <p class="tbk__subtitle" itemprop="alternativeHeadline">Energistically
+                                            communicate e-business collaboration and idea-sharing rather than team
+                                            building process improvements. Collaboratively incentivize maintainable
+                                            technologies through highly efficient web services. Appropriately actualize
+                                            inexpensive outsourcing and clicks-and-mortar catalysts for change.</p>
+                                    </div>
+                                    <div class="zn-buttonWrapper zn-buttonWrapper-eluidae5566ae text-left"><a
+                                            href="https://demo.kallyas.net/dentist/our-clinic/" id="eluidae5566ae"
+                                            class="eluidae5566ae  zn-button btn btn-fullcolor btn--rounded btn-icon--before"
+                                            title="Click me" target="_self" itemprop="url"><span
+                                                class="zn-buttonText">Find More</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="zn_section eluid40e9ae8c     section-sidemargins    zn_section--relative section--no element-scheme--dark"
+                id="eluid40e9ae8c">
+                <div class="zn-bgSource ">
+                    <div class="zn-bgSource-image"
+                        style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_09.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                    </div>
+                    <div class="zn-bgSource-overlay"
+                        style="  background-image: -moz-linear-gradient( -90deg, rgb(33,145,173) 0%, rgb(16,108,160) 55%, rgba(16,108,160,0.91) 88%, rgba(16,108,160,0.81961) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(33,145,173) 0%, rgb(16,108,160) 55%, rgba(16,108,160,0.91) 88%, rgba(16,108,160,0.81961) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(33,145,173) 0%, rgb(16,108,160) 55%, rgba(16,108,160,0.91) 88%, rgba(16,108,160,0.81961) 100%);">
+                    </div>
+                </div>
+                <div
+                    class="zn_section_size container custom_width zn-section-height--auto zn-section-content_algn--top ">
+                    <div class="row ">
+                        <div class="eluide0030898            col-md-12 col-sm-12   znColumnElement" id="eluide0030898">
+                            <div
+                                class="znColumnElement-innerWrapper-eluide0030898 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--line tbk--colored tbk-icon-pos--before-title eluidcbc17ab4 ">
+                                        <span class="tbk__symbol "><span></span></span>
+                                        <h2 class="tbk__title" itemprop="headline">Our Services</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid66515d96            col-md-4 col-sm-12   znColumnElement" id="eluid66515d96">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid66515d96 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="kl-iconbox eluid524d67cb   kl-iconbox--type-icon  kl-iconbox--fright kl-iconbox--align-right text-right kl-iconbox--theme-light element-scheme--light"
+                                        id="eluid524d67cb">
+                                        <div class="kl-iconbox__inner clearfix">
+                                            <div class="kl-iconbox__icon-wrapper ">
+                                                <span class="kl-iconbox__icon kl-iconbox__icon--"
+                                                    data-zniconfam="icomoon" data-zn_icon=""></span> </div>
+                                            <div class="kl-iconbox__content-wrapper">
+                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                    <h3 class="kl-iconbox__title element-scheme__hdg1"
+                                                        itemprop="headline">Prosthodontics</h3>
+                                                </div>
+                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                    <p class="kl-iconbox__desc">Competently plagiarize goal-oriented
+                                                        deliverables after cross-media human capital</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="th-spacer clearfix eluidb9729ff6     "></div>
+                                    <div class="kl-iconbox eluidd6a04cae mgNegLeft  kl-iconbox--type-icon  kl-iconbox--fright kl-iconbox--align-right text-right kl-iconbox--theme-light element-scheme--light"
+                                        id="eluidd6a04cae">
+                                        <div class="kl-iconbox__inner clearfix">
+                                            <div class="kl-iconbox__icon-wrapper ">
+                                                <span class="kl-iconbox__icon kl-iconbox__icon--"
+                                                    data-zniconfam="icomoon" data-zn_icon=""></span> </div>
+                                            <div class="kl-iconbox__content-wrapper">
+                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                    <h3 class="kl-iconbox__title element-scheme__hdg1"
+                                                        itemprop="headline">Cleanings & Prevention</h3>
+                                                </div>
+                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                    <p class="kl-iconbox__desc">Competently plagiarize goal-oriented
+                                                        deliverables after cross-media</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="th-spacer clearfix eluid4bef40b3     "></div>
+                                    <div class="kl-iconbox eluid513fe865   kl-iconbox--type-icon  kl-iconbox--fright kl-iconbox--align-right text-right kl-iconbox--theme-light element-scheme--light"
+                                        id="eluid513fe865">
+                                        <div class="kl-iconbox__inner clearfix">
+                                            <div class="kl-iconbox__icon-wrapper ">
+                                                <span class="kl-iconbox__icon kl-iconbox__icon--"
+                                                    data-zniconfam="icomoon" data-zn_icon=""></span> </div>
+                                            <div class="kl-iconbox__content-wrapper">
+                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                    <h3 class="kl-iconbox__title element-scheme__hdg1"
+                                                        itemprop="headline">Restoring Teeth</h3>
+                                                </div>
+                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                    <p class="kl-iconbox__desc">Competently plagiarize goal-oriented
+                                                        deliverables after cross-media human capital</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid42039e83            col-md-4 col-sm-12   znColumnElement" id="eluid42039e83">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid42039e83 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="image-boxes imgbox-simple eluid49cc7d8e ">
+                                        <div class="image-boxes-holder imgboxes-wrapper u-mb-0  ">
+                                            <div class="image-boxes-img-wrapper img-align-center"><img
+                                                    class="image-boxes-img img-responsive "
+                                                    src="https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/tooth.png"
+                                                    alt="" title="tooth" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluida661f290            col-md-4 col-sm-12   znColumnElement" id="eluida661f290">
+                            <div
+                                class="znColumnElement-innerWrapper-eluida661f290 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="kl-iconbox eluidb8eb9758   kl-iconbox--type-icon  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light"
+                                        id="eluidb8eb9758">
+                                        <div class="kl-iconbox__inner clearfix">
+                                            <div class="kl-iconbox__icon-wrapper ">
+                                                <span class="kl-iconbox__icon kl-iconbox__icon--"
+                                                    data-zniconfam="icomoon" data-zn_icon=""></span> </div>
+                                            <div class="kl-iconbox__content-wrapper">
+                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                    <h3 class="kl-iconbox__title element-scheme__hdg1"
+                                                        itemprop="headline">Cosmetic Dentistry</h3>
+                                                </div>
+                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                    <p class="kl-iconbox__desc">Competently plagiarize goal-oriented
+                                                        deliverables after cross-media human capital</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="th-spacer clearfix eluid2fdf0e69     "></div>
+                                    <div class="kl-iconbox eluid5abfc45e mgNegRight  kl-iconbox--type-icon  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light"
+                                        id="eluid5abfc45e">
+                                        <div class="kl-iconbox__inner clearfix">
+                                            <div class="kl-iconbox__icon-wrapper ">
+                                                <span class="kl-iconbox__icon kl-iconbox__icon--"
+                                                    data-zniconfam="icomoon" data-zn_icon=""></span> </div>
+                                            <div class="kl-iconbox__content-wrapper">
+                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                    <h3 class="kl-iconbox__title element-scheme__hdg1"
+                                                        itemprop="headline">Dental Implants</h3>
+                                                </div>
+                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                    <p class="kl-iconbox__desc">Competently plagiarize goal-oriented
+                                                        deliverables after cross-media</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="th-spacer clearfix eluidaee4e673     "></div>
+                                    <div class="kl-iconbox eluid54491f48   kl-iconbox--type-icon  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light"
+                                        id="eluid54491f48">
+                                        <div class="kl-iconbox__inner clearfix">
+                                            <div class="kl-iconbox__icon-wrapper ">
+                                                <span class="kl-iconbox__icon kl-iconbox__icon--"
+                                                    data-zniconfam="icomoon" data-zn_icon=""></span> </div>
+                                            <div class="kl-iconbox__content-wrapper">
+                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                    <h3 class="kl-iconbox__title element-scheme__hdg1"
+                                                        itemprop="headline">Invisalign</h3>
+                                                </div>
+                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                    <p class="kl-iconbox__desc">Competently plagiarize goal-oriented
+                                                        deliverables after cross-media human capital</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid6d75756c            col-md-12 col-sm-12   znColumnElement" id="eluid6d75756c">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid6d75756c znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="zn-buttonWrapper zn-buttonWrapper-eluid8bf5cb12 text-center"><a href="#"
+                                            id="eluid8bf5cb12"
+                                            class="eluid8bf5cb12  zn-button btn btn-fullcolor btn--rounded btn-icon--before"
+                                            title="Click me" target="_self" itemprop="url"><span
+                                                class="zn-buttonText">View all Services</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="zn_section eluidfe167b04     section-sidemargins    section--no " id="eluidfe167b04">
+                <div class="zn_section_size full_width zn-section-height--auto zn-section-content_algn--top ">
+                    <div class="row ">
+                        <div class="eluid729df2cb            col-md-5 col-sm-12   znColumnElement" id="eluid729df2cb">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid729df2cb znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-right ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--line  tbk-icon-pos--before-title eluid5c04231a ">
+                                        <span class="tbk__symbol "><span></span></span>
+                                        <h2 class="tbk__title" itemprop="headline">Our Specialists</h2>
+                                        <p class="tbk__subtitle" itemprop="alternativeHeadline">Base leadership skills
+                                            without reliable. Monotonectally build next-generation mindshare whereas
+                                            vertical channels.</p>
+                                    </div>
+                                    <div class="zn-buttonWrapper zn-buttonWrapper-eluidcc813f30 text-left"><a
+                                            href="https://demo.kallyas.net/dentist/dental-team/" id="eluidcc813f30"
+                                            class="eluidcc813f30  zn-button btn btn-fullcolor btn--rounded btn-icon--before"
+                                            title="Click me" target="_self" itemprop="url"><span
+                                                class="zn-buttonText">View all</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid641ff5f2            col-md-7 col-sm-12   znColumnElement" id="eluid641ff5f2">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid641ff5f2 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="zn_custom_container eluidfc216b33  smart-cnt--default   clearfix">
+                                        <div class="row zn_col_container-smart_container gutter-0">
+                                            <div class="eluid478254ac            col-md-4 col-sm-4   znColumnElement"
+                                                id="eluid478254ac">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid478254ac znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div class="media-container eluid5f6e443a  media-container--type-pb kl-overlay-none  "
+                                                            onclick="window.open( '#', '_self')">
+                                                            <div class="zn-bgSource ">
+                                                                <div class="zn-bgSource-image"
+                                                                    style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_10.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                                                </div>
+                                                                <div class="zn-bgSource-overlay"
+                                                                    style="  background-image: -moz-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);
+  background-image: -ms-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="media-container-pb media-container-pb--alg-bottom">
+                                                                <div class="row zn_col_container-media_container ">
+                                                                    <div class="eluid671d2291            col-md-12 col-sm-12   znColumnElement"
+                                                                        id="eluid671d2291">
+                                                                        <div
+                                                                            class="znColumnElement-innerWrapper-eluid671d2291 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                            <div class="znColumnElement-innerContent">
+                                                                                <div
+                                                                                    class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidffe0d73f ">
+                                                                                    <h4 class="tbk__title"
+                                                                                        itemprop="headline">Dr. Cynthia
+                                                                                        Johnson</h4>
+                                                                                    <div class="tbk__subtitle"
+                                                                                        itemprop="alternativeHeadline">
+                                                                                        Oral and Maxillofacial Surgeon
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="eluidf15201c8            col-md-4 col-sm-4   znColumnElement"
+                                                id="eluidf15201c8">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluidf15201c8 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div class="media-container eluid632fc660  media-container--type-pb kl-overlay-none znBoxShadow-6 "
+                                                            onclick="window.open( '#', '_self')">
+                                                            <div class="zn-bgSource ">
+                                                                <div class="zn-bgSource-image"
+                                                                    style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_11.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                                                </div>
+                                                                <div class="zn-bgSource-overlay"
+                                                                    style="  background-image: -moz-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);
+  background-image: -ms-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="media-container-pb media-container-pb--alg-bottom">
+                                                                <div class="row zn_col_container-media_container ">
+                                                                    <div class="eluid11ed0062            col-md-12 col-sm-12   znColumnElement"
+                                                                        id="eluid11ed0062">
+                                                                        <div
+                                                                            class="znColumnElement-innerWrapper-eluid11ed0062 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                            <div class="znColumnElement-innerContent">
+                                                                                <div
+                                                                                    class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidec9c3b38 ">
+                                                                                    <h4 class="tbk__title"
+                                                                                        itemprop="headline">Dr. Kevin
+                                                                                        Osbourne</h4>
+                                                                                    <div class="tbk__subtitle"
+                                                                                        itemprop="alternativeHeadline">
+                                                                                        Oral Surgeon and Implantologist
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="eluid5527d0fe            col-md-4 col-sm-4   znColumnElement"
+                                                id="eluid5527d0fe">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid5527d0fe znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div class="media-container eluid0af7bf68  media-container--type-pb kl-overlay-none  "
+                                                            onclick="window.open( '#', '_self')">
+                                                            <div class="zn-bgSource ">
+                                                                <div class="zn-bgSource-image"
+                                                                    style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_12.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                                                </div>
+                                                                <div class="zn-bgSource-overlay"
+                                                                    style="  background-image: -moz-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);
+  background-image: -ms-linear-gradient( 90deg, rgb(33,145,173) 0%, rgb(33,145,173) 1%, rgb(16,109,160) 20%, rgba(16,108,160,0.99) 20%, rgba(16,108,160,0) 54%);">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="media-container-pb media-container-pb--alg-bottom">
+                                                                <div class="row zn_col_container-media_container ">
+                                                                    <div class="eluid17dc373f            col-md-12 col-sm-12   znColumnElement"
+                                                                        id="eluid17dc373f">
+                                                                        <div
+                                                                            class="znColumnElement-innerWrapper-eluid17dc373f znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                                            <div class="znColumnElement-innerContent">
+                                                                                <div
+                                                                                    class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid8f640aae ">
+                                                                                    <h4 class="tbk__title"
+                                                                                        itemprop="headline">Dr. Kemal
+                                                                                        Larson</h4>
+                                                                                    <div class="tbk__subtitle"
+                                                                                        itemprop="alternativeHeadline">
+                                                                                        Prosthodontist</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="zn_section eluidd2b0c52d     section-sidemargins    section--no " id="eluidd2b0c52d">
+                <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                    <div class="row ">
+                        <div class="eluid9780c33c            col-md-4 col-sm-4   znColumnElement" id="eluid9780c33c">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid9780c33c znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--line tbk--colored tbk-icon-pos--before-title eluidfe3cd3ce ">
+                                        <span class="tbk__symbol "><span></span></span>
+                                        <h2 class="tbk__title" itemprop="headline">Happy Stories</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluidaa03278c            col-md-4 col-sm-4   znColumnElement" id="eluidaa03278c">
+                            <div
+                                class="znColumnElement-innerWrapper-eluidaa03278c znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidc5d8dcf8 ">
+                                        <p class="tbk__subtitle" itemprop="alternativeHeadline">Came in to get my teeth
+                                            cleaned and cavity filled and I was given the best service. They have TV's
+                                            so you can watch a movie as you get your teeth worked on which is a nice
+                                            convenience. The staff is excellent and super friendly. The specialists are
+                                            truly professionals at their profession. Come check out this place.</p>
+                                    </div>
+                                    <div class="zn_custom_container eluid4dba1ebc  smart-cnt--default   clearfix">
+                                        <div class="row zn_col_container-smart_container ">
+                                            <div class="eluid99a510f6            col-md-3 col-sm-3   znColumnElement"
+                                                id="eluid99a510f6">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid99a510f6 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div class="image-boxes imgbox-simple eluid42e6579d ">
+                                                            <div class="image-boxes-holder imgboxes-wrapper u-mb-0  ">
+                                                                <div class="image-boxes-img-wrapper img-align-center">
+                                                                    <img class="image-boxes-img img-responsive "
+                                                                        src="https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/client_01.png"
+                                                                        alt="" title="client_01.png" /></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="eluid1bde5f3e            col-md-9 col-sm-9   znColumnElement"
+                                                id="eluid1bde5f3e">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid1bde5f3e znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div
+                                                            class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid067dae88 ">
+                                                            <h5 class="tbk__title" itemprop="headline">Amber Hitchens
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid1142deca            col-md-4 col-sm-4   znColumnElement" id="eluid1142deca">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid1142deca znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluida7535763 ">
+                                        <p class="tbk__subtitle" itemprop="alternativeHeadline">Another appointment with
+                                            Jonathan Rivera. I never really liked dentists, but he's the best I've
+                                            encountered. He's really gentle and light with his hands, he always makes me
+                                            feel comfortable. He's the only dentist I trust. He has the best assistants
+                                            - Martha and Jessica. My visit is not complete unless one of them is around.
+                                        </p>
+                                    </div>
+                                    <div class="zn_custom_container eluid78bbdc2f  smart-cnt--default   clearfix">
+                                        <div class="row zn_col_container-smart_container ">
+                                            <div class="eluid83dcd917            col-md-3 col-sm-3   znColumnElement"
+                                                id="eluid83dcd917">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid83dcd917 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div class="image-boxes imgbox-simple eluiddc858bfd ">
+                                                            <div class="image-boxes-holder imgboxes-wrapper u-mb-0  ">
+                                                                <div class="image-boxes-img-wrapper img-align-center">
+                                                                    <img class="image-boxes-img img-responsive "
+                                                                        src="https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/client_02.png"
+                                                                        alt="" title="client_02" /></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="eluid4d3a9a45            col-md-9 col-sm-9   znColumnElement"
+                                                id="eluid4d3a9a45">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid4d3a9a45 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div
+                                                            class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluida432a3dc ">
+                                                            <h5 class="tbk__title" itemprop="headline">Richard Hope</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluidd90357c0            col-md-12 col-sm-12   znColumnElement" id="eluidd90357c0">
+                            <div
+                                class="znColumnElement-innerWrapper-eluidd90357c0 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="th-spacer clearfix eluid1175a3a5     "></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluidc921b0b2            col-md-4 col-sm-4   znColumnElement" id="eluidc921b0b2">
+                            <div
+                                class="znColumnElement-innerWrapper-eluidc921b0b2 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="media-container eluidbe1d9d5d  media-container--type-btn kl-overlay-none znBoxShadow-5 znBoxShadow--hov-6 znBoxShadow--hover">
+                                        <div class="zn-bgSource ">
+                                            <div class="zn-bgSource-image"
+                                                style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_33.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                            </div>
+                                        </div> <a
+                                            class="media-container__link media-container__link--btn media-container__link--style-circle "
+                                            href="https://www.youtube.com/watch?v=SN4tEqeQEPQ" data-lightbox="iframe">
+                                            <div class="circleanim-svg">
+                                                <svg height="108" width="108" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle stroke-opacity="0.1" fill="#FFFFFF" stroke-width="5" cx="54"
+                                                        cy="54" r="48" class="circleanim-svg__circle-back"></circle>
+                                                    <circle stroke-width="5" fill="#FFFFFF" cx="54" cy="54" r="48"
+                                                        class="circleanim-svg__circle-front"
+                                                        transform="rotate(50 54 54) "></circle>
+                                                    <path
+                                                        d="M62.1556183,56.1947505 L52,62.859375 C50.6192881,63.7654672 49.5,63.1544098 49.5,61.491212 L49.5,46.508788 C49.5,44.8470803 50.6250889,44.2383396 52,45.140625 L62.1556183,51.8052495 C64.0026693,53.0173767 63.9947588,54.9878145 62.1556183,56.1947505 Z"
+                                                        fill="#FFFFFF"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluida60b45cf            col-md-4 col-sm-4   znColumnElement" id="eluida60b45cf">
+                            <div
+                                class="znColumnElement-innerWrapper-eluida60b45cf znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="media-container eluidde1b86c3  media-container--type-btn kl-overlay-none znBoxShadow-5 znBoxShadow--hov-6 znBoxShadow--hover">
+                                        <div class="zn-bgSource ">
+                                            <div class="zn-bgSource-image"
+                                                style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_20.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:scroll">
+                                            </div>
+                                        </div> <a
+                                            class="media-container__link media-container__link--btn media-container__link--style-circle "
+                                            href="https://www.youtube.com/watch?v=SN4tEqeQEPQ" data-lightbox="iframe">
+                                            <div class="circleanim-svg">
+                                                <svg height="108" width="108" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle stroke-opacity="0.1" fill="#FFFFFF" stroke-width="5" cx="54"
+                                                        cy="54" r="48" class="circleanim-svg__circle-back"></circle>
+                                                    <circle stroke-width="5" fill="#FFFFFF" cx="54" cy="54" r="48"
+                                                        class="circleanim-svg__circle-front"
+                                                        transform="rotate(50 54 54) "></circle>
+                                                    <path
+                                                        d="M62.1556183,56.1947505 L52,62.859375 C50.6192881,63.7654672 49.5,63.1544098 49.5,61.491212 L49.5,46.508788 C49.5,44.8470803 50.6250889,44.2383396 52,45.140625 L62.1556183,51.8052495 C64.0026693,53.0173767 63.9947588,54.9878145 62.1556183,56.1947505 Z"
+                                                        fill="#FFFFFF"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid688f2547            col-md-4 col-sm-4   znColumnElement" id="eluid688f2547">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid688f2547 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                <div class="znColumnElement-innerContent">
+                                    <div class="media-container eluid4c86bb97  media-container--type-pb kl-overlay-none znBoxShadow-5 znBoxShadow--hov-6 znBoxShadow--hover"
+                                        onclick="window.open( 'https://demo.kallyas.net/dentist/#reservation', '_self')">
+                                        <div class="zn-bgSource ">
+                                            <div class="zn-bgSource-overlay" style="    background-image: -moz-linear-gradient( 129deg, rgb(16,108,160) 0%, rgb(33,145,173) 99%);
+    background-image: -webkit-linear-gradient( 129deg, rgb(16,108,160) 0%, rgb(33,145,173) 99%);
+    background-image: -ms-linear-gradient( 129deg, rgb(16,108,160) 0%, rgb(33,145,173) 99%);"></div>
+                                        </div>
+                                        <div class="media-container-pb media-container-pb--alg-center">
+                                            <div class="row zn_col_container-media_container ">
+                                                <div class="eluidd4072a93            col-md-12 col-sm-12   znColumnElement"
+                                                    id="eluidd4072a93">
+                                                    <div
+                                                        class="znColumnElement-innerWrapper-eluidd4072a93 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                        <div class="znColumnElement-innerContent">
+                                                            <div
+                                                                class="zn-buttonWrapper zn-buttonWrapper-eluid651d1c60 text-center">
+                                                                <a href="#" id="eluid651d1c60"
+                                                                    class="eluid651d1c60  zn-button btn btn-text btn-custom-color btn--square btn-icon--after"
+                                                                    title="Click me" target="_self" itemprop="url"><span
+                                                                        class="zn-buttonText">Your Story</span><span
+                                                                        class="zn-buttonIcon" data-zniconfam="icomoon"
+                                                                        data-zn_icon=""></span></a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="zn_section eluidd26c396f     section-sidemargins    zn_section--relative section--no "
+                id="eluidd26c396f">
+                <div class="zn-bgSource ">
+                    <div class="zn-bgSource-image"
+                        style="background-image:url(https://demo.kallyas.net/dentist/wp-content/uploads/sites/66/2017/05/img_25.jpg);background-repeat:no-repeat;background-position:right bottom;background-size:auto;background-attachment:scroll">
+                    </div>
+                </div>
+                <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                    <div class="row gutter-0">
+                        <div class="eluid63b443f4            col-md-12 col-sm-12   znColumnElement" id="eluid63b443f4">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid63b443f4 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidff6420fb ">
+                                        <h4 class="tbk__title" itemprop="headline">Special Offer</h4>
+                                        <h2 class="tbk__subtitle" itemprop="alternativeHeadline">Every new patient gets:
+                                        </h2>
+                                    </div>
+                                    <div class="zn_custom_container eluid3931651f  smart-cnt--default   clearfix">
+                                        <div class="row zn_col_container-smart_container ">
+                                            <div class="eluidf1836dfc            col-md-6 col-sm-6  col-lg-6 znColumnElement"
+                                                id="eluidf1836dfc">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluidf1836dfc znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div
+                                                            class="znList eluid086d07d4  text-left znList-icon--left elm-znlist--light element-scheme--light">
+                                                            <ul class="znListItems clearfix">
+                                                                <li class="znListItems-item clearfix"><span
+                                                                        class="znListItems-icon znListItems-icon-0"
+                                                                        data-zniconfam="glyphicons_halflingsregular"
+                                                                        data-zn_icon=""></span><span
+                                                                        class="znListItems-text">Consultation</span>
+                                                                </li>
+                                                                <li class="znListItems-item clearfix"><span
+                                                                        class="znListItems-icon znListItems-icon-1"
+                                                                        data-zniconfam="glyphicons_halflingsregular"
+                                                                        data-zn_icon=""></span><span
+                                                                        class="znListItems-text">Digital
+                                                                        Ortho-Pantograph X-ray</span></li>
+                                                                <li class="znListItems-item clearfix"><span
+                                                                        class="znListItems-icon znListItems-icon-2"
+                                                                        data-zniconfam="glyphicons_halflingsregular"
+                                                                        data-zn_icon=""></span><span
+                                                                        class="znListItems-text">Extraction</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="eluid2aa639f7            col-md-6 col-sm-6   znColumnElement"
+                                                id="eluid2aa639f7">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid2aa639f7 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div
+                                                            class="znList eluid1fbe0941  text-left znList-icon--left elm-znlist--light element-scheme--light">
+                                                            <ul class="znListItems clearfix">
+                                                                <li class="znListItems-item clearfix"><span
+                                                                        class="znListItems-icon znListItems-icon-0"
+                                                                        data-zniconfam="glyphicons_halflingsregular"
+                                                                        data-zn_icon=""></span><span
+                                                                        class="znListItems-text">Consultation</span>
+                                                                </li>
+                                                                <li class="znListItems-item clearfix"><span
+                                                                        class="znListItems-icon znListItems-icon-1"
+                                                                        data-zniconfam="glyphicons_halflingsregular"
+                                                                        data-zn_icon=""></span><span
+                                                                        class="znListItems-text">Digital
+                                                                        Ortho-Pantograph X-ray</span></li>
+                                                                <li class="znListItems-item clearfix"><span
+                                                                        class="znListItems-icon znListItems-icon-2"
+                                                                        data-zniconfam="glyphicons_halflingsregular"
+                                                                        data-zn_icon=""></span><span
+                                                                        class="znListItems-text">Extraction</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="eluid97dda932            col-md-12 col-sm-12   znColumnElement"
+                                                id="eluid97dda932">
+                                                <div
+                                                    class="znColumnElement-innerWrapper-eluid97dda932 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div
+                                                            class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidf3cec50c ">
+                                                            <div class="tbk__subtitle" itemprop="alternativeHeadline">
+                                                                for only $75</div>
+                                                        </div>
+                                                        <div
+                                                            class="zn-buttonWrapper zn-buttonWrapper-eluide5263682 text-left">
+                                                            <a href="https://demo.kallyas.net/dentist/#reservation"
+                                                                id="eluide5263682"
+                                                                class="eluide5263682  zn-button btn btn-fullcolor btn-custom-color btn--rounded btn-icon--before"
+                                                                title="Click me" target="_self" itemprop="url"><span
+                                                                    class="zn-buttonText">Make an appointment</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="znpb-footer-smart-area">
+            <section class="zn_section eluid82c261af     section-sidemargins    zn_section--relative section--no "
+                id="eluid82c261af">
+                <div class="zn-bgSource ">
+                    <div class="zn-bgSource-overlay" style="  background-image: -moz-linear-gradient( 129deg, rgb(16,108,160) 0%, rgb(33,145,173) 99%);
+  background-image: -webkit-linear-gradient( 129deg, rgb(16,108,160) 0%, rgb(33,145,173) 99%);
+  background-image: -ms-linear-gradient( 129deg, rgb(16,108,160) 0%, rgb(33,145,173) 99%);"></div>
+                </div>
+                <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                    <div class="row ">
+                        <div class="eluidcf4b0783            col-md-3 col-sm-3   znColumnElement" id="eluidcf4b0783">
+                            <div
+                                class="znColumnElement-innerWrapper-eluidcf4b0783 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid574f643f ">
+                                        <h3 class="tbk__title" itemprop="headline">DentalCare</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid86584de3            col-md-3 col-sm-3   znColumnElement" id="eluid86584de3">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid86584de3 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid1834a96f ">
+                                        <h4 class="tbk__title" itemprop="headline">Our Location</h4>
+                                        <div class="tbk__subtitle" itemprop="alternativeHeadline">100 Old Palisade Rd,
+                                            Fort Lee, NJ, 07024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid33bab954            col-md-3 col-sm-3   znColumnElement" id="eluid33bab954">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid33bab954 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluided076af4 ">
+                                        <h4 class="tbk__title" itemprop="headline">Contact</h4>
+                                        <div class="tbk__subtitle" itemprop="alternativeHeadline">(201) 944-2928<br>
+                                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                data-cfemail="fe97909891be9a9b908a9f929d9f8c9bd09d9193">[email&#160;protected]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eluid7dbec239            col-md-3 col-sm-3   znColumnElement" id="eluid7dbec239">
+                            <div
+                                class="znColumnElement-innerWrapper-eluid7dbec239 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                <div class="znColumnElement-innerContent">
+                                    <div
+                                        class="elm-socialicons eluid9c3297a4  text-right sc-icon--right elm-socialicons--light element-scheme--light">
+                                        <ul class="elm-social-icons sc--clean sh--rounded sc-lay--normal clearfix">
+                                            <li class="elm-social-icons-item"><a href="#"
+                                                    class="elm-sc-link elm-sc-icon-0" target="_self"
+                                                    itemprop="url"><span class="elm-sc-icon "
+                                                        data-zniconfam="kl-social-icons" data-zn_icon=""></span></a>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li class="elm-social-icons-item"><a href="#"
+                                                    class="elm-sc-link elm-sc-icon-1" target="_self"
+                                                    itemprop="url"><span class="elm-sc-icon "
+                                                        data-zniconfam="kl-social-icons" data-zn_icon=""></span></a>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li class="elm-social-icons-item"><a href="#"
+                                                    class="elm-sc-link elm-sc-icon-2" target="_self"
+                                                    itemprop="url"><span class="elm-sc-icon "
+                                                        data-zniconfam="kl-social-icons" data-zn_icon=""></span></a>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop">TOP</a>
+   
+
+    <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+    
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Toggle panel
+            var demoPanel = document.getElementById('znDemosPanel'),
+                panelTrigger = document.getElementById('znDemosPanel-settings'),
+                smallPanelCloseTrigger = document.getElementById('znDemosPanel-fixedBtn-close'),
+                smallPanel = document.getElementById('znDemosPanel-fixedBtn'),
+                demoPanelClose = document.getElementById('znDemosPanel-close'),
+                demoPanelOverlay = document.getElementById('znDemosPanel-overlay'),
+                demoPanelExpandBtn = document.getElementById('znDemosPanel-expandBtn'),
+                demoPanelContent = document.getElementById('znDemosPanel-content');
+
+            let lazyImages = [].slice.call(document.querySelectorAll("img.znhg_kallyas_lazy_image"));
+            let active = false;
+
+            const lazyLoad = function () {
+
+                if (active === false) {
+                    active = true;
+
+                    setTimeout(function () {
+                        lazyImages.forEach(function (lazyImage) {
+                            if ((lazyImage.getBoundingClientRect().top <= window
+                                    .innerHeight && lazyImage.getBoundingClientRect()
+                                    .bottom >= 0)) {
+                                lazyImage.src = lazyImage.dataset.src;
+                                lazyImage.classList.remove("znhg_kallyas_lazy_image");
+
+                                lazyImages = lazyImages.filter(function (image) {
+                                    return image !== lazyImage;
+                                });
+
+                                if (lazyImages.length === 0) {
+                                    document.removeEventListener("scroll", lazyLoad);
+                                    window.removeEventListener("resize", lazyLoad);
+                                    window.removeEventListener("orientationchange",
+                                        lazyLoad);
+                                }
+                            }
+                        });
+
+                        active = false;
+                    }, 200);
+                }
+            };
+
+            demoPanelContent.addEventListener("scroll", lazyLoad);
+            window.addEventListener("resize", lazyLoad);
+            window.addEventListener("orientationchange", lazyLoad);
+
+            panelTrigger.addEventListener('click', function () {
+                demoPanel.classList.add('is-opened');
+                demoPanelContent.dispatchEvent(new Event('scroll'))
+            });
+
+            smallPanelCloseTrigger.addEventListener('click', function () {
+                smallPanel.classList.toggle("is-closed");
+            });
+
+            function removeOpenClasses() {
+                demoPanel.classList.remove('is-teaser');
+                demoPanel.classList.remove('is-opened');
+                demoPanel.classList.remove('is-expanded');
+            }
+
+            demoPanelClose.addEventListener('click', removeOpenClasses);
+            demoPanelOverlay.addEventListener('click', removeOpenClasses);
+
+            demoPanelExpandBtn.addEventListener('click', function () {
+                demoPanel.classList.toggle("is-expanded");
+            });
+
+            if (typeof (Storage) !== "undefined") {
+                var panelState = localStorage.getItem('opened_panel');
+
+                if (panelState === 'yes') {
+                    removeOpenClasses();
+                } else {
+
+                    localStorage.setItem('opened_panel', 'yes');
+
+                    demoPanel.classList.add('is-opened');
+
+                    setTimeout(function () {
+                        removeOpenClasses();
+                    }, 3000);
+                }
+
+            }
+        });
+    </script> -->
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/js/plugins.min.js?ver=4.16.7'></script>
+
+        
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/addons/scrollmagic/scrollmagic.js?ver=4.16.7'>
+    </script>
+
+    
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var zn_do_login = {
+            "ajaxurl": "\/dentist\/wp-admin\/admin-ajax.php",
+            "add_to_cart_text": "Item Added to cart!"
+        };
+        var ZnThemeAjax = {
+            "ajaxurl": "\/dentist\/wp-admin\/admin-ajax.php",
+            "zn_back_text": "Back",
+            "zn_color_theme": "light",
+            "res_menu_trigger": "1199",
+            "top_offset_tolerance": "",
+            "logout_url": "https:\/\/demo.kallyas.net\/dentist\/wp-login.php?action=logout&redirect_to=https%3A%2F%2Fdemo.kallyas.net%2Fdentist&_wpnonce=4cfb32efaf"
+        };
+        var ZnSmoothScroll = {
+            "type": "yes",
+            "touchpadSupport": "no"
+        };
+        /* ]]> */
+    </script>
+    
+    
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/js/znscript.min.js?ver=4.16.7'></script>
+
+        
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/addons/smooth_scroll/SmoothScroll.min.js?ver=4.16.7'>
+    </script>
+
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/addons/slick/slick.min.js?ver=4.16.7'></script>
+    
+        <!-- <script type='text/javascript'>
+        /* <![CDATA[ */
+        var ZionBuilderFrontend = {
+            "allow_video_on_mobile": ""
+        };
+        /* ]]> */
+    </script> -->
+    <!-- <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/framework/zion-builder/dist/znpb_frontend.bundle.js?ver=1.0.22'>
+    </script> -->
+    <!-- <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script> -->
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+    <script type='text/javascript'>
+        jQuery(document).ready(function (jQuery) {
+            jQuery.datepicker.setDefaults({
+                "closeText": "Close",
+                "currentText": "Today",
+                "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August",
+                    "September", "October", "November", "December"
+                ],
+                "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+                    "Oct", "Nov", "Dec"
+                ],
+                "nextText": "Next",
+                "prevText": "Previous",
+                "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+                    "Saturday"
+                ],
+                "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+                "dateFormat": "MM d, yy",
+                "firstDay": 1,
+                "isRTL": false
+            });
+        });
+    </script>
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/themes/kallyas/framework/zion-builder/hg-framework/assets/dist/js/jquery.timepicker.min.js?ver=4.16.7'>
+    </script>
+
+    <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-content/plugins/kallyas-addon-nav-overlay/assets/app.min.js?ver=1.0.10'>
+    </script>
+    
+    <!-- <script type='text/javascript'
+        src='https://demo.kallyas.net/dentist/wp-includes/js/wp-embed.min.js?ver=d14c58ed8b28ab8fd2693fd6b26bf2ab'>
+    </script> -->
+
+    <!-- <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-znb_close-thin" viewBox="0 0 100 100">
+                <path
+                    d="m87.801 12.801c-1-1-2.6016-1-3.5 0l-33.801 33.699-34.699-34.801c-1-1-2.6016-1-3.5 0-1 1-1 2.6016 0 3.5l34.699 34.801-34.801 34.801c-1 1-1 2.6016 0 3.5 0.5 0.5 1.1016 0.69922 1.8008 0.69922s1.3008-0.19922 1.8008-0.69922l34.801-34.801 33.699 33.699c0.5 0.5 1.1016 0.69922 1.8008 0.69922 0.69922 0 1.3008-0.19922 1.8008-0.69922 1-1 1-2.6016 0-3.5l-33.801-33.699 33.699-33.699c0.89844-1 0.89844-2.6016 0-3.5z" />
+            </symbol>
+            <symbol id="icon-znb_play" viewBox="0 0 22 28">
+                <path
+                    d="M21.625 14.484l-20.75 11.531c-0.484 0.266-0.875 0.031-0.875-0.516v-23c0-0.547 0.391-0.781 0.875-0.516l20.75 11.531c0.484 0.266 0.484 0.703 0 0.969z">
+                </path>
+            </symbol>
+        </defs>
+    </svg> -->
+</body>
+
+</html>
